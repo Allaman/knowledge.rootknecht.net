@@ -41,6 +41,7 @@ Run `docker-compose up -d` to start the service in the backgroud. You should now
 ## Install openssl and generate certificates
 Add `openssl` to `environment.systemPackages`
 `openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365`
+!! Alternative: Use lets encrypt
 
 ## Gitlab configuration
 The main configuration file is `/srv/gitlab/config/gitlab.rb` (adjust your path according to your docker-compose file)
