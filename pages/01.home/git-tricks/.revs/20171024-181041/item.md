@@ -2,7 +2,7 @@
 title: 'Git Tricks'
 taxonomy:
     category:
-        - Others
+        - Other
     author:
         - Knecht
 ---
