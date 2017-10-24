@@ -2,7 +2,7 @@
 title: 'Git Tricks'
 taxonomy:
     category:
-        - Others
+        - Other
     author:
         - Knecht
 ---
@@ -17,10 +17,6 @@ git remote -v
 Switch urls:
 ```bash
 git remote set-url origin NEWURL
-```
-Compare change
-```bash
-git remote -v
 ```
 Push to new remote
 ```bash
