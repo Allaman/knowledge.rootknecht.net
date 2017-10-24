@@ -18,6 +18,10 @@ Switch urls:
 ```bash
 git remote set-url origin NEWURL
 ```
+Compare change
+```bash
+git remote -v
+```
 Push to new remote
 ```bash
 git push -u origin master
