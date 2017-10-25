@@ -31,7 +31,7 @@ Prints various information about vim like version, enabled features, compile fla
 ```
 
 ## Modeline
-By setting `set modeline=1` you can enable the (Modeline Magic)[http://vim.wikia.com/wiki/Modeline_magic]. When it is not working you can check the setting with the following command:
+By setting `set modeline=1` you can enable the [Modeline Magic](http://vim.wikia.com/wiki/Modeline_magic). When it is not working you can check the setting with the following command:
 ```
 :verbose set modeline?
 ```
