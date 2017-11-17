@@ -7,7 +7,7 @@ taxonomy:
         - Knecht
 ---
 
-Gitlab provides official [Docker images](https://docs.gitlab.com/omnibus/docker/). The following config shows the integration in nginx of an out of the box gitlab container with docker-compose.yml.
+Gitlab provides official [Docker images](https://docs.gitlab.com/omnibus/docker/). The following config shows the integration of an out of the box gitlab container with docker-compose.yml.
 
 ## docker-compose
 ```yml
@@ -89,11 +89,4 @@ server {
     ssl_stapling_verify on;
 }
 
-```
-Reload nginx:
-```bash
-# check config syntx
-nginx -t
-# reload
-nginx -s reload
 ```
