@@ -27,7 +27,7 @@ services:
 ```
 
 ## Gitlab
-In `/etc/gitlab/gitlab.rb` (from within the container) or in `/srv/gitlab/config/gitlab.rb` from within the host:
+In `/etc/gitlab/gitlab.rb`
 ```ruby
 external_url 'https://domain.tld/gitlab/'
 
