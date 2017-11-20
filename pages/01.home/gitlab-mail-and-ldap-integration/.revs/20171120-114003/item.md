@@ -7,8 +7,6 @@ taxonomy:
         - Knecht
 ---
 
-`gitlab.rb`
-
 ```ruby
 gitlab_rails['smtp_enable'] = true
 gitlab_rails['smtp_address'] = "<SMTP Host>"
