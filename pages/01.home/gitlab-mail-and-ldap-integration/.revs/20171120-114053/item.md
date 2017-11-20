@@ -22,6 +22,7 @@ gitlab_rails['gitlab_email_from'] = "<MAIL FROM>"
 gitlab_rails['gitlab_email_reply_to'] = "<REPLY TO>"
 
 gitlab_rails['ldap_enabled'] = true
+
 gitlab_rails['ldap_servers'] = {
 'main' => {
   'label' => 'Description',
