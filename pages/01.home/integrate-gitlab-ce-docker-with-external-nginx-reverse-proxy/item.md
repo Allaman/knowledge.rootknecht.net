@@ -1,6 +1,8 @@
 ---
 title: 'Gitlab CE Docker with external Nginx Reverse Proxy'
 taxonomy:
+    category:
+        - Applications
     author:
         - Knecht
 ---
