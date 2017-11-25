@@ -1,8 +1,6 @@
 ---
-title: 'Integrate Gitlab CE Docker with external Nginx Reverse Proxy'
+title: 'Gitlab CE Docker with external Nginx Reverse Proxy'
 taxonomy:
-    category:
-        - Docker
     author:
         - Knecht
 ---
