@@ -17,5 +17,3 @@ sh regenerate.sh
 
 frontend/conf.json
 api domain
-
-admin url http://project.rootknecht.net:8080/admin/
