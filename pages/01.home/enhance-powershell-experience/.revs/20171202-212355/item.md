@@ -9,7 +9,7 @@ taxonomy:
 
 ## Make it more bash like
 
-Install [PSReadLine](https://github.com/lzybkr/PSReadLine) (optionally as current user if your are lacking admin rights). PSReadLine provides several features which are known from bash like a history search, undo/redo, and more.
+Install [PSReadLine](https://github.com/lzybkr/PSReadLine) optionally as current user if your are lacking admin rights. PSReadLine provides several features which are known from bash.
 
 ```powershell
 Install-Module [-Scope CurrentUser] PSReadLine
