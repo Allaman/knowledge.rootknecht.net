@@ -16,7 +16,7 @@ Install-Module [-Scope CurrentUser] PSReadLine
 ```
 Add `Import-Module PSReadLine` to C:\Users\<user>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` (create file if necessary) to autoload the module upon powershell start.
 
-Set keybinding to Emacs to use common bash key combos, e.g. `ctrl+a` for jumping to the beginning of the line
+Set keybinding to Emacs which allows to use common bash key combos, e.g. `ctrl+a` for jumping to the beginning of the line
 ```powershell
 Set-PSReadlineOption -EditMode Emacs
 ```
