@@ -1,10 +1,5 @@
 ---
 title: 'Windows Tricks'
-taxonomy:
-    category:
-        - Windows
-    author:
-        - Knecht
 ---
 
 [TOC]
