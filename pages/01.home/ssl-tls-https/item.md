@@ -10,9 +10,30 @@ taxonomy:
 [TOC]
 
 ## Generate self-signed certificate for https
+**Simple usecase**
 ```bash
-openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
+openssl req -x509 -newkey rsa:4096 -sha256 -keyout key.pem -out cert.pem -days 365
 ```
+
+**Advanced usecase**
+Including *S*ubject *A*lternative *N*ames
+```bash
+openssl req \
+-newkey rsa:4096 \
+-x509 \
+-nodes \
+-keyout key.pem \
+-out cert.pem \
+-subj "/C=DE/ST=Munich/L=Bavaria/O=department/OU=company/CN=example.com" \
+-reqexts SAN \
+-extensions SAN \
+-config <(cat /etc/ssl/openssl.cnf \
+    <(printf '[SAN]\nsubjectAltName=IP:127.0.0.1,DNS:localhost')) \
+-sha256 \
+-days 365
+```
+! Path of `/etc/ssl/openssl.cnf` might differ
+
 ## Remove password from protected certificate key
 ```bash
 openssl rsa -in original.key -out unencripted.key
