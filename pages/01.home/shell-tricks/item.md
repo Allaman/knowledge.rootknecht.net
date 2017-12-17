@@ -70,6 +70,11 @@ conda config --set ssl_verify false
 pip install [--index-url=http://pypi.python.org/simple/] --trusted-host pypi.python.org
 ```
 
+**npm**
+```bash
+npm config set strict-ssl false
+```
+
 ## Create user with predefined password
 ```bash
 useradd -p $(openssl passwd -1 $PASS) $USER
