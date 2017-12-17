@@ -74,9 +74,3 @@ pip install [--index-url=http://pypi.python.org/simple/] --trusted-host pypi.pyt
 ```bash
 useradd -p $(openssl passwd -1 $PASS) $USER
 ```
-
-## Copy permissions from existing file
-```bash
-chown --reference=otherfile newFile
-chmod --reference=otherfile newFile
-```
