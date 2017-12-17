@@ -85,22 +85,3 @@ useradd -p $(openssl passwd -1 $PASS) $USER
 chown --reference=otherfile newFile
 chmod --reference=otherfile newFile
 ```
-
-## Redirect command output
-**stderr and stdout**
-```bash
-command > /dev/null 2>&1
-# bash only
-command &> /dev/null
-```
-
-**only stderr**
-```bash
-command 2> /dev/null
-```
-
-**only stdout**
-```bash
-command 1> /dev/null
-```
-
