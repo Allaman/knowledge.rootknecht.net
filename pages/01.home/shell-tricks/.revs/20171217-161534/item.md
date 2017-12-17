@@ -105,24 +105,8 @@ command 1> /dev/null
 ```
 
 ## Curl for REST API
-**Auth**
-```bash
-# Auth with username password and store cookie information
-curl -c cookies.txt -X POST -d 'username=admin&password=admin' https://example.com/login
-# Use cookie auth information to post data from json file
-curl -b cookies.txt -d @data.json -H "Content-Type: application/json" -X POST https://example.com/rest
-# Use auth token
-curl -H "X-Auth-Token: <Token ID>" https://example.com/login
-```
 **GET**
 ```bash
 curl -H "Accept:application/json" https://httpbin.org/get
 ```
-**POST**
-```bash
-curl \
--h "Content-type: application/json" \
--X POST \
--d '{"title": "Test Title", "note": "Test note"}' \
-https://httpbin.org/
-```
+
