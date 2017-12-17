@@ -104,3 +104,9 @@ command 2> /dev/null
 command 1> /dev/null
 ```
 
+## Curl for REST API
+**GET**
+```bash
+curl -H "Accept:application/json" https://httpbin.org/get
+```
+
