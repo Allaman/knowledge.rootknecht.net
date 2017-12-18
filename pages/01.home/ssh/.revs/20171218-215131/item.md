@@ -55,5 +55,5 @@ scp USER@HOST:/path/to/file.txt /tmp/file.txt
 scp /tmp/file.txt USER@HOST:/tmp/file.txt
 ```
 **Options**
-- /-r/ copy recursive
-- /-P/ custom port (note capital P in contrast to ssh)
+- r copy recursive
+- P custom port (note capital P in contrast to ssh)
