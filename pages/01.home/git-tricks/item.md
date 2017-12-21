@@ -26,3 +26,9 @@ Push to new remote
 ```bash
 git push -u origin master
 ```
+
+## Run git command over all subdirectories
+
+```bash
+find . -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;
+```
