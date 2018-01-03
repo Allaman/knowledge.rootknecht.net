@@ -104,6 +104,11 @@ command 2> /dev/null
 command 1> /dev/null
 ```
 
+## Inherit permissions from parent directory
+```bash
+chmod g+s /path/to/parent
+```
+
 ## Curl for REST API
 **Auth**
 ```bash
