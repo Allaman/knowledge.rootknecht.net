@@ -39,13 +39,12 @@ title: Minishift
  
 ### With Virtualbox
 
-1. Disable HyperV if appropriate
+1. Disable HyperV
 	
     ```powershell
     Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
     ```
-1. Run Minishift
 
-    ```powershell
-    minishift.exe start --vm-driver virtualbox --iso-url file://C:/path/to/minishift-b2d.iso
-    ```
+```powershell
+minishift.exe start --vm-driver virtualbox --iso-url file://C:/path/to/minishift-b2d.iso
+```
