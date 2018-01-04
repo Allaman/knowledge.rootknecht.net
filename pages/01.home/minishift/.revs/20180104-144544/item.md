@@ -7,8 +7,6 @@ taxonomy:
         - Knecht
 ---
 
-[TOC]
-
 ## Requirements
 
 - HyperV (Windows 10 Enterprise, Professional, or Education)
