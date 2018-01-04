@@ -4,6 +4,8 @@ title: Minishift
 
 ## Requirements
 
+### Windows
+
 - HyperV (Windows 10 Enterprise, Professional, or Education)
 - or VirtualBox 5.1.12 or later
 - [Minishift Binary](https://github.com/minishift/minishift/releases)
