@@ -23,9 +23,4 @@ title: Minishift
     
     [More options](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
-1. Add user to HyperV group
-
-	Run powershell as administrator
-	```powershell
-    ([adsi]”WinNT://./Hyper-V Administrators,group”).Add(“WinNT://$env:UserDomain/$env:Username,user”)
-    ```
+1. 
