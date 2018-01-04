@@ -43,12 +43,6 @@ taxonomy:
     ```powershell
     set HYPERV_VIRTUAL_SWITCH=
     ```
-
-1. Run minishift
-	
-    ```powershell
-    minishift.exe start
-    ```
  
 ### With Virtualbox
 
