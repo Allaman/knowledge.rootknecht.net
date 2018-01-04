@@ -60,5 +60,5 @@ taxonomy:
 1. Run Minishift
 
     ```powershell
-    minishift.exe start --vm-driver virtualbox --show-libmachine-logs --iso-url file://C:/path/to/minishift-b2d.iso
+    minishift.exe start --vm-driver virtualbox --iso-url file://C:/path/to/minishift-b2d.iso
     ```
