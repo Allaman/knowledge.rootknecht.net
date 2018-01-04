@@ -7,7 +7,7 @@ title: Minishift
 ### Windows
 
 - HyperV (Windows 10 Enterprise, Professional, or Education)
-- or VirtualBox 5.1.12 or later
+- or VirtualBox
 - [Minishift Binary](https://github.com/minishift/minishift/releases)
 
 ## Installation
@@ -28,13 +28,4 @@ title: Minishift
 	Run powershell as administrator
 	```powershell
     ([adsi]”WinNT://./Hyper-V Administrators,group”).Add(“WinNT://$env:UserDomain/$env:Username,user”)
-    ```
-    
-1. Create virtual Switch
-	See [docs.microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network)
- 
-1. Set environment variable to the name of the created virtual switch
-	
-    ```powershell
-    set HYPERV_VIRTUAL_SWITCH=
     ```
