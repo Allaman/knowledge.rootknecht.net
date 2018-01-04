@@ -12,7 +12,7 @@ title: Minishift
 
 ## Installation
 
-### With HyperV
+### Windows
 
 1. Enable HyperV with a Powershell as administrator
 
@@ -38,9 +38,3 @@ title: Minishift
     ```powershell
     set HYPERV_VIRTUAL_SWITCH=
     ```
- 
-### With Virtualbox
-
-```powershell
-minishift.exe start --vm-driver virtualbox
-```
