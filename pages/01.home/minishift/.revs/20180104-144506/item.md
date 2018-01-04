@@ -1,10 +1,5 @@
 ---
 title: Minishift
-taxonomy:
-    category:
-        - Others
-    author:
-        - Knecht
 ---
 
 ## Requirements
