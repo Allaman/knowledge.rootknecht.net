@@ -30,5 +30,3 @@ After installation of additional packages/fonts run
 ```bash
 sudo texhash
 ```
-## Fix xdvipdfmx:fatal: pdf_ref_obj(): passed invalid object.
-Occurs when fontawesome is used. Add `\newfontfamily{\FA}{[FontAwesome.otf]}` after loading the fontawesome package
