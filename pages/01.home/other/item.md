@@ -24,3 +24,8 @@ In tmux command mode
 
 - Right click on Titlebar
 - More Actions -> Special Application Settings -> Size & Position -> set `Obey geometry restriction` to `Force` `No`
+
+## Fix XeLatex font errors
+```bash
+sudo texhash
+```
