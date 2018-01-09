@@ -131,3 +131,8 @@ curl \
 -d '{"title": "Test Title", "note": "Test note"}' \
 https://httpbin.org/
 ```
+
+## Add existing user to group
+```bash
+usermod -a -G group user
+```
