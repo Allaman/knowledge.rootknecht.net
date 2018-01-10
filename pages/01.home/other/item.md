@@ -32,3 +32,11 @@ sudo texhash
 ```
 ## Fix xdvipdfmx:fatal: pdf_ref_obj(): passed invalid object.
 Occurs when fontawesome is used. Add `\newfontfamily{\FA}{[FontAwesome.otf]}` after loading the fontawesome package
+
+## Create new MySQL database and user
+```bash
+mysql -u root -p
+create database name;
+grant all privileges on database.* to 'user'@'localhost' identified by "password";
+flush privileges;
+```
