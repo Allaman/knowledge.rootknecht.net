@@ -10,8 +10,6 @@ taxonomy:
 ## For Loop
 
 ## IF Condition
-```bash
 if [ "$ENV_VAR" = "true" ] ; then
 	echo $ENV_VAR
 fi
-```
