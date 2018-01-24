@@ -93,8 +93,6 @@ After vagrant has finished execute `vagrant reload`
 * Start installer with`./install.sh -g`. We must use the graphical installer as the unattended installer throws an error with a database connection. I gues that there is some kind of timeout or weired thing.
 * After hitting the installer at some point it stops showing an URL which you must open in your VM's browser. This is the graphical installer which you must complete.
 
-! After completing the installer a sapnw  instance is up and running
-
 ## Client
 
 In order to access sapnw from your host machine you have to edit your `hosts` file.
