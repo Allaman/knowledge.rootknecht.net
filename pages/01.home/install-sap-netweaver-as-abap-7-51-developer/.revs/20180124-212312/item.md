@@ -42,7 +42,9 @@ For completness although the following software will be handled by the created v
 * hostname max 13 chars
 * FQDN (Full Qualified Domain Name)
 
-### Client (not covered extensively in this article)
+### Client (not covered in this article)
+
+TODO
 
 * Minimum 4 GB RAM
 * Supported OS (cp. the ![Links](#Links) section)
@@ -50,6 +52,8 @@ For completness although the following software will be handled by the created v
 * [Eclipse](http://www.eclipse.org/downloads/eclipse-packages/) for ABAP development
 
 ## Download and Extract
+
+Now let's begin!
 
 From [SAP](https://tools.hana.ondemand.com/#abap) download the *SAP NetWeaver AS ABAP Developer Edition* in version *7.51 SP02*. In order to download the archives in our (linux) shell we download and accept the terms within a webbrowser with enabled network analysis tools. Then we copy the request as curl and paste it into our commandline. We append `-o part01.rar` to tell curl to save the output in a file (default is stdout). Now we can duplicate the requests and increment the numbers.
 
