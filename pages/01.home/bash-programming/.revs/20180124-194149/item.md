@@ -30,7 +30,7 @@ fi
 [ FILE1 -nt FILE2 ] # True if FILE1 has been changed more recently or if FILE1 exists and FILE2 does not
 [ FILE1 -ot FILE2 ] # True if FILE1 is older or FILE1 exists and FILE2 does not
 ```
-### Strings
+### String
 
 ```bash
 [ -z STRING ] # True if length of STRING is zero
