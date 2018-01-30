@@ -62,22 +62,8 @@ fi
 ### Strings
 
 ```bash
-[ -z "STRING" ] # True if length of STRING is zero
-[ "STRING1" != "STRING2" ] # True if strings are (not) equal
-```
-
-## Integers
-
-```bash
-[ NUM1 -eq NUM2 ] # True if NUM1 is equal to NUM2
-[ NUM1 -ne NUM2 ] # True if NUM1 is not equal to NUM2
-[ NUM1 -gt NUM2 ] # True if NUM1 is greater than NUM2
-[ NUM1 -ge NUM2 ] # True if NUM1 is greater or equal to NUM2
-[ NUM1 -lt NUM2 ] # True if NUM1 is leass than NUM2
-[ NUM1 -le NUM2 ] # True if NUM1 is less than or equal to NUM2
-# Former statements work with double parentheses e.g. ((NUM1 <= NUM2))
-[ NUM1 -lt NUM2 ]
-[ NUM1 -lt NUM2 ]
+[ -z STRING ] # True if length of STRING is zero
+[ STRING1 != STRING2 ] # True if strings are (not) equal
 ```
 
 ## Combining Expressions
