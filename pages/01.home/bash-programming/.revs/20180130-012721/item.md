@@ -7,38 +7,6 @@ taxonomy:
         - Knecht
 ---
 
-[TOC]
-
-## Shebang
-
-```bash
-#!/bin/bash
-```
-
-## Debugging
-
-```bash
-bash -x script
-```
-
-```bash
-set -x # start debugging from here
-echo Hello World!
-set +x ' stop debugging from here
-```
-
-```bash
-set -v # print shell inputs as they are read
-echo Hello World!
-set +v # stops showing shell inputs
-```
-
-```bash
-#!/bin/bash -xv # combining options for whole scripts in the shebang
-```
-
-
-
 ## Loops
 
 ```bash
