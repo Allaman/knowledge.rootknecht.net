@@ -61,3 +61,8 @@ openssl pkcs12 -info -in keyStore.p12
 openssl pkcs12 -in keyStore.[pfx|p12] -out keyStore.pem -nodes
 ```
 `-nocerts` to only output the private key or `-nokeys` to only output the certificates.
+
+## Emulate SSL/TLS Handshake
+```bash
+openssl s_client -state -nbio -connect HOST:PORT
+```
