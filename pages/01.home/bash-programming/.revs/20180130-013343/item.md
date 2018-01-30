@@ -24,7 +24,7 @@ bash -x script
 ```bash
 set -x # start debugging from here
 echo Hello World!
-set +x # stop debugging from here
+set +x ' stop debugging from here
 ```
 
 ```bash
