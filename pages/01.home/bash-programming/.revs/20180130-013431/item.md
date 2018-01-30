@@ -37,6 +37,8 @@ set +v # stops showing shell inputs
 #!/bin/bash -xv # combining options for whole scripts in the shebang
 ```
 
+
+
 ## Loops
 
 ```bash
