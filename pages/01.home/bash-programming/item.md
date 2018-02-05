@@ -116,3 +116,9 @@ fi
 [ EXPR1 -a EXPR2 ] # True if both are true
 [ EXPR1 -o EXPR2 ] # True if 1 or 2 is true
 ```
+
+## PID
+
+```bash
+[ -d $(ps -A | grep 'PATTERN') ] && echo "exists" || echo "not exists"
+```
