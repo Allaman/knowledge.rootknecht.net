@@ -20,3 +20,10 @@ glob.sync("../*/*.xlsm").forEach(function (file) {
 ```javascript
 dirs = FS.readdirSync(path)
 ```
+
+## NPM proxy
+
+```bash
+npm config set proxy http://proxy.company.com:3128
+npm config set https-proxy http://proxy.company.com:3128
+```
