@@ -49,12 +49,3 @@ for (let input of inputs) {
     console.log(input)
 }
 ```
-
-## Transpiler error lines mapping
-Add to your entrypoint the following snippet
-```javascript
-require('source-map-support').install()
-```
-```bash
-npm install dev-dependencies source-map-support
-```
