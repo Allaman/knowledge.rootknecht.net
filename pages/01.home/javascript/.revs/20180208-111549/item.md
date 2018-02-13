@@ -35,17 +35,3 @@ if (date.isValid()) {
     console.log(date.format("DD.MM.YY"))
 }
 ```
-
-## Check for undefined and not null
-```javascript
-if (typeof(variable) != "undefined" && variable) {
-	console.log("Good")
-}
-```
-
-## For loops
-```javascript
-for (let input of inputs) {
-    console.log(input)
-}
-```
