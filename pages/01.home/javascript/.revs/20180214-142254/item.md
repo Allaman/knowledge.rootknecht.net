@@ -65,25 +65,3 @@ require('source-map-support').install()
 ```bash
 npm install dev-dependencies source-map-support
 ```
-
-## Reload on change
-```html
-<script type="text/javascript">app.main()</script>
-<body>
-    <form>
-    	<select id="year" name="year">
-    		<option value="2017">2017</option>
-    		<option selected="selected" value="2018">2018</option>
-    	</select>
-    </form>
-```
-```javascript
-    static main () {
-        $(document).ready(() => {
-            this.draw() // do stuff
-            $("#year").change(() => {
-                this.draw()
-            })
-        })
-    }
-```
