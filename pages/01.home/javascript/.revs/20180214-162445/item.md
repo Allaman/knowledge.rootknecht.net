@@ -82,12 +82,12 @@ index.html
 ```
 app.js
 ```javascript
-static main () {
-    $(document).ready(() => {
-        this.draw() // do stuff
-        $("#year").change(() => {
-            this.draw()
+    static main () {
+        $(document).ready(() => {
+            this.draw() // do stuff
+            $("#year").change(() => {
+                this.draw()
+            })
         })
-    })
-}
+    }
 ```
