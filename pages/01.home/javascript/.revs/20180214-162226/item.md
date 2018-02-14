@@ -7,8 +7,6 @@ taxonomy:
         - Knecht
 ---
 
-[TOC]
-
 ## File globbing
 
 ```javascript
@@ -69,7 +67,6 @@ npm install dev-dependencies source-map-support
 ```
 
 ## Reload on change
-index.html
 ```html
 <script type="text/javascript">app.main()</script>
 <body>
@@ -80,7 +77,6 @@ index.html
     	</select>
     </form>
 ```
-app.js
 ```javascript
     static main () {
         $(document).ready(() => {
