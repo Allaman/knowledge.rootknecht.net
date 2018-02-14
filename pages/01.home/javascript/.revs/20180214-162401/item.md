@@ -68,7 +68,7 @@ require('source-map-support').install()
 npm install dev-dependencies source-map-support
 ```
 
-## Reload content on change
+## Reload on change
 index.html
 ```html
 <script type="text/javascript">app.main()</script>
