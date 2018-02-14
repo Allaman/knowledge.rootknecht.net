@@ -91,8 +91,3 @@ static main () {
     })
 }
 ```
-
-## Set content of textarea
-```javascript
-document.getElementById("id").value = data
-```
