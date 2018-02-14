@@ -50,13 +50,6 @@ for (let input of inputs) {
 }
 ```
 
-## IE not rendering Javascript
-```html
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-</head
-```
-
 ## Transpiler error lines mapping
 Add to your entrypoint the following snippet
 ```javascript
