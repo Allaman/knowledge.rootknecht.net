@@ -23,9 +23,15 @@ btrfs fi df /varLib/docker
 
 ## Docker and Proxy
 
-vim /etc/systemd/system/multi-user.target.wants/docker.service
+### System
+vim /etc/systemd/system/multi-user.target.wants/docker.service (adjust for other startup mechanism)
 
 ```
 [Service]
 Environment="HTTPS_PROXY=https://proxy.example.com:443/"
+```
+
+### Per build
+```bash
+docker build --build-arg HTTP_PROXY=proxy.company.com:3128 -t TAG .
 ```
