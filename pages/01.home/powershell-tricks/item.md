@@ -16,6 +16,14 @@ You might have to allow the execution of powershell scripts on your system: `Set
 ```powershell
 function f_workspace {Set-Location "C:\Users\<user>\Documents\workspace"}
 Set-Alias workspace f_workspace
+function f_up {docker-compose.exe up }
+Set-Alias dup f_up
+function f_images {docker images}
+Set-Alias di f_images
+function f_ps {docker ps}
+Set-Alias dps f_ps
+function f_dexec {docker exec -it}
+Set-Alias dexec f_dexec
 ```
 
 ## Grep
