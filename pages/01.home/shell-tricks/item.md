@@ -136,3 +136,15 @@ https://httpbin.org/
 ```bash
 usermod -a -G group user
 ```
+
+## Reduce size of pdf files with ghostscript
+```bash
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=OPTION -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
+```
+common options for dPDFSETTINGS are:
+
+- dPDFSETTINGS=/screen lower quality, smaller size.
+- dPDFSETTINGS=/ebook for better quality, but slightly larger pdfs.
+- dPDFSETTINGS=/prepress output similar to Acrobat Distiller "Prepress Optimized" setting
+- dPDFSETTINGS=/printer selects output similar to the Acrobat Distiller "Print Optimized" setting
+- dPDFSETTINGS=/default selects output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file
