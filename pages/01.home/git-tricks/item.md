@@ -32,3 +32,13 @@ git push -u origin master
 ```bash
 find . -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;
 ```
+
+## Git proxy
+```bash
+git config --global http.proxy http://proxy.company.com:3128
+```
+oder in .git/config
+```
+[http]
+	proxy = http://proxy.company.com:3128
+```
