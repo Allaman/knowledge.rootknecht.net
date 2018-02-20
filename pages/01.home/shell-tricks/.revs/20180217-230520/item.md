@@ -148,8 +148,3 @@ common options for dPDFSETTINGS are:
 - dPDFSETTINGS=/prepress output similar to Acrobat Distiller "Prepress Optimized" setting
 - dPDFSETTINGS=/printer selects output similar to the Acrobat Distiller "Print Optimized" setting
 - dPDFSETTINGS=/default selects output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file
-
-## Generate hash for passwords
-```bash
-echo "password" | sha1sum
-```
