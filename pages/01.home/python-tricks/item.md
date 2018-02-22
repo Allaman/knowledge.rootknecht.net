@@ -7,3 +7,14 @@ title: 'Python Tricks'
 content = open(file, 'r').read()
 lines = open(file, 'r').readline()
 ```
+
+## Logging
+```python
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+logger.info("TEXT")
+logger.debug("!!!!")
+```
