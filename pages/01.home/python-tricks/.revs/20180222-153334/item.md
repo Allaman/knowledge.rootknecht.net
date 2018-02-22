@@ -18,11 +18,3 @@ logger = logging.getLogger(__name__)
 logger.info("TEXT")
 logger.debug("!!!!")
 ```
-
-## JSON
-```python
-import json
-
-json.load(open(path, 'r'))
-json.loads('{"hello": "world}')
-```
