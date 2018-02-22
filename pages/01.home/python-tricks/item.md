@@ -16,9 +16,28 @@ except IOError as err:
 ```python
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
+loggers = {}
 
+def mylogger(name):
+    global loggers
+
+    if loggers.get(name):
+        return loggers.get(name)
+    else:
+        logger = logging.getLogger(name)
+        logger.setLevel(logging.DEBUG)
+        handler = logging.StreamHandler()
+        formatter = logging.Formatter(
+            '%(asctime)s %(levelname)s %(module)s %(message)s')
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+        loggers.update(dict(name=logger))
+
+        return logger
+```
+```python
+from log import mylogger
+logger = mylogger(__name__)
 logger.info("TEXT")
 logger.debug("!!!!")
 ```
