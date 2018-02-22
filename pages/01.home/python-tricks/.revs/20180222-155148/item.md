@@ -4,12 +4,8 @@ title: 'Python Tricks'
 
 ## Read file
 ```python
-try:
-	content = open(file, 'r').read()
-	lines = open(file, 'r').readline()
-except IOError as err:
-    print(err)
-    sys.exit()
+content = open(file, 'r').read()
+lines = open(file, 'r').readline()
 ```
 
 ## Logging
