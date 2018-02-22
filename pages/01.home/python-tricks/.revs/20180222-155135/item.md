@@ -23,6 +23,6 @@ logger.debug("!!!!")
 ```python
 import json
 
-json.load(open(file.json, 'r'))
+json.load(open(path, 'r'))
 json.loads('{"hello": "world}')
 ```
