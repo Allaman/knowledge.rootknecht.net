@@ -153,3 +153,8 @@ common options for dPDFSETTINGS are:
 ```bash
 echo "password" | sha1sum
 ```
+
+## Run multiple commands in background
+```bash
+(command1 &) && (command2 &)
+```
