@@ -32,3 +32,8 @@ Set-Alias dexec f_dexec
 Get-Content file.txt | Select-String -Pattern abcdef # Single file
 Get-ChildItem -recurse | Select-String -Pattern abcdef # All files in directory
 ```
+
+## Redirect all output
+```powershell
+ *>&1 > log.txt
+```
