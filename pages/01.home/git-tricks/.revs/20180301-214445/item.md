@@ -44,4 +44,4 @@ oder in .git/config
 ```
 
 ## Gitignore for latex projects
-<a href="latex.gitignore" target="_blank">gitignore</a>
+[gitignore](latex.gitignore)
