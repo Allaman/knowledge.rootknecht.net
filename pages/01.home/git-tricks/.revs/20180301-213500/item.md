@@ -42,6 +42,3 @@ oder in .git/config
 [http]
 	proxy = http://proxy.company.com:3128
 ```
-
-## Gitignore for latex projects
-![gitignore](latex.gitignore?link&display=text)
