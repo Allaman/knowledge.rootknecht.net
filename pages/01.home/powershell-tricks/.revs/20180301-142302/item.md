@@ -37,3 +37,8 @@ Get-ChildItem -recurse | Select-String -Pattern abcdef # All files in directory
 ```powershell
  *>&1 > log.txt
 ```
+
+## Extensions
+
+* `posh-git` for Powershell Git integration: Install-Module posh-git
+* `PSReadLine` for bash like experience: Install-Module PSReadLine
