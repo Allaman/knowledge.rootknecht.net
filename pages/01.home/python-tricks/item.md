@@ -2,6 +2,8 @@
 title: 'Python Tricks'
 ---
 
+[TOC]
+
 ## Read file
 ```python
 try:
@@ -48,4 +50,12 @@ import json
 
 json.load(open(file.json, 'r'))
 json.loads('{"hello": "world}')
+```
+
+## pip proxy
+Windows `%APPDATA%\pip\pip.ini` (for use with pipenv)
+```ini
+[global]
+    trusted-host = pypi.python.org
+    proxy = http://[domain name]%5C[username]:[password]@[proxy address]:[proxy port]
 ```
