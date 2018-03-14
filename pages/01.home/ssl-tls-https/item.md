@@ -66,3 +66,23 @@ openssl pkcs12 -in keyStore.[pfx|p12] -out keyStore.pem -nodes
 ```bash
 openssl s_client -state -nbio -connect HOST:PORT
 ```
+
+## Java key store vs trust store
+
+1. trustStore is used by `TrustManager` class and keyStore is used by `KeyManager` class
+1. `TrustManager` determines whether remote connection should be trusted or not; `KeyManager` decides which authentication credentials should be sent to the remote host for authentication during SSL handshake
+1. `KeyStore` contains private keys and is required only if you are running a Server in SSL connection or you have enabled client authentication on server side. TrustStore stores public key or certificates from CAs which tells Java to trust a remote party or SSL connection
+
+## Create java trust store
+```bash
+# Repeat for each certificate
+keytool -import -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TRUSTSTORE
+```
+
+## Use Java key / trust store
+```bash
+-Djavax.net.ssl.trustStore /PATH/TO/TRUSTSTORE
+-Djavax.net.ssl.trustStorePassword PASSWORD
+-Djavax.net.ssl.keyStore /PATH/TO/KEYSTORE
+-Djavax.net.ssl.keyStorePassword PASSWORD
+```
