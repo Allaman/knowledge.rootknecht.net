@@ -72,13 +72,10 @@ openssl s_client -state -nbio -connect HOST:PORT
 1. trustStore is used by `TrustManager` class and keyStore is used by `KeyManager` class
 1. `TrustManager` determines whether remote connection should be trusted or not; `KeyManager` decides which authentication credentials should be sent to the remote host for authentication during SSL handshake
 1. `KeyStore` contains private keys and is required only if you are running a Server in SSL connection or you have enabled client authentication on server side. TrustStore stores public key or certificates from CAs which tells Java to trust a remote party or SSL connection
-1. Default: `$JAVA_HOME/jre/lib/security/cacerts`
 
 ## Create java trust store
 ```bash
-# Import CA and create new trustStore
-keytool -import -trustcacerts -storepass changeit -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TRUSTSTORE
-# Just import (repeat for each certificate)
+# Repeat for each certificate
 keytool -import -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TRUSTSTORE
 ```
 
