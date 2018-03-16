@@ -67,11 +67,6 @@ openssl pkcs12 -in keyStore.[pfx|p12] -out keyStore.pem -nodes
 openssl s_client -state -nbio -connect HOST:PORT
 ```
 
-## Get a certificate from remote
-```bash
-curl --insecure -v https://google.com 2>&1 | awk 'BEGIN { cert=0 } /^\* Server certificate:/ { cert=1 } /^\*/ { if (cert) print }'
-```
-
 ## Java key store vs trust store
 
 1. trustStore is used by `TrustManager` class and keyStore is used by `KeyManager` class
