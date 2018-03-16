@@ -83,7 +83,6 @@ keytool -import -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TR
 ```
 
 ## Use Java key / trust store
-! Will override the default stores
 ```bash
 -Djavax.net.ssl.trustStore /PATH/TO/TRUSTSTORE
 -Djavax.net.ssl.trustStorePassword PASSWORD
