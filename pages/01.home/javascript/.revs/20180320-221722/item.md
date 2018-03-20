@@ -38,13 +38,7 @@ npm config set https-proxy http://proxy.company.com:3128
 npm list -g --depth=0
 npm uninstall -g MODULE
 ```
-Remove all global modules:
-```powershell
-del %APPDATA%\npm
-```
-```bash
-npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}' | xargs npm -g rm
-```
+
 
 ## Convert Time
 ```javascript
