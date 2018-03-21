@@ -7,9 +7,11 @@ taxonomy:
         - Knecht
 ---
 
+[TOC]
+
 This article describes the installation of a SAP Netweaver 751 ABAP platform (in the following abbreviated as sapnw) for privat not commercial purpose.
 
-! Please note that I haven't invent the wheel again. This is just a collection of guides and tutorials from other people that was working for me after some fixes. Credits goes to the creators of the content in the ![Links](#links) section especially [wechris](https://github.com/wechris) and [Julie Plummer](https://people.sap.com/julie.plummer). in the ![Additional Links](#additional_links) section you can find further information.
+! Please note that I haven't invent the wheel again. This is just a collection of guides and tutorials from other people that was working for me after some fixes. Credits goes to the creators of the content in the [Links](#links) section especially [wechris](https://github.com/wechris) and [Julie Plummer](https://people.sap.com/julie.plummer). in the [Additional Links](#additional_links) section you can find further information.
 
 Essentially we will build an image for a VirtualBox appliance where sapnw will run. From there we connect with Eclipse ABAP developer tools and the SAP GUI for Netweaver. This article is assuiming that your are running a Linux host machine. Nevertheless, this guide also applies on Windows machines as we are running sapnw on a virtual machine.
 
@@ -118,7 +120,7 @@ User `DDIC` password    `Appl1ance`
 
 Sap GUI requires Oracle Java 8. Please refer to the [Oracle Download Page](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to obtain a version for your operating system.
 
-## Links
+## Links <a id="links"></a>
 
 1. [SAP 751 & 750 Download Links](https://tools.hana.ondemand.com/#abap)
 1. [SAP 751 Dev Edition Download and Installation](https://blogs.sap.com/2017/09/04/sap-as-abap-7.51-sp2-developer-edition-to-download-concise-installation-guide/)
@@ -126,7 +128,7 @@ Sap GUI requires Oracle Java 8. Please refer to the [Oracle Download Page](http:
 1. [SAP 751 Concise Installation Guide](https://blogs.sap.com/2017/09/04/sap-as-abap-7.51-sp2-developer-edition-to-download-concise-installation-guide/)
 1. [SAP 750 Preconfigured Vbox image](https://github.com/wechris/SAPNW75SPS02) (which is working also for version 751)
 
-## Additional Links
+## Additional Links <a id="additional_links"></a>
 
 1. [SAP Developer Tools](https://tools.hana.ondemand.com/#abap)
 1. [SAP 750 Docker Image](https://github.com/tobiashofmann/sap-nw-abap-docker) not working due to "no space left on device" error of docker
