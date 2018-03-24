@@ -21,6 +21,7 @@ This page describes certain aspects in the area of DevOps. If not marked these s
 !!! Utilization of IT ressources not owned by the user.
 
 #### Types of Cloud Computing
+![CloudComputing-Overview](cc.png)
 
 ### What is Infrastructure as Code
 !!! Management of the life cycle of all infrastructure components in their entirety by utilization of methods and best practices from the area of software engineering.
