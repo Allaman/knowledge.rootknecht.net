@@ -1,5 +1,6 @@
 ---
 title: DevOps
+media_order: cc.png
 taxonomy:
     category:
         - Others
