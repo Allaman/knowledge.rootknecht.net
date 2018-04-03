@@ -44,5 +44,5 @@ or in .git/config
 ```
 or temporarly as command line argument
 ```bash
--c http.proxy http://proxy.company.com:3128
+- c http.proxy http://proxy.company.com:3128
 ````
