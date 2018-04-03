@@ -37,8 +37,12 @@ find . -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull 
 ```bash
 git config --global http.proxy http://proxy.company.com:3128
 ```
-oder in .git/config
+or in .git/config
 ```
 [http]
 	proxy = http://proxy.company.com:3128
 ```
+or temporarly as command line argument
+```bash
+- c http.proxy http://proxy.company.com:3128
+````
