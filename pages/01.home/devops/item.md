@@ -36,6 +36,6 @@ Examples in the Amazon ecosystem:
 
 
 ### What is Infrastructure as Code
-!!! Management of the life cycle of all infrastructure components in their entirety by utilization of methods and best practices from the area of software engineering.
+!!! Automated management of the life cycle of all infrastructure components in their entirety by utilization of methods and best practices from the area of software engineering.
 
 [^1]: Better known examples for SaaS solutions are for example Gmail or Office365
