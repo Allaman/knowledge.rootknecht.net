@@ -73,6 +73,7 @@ pip install [--index-url=http://pypi.python.org/simple/] --trusted-host pypi.pyt
 **npm**
 ```bash
 npm config set strict-ssl false
+npm config set loglevel error
 ```
 
 ## Create user with predefined password
