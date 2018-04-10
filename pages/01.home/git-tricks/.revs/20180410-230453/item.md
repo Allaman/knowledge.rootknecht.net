@@ -54,11 +54,11 @@ git remote add github https://github.com/USER/repo.git
 git push/pull origin
 git push/pull github
 ```
-When the origin is at github vice versa.
+When origin is at github vice versa.
 
 ### Single remote with multiple targets
 ```bash
 git remote set-url –add origin https://github.com/USER/repo.git
 git push/pull origin
 ```
-When the origin is at github vice versa. Now, origin will targed the Gitlab as well as Github remotes
+Origin will targed the Gitlab as well as Github remotes
