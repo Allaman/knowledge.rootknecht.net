@@ -46,3 +46,19 @@ or temporarly as command line argument
 ```bash
 -c http.proxy http://proxy.company.com:3128
 ````
+
+## Use Github and Gitlab
+### Use multiple remotes named differently
+```bash
+git remote add github https://github.com/USER/repo.git
+git push/pull origin
+git push/pull github
+```
+When origin is at github vice versa.
+
+### Single remote with multiple targets
+```bash
+git remote set-url –add origin https://github.com/USER/repo.git
+git push/pull origin
+```
+Origin will targed the Gitlab as well as Github remotes
