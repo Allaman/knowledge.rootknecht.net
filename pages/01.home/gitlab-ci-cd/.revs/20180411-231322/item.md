@@ -28,7 +28,7 @@ sudo gitlab-runner register
 - No tags, allow untagged jobs, no shared runner (without those settings the runner stuck)
 
 ## Basic maven build
-add and push `.gitlab-ci.yml` in your project root
+.gitlab-ci.yml
 ```yml
 image: maven:latest
 
