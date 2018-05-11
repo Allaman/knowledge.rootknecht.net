@@ -3,6 +3,7 @@ title: 'Docker Command Overview'
 taxonomy:
     category:
         - Docker
+        - DevOps
     author:
         - Knecht
 ---
