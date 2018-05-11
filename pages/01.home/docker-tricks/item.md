@@ -3,6 +3,7 @@ title: 'Docker Tricks'
 taxonomy:
     category:
         - Docker
+        - DevOps
     author:
         - Knecht
 ---
