@@ -1,5 +1,5 @@
 ---
-title: 'Windows Tricks'
+title: Windows
 taxonomy:
     category:
         - Windows
