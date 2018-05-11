@@ -1,5 +1,5 @@
 ---
-title: 'Python Tricks'
+title: Python
 ---
 
 [TOC]
