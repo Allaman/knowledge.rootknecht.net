@@ -2,7 +2,7 @@
 title: 'Ansible playbook waiting for reboot of target'
 taxonomy:
     category:
-        - Ansible
+        - DevOps
     author:
         - Knecht
 ---
