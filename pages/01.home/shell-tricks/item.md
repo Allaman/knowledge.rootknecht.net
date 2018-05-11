@@ -1,5 +1,5 @@
 ---
-title: 'Shell Tricks'
+title: Shell
 taxonomy:
     category:
         - Shell
