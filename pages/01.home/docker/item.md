@@ -1,5 +1,5 @@
 ---
-title: 'Docker Tricks'
+title: Docker
 taxonomy:
     category:
         - Docker
