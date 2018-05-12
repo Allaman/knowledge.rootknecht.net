@@ -32,3 +32,9 @@ Acquire::http::Pipeline-Depth 0;
 Acquire::http::No-Cache true;
 Acquire::BrokenProxy    true;
 ```
+
+## Different version of packages
+```bash
+apt-cache policy PACKAGE
+apt-get install PACKAGE=VERSION
+```
