@@ -34,16 +34,7 @@ Acquire::BrokenProxy    true;
 ```
 
 ## Different version of packages
-
 ```bash
 apt-cache policy PACKAGE
 apt-get install PACKAGE=VERSION
-```
-
-## Hold packages
-
-```bash
-apt-mark hold PACKAGE
-apt-mark unhold PACKAGE
-apt-mark showhold
 ```
