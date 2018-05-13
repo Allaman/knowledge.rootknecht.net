@@ -71,11 +71,6 @@ List all deployments
 kubectl get deployment --all-namespaces
 ```
 
-List all services
-```bash
-kubectl get svc --all-namespaces
-```
-
 ## Deploy Dashboard
 
 Deploy dashboard

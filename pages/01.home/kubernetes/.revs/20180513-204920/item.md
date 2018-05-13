@@ -61,21 +61,6 @@ Get logs of pod
 kubectl logs POD --namespace=NAME
 ```
 
-List all pods
-```bash
-kubectl get pods --all-namespaces
-```
-
-List all deployments
-```bash
-kubectl get deployment --all-namespaces
-```
-
-List all services
-```bash
-kubectl get svc --all-namespaces
-```
-
 ## Deploy Dashboard
 
 Deploy dashboard
@@ -119,22 +104,4 @@ Deploy to your cluster `kubectl create -f dashboard-admin.yml`. Then you skip au
 
 ## helm
 
-[Powerful "package manager" for Kubernetes](https://github.com/kubernetes/helm). Install client for example with your system's package manager. With an already configured kubectl run `helm init` to install on your Kubernetes the server side component named `tiller`. Update helm's repo information with `help repo update`. Inspect a package with `helm inspect`.
-
-When you encounter the error `Error: release jenkins failed: namespaces "dev" is forbidden: User "system:serviceaccount:kube-system:default" cannot get namespaces in the namespace "dev"` during installation of a package execute `kubectl create clusterrolebinding add-on-cluster-admin --clusterrole=cluster-admin --serviceaccount=kube-system:default` in order to add the role cluster-admin to the serviceaccount kube-system:default.
-
-## Create namespace
-```bash
-cat <<EOF | kubectl create -f -
-{
-  "kind": "Namespace",
-  "apiVersion": "v1",
-  "metadata": {
-    "name": "dev",
-    "labels": {
-      "name": "dev"
-    }
-  }
-}
-EOF
-```
+[Powerful "package manager" for Kubernetes](https://github.com/kubernetes/helm). Install client for example with your system's package manager. With a allready configured kubectl run `helm init` to install on your Kubernetes the server side component named `tiller`. Update helm's repo information with `help repo update`. Inspect a package with `helm inspect`.
