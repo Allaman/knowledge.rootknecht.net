@@ -28,8 +28,6 @@ etcd:
 ```
 and start initialization again with `kubeadm init --config kubeadm.yml`. (see [Github](https://github.com/kubernetes/kubernetes/issues/57709) for details and origin). A previous attempt must be reverted with `kubeadm reset`.
 
-! Be aware that depending on the pod network additional flags for init are required
-
 ### Minikube
 
 Minikube is a tool to provision a Kubernetes cluster on a dev box by deploying a Linux virtual machine with e.g. VirtualBox or VMware.
