@@ -101,7 +101,3 @@ subjects:
   namespace: kube-system
 ```
 Deploy to your cluster `kubectl create -f dashboard-admin.yml`. Then you skip authentication in the login screen
-
-## helm
-
-[Powerful "package manager" for Kubernetes](https://github.com/kubernetes/helm). Install client for example with your system's package manager. With a allready configured kubectl run `helm init` to install on your Kubernetes the server side component named `tiller` 
