@@ -30,14 +30,6 @@ and start initialization again with `kubeadm init --config kubeadm.yml`. (see [G
 
 ! Be aware that depending on the pod network additional flags for init are required
 
-For example add the following lines to kubeadm.yml for using [Canal](https://github.com/projectcalico/canal/tree/master/k8s-install) pod network
-
-```yaml
-kubeProxy:
-  config:
-    clusterCIDR: "10.244.0.0/16"
-```
-
 ### Minikube
 
 Minikube is a tool to provision a Kubernetes cluster on a dev box by deploying a Linux virtual machine with e.g. VirtualBox or VMware.
