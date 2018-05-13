@@ -7,7 +7,6 @@ taxonomy:
         - Knecht
 ---
 
-[TOC]
 ## Installation on a "bare metal" single Node
 
 There are quite a lot of options [how to install a kubernetes cluster](https://kubernetes.io/docs/setup/pick-right-solution/). 
