@@ -26,7 +26,7 @@ etcd:
   extraArgs:
     'listen-peer-urls': 'http://127.0.0.1:2380'
 ```
-and start initialization again with `kubeadm init --config kubeadm.yml`. (see [Github](https://github.com/kubernetes/kubernetes/issues/57709) for details and origin). A previous attempt must be reverted with `kubeadm reset`.
+and start initialization again with `kubeadm init --config kubeadm.yml`. (see [Github](https://github.com/kubernetes/kubernetes/issues/57709) for details and origin)
 
 ### Minikube
 
