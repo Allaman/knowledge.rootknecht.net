@@ -48,7 +48,7 @@ Maybe you see messages linke `Error from server (BadRequest): a container name m
     - --allocate-node-cidrs=true
     - --cluster-cidr=10.244.0.0/16
 ```
-Then restart kubelet with `systemctl restart kubelet` ([original hint on Github](https://github.com/coreos/flannel/issues/728)
+Then restart kubelet with `systemctl restart kubelet`
 
 ### Minikube
 
