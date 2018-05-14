@@ -56,11 +56,3 @@ services:
 ````
 
 Starting the service with `docker-compose up -d`keeps the container running
-
-## Set docker host
-```bash
-DOCKER_HOST=tcp://192.168.56.101:2375
-# with TLS enabled Daemon
-# make sure that ~/.docker/ of the current user contains the ca.pem or the {cert,key}.pem in case of client auth
-export DOCKER_TLS_VERIFY=1
-```
