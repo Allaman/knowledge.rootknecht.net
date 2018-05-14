@@ -2,8 +2,8 @@
 title: Docker
 taxonomy:
     category:
-        - Docker
         - DevOps
+        - Docker
     author:
         - Knecht
 ---
@@ -36,3 +36,17 @@ Environment="HTTPS_PROXY=https://proxy.example.com:443/"
 ```bash
 docker build --build-arg HTTP_PROXY=proxy.company.com:3128 -t TAG .
 ```
+
+## Fast Testing with alpine and docker-compose
+
+```bash
+version: "3.0"
+services:
+  alpine:
+    image: alpine
+    volumes:
+      - /tmp/:/tmp/
+    tty: true
+````
+
+Starting the service with `docker-compose up -d`keeps the container running
