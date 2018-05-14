@@ -37,12 +37,6 @@ Environment="HTTPS_PROXY=https://proxy.example.com:443/"
 docker build --build-arg HTTP_PROXY=proxy.company.com:3128 -t TAG .
 ```
 
-## Exec a command without entering a container
-
-```bash
-docker exec CONTAINER sh -c "cat /tmp/test"
-```
-
 ## Fast Testing with alpine and docker-compose
 
 ```bash
