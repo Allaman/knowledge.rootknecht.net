@@ -110,6 +110,20 @@ fi
 [ NUM1 -lt NUM2 ]
 ```
 
+## Case (switch) statement
+
+```bash
+case $1 in
+    pattern1 )
+        statements 
+        ;;
+    pattern2 )
+        statements 
+        ;;
+    ...
+esac
+```
+
 ## Combining Expressions
 
 ```bash
