@@ -31,3 +31,7 @@ HKEY_CURRENT_USER\Environment
 - First IP address is the default Docker subnet
 - The last IP address is the address of the Docker host
 - The -p flag persists the change across reboots
+
+## Autostart virtualbox manage at boot
+
+Create a link in your autostart folder with target `"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" startvm "VM_NAME" --type headless`
