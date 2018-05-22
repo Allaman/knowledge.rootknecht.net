@@ -19,6 +19,18 @@ Since version 2.0 Rancher supports out of the box "production ready" [Kubernetes
 ### Kubeadm
 
 [kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/) is a toolkit for easy installation of Kubernetes.
+
+! Be aware that depending on the pod network additional flags for init are required
+
+For the [Canal](https://github.com/projectcalico/canal/tree/master/k8s-install) pod network use `--pod-network-cidr=10.244.0.0/16`
+After initialization execute
+```bash
+kubectl apply -f https://raw.githubusercontent.com/projectcalico/canal/master/k8s-install/1.7/rbac.yaml
+kubectl apply -f https://raw.githubusercontent.com/projectcalico/canal/master/k8s-install/1.7/canal.yaml
+```
+
+#### Troubleshooting:
+
 After `kube init` the process blocks at `This might take a minute or longer if the control plane images have to be pulled`. Further investigations resulted in the etcd container not starting because of `tcdmain: listen tcp xxx.xxx.xxx.xxx:xxxxx bind: cannot assign requested address`.  To solve this issue create a file `kubeadm.yml`:
 ```yaml
 apiVersion: kubeadm.k8s.io/v1alpha1
@@ -28,16 +40,6 @@ etcd:
     'listen-peer-urls': 'http://127.0.0.1:2380'
 ```
 and start initialization again with `kubeadm init --config kubeadm.yml`. (see [Github](https://github.com/kubernetes/kubernetes/issues/57709) for details and origin). A previous attempt must be reverted with `kubeadm reset`.
-
-! Be aware that depending on the pod network additional flags for init are required
-
-For example add the following lines to kubeadm.yml for using [Canal](https://github.com/projectcalico/canal/tree/master/k8s-install) pod network
-
-```yaml
-kubeProxy:
-  config:
-    clusterCIDR: "10.244.0.0/16"
-```
 
 Check the status with `kubectl get pods --all-namespaces`. If your canal pod is in the status 'CrashLoopBackOff' check the following:
 * `kubectl logs canal-zhzph --namespace=kube-system` (adjust pod name)
