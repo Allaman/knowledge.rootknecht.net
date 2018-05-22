@@ -18,19 +18,16 @@ Since version 2.0 Rancher supports out of the box "production ready" [Kubernetes
 
 ### Kubeadm
 
-[kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/) is a toolkit for easy installation of Kubernetes. Follow the [Installation Instructions](https://kubernetes.io/docs/tasks/tools/install-kubeadm/) and the [Usage Instructions](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#instructions).
+[kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/) is a toolkit for easy installation of Kubernetes.
 
 ! Be aware that depending on the pod network additional flags for init are required
 
 For the [Canal](https://github.com/projectcalico/canal/tree/master/k8s-install) pod network use `--pod-network-cidr=10.244.0.0/16`
-
 After initialization execute
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/canal/master/k8s-install/1.7/rbac.yaml
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/canal/master/k8s-install/1.7/canal.yaml
 ```
-
-! When running as a single node cluster turn off master isolation before deploying stuff
 
 #### Troubleshooting:
 

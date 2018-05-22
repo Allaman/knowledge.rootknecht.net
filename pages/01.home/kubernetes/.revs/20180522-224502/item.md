@@ -23,7 +23,6 @@ Since version 2.0 Rancher supports out of the box "production ready" [Kubernetes
 ! Be aware that depending on the pod network additional flags for init are required
 
 For the [Canal](https://github.com/projectcalico/canal/tree/master/k8s-install) pod network use `--pod-network-cidr=10.244.0.0/16`
-
 After initialization execute
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/canal/master/k8s-install/1.7/rbac.yaml
