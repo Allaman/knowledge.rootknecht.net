@@ -55,8 +55,6 @@ Maybe you see messages linke `Error from server (BadRequest): a container name m
 ```
 Then restart kubelet with `systemctl restart kubelet` ([original hint on Github](https://github.com/coreos/flannel/issues/728)
 
-DNS warnings can be resolved by editing `/etc/hosts`
-
 ### Minikube
 
 Minikube is a tool to provision a Kubernetes cluster on a dev box by deploying a Linux virtual machine with e.g. VirtualBox or VMware.
