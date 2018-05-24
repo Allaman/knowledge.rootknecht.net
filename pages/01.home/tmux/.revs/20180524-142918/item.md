@@ -21,17 +21,9 @@ taxonomy:
 2. **Panes** are splits of windows each containing an individual shell
 3. **Sessions** represent a state of different windows and panes
 
-## Starting tmux
-
-Start tmux from scratch, with a session or with a named session
-```bash
-tmux [ a [ -t session ] ]
-```
-
-
 ## Basic commands
 
-Commands are composed of the **tmux prefix (default CTRL+b) and the actual command**.
+Commands are composed of the **tmux prefix (default CTRL+b)+ the actual command**.
 
 |command|action|
 |-------------|---------|
