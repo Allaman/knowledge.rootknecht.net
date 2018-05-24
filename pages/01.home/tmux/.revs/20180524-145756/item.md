@@ -7,15 +7,13 @@ taxonomy:
         - Knecht
 ---
 
-## Why tmux
+## Why
 
 1. Multiple shell windows and panes from a single connection
 2. Session functionality which survices disconnects
 3. Session sharing
 4. Extensible
 5. Keyboard driven
-
-Alternative: `screen` which comes preinstalled on most distributions
 
 ## Basic concepts
 
