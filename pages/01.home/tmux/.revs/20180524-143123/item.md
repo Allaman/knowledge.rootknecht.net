@@ -38,5 +38,3 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 | prefix c|create new window|
 | prefix n|switch to window number n|
 | prefix x|kill current window|
-| prefix %|split window vertically|
-| prefix "|split window horizontally|
