@@ -26,7 +26,6 @@ taxonomy:
 Commands are composed of the **tmux prefix + the actual command**. Default prefix is `CTRL+b`
 
 |command|action|
-|-------------|---------|
 |<prefix> c|create new window|
 |<prefix> n|switch to window number n|
 |<prefix> x|kill current window|
