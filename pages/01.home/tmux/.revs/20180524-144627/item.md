@@ -26,13 +26,12 @@ taxonomy:
 ```bash
 tmux # start fresh session
 tmux a # attach to session
-tmux a -t NAME # attach to named session
+tmux a -t session # attach to named session
 tmux ls # list running sessions
-tmux kill-session -t NAME # kill session NAME
 ```
 
 
-## Commands
+## Basic commands
 
 Commands are composed of the **tmux prefix (default CTRL+b) and the actual command**.
 
@@ -41,12 +40,7 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 | prefix c|create new window|
 | prefix n|switch to window number n|
 | prefix &|kill current window|
-| prefix w|list windows|
-| prefix .|move window to given number|
 | prefix %|split window vertically|
 | prefix "|split window horizontally|
 | prefix x|kill current pane|
 |prefix d|detach tmux (back to normal shell)|
-| prefix ?|list shortcuts|
-| prefix t|show big clock|
-|:|command prompt|
