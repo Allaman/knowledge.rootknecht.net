@@ -27,8 +27,9 @@ taxonomy:
 tmux # start fresh session
 tmux a # attach to session
 tmux a -t session # attach to named session
-tmux ls # list running sessions
 ```
+
+
 
 
 ## Basic commands
@@ -43,4 +44,3 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 | prefix %|split window vertically|
 | prefix "|split window horizontally|
 | prefix x|kill current pane|
-|prefix d|detach tmux (back to normal shell)|
