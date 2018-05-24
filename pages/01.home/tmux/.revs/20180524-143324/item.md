@@ -23,13 +23,10 @@ taxonomy:
 
 ## Starting tmux
 
+Start tmux from scratch, with a session or with a named session
 ```bash
-tmux # start fresh session
-tmux a # attach to session
-tmux a -t session # attach to named session
+tmux [ a [ -t session ] ]
 ```
-
-
 
 
 ## Basic commands
