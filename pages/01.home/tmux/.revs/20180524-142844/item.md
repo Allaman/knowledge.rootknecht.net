@@ -23,7 +23,7 @@ taxonomy:
 
 ## Basic commands
 
-Commands are composed of the **tmux prefix (default CTRL+b)+ the actual command**.
+Commands are composed of the **tmux prefix + the actual command**. Default prefix is `CTRL+b`
 
 |command|action|
 |-------------|---------|
