@@ -27,6 +27,6 @@ Commands are composed of the **tmux prefix + the actual command**. Default prefi
 
 |command|action|
 |-------------|---------|
-| prefix c|create new window|
-| prefix n|switch to window number n|
-| prefix x|kill current window|
+| <prefix> c|create new window|
+| <prefix> n|switch to window number n|
+| <prefix> x|kill current window|
