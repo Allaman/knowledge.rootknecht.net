@@ -51,7 +51,4 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 |prefix d|detach tmux (back to normal shell)|
 | prefix ?|list shortcuts|
 | prefix t|show big clock|
-
-## Command prompt
-
-With `:`you can start a command prompt similar to Vim's ex mode. Tab-autocompletion is available
+|:|command prompt|

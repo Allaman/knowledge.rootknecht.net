@@ -25,7 +25,6 @@ taxonomy:
 
 ```bash
 tmux # start fresh session
-tmux new-session -s NAME # create new session with NAME
 tmux a # attach to session
 tmux a -t NAME # attach to named session
 tmux ls # list running sessions
@@ -43,7 +42,6 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 | prefix n|switch to window number n|
 | prefix &|kill current window|
 | prefix w|list windows|
-| prefix ,|rename window|
 | prefix .|move window to given number|
 | prefix %|split window vertically|
 | prefix "|split window horizontally|
@@ -51,7 +49,4 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 |prefix d|detach tmux (back to normal shell)|
 | prefix ?|list shortcuts|
 | prefix t|show big clock|
-
-## Command prompt
-
-With `:`you can start a command prompt similar to Vim's ex mode. Tab-autocompletion is available
+|:|command prompt|
