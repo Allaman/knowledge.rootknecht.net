@@ -47,3 +47,14 @@ apt-mark hold PACKAGE
 apt-mark unhold PACKAGE
 apt-mark showhold
 ```
+
+## Create and enable Swap
+
+```bash
+touch /var/swap
+chmod 600 /var/swap
+dd if=/dev/zero of=/var/swap bs=1M count=SIZE_OF_RAM_IN_MB
+mkswap /var/swap
+swapon /var/swap
+echo "/var/swap    none    swap    sw    0    0" >> /etc/fstab
+```
