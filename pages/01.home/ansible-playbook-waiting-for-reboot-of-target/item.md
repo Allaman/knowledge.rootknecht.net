@@ -7,11 +7,11 @@ taxonomy:
         - Knecht
 ---
 
-Sometimes a reboot of a machine during Ansible operation is required, e.g. when altering the network config (I am aware of the possibility of restarting the network service but I have made bad experiences regarding the reliability of this methodi. Nevertheless, reboot and restart of the network results in a lost ssh connection).
+Sometimes a reboot of a machine during Ansible operation is required, e.g. when altering the network config (I am aware of the possibility of restarting the network service but I have made bad experiences regarding the reliability of this method). Nevertheless, reboot and restart of the network results in a lost ssh connection.
 
 Here is a way how to properly tell Ansible to handle a machines reboot in the middle of its operation without failing.
 
-The following playbook snippet reconfigures the network, performs a reboot of the server while wating for it to come back with its new IP address.
+The following playbook snippet reconfigures the network, performs a reboot of the server while wating for it to come back with its new IP address. `host_name` and `ip_address` must be provided from external call.
 
 ```yaml
 ---
