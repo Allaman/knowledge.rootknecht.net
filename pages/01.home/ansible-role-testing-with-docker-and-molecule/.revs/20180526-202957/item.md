@@ -18,15 +18,14 @@ taxonomy:
 ## Big Picture
 
 [mermaid]
-graph LR
-    A[Ansible Role] --> B((Molecule))
-        click A "https://www.ansible.com/" "Ansible Homepage"
-        click B "https://github.com/metacloud/molecule" "Molecule Homepage"
+graph TD
+    A[Ansible Role] --> B(Molecule)
     B --> C[Docker Container]
-        click B "https://www.docker.com/" "Docker Homepage"
+    C --> D
     B --> D[Play Playbook]
+    D --> E
     B --> E[Testinfra]
-       click B "https://github.com/philpep/testinfra" "Testinfra Homepage"
+    E --> F
     B --> F[Clean up]
 [/mermaid]
 
