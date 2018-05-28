@@ -199,6 +199,13 @@ echo $(curl -ss http://ipecho.net/plain)
 sudo pip freeze --local | grep -v '"'"'^\-e'"'"' | cut -d = -f 1  | xargs -n1 sudo pip install -U
 ```
 ## Convert all files in the directory to unix line endings
+
 ```bash
 find . -type f -print0 | xargs -0 dos2unix
+```
+
+## Ommit first line of stdout
+
+```bash
+awk '{if(NR>1)print}'
 ```
