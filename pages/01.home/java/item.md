@@ -175,3 +175,31 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
 Build with `mvn dockerfile:build`
+
+## Check SIGTERM vs SIGKILL
+
+```java
+public class Test {
+    public static void main(String[] args) {
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                System.out.println("Shutdown Hook executed!");
+            }
+        });
+        for (int i=0; i<100000; i++) {
+            System.out.println("Wating....");
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                System.err.println(e);
+            }
+         }
+    }
+}
+```
+
+```bash
+kill PID     # Hook will be executed
+kill -9 PID # Hook will not be executed
+```
