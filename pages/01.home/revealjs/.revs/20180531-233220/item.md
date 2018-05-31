@@ -1,6 +1,5 @@
 ---
 title: Revealjs
-media_order: revealjs-quickstart.html
 taxonomy:
     category:
         - Others
@@ -10,4 +9,6 @@ taxonomy:
 
 ## Revealjs
 
-Short intro to revealjs
+Short intro to revealjs:
+
+[Click me](./revealjs-quickstart.html)
