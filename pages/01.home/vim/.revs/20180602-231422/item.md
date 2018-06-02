@@ -41,8 +41,3 @@ Some distros disable it with `nomodeline` in /etc/vimrc
 ```bash
 vim --startuptime vim.log
 ```
-
-## Open vim in debug mode
-```bash
-vim -D
-```
