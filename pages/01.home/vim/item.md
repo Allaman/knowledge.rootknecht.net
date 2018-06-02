@@ -1,5 +1,5 @@
 ---
-title: 'Vim Tricks'
+title: Vim
 taxonomy:
     category:
         - Vim
@@ -36,3 +36,8 @@ By setting `set modeline=1` you can enable the [Modeline Magic](http://vim.wikia
 :verbose set modeline?
 ```
 Some distros disable it with `nomodeline` in /etc/vimrc
+
+## Startup time
+```bash
+vim --startuptime vim.log
+```
