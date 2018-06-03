@@ -87,6 +87,11 @@ chown --reference=otherfile newFile
 chmod --reference=otherfile newFile
 ```
 
+## Modify ownership of symlinks
+```bash
+chown -h USER:GROUP SYMLINK
+```
+
 ## Redirect command output
 **stderr and stdout**
 ```bash
