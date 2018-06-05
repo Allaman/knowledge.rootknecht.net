@@ -2,8 +2,8 @@
 title: Jenkinsfile
 taxonomy:
     category:
-        - Applications
         - DevOps
+        - Applications
         - Pipeline
         - CI
         - CD
@@ -14,4 +14,3 @@ taxonomy:
 ## Global vars
 https://JENKINS_URL/pipeline-syntax/globals
 
-##
