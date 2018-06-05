@@ -31,3 +31,6 @@ taxonomy:
       }
 ```
 In case of bad proxy configuration warning in Jenkins ensure that the `Jenkins URL` in the settings ist with port number!
+
+## Setup Git, Maven, JDK, Docker, and Co
+Configure multiple Versions in „Manage Jenkins“ - > „Configure Global Tools“. When nothing is configured the system defaults will be used. When one entry is present this one will be used. If multiple versions are configured you can select the version in your job settings
