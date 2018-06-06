@@ -34,3 +34,9 @@ In case of bad proxy configuration warning in Jenkins ensure that the `Jenkins U
 
 ## Setup Git, Maven, JDK, Docker, and Co
 Configure multiple Versions in „Manage Jenkins“ - > „Configure Global Tools“. When nothing is configured the system defaults will be used. When one entry is present this one will be used. If multiple versions are configured you can select the version in your job settings
+
+## Ldap troubleshooting
+
+`Root exception is java.net.UnknownHostException: DomainDnsZones` LDAP answers the request with other systems which might have further information but cannot be resolved. Set a variable `java.naming.referral`to `ignore`. `PartialResultException`: You have to narrow down your root DN
+
+More [here](https://issues.jenkins-ci.org/browse/JENKINS-4895) and [here](https://issues.jenkins-ci.org/browse/JENKINS-8569)
