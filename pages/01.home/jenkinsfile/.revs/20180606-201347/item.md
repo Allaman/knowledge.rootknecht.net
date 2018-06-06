@@ -43,12 +43,12 @@ In your Jenkinsfile
 ```groovy
 library ('LIBRARY_NAME') // At the beginning
 ...
-stages {
-   stage ('prepare') {
-        steps {
-            deployment('remove') // name of the file of the shared library
-        }
-    }
+ stages {
+            stage ('prepare') {
+                steps {
+                    deployment('remove') // name of the file of the shared library
+                }
+            }
 ...
 }
 ```
