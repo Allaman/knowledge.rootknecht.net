@@ -44,13 +44,12 @@ In your Jenkinsfile
 library ('LIBRARY_NAME') // At the beginning
 ...
  stages {
+
             stage ('prepare') {
                 steps {
                     deployment('remove') // name of the file of the shared library
                 }
             }
-...
-}
 ```
 
 [Reference](https://jenkins.io/doc/book/pipeline/shared-libraries/)
