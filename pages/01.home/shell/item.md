@@ -214,3 +214,9 @@ find . -type f -print0 | xargs -0 dos2unix
 ```bash
 awk '{if(NR>1)print}'
 ```
+
+## Custom ps command
+
+```bash
+ps axo user:20,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,comm
+```
