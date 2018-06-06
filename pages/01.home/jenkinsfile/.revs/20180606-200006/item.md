@@ -67,15 +67,3 @@ def gt(args) {
 }
 ```
 The cryptic number represents the ID of the credentials saved in the credential store of Jenkins
-
-### Use credentials in your pipeline
-
-```groovy
-environment {
-	NEXUS_CREDS = credentials('developer')
-}
-````
-The name is the ID of the credential. Then the following three variables are automatically available:
-* NEXUS_CREDS_USR (the username)
-* NEXUS_CREDS_PSW (the password)
-* NEXUS_CREDS (username:password)
