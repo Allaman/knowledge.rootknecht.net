@@ -5,8 +5,7 @@ taxonomy:
         - Applications
         - DevOps
         - Pipeline
-        - CI
-        - CD
+        - CI/CD
     author:
         - Knecht
 ---
