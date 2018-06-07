@@ -9,7 +9,7 @@ taxonomy:
 
 ## Reverse proxy config
 
-! Adjust jenkins prefix accordingly!
+! Adjust jenkins prefix accordingly depending on your install method, e.g. in /etc/default/jenkins!
 
 ```nginx
       location ^~ /jenkins/ {
