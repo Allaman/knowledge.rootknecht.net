@@ -3,6 +3,7 @@ title: 'Gitlab CI-CD'
 taxonomy:
     category:
         - DevOps
+        - CI/CD
     author:
         - Knecht
 ---
