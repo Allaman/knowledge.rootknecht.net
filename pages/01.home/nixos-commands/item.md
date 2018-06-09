@@ -44,7 +44,12 @@ nixos-rebuild switch --upgrade
 nixos-option OPTION-SET
 nixos-option services.sshd
 ```
-### List available pacakges
+
+### Search package
 ```bash
-nix-env -qaP '*' --description
+nix-env -qaP '.*PACKAGE.*'
+```
+### Show package description
+```bash
+nix-env -qa --description '.*PACKAGE.*'
 ```
