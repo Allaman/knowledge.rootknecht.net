@@ -38,11 +38,6 @@ nix-channel --add https://nixos.org/channels/channel-name nixos
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
 nix-channel --update
 ```
-
-### Remove channel
-```bash
-nix-channel --remove CHANNEL_ALIAS
-```
 ### Upgrade
 ```bash
 nixos-rebuild switch --upgrade
@@ -60,9 +55,4 @@ nix-env -qaP '.*PACKAGE.*'
 ### Show package description
 ```bash
 nix-env -qa --description '.*PACKAGE.*'
-```
-
-### Install package from source
-```bash
-nix-env -f https://github.com/NixOS/nixpkgs/archive/master.tar.gz -iA pkgs.NAME
 ```

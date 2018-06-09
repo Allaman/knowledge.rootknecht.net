@@ -61,8 +61,3 @@ nix-env -qaP '.*PACKAGE.*'
 ```bash
 nix-env -qa --description '.*PACKAGE.*'
 ```
-
-### Install package from source
-```bash
-nix-env -f https://github.com/NixOS/nixpkgs/archive/master.tar.gz -iA pkgs.NAME
-```
