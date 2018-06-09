@@ -220,3 +220,17 @@ awk '{if(NR>1)print}'
 ```bash
 ps axo user:20,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,comm
 ```
+
+## Download whole website with wget
+```bash
+wget \
+     --recursive \
+     --no-clobber \
+     --page-requisites \
+     --html-extension \
+     --convert-links \
+     --restrict-file-names=windows \
+     --domains example.com \
+     --no-parent \
+         www.example.com/home/wiki/
+```
