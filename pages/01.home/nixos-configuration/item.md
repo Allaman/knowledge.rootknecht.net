@@ -202,5 +202,47 @@ This user has no password and is only able to login with its private ssh key. In
 
 As ad hoc style you can use standarf linux commands such as useradd, usermod, groupadd, etc.
 
+## Zsh
+In configuration.nix
+```
+  environment.systemPackages = with pkgs; [
+        zsh
+        oh-my-zsh
+  ];
+
+  programs.zsh.enable = true;
+  programs.zsh.interactiveShellInit = ''
+    export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
+
+    # Customize your oh-my-zsh options here
+    ZSH_THEME="robbyrussell"
+    plugins=(git docker)
+
+    bindkey '\e[5~' history-beginning-search-backward
+    bindkey '\e[6~' history-beginning-search-forward
+
+    HISTFILESIZE=500000
+    HISTSIZE=500000
+    setopt SHARE_HISTORY
+    setopt HIST_IGNORE_ALL_DUPS
+    setopt HIST_IGNORE_DUPS
+    setopt INC_APPEND_HISTORY
+    autoload -U compinit && compinit
+    unsetopt menu_complete
+    setopt completealiases
+
+    if [ -f ~/.aliases ]; then
+      source ~/.aliases
+    fi
+
+    source $ZSH/oh-my-zsh.sh
+  '';
+  programs.zsh.promptInit = "";
+  
+  users.extraUsers.USER = {
+    shell = pkgs.zsh;
+  };
+```
+
 ## Firewall
 NixOS comes with a simple staeful firewall wich is enabled per default. You can disable it with `networking.firewall.enable = false;`. To allow TCP/UDP ports use `networking.firewall.allowedTCPPorts = [ 80 443 ];` (respective `networking.firewall.allowedUDPPorts`).
