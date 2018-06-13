@@ -117,7 +117,6 @@ ssl_verify_client      on; # force SSL verification
 Testing with curl (assuming nginx is running on localhost listening to standard https port)
 ```bash
 curl --insecure https://localhost
-# --insecure as we use self signed certificates
 ```
 ```html
 <center><h1>400 Bad Request</h1></center>
