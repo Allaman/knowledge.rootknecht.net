@@ -203,3 +203,8 @@ public class Test {
 kill PID     # Hook will be executed
 kill -9 PID # Hook will not be executed
 ```
+
+## Create a jar form command line
+```bash
+jar cfe NAME.jar ENTRYPOINTCLASSNAME *.class
+```
