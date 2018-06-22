@@ -60,8 +60,6 @@ var cores = data["server"].(map[string]interface{})["cores"].(float64)
 ```
 
 ## Building a CLI
-
-**Result:**
 ```bash
 Usage:
   ServerControl [command]
@@ -78,7 +76,6 @@ Flags:
 
 Use "ServerControl [command] --help" for more information about a command.
 ```
-**Source code**
 ```go
 import (
   "github.com/spf13/cobra"
