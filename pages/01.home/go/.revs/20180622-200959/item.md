@@ -31,13 +31,7 @@ fmt.Printf("Current Status: Power %v, Cores %v, Memory %v", s.status, s.cores, s
 fmt.Sprintf("{\"cores\": %v}", cores)
 ```
 
-## Rest
-```go
-import (
-  "gopkg.in/resty.v1"
-)
-```
-### Get
+## Rest GET
 ```go
 resp, err := resty.R().
 		SetHeaders(map[string]string{"Content-Type": "application/json", "X-Auth-UserId": userID,"X-Auth-Token": token}).
@@ -60,41 +54,7 @@ var cores = data["server"].(map[string]interface{})["cores"].(float64)
 ```
 
 ## Building a CLI
-```bash
-Usage:
-  ServerControl [command]
-
-Available Commands:
-  help        Help about any command
-  off         Power off
-  on          Power on
-  resize      Resize Server
-  status      Get status
-
-Flags:
-  -h, --help   help for ServerControl
-
-Use "ServerControl [command] --help" for more information about a command.
-```
 ```go
-import (
-  "github.com/spf13/cobra"
-)
-func main() {
-    resizeCmd.Flags().IntVarP(&cores, "cores", "c", 1, "number of cores")
-    resizeCmd.Flags().IntVarP(&memory, "memory", "m", 2, "amount of memory")
-    resizeCmd.MarkFlagRequired("cores")
-    resizeCmd.MarkFlagRequired("memory")
-    rootCmd.AddCommand(onCmd)
-    rootCmd.AddCommand(offCmd)
-    rootCmd.AddCommand(resizeCmd)
-    rootCmd.AddCommand(statusCmd)
-    if err := rootCmd.Execute(); err != nil {
-        fmt.Println(err)
-        os.Exit(1)
-  }
-}
-
 var rootCmd = &cobra.Command{
     Use:    "ServerControl",
 }
@@ -106,14 +66,6 @@ var onCmd = &cobra.Command{
       Power(true)
     },
 }
-var offCmd = &cobra.Command{
-    Use:   "off",
-    Short: "Power off",
-    Long:  `Power off the Machine`,
-    Run: func(cmd *cobra.Command, args []string) {
-      Power(false)
-    },
-}
 var resizeCmd = &cobra.Command{
     Use:   "resize",
     Short: "Resize Server",
@@ -122,12 +74,14 @@ var resizeCmd = &cobra.Command{
       Resize(cores, memory)
     },
 }
-var statusCmd = &cobra.Command{
-    Use:   "status",
-    Short: "Get status",
-    Long:  `Prints the current power status, number of cores and amount of memory of the Machine`,
-    Run: func(cmd *cobra.Command, args []string) {
-      PrintStatus()
-    },
-}
+    resizeCmd.Flags().IntVarP(&cores, "cores", "c", 1, "number of cores")
+    resizeCmd.Flags().IntVarP(&memory, "memory", "m", 2, "amount of memory")
+    resizeCmd.MarkFlagRequired("cores")
+    resizeCmd.MarkFlagRequired("memory")
+    rootCmd.AddCommand(onCmd)
+    rootCmd.AddCommand(resizeCmd)
+    if err := rootCmd.Execute(); err != nil {
+        fmt.Println(err)
+        os.Exit(1)
+  }
 ```
