@@ -42,9 +42,6 @@ import (
 resp, err := resty.R().
 		SetHeaders(map[string]string{"Content-Type": "application/json", "X-Auth-UserId": userID,"X-Auth-Token": token}).
 		Get(baseURL + endpoint)
-if err != nil || resp.StatusCode() != 200 {
-	// error handling
-}
 ```
 
 ## Load json data
