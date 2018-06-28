@@ -234,3 +234,11 @@ wget \
      --no-parent \
          www.example.com/home/wiki/
 ```
+
+## Set tmux as login shell
+In your .bashrc or zshrc
+```bash
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+```
