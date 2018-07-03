@@ -21,7 +21,7 @@ svnadmin load /path/to/repo < repo.dump
 ## Setup Apache
 Install/enable `mod_dav_svn`, `mod_authz_svn`, and `mod_authnz_ldap`
 
-Add location to your `apache.conf`:
+Add location to your `apache.conf:
 ```ini
  <Location /repo>
         Options                    Includes Indexes FollowSymLinks ExecCGI
