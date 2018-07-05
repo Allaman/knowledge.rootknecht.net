@@ -47,6 +47,49 @@ if err != nil || resp.StatusCode() != 200 {
 }
 ```
 
+## net/http
+
+```go
+func Retrieve() map[string]interface{} {
+
+	var urlBase = "https://example.com/v3/"
+	var consumerKey = "325-2664324-67324"
+	var accessToken = "960234-265623-3553"
+
+	type Payload struct {
+		ConsumerKey string `json:"consumer_key"`
+		AccessToken string `json:"access_token"`
+	}
+
+	data := Payload{consumerKey, accessToken}
+	payloadBytes, err := json.Marshal(data)
+	if err != nil {
+		panic(err)
+	}
+	body := bytes.NewReader(payloadBytes)
+
+	req, err := http.NewRequest("POST", urlBase, body)
+	if err != nil {
+		panic(err)
+	}
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("X-Accept", "application/json")
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		panic(err)
+	}
+
+	defer resp.Body.Close()
+
+	var items map[string]interface{}
+	err = json.NewDecoder(resp.Body).Decode(&items)
+
+	return items
+}
+```
+
 ## Load json data
 ### "Dynamically" typed
 ```go
