@@ -136,3 +136,11 @@ esac
 ```bash
 [ -d $(ps -A | grep 'PATTERN') ] && echo "exists" || echo "not exists"
 ```
+
+## Search / Replace with sed
+```bash
+sed -i \
+        -e "s;^\\(application-port\\)=.*;\\1=8080;g" \
+        -e "s;^\\(application-host\\)=.*;\\1=0.0.0.0;g" \
+        /PATH/TO/FILE
+```
