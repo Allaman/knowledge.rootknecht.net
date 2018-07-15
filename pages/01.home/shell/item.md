@@ -67,8 +67,16 @@ conda config --set ssl_verify false
 
 **pip**
 ```bash
-pip install [--index-url=http://pypi.python.org/simple/] --trusted-host pypi.python.org
+pip install [--index-url=http://pypi.org/simple/] --trusted-host pypi.org
 ```
+or in pip.ini (windowns) / pip.conf (linux)
+```ini
+[global]
+trusted-host = pypi.python.org
+               pypi.org
+               files.pythonhosted.org
+```
+or provide certificate (in pem format) with `pip3 --cert path/to/cert install PACAKGE`
 
 **npm**
 ```bash
