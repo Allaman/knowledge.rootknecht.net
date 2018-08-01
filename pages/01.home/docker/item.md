@@ -64,38 +64,3 @@ DOCKER_HOST=tcp://192.168.56.101:2375
 # make sure that ~/.docker/ of the current user contains the ca.pem or the {cert,key}.pem in case of client auth
 export DOCKER_TLS_VERIFY=1
 ```
-
-## Check container config for initial start
-Set the timestamp of your configuration in the `Dockerfile` file to zero
-```
-RUN         touch -d @0 /config.yml
-```
-In your entrypoint check the timestamp. When the timestamp is zero the container is started for the first time
-```bash
-if [ "$(stat --format %Y /config.yml)" -eq 0 ]; then
-# initial start of the container
-fi
-```
-
-## Autostart a container with systemd
-
-/etc/systemd/system/NAME.service
-```init
-[Unit]
-Description=Start Container
-After=docker.service
-Requires=docker.service
-
-[Service]
-Restart=always
-ExecStart=/usr/bin/docker start -a CONTAINER
-ExecStop=/usr/bin/docker stop -t 5 CONTAINER
-
-[Install]
-WantedBy=multi-user.target
-```
-Start und enable service at boot time
-```bash
-systemctl start NAME
-systemctl enable NAME
-```
