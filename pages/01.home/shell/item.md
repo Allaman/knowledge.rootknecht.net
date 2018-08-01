@@ -78,6 +78,7 @@ trusted-host = pypi.python.org
 ```
 or provide certificate (in pem format) with `pip3 --cert path/to/cert install PACAKGE`
 
+
 **npm**
 ```bash
 npm config set strict-ssl false
@@ -241,12 +242,4 @@ wget \
      --domains example.com \
      --no-parent \
          www.example.com/home/wiki/
-```
-
-## Set tmux as login shell
-In your .bashrc or zshrc
-```bash
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
 ```
