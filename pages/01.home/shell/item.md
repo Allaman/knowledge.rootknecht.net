@@ -243,3 +243,9 @@ wget \
      --no-parent \
          www.example.com/home/wiki/
 ```
+
+## PHP modules
+```bash
+php -m
+```
+/etc/php/php.ini
