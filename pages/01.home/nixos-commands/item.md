@@ -62,6 +62,18 @@ nix-env -qaP '.*PACKAGE.*'
 nix-env -qa --description '.*PACKAGE.*'
 ```
 
+### Upgrade package(s)
+```bash
+nix-env -u PACKAGE
+nix-env -u
+```
+
+### (Un)Install package
+```bash
+nix-env -i PACKAGE
+nix-env -e PACKAGE
+```
+
 ### Install package from source
 ```bash
 nix-env -f https://github.com/NixOS/nixpkgs/archive/master.tar.gz -iA pkgs.NAME
