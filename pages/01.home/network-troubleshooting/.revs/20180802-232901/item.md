@@ -4,8 +4,6 @@ title: 'Network Troubleshooting'
 
 ## Check DNS
 
-Check alos `dnsmasq` and `/etc/resolv.conf`
-
 ### nslookup
 ```bash
 nslookup DOMAIN.TLD # A record
@@ -19,13 +17,6 @@ dig DOMAIN.tld [+short]
 dig -x IP +short # rDNS
 dig DOMAIN.tld TTL # TTL record
 dig DOMAIN.tld ANY +noall +answer # query all DNS records
-```
-
-## Check Traceroute
-```bash
-traceroute www.google.com # uses UDP data on random port
-traceroute -I www.google.com # uses ICMP data
-traceroute -T -p 80 www.google.com # fix TCP port to test path to services to bypass firewalls
 ```
 
 ## Check DHCP traffic
