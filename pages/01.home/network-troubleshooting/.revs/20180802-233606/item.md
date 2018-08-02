@@ -2,8 +2,6 @@
 title: 'Network Troubleshooting'
 ---
 
-[[TOC]]
-
 ## Check DNS
 
 Check alos `dnsmasq` and `/etc/resolv.conf`
