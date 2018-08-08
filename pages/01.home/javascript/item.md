@@ -121,3 +121,11 @@ Automatically check your dependencies in your package.json for vulnerabilites
 ```bash
 npm install auditjs -g
 ```
+
+### Settings
+```bash
+npm config [--global] set strict-ssl false|true
+npm config [--global] set cafile CAFILE
+npm config [--global] set proxy PROXY
+npm config [--global] set https-proxy PROXY
+```
