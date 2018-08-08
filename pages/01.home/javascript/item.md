@@ -112,3 +112,12 @@ static main () {
 ```javascript
 document.getElementById("id").value = data
 ```
+
+## NPM
+
+### Security
+
+Automatically check your dependencies in your package.json for vulnerabilites
+```bash
+npm install auditjs -g
+```
