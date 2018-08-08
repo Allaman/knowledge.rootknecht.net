@@ -208,3 +208,10 @@ kill -9 PID # Hook will not be executed
 ```bash
 jar cfe NAME.jar ENTRYPOINTCLASSNAME *.class
 ```
+
+## Access system clipboard
+```java
+public static String readClipboard(){
+    return (String) Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor);
+}
+```
