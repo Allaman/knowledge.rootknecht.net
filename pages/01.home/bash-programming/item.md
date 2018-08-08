@@ -145,3 +145,12 @@ esac
 	        -e "s;^\\(application-host\\)=.*;\\1=0.0.0.0;g" \
 	        /PATH/TO/FILE
 ```
+
+## Arrays
+
+```bash
+arr=(hello word array)
+for i in ${arr[*]}; do
+        echo "her is $i"
+done
+```
