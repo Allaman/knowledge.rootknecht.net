@@ -111,3 +111,10 @@ def send_mail(host, me, you, user, password):
     s.sendmail(me, [you], msg.as_string())
     s.quit()
 ```
+
+## Generate sha1 password
+For example for Jupyter notebooks credentials
+```python
+In [1]: from IPython.lib import passwd
+In [2]: passwd()
+```
