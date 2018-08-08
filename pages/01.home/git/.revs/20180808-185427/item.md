@@ -34,7 +34,7 @@ find . -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull 
 ```
 
 ## Modify past commits
-! Use it with care! Interactive rebase is almost almighty
+!!! Use it with care! Interactive rebase is almost almighty
 
 Start the rebase at the last "good" commit
 
@@ -44,7 +44,7 @@ git rebase -i -p COMMITHASH
 or start from the initial commit with
 
 ```bash
-git rebase -i --root $tip
+git rebase [-i] --root $tip
 ```
 
 After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g. 

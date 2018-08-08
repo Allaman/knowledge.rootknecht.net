@@ -34,32 +34,15 @@ find . -maxdepth 1 -type d -exec git --git-dir={}/.git --work-tree=$PWD/{} pull 
 ```
 
 ## Modify past commits
-! Use it with care! Interactive rebase is almost almighty
+!!! Use it with care! Interactive rebase is almost almighty
 
 Start the rebase at the last "good" commit
 
 ```bash
 git rebase -i -p COMMITHASH
 ```
-or start from the initial commit with
 
-```bash
-git rebase -i --root $tip
-```
-
-After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g. 
-```bash
-git commit --amend --author="Michael <knecht@rootknecht.net>"
-```
-to modify the author. Then run 
-```bash
-git rebase --continue
-```
-to go to the next marked commit. After rebasing run 
-```bash
-git push --force-with-lease
-```
-to push your modifications.
+After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g. `git commit --amend --author="Michael <knecht@rootknecht.net>"`to modify the author. Then run `git rebase --continue` to go to the next marked commit. After rebasing run `git push --force-with-lease`.
 
 ## Git proxy
 ```bash
