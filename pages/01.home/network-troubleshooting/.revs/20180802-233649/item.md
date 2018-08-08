@@ -2,7 +2,7 @@
 title: 'Network Troubleshooting'
 ---
 
-[TOC]
+[[TOC]]
 
 ## Check DNS
 
