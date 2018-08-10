@@ -11,7 +11,7 @@ taxonomy:
         - Knecht
 ---
 
-Minimalistic Java Spring Boot application coming with a preconfigured Prometheus and Grafana allowing to get insights of your application.
+Minimalistic Java Spring Boot application coming with a preconfigured Prometheus and Grafana allowing to get insights of your application as well as OS and container metrics.
 
 ![](grafana.png?link&cropResize=500,400)
 
