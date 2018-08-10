@@ -1,6 +1,6 @@
 ---
 title: 'Monitoring with Prometheus'
-media_order: 'grafana.png,grafana2.png'
+media_order: grafana.png
 taxonomy:
     category:
         - DevOps
@@ -14,7 +14,5 @@ taxonomy:
 Minimalistic Java Spring Boot application coming with a preconfigured Prometheus and Grafana allowing to get insights of your application as well as OS and container metrics.
 
 ![](grafana.png?link&cropResize=500,400)
-
-![](grafana2.png?link&cropResize=500,400)
 
 [Spring-Boot-Demo](https://repo.rootknecht.net/knecht/spring-boot-demo)
