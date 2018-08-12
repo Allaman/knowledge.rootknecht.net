@@ -154,3 +154,17 @@ for i in ${arr[*]}; do
         echo "her is $i"
 done
 ```
+
+## Yes no choice selection
+```bash
+  echo "Continue?"
+  select choice in "Yes" "No"; do
+    case $choice in
+      Yes ) echo "Going on; break;;
+      No ) exit;;
+    esac
+  done
+```
+
+## Prevent a script from exiting your shell
+If you source a script file any `exit` in a function will exit the shell as it runs in the current shell instead of spawning a subshell. Prevent this behaviour by using `return`!
