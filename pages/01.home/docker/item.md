@@ -99,3 +99,10 @@ Start und enable service at boot time
 systemctl start NAME
 systemctl enable NAME
 ```
+
+## Inspect a restarting container
+
+```bash
+docker commit CONTAINERID test
+docker run -it --entrypoint=/bin/bash test
+```
