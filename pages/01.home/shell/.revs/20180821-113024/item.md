@@ -230,8 +230,3 @@ wget \
 php -m
 ```
 /etc/php/php.ini
-
-## Make all files with shebang in a folder executable
-```bash
-grep -rl '^#!' FOLDER | xargs chmod +x
-```
