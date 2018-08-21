@@ -63,6 +63,17 @@ openssl pkcs12 -in keyStore.[pfx|p12] -out keyStore.pem -nodes
 ```
 `-nocerts` to only output the private key or `-nokeys` to only output the certificates.
 
+## Get SSL/TLS certificate information
+```bash
+alias get-ssl-cert='echo Q |openssl s_client -connect' # prints certificate
+alias get-ssl-fingerprint='openssl x509 -in cert.pem -sha1 -noout -fingerprint'
+```
+Example:
+```bash
+get-ssl-cert google.com:443 > cert.pem
+get-ssl-fingerprint # assumes cert.pem in current directory
+```
+
 ## Emulate SSL/TLS Handshake
 ```bash
 openssl s_client -state -nbio -connect HOST:PORT
