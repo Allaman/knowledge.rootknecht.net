@@ -52,11 +52,6 @@ json.load(open(file.json, 'r'))
 json.loads('{"hello": "world}')
 ```
 
-## Upgrade all pip packages
-```bash
-sudo pip freeze --local | grep -v '"'"'^\-e'"'"' | cut -d = -f 1  | xargs -n1 sudo pip install -U
-```
-
 ## pip proxy
 Windows `%APPDATA%\pip\pip.ini` /  Linux pip.conf
 ```ini
