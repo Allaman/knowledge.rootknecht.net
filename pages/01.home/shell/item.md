@@ -162,10 +162,7 @@ sudo dmidecode | grep BIOS
 ```bash
 echo $(curl -ss http://ipecho.net/plain)
 ```
-## Upgrade all pip packages
-```bash
-sudo pip freeze --local | grep -v '"'"'^\-e'"'"' | cut -d = -f 1  | xargs -n1 sudo pip install -U
-```
+
 ## Convert all files in the directory to unix line endings
 
 ```bash
