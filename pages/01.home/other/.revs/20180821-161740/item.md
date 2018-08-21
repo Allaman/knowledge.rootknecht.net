@@ -75,7 +75,6 @@ I am a highlighted note
 ```
 
 ```css
-<style>
 .note+p {
     padding: 8px 35px 8px 14px;
     margin-bottom: 20px;
@@ -90,11 +89,9 @@ I am a highlighted note
     font-weight: bold;
     display: block;
 }
-</style>
 ```
 
 ## Fancy error page
-HTML
 ```html
 <h1>Segmentation Fault!</h1>
 <section class="error-container">
@@ -106,7 +103,7 @@ HTML
   <a target="_blank" href="mailto:support@example.com" class="more-link">Report!</a>
 </div>
 ```
-CSS
+
 ```css
 .error-container {
   text-align: center;

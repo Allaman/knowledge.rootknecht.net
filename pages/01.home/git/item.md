@@ -61,12 +61,12 @@ git push --force-with-lease
 ```
 to push your modifications.
 
-## Git proxy
+## Proxy settings
 ```bash
 git config --global http.proxy http://proxy.company.com:3128
 ```
 or in .git/config
-```
+```ini
 [http]
 	proxy = http://proxy.company.com:3128
 ```
@@ -74,6 +74,20 @@ or temporarly as command line argument
 ```bash
 -c http.proxy http://proxy.company.com:3128
 ````
+
+## Disable certificate validation
+```bash
+git config --global http.sslVerify=false
+```
+or in .git/config 
+```ini
+[http]
+sslVerify = false
+```
+or temporarly as command line argument
+```bash
+-c http.sslVerify=false
+```
 
 ## Use Github and Gitlab
 ### Use multiple remotes named differently
