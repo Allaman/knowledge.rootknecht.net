@@ -59,3 +59,20 @@ lsof -i :PORT
 ss -tan
 netstat -tulpen
 ```
+
+## Check traffic on interface
+```bash
+iftop -i INTERFACE
+```
+
+## Routes
+List routes
+```bash
+ip route
+route -n
+```
+Add default gateway
+```bash
+ip route add default via GATEWAYIP
+route add default gw GATEWAYIP
+```
