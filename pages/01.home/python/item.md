@@ -53,11 +53,30 @@ json.loads('{"hello": "world}')
 ```
 
 ## pip proxy
-Windows `%APPDATA%\pip\pip.ini` (for use with pipenv)
+Windows `%APPDATA%\pip\pip.ini` /  Linux pip.conf
 ```ini
 [global]
-    trusted-host = pypi.python.org
     proxy = http://[domain name]%5C[username]:[password]@[proxy address]:[proxy port]
+```
+
+## pip certificate validation
+
+**pip**
+```bash
+pip install [--index-url=http://pypi.org/simple/] --trusted-host pypi.org
+```
+or in pip.ini (windowns) / pip.conf (linux)
+```ini
+[global]
+trusted-host = pypi.python.org
+               pypi.org
+               files.pythonhosted.org
+```
+or provide certificate (in pem format) with `pip3 --cert path/to/cert install PACAKGE`
+
+**conda**
+```bash
+conda config --set ssl_verify false
 ```
 
 ## LDAP testing
