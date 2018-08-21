@@ -78,13 +78,6 @@ trusted-host = pypi.python.org
 ```
 or provide certificate (in pem format) with `pip3 --cert path/to/cert install PACAKGE`
 
-
-**npm**
-```bash
-npm config set strict-ssl false
-npm config set loglevel error
-```
-
 ## Create user with predefined password
 ```bash
 useradd -p $(openssl passwd -1 $PASS) $USER
@@ -168,12 +161,10 @@ common options for dPDFSETTINGS are:
 ```bash
 echo "password" | sha1sum
 ```
-
 ## Run multiple commands in background
 ```bash
 (command1 &) && (command2 &)
 ```
-
 ## Replace whitspace with underscore in all filenames in current directory
 ```bash
 for f in *\ *; do mv "$f" "${f// /_}"; done
@@ -181,16 +172,6 @@ for f in *\ *; do mv "$f" "${f// /_}"; done
 ## Shows what is in file 2 but not in file 1
 ```bash
 grep -v -F -x -f
-```
-## Get SSL/TLS certificate information
-```bash
-alias get-ssl-cert='echo Q |openssl s_client -connect' # prints certificate
-alias get-ssl-fingerprint='openssl x509 -in cert.pem -sha1 -noout -fingerprint'
-```
-Example:
-```bash
-get-ssl-cert google.com:443 > cert.pem
-get-ssl-fingerprint # assumes cert.pem in current directory
 ```
 ## Merge all pdf files in current directory
 ```bash
