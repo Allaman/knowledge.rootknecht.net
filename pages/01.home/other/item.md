@@ -14,20 +14,6 @@ taxonomy:
 gem install <name> -p http://my.proxy.com:1234
 ```
 
-## Respawn tmux pane
-In tmux command mode 
-```
-:respawn-pane -k
-```
-
-## Set tmux as login shell
-In your .bashrc or zshrc
-```bash
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
-```
-
 ## Maximize emacs (gVim xTerm,...) in KDE without gaps
 
 - Right click on Titlebar
@@ -78,4 +64,31 @@ JavaScript
 ```bash
 npm install http-server –g
 http-server
+```
+
+## Markdown highlighted notes
+For custom highlighted notes in a normal Markdown use the following snippets
+```markdown
+div class="note"></div>
+
+I am a highlighted note
+```
+
+```css
+<style>
+.note+p {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    border-radius: 4px;
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.note+p:before {
+    font-weight: bold;
+    display: block;
+}
+</style>
 ```
