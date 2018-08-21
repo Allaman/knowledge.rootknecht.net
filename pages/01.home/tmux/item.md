@@ -57,3 +57,29 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 ## Command prompt
 
 With `:`you can start a command prompt similar to Vim's ex mode. Tab-autocompletion is available
+
+## Advanced 
+
+### Respawn tmux pane
+In tmux command mode 
+```
+:respawn-pane -k
+```
+
+### Set tmux as login shell
+In your .bashrc or zshrc
+```bash
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+```
+
+### Attach to a tmux session within tmux
+list sessions
+```
+: list-sessions
+```
+Attach to session identified by its number
+```
+: attach-session -t NUMBER
+```
