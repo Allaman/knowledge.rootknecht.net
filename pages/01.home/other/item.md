@@ -62,3 +62,20 @@ SHARED_FOLDER_NAME /PATH/TO/MOUNT_POINT vboxsf rw,dmask=770,fmask=600,uid=1000,g
 ! Ensure that your linux user is in vboxsf group ( `sudo usermod -aG vboxsf USER`)
 
 ! Ensure that the vboxsf module is loaded (`sudo modprobe -a vboxsf`)
+
+## Start a simple web server for testing/developing
+PHP
+```bash
+php -S localhost:8000
+```
+
+Python
+```bash
+python -m SimpleHTTPServer 8000
+```
+
+JavaScript
+```bash
+npm install http-server –g
+http-server
+```
