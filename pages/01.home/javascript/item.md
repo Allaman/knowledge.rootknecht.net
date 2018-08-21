@@ -23,29 +23,6 @@ glob.sync("../*/*.xlsm").forEach(function (file) {
 dirs = FS.readdirSync(path)
 ```
 
-## NPM
-
-### Proxy
-
-```bash
-npm config set proxy http://proxy.company.com:3128
-npm config set https-proxy http://proxy.company.com:3128
-```
-
-## Module management
-
-```bash
-npm list -g --depth=0
-npm uninstall -g MODULE
-```
-Remove all global modules:
-```powershell
-del %APPDATA%\npm
-```
-```bash
-npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}' | xargs npm -g rm
-```
-
 ## Convert Time
 ```javascript
 let date = moment("01/23/18", ["MM/DD/YY", "M/DD/YY", "MM/D/YY", "M/D/YY"], true)
@@ -115,8 +92,21 @@ document.getElementById("id").value = data
 
 ## NPM
 
-### Security
+### Proxy
 
+### Module management
+
+```bash
+npm list -g --depth=0
+npm uninstall -g MODULE
+```
+Remove all global modules:
+```powershell
+del %APPDATA%\npm
+```
+```bash
+npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}' | xargs npm -g rm
+```
 Automatically check your dependencies in your package.json for vulnerabilites
 ```bash
 npm install auditjs -g
@@ -124,8 +114,17 @@ npm install auditjs -g
 
 ### Settings
 ```bash
-npm config [--global] set strict-ssl false|true
-npm config [--global] set cafile CAFILE
-npm config [--global] set proxy PROXY
-npm config [--global] set https-proxy PROXY
+npm config [--global] set|delete strict-ssl false|true
+npm config [--global] set|delete cafile CAFILE
+npm config [--global] set|delete proxy PROXY
+npm config [--global] set|delete https-proxy PROXY
+```
+### Ignore certificates
+```bash
+npm config set strict-ssl false
+```` 
+
+### Set loglevel
+```bash
+npm config set loglevel error
 ```
