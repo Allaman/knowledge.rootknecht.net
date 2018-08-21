@@ -20,10 +20,10 @@ keytool -import -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TR
 ## Use Java key / trust store
 ! Will override the default stores
 ```bash
--Djavax.net.ssl.trustStore /PATH/TO/TRUSTSTORE
--Djavax.net.ssl.trustStorePassword PASSWORD
--Djavax.net.ssl.keyStore /PATH/TO/KEYSTORE
--Djavax.net.ssl.keyStorePassword PASSWORD
+-Djavax.net.ssl.trustStore=/PATH/TO/TRUSTSTORE
+-Djavax.net.ssl.trustStorePassword=PASSWORD
+-Djavax.net.ssl.keyStore=/PATH/TO/KEYSTORE
+-Djavax.net.ssl.keyStorePassword=PASSWORD
 ```
 
 ## Check HTTPS connection with Java
@@ -64,7 +64,11 @@ public class SSLPoke {
 ```bash
 javac SSLPoke.java
 java SSLPoke HOST PORT
+# Test your Truststore
+java -Djavax.net.ssl.trustStore=/PATH/TO/TRUSTSTORE -Djavax.net.ssl.trustStorePassword=PASSWORD SSLPoke HOST PORT
 ```
+Adopted from https://gist.github.com/4ndrej/4547029
+
 
 ## Get SSL ciphers available on JVM
 ```java
