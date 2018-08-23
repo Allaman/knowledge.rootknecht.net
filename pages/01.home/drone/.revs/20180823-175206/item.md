@@ -19,7 +19,7 @@ Add secrets (use exact these names)
 ./drone secret add --repository REPO -name SSH_USERNAME -value USER
 ```
 .drone.yml
-```yml
+```yaml
 pipeline:
   deploy:
     image:    appleboy/drone-scp
