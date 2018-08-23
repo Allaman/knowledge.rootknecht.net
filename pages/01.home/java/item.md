@@ -13,8 +13,6 @@ title: Java
 ```bash
 # Import CA and create new trustStore
 keytool -import -trustcacerts -storepass changeit -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TRUSTSTORE
-# Just import (repeat for each certificate)
-keytool -import -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TRUSTSTORE
 ```
 
 ## Use Java key / trust store
@@ -24,6 +22,21 @@ keytool -import -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TR
 -Djavax.net.ssl.trustStorePassword=PASSWORD
 -Djavax.net.ssl.keyStore=/PATH/TO/KEYSTORE
 -Djavax.net.ssl.keyStorePassword=PASSWORD
+```
+
+## Keytool commands
+List certificates
+```bash
+keytool -list -v -keystore /PATH/TO/STORE
+```
+Change password of keystore
+```bash
+keytool -storepasswd -new new_storepass -keystore /PATH/TO/KEYSTORE
+```
+Import CA
+```bash
+# repeat for each certificate
+keytool -import -file /PATH/TO/FIRSTCA.cert -alias firstCA -keystore /PATH/TO/TRUSTSTORE
 ```
 
 ## Check HTTPS connection with Java
