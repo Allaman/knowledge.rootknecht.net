@@ -2,9 +2,8 @@
 title: Drone
 taxonomy:
     category:
-        - Applications
         - DevOps
-        - CI/CD
+        - Applications
     author:
         - Knecht
 ---
