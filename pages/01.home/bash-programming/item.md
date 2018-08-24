@@ -168,3 +168,9 @@ done
 
 ## Prevent a script from exiting your shell
 If you source a script file any `exit` in a function will exit the shell as it runs in the current shell instead of spawning a subshell. Prevent this behaviour by using `return`!
+
+## Printf
+More stable and powerful than echo. Comparable to C's function.
+```bash
+printf "%s with %s\\n" "VAL1" "VAL2" >> test.txt
+```
