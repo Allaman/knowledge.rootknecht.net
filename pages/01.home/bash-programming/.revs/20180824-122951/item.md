@@ -174,9 +174,3 @@ More stable and powerful than echo. Comparable to C's function.
 ```bash
 printf "%s with %s\\n" "VAL1" "VAL2" >> test.txt
 ```
-
-## Empty/clear a file
-```bash
-echo > FILE
-cat /dev/null > FILE
-```
