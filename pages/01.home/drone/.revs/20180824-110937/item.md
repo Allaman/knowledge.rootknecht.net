@@ -19,7 +19,7 @@ Add secrets (use exact these names)
 ./drone secret add --repository REPO -name SSH_USERNAME -value USER
 ```
 .drone.yml
-```yaml
+```yml
 pipeline:
   deploy:
     image:    appleboy/drone-scp
@@ -35,7 +35,7 @@ pipeline:
     strip_components: 1
 ```
 ## Use Drone to ssh on remote hosts and execute commands
-```yaml
+```yml
 pipeline:
   ssh:
     image:    appleboy/drone-ssh
@@ -49,7 +49,7 @@ pipeline:
 
 ## Get notified by drone build
 Username and password must be provided
-```yaml
+```yml
 pipeline
   notify:
     image:     drillster/drone-email
