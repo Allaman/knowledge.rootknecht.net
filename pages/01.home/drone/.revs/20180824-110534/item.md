@@ -48,7 +48,7 @@ pipeline:
 ```
 
 ## Get notified by drone build
-Username and password must be provided
+Username and password must be provided, see [Use Drone to scp files to a target](#use_drone-to_scp_files_to_a_target)
 ```yml
 pipeline
   notify:
