@@ -34,3 +34,32 @@ pipeline:
       - /var/www/html
     strip_components: 1
 ```
+## Use Drone to ssh on remote hosts and execute commands
+```yml
+pipeline:
+  ssh:
+    image:    appleboy/drone-ssh
+    host:     HOST
+    port:     22
+    secrets: [ SSH_USERNAME, SSH_PASSWORD ]
+    script:
+      - echo "Hello World"
+      - ps aux
+```
+
+## Get notified by drone build
+Username and password must be provided, see [Use Drone to scp files to a target](#use_drone-to_scp_files_to_a_target)
+```yml
+pipeline
+  notify:
+    image:     drillster/drone-email
+    from:        drone@example.com
+    host:        smtp.example.com
+    skip_verify: true
+    secrets:     [ email_username, email_password ]
+    subject:     >
+        [DRONE CI]: {{ build.status }}: {{ repo.owner }}/{{ repo.name }}
+        ({{ commit.branch }} - {{ truncate commit.sha 8 }})
+    recipients:
+        - knecht@rootknecht.net
+```
