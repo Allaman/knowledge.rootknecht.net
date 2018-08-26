@@ -9,3 +9,5 @@ Linux and open source enthusiast. Wants to automate everything. Thinks modal edi
 !!!! [Github](https://github.com/Allaman)
 
 ! [Twitter](https://twitter.com/Allamann)
+
+!! [Keybase](https://keybase.io/allaman)
