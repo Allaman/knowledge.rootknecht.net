@@ -1,5 +1,5 @@
 ---
-title: 'Contact'
+title: Contact
 form:
     name: contact
     fields:
@@ -60,5 +60,5 @@ form:
             display: thankyou
 ---
 
-## Get in touch with Knecht
+## Get in touch with Allaman
 Fields with **\* ** are required
