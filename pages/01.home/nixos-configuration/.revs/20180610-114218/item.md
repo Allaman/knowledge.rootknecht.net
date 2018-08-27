@@ -189,7 +189,7 @@ Like in [Package Management](#package_management) declarative and ad hoc style i
 ```
   users.extraUsers.USERNAME = {
     createHome = true;
-    home = "/home/knecht";
+    home = "/home/user";
     extraGroups = [ "wheel" ];
     shell = pkgs.bashInteractive;
     openssh.authorizedKeys.keys = [ "ssh-rsa ..." ];

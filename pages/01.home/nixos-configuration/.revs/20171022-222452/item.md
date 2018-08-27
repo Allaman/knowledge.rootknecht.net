@@ -188,7 +188,7 @@ system.autoUpgrade.enable = true;
 ```
   users.extraUsers.USERNAME = {
     createHome = true;
-    home = "/home/knecht";
+    home = "/home/user";
     extraGroups = [ "wheel" ];
     shell = pkgs.bashInteractive;
     openssh.authorizedKeys.keys = [ "ssh-rsa ..." ];
