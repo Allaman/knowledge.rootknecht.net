@@ -3,8 +3,6 @@ title: 'NixOS Configuration'
 taxonomy:
     category:
         - NixOS
-    author:
-        - Knecht
 ---
 
 [TOC]

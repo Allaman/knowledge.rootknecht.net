@@ -5,8 +5,6 @@ taxonomy:
         - Ansible
         - DevOps
         - Docker
-    author:
-        - Knecht
 ---
 
 ## Requirements

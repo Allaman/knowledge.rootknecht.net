@@ -3,8 +3,6 @@ title: 'Vim Tricks'
 taxonomy:
     category:
         - Vim
-    author:
-        - Knecht
 ---
 
 [TOC]

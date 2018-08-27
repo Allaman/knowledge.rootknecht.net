@@ -3,8 +3,6 @@ title: 'Shell Tricks'
 taxonomy:
     category:
         - Shell
-    author:
-        - Knecht
 ---
 
 [TOC]

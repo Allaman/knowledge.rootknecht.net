@@ -3,8 +3,6 @@ title: 'Enhance Powershell Experience'
 taxonomy:
     category:
         - Windows
-    author:
-        - Knecht
 ---
 
 ## Make it more bash like

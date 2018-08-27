@@ -3,8 +3,6 @@ title: Kubernetes
 taxonomy:
     category:
         - DevOps
-    author:
-        - Knecht
 ---
 
 ## Installation on a "bare metal" single Node

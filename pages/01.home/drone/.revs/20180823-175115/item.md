@@ -4,8 +4,6 @@ taxonomy:
     category:
         - DevOps
         - Applications
-    author:
-        - Knecht
 ---
 
 ## Use Drone to scp files to a target

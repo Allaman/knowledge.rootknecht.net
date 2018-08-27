@@ -3,8 +3,6 @@ title: Vim
 taxonomy:
     category:
         - Vim
-    author:
-        - Knecht
 ---
 
 [TOC]

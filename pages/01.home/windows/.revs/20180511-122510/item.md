@@ -3,8 +3,6 @@ title: Windows
 taxonomy:
     category:
         - Windows
-    author:
-        - Knecht
 ---
 
 [TOC]

@@ -4,8 +4,6 @@ taxonomy:
     category:
         - Docker
         - DevOps
-    author:
-        - Knecht
 ---
 
 [TOC]

@@ -3,8 +3,6 @@ title: 'Install SAP Netweaver AS ABAP 7.51 Developer'
 taxonomy:
     category:
         - Applications
-    author:
-        - Knecht
 ---
 
 This article describes the installation of a SAP Netweaver 751 ABAP platform (in the following abbreviated as sapnw) for privat not commercial purpose.

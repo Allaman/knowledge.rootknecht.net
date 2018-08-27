@@ -4,8 +4,6 @@ taxonomy:
     category:
         - DevOps
         - Ansible
-    author:
-        - Knecht
 ---
 
 Sometimes a reboot of a machine during Ansible operation is required, e.g. when altering the network config (I am aware of the possibility of restarting the network service but I have made bad experiences regarding the reliability of this method). Nevertheless, reboot and restart of the network results in a lost ssh connection.

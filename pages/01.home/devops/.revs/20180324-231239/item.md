@@ -4,8 +4,6 @@ media_order: cc.png
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 [TOC]

@@ -3,8 +3,6 @@ title: SSH
 taxonomy:
     category:
         - Shell
-    author:
-        - Knecht
 ---
 
 ## Basic usage with custom port and custom key

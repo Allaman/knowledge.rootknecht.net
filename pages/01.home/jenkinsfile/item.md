@@ -6,8 +6,6 @@ taxonomy:
         - DevOps
         - Pipeline
         - CI/CD
-    author:
-        - Knecht
 ---
 
 ## Global vars

@@ -3,8 +3,6 @@ title: Git
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 [TOC]

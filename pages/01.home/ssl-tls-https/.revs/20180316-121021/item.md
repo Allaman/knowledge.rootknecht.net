@@ -3,8 +3,6 @@ title: SSL/TLS/HTTPS
 taxonomy:
     category:
         - Shell
-    author:
-        - Knecht
 ---
 
 [TOC]

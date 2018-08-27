@@ -3,8 +3,6 @@ title: 'Gitlab CI-CD'
 taxonomy:
     category:
         - DevOps
-    author:
-        - Knecht
 ---
 
 ## Install gitlab-runner

@@ -3,8 +3,6 @@ title: 'Why Grav?'
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 visible: false
 ---
 

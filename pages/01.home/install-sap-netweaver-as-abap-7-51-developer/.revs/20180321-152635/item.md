@@ -3,8 +3,6 @@ title: 'Install SAP Netweaver AS ABAP 7.51 Developer'
 taxonomy:
     category:
         - Applications
-    author:
-        - Knecht
 ---
 
 [TOC]

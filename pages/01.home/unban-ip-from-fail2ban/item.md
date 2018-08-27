@@ -3,8 +3,6 @@ title: 'Unban IP from fail2ban'
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 Unban a IP blocked from fail2ban.

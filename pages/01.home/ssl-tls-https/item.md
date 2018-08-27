@@ -4,8 +4,6 @@ taxonomy:
     category:
         - Shell
         - security
-    author:
-        - Knecht
 ---
 
 [TOC]

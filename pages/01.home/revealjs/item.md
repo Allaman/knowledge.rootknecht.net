@@ -4,8 +4,6 @@ media_order: revealjs-quickstart.html
 taxonomy:
     category:
         - tools
-    author:
-        - Knecht
 ---
 
 Revealjs is a framework for producing nice looking HTML presentations.

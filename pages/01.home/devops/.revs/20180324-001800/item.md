@@ -3,8 +3,6 @@ title: DevOps
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 [TOC]

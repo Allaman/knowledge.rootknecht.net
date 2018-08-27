@@ -3,8 +3,6 @@ title: 'Docker Tricks'
 taxonomy:
     category:
         - Docker
-    author:
-        - Knecht
 ---
 
 ## Prevent a container from exiting

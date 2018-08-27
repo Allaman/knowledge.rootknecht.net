@@ -3,8 +3,6 @@ title: 'NixOS Configuration'
 taxonomy:
     category:
         - NixOS
-    author:
-        - Knecht
 ---
 
 The main config file of NixOS is `/etc/nixos/configuration.nix`. After each modification the changes must be propagate to the system (see [NixOS Commands](../nixos-commands)).

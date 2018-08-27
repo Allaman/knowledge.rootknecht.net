@@ -5,8 +5,6 @@ published: false
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 [TOC]

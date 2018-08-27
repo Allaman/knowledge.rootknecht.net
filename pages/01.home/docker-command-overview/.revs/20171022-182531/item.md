@@ -3,8 +3,6 @@ title: 'Docker Command Overview'
 taxonomy:
     category:
         - Docker
-    author:
-        - Knecht
 ---
 
 [TOC]

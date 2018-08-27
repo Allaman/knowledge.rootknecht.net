@@ -7,8 +7,6 @@ taxonomy:
         - Pipeline
         - CI
         - CD
-    author:
-        - Knecht
 ---
 
 ## Global vars

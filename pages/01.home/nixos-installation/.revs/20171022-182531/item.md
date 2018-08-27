@@ -3,8 +3,6 @@ title: 'NixOS Installation'
 taxonomy:
     category:
         - NixOS
-    author:
-        - Knecht
 ---
 
 This article describes a simple *not* heavily customized installation of NixOS (nixos-minimal-17.09.1756.c99239bca0-x86_64-linux.iso) on a clean vServer.

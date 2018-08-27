@@ -4,8 +4,6 @@ taxonomy:
     category:
         - golang
         - programming
-    author:
-        - Knecht
 ---
 
 [TOC]

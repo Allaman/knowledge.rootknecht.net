@@ -4,8 +4,6 @@ taxonomy:
     category:
         - DevOps
         - CI/CD
-    author:
-        - Knecht
 ---
 
 ## Install gitlab-runner

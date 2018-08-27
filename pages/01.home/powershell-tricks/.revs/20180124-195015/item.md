@@ -3,8 +3,6 @@ title: 'Powershell Tricks'
 taxonomy:
     category:
         - Windows
-    author:
-        - Knecht
 ---
 
 ## Aliase

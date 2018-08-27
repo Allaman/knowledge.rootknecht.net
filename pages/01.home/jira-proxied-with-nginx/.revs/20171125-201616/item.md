@@ -3,8 +3,6 @@ title: 'Jira proxied with Nginx'
 taxonomy:
     category:
         - Applications
-    author:
-        - Knecht
 ---
 
 ## Jira

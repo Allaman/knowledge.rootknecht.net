@@ -3,8 +3,6 @@ title: Debian
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 [TOC]

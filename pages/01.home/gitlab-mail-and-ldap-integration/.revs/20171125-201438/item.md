@@ -1,8 +1,6 @@
 ---
 title: 'Gitlab Mail and LDAP Integration'
 taxonomy:
-    author:
-        - Knecht
 ---
 
 `gitlab.rb`

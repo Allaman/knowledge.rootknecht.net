@@ -3,8 +3,6 @@ title: Jenkins
 taxonomy:
     category:
         - Applications
-    author:
-        - Knecht
 ---
 
 ## Reverse proxy config

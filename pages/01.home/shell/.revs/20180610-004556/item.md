@@ -3,8 +3,6 @@ title: Shell
 taxonomy:
     category:
         - Shell
-    author:
-        - Knecht
 ---
 
 [TOC]

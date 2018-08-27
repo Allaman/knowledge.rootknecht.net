@@ -3,8 +3,6 @@ title: 'NixOS Commands'
 taxonomy:
     category:
         - NixOS
-    author:
-        - Knecht
 ---
 
 ## Configuration

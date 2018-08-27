@@ -3,8 +3,6 @@ title: Revealjs
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 ## Revealjs

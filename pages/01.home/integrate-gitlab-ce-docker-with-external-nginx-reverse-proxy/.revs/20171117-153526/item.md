@@ -3,8 +3,6 @@ title: 'Integrate Gitlab CE Docker with external Nginx Reverse Proxy'
 taxonomy:
     category:
         - Docker
-    author:
-        - Knecht
 ---
 
 Gitlab provides official [Docker images](https://docs.gitlab.com/omnibus/docker/). The following config shows the integration in nginx of an out of the box gitlab container with docker-compose.yml.

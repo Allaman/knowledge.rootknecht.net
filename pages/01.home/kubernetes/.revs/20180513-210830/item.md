@@ -3,8 +3,6 @@ title: Kubernetes
 taxonomy:
     category:
         - DevOps
-    author:
-        - Knecht
 ---
 
 [TOC]

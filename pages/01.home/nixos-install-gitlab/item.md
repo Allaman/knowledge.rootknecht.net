@@ -3,8 +3,6 @@ title: 'NixOS Install Gitlab'
 taxonomy:
     category:
         - NixOS
-    author:
-        - Knecht
 ---
 
 ## Install docker service

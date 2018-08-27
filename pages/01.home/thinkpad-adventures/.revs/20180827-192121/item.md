@@ -6,8 +6,6 @@ taxonomy:
         - thinkpad
         - diy
         - hardware
-    author:
-        - Knecht
 ---
 
 [TOC]

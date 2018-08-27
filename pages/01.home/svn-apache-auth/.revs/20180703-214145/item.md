@@ -3,8 +3,6 @@ title: SVN+Apache+Auth
 taxonomy:
     category:
         - Applications
-    author:
-        - Knecht
 ---
 
 Setup SVN accessable through Apache with authentication and authorization

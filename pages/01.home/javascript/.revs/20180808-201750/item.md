@@ -3,8 +3,6 @@ title: Javascript
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 [TOC]

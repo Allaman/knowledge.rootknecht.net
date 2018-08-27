@@ -3,8 +3,6 @@ title: Apache
 taxonomy:
     category:
         - Applications
-    author:
-        - Knecht
 ---
 
 ## Simple rewrite http to https

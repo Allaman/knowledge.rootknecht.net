@@ -3,8 +3,6 @@ title: 'Shell Tricks'
 taxonomy:
     category:
         - Shell
-    author:
-        - Knecht
 ---
 
 ## Auto complete a command with history-search

@@ -3,8 +3,6 @@ title: Other
 taxonomy:
     category:
         - Others
-    author:
-        - Knecht
 ---
 
 [TOC]

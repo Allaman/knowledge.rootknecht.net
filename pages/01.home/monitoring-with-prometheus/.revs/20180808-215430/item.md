@@ -7,8 +7,6 @@ taxonomy:
         - java
         - spring-boot
         - Docker
-    author:
-        - Knecht
 ---
 
 Minimalistic Java Spring Boot application coming with a preconfigured Prometheus and Grafana allowing to get insights of your application.

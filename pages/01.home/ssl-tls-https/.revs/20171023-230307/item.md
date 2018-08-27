@@ -3,8 +3,6 @@ title: SSL/TLS/HTTPS
 taxonomy:
     category:
         - Shell
-    author:
-        - Knecht
 ---
 
 ## Generate self-signed certificate for https

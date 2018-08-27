@@ -3,8 +3,6 @@ title: tmux
 taxonomy:
     category:
         - Shell
-    author:
-        - Knecht
 ---
 
 ## Why tmux
