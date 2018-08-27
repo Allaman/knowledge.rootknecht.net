@@ -1,5 +1,9 @@
 ---
 title: Ansible
+taxonomy:
+    category:
+        - DevOps
+        - Ansible
 ---
 
 ## Run playbook without inventory file
