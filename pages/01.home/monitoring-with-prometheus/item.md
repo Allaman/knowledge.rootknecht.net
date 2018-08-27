@@ -15,4 +15,4 @@ Minimalistic Java Spring Boot application coming with a preconfigured Prometheus
 
 ![](grafana2.png?link&cropResize=500,400)
 
-You can find a running demonstration stack all in one bo here: [Spring-Boot-Demo with Monitoring](https://repo.rootknecht.net/knecht/spring-boot-demo)
+You can find a running demonstration stack all in one bo here: [Spring-Boot-Demo with Monitoring](https://repo.rootknecht.net/allaman/spring-boot-demo)
