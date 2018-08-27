@@ -40,7 +40,7 @@ Start the rebase at the last "good" commit
 git rebase -i -p COMMITHASH
 ```
 
-After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g. `git commit --amend --author="Michael <knecht@rootknecht.net>"`to modify the author. Then run `git rebase --continue` to go to the next marked commit. After rebasing run `git push --force-with-lease`.
+After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g. `git commit --amend --author="Michael <allaman@rootknecht.net>"`to modify the author. Then run `git rebase --continue` to go to the next marked commit. After rebasing run `git push --force-with-lease`.
 
 ## Git proxy
 ```bash

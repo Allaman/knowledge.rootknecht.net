@@ -59,5 +59,5 @@ pipeline
         [DRONE CI]: {{ build.status }}: {{ repo.owner }}/{{ repo.name }}
         ({{ commit.branch }} - {{ truncate commit.sha 8 }})
     recipients:
-        - knecht@rootknecht.net
+        - allaman@rootknecht.net
 ```
