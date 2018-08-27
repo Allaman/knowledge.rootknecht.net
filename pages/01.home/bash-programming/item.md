@@ -143,6 +143,14 @@ esac
 	        -e "s;^\\(application-host\\)=.*;\\1=0.0.0.0;g" \
 	        /PATH/TO/FILE
 ```
+search and replace in multiple files
+```bash
+find . -type f -name 'config' | xargs sed -i -e  's/PATTERN/STRING/g'
+```
+delete lines containing a pattern from multiple files
+```bash
+find . -type f -name '*.md' | xargs sed -i -e '/PATTERN/d'
+```
 
 ## Arrays
 
