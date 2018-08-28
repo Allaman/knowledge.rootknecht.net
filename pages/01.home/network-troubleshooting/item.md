@@ -54,10 +54,17 @@ iperf -c SERVERIP -p SERVERPORT -t 15 -i 1 -f m
 - -f m shows rate in Mbps
 
 ## Check open ports
+local
 ```bash
 lsof -i :PORT
 ss -tan
 netstat -tulpen
+```
+on remote
+```bash
+telnet HOST PORT
+nc -zv HOST PORT[-][PORT]
+nmap -source-port PORT HOST
 ```
 
 ## Check traffic on interface
