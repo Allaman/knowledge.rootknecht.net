@@ -70,6 +70,7 @@ nmap -source-port PORT HOST
 ## Check traffic on interface
 ```bash
 iftop -i INTERFACE
+nethogs device INTERFACE
 ```
 
 ## Routes
