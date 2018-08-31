@@ -186,3 +186,9 @@ printf "%s with %s\\n" "VAL1" "VAL2" >> test.txt
 echo > FILE
 cat /dev/null > FILE
 ```
+
+## File or directory listings
+```bash
+find PATH -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | exec -0 ls -l
+find PATH -maxdepth 1 -mindepth 1 -type f -not -name README.md | exec -0 ls -l
+```
