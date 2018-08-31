@@ -135,6 +135,11 @@ esac
 [ -d $(ps -A | grep 'PATTERN') ] && echo "exists" || echo "not exists"
 ```
 
+## Programm
+
+```bash
+command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo" }
+```
 
 ## Search / Replace with sed
 ```bash
