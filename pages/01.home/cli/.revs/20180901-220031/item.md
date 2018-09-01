@@ -27,4 +27,4 @@ In your git config:
 ```
 
 ## grep alternatives
-[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives. Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
+[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
