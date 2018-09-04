@@ -90,7 +90,3 @@ I am a highlighted note
 }
 </style>
 ```
-
-## Fancy http error pages
-
-In [my repo](https://repo.rootknecht.net/allaman/404) I collect some funky http error pages I stumbled over
