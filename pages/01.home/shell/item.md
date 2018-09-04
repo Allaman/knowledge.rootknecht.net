@@ -208,3 +208,8 @@ grep -rl '^#!' FOLDER | xargs chmod +x
 ```bash
 type ALIAS
 ```
+
+## Convert svg to all in one ico
+```bash
+convert -density 384 NAME.svg -define icon:auto-resize NAME.ico
+```
