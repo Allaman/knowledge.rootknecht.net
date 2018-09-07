@@ -24,14 +24,6 @@ When you now visit `localhost:9000` in your browser you will be tunneled to your
 ```bash
 ssh -R BINDADDRESS:PORT:LOCALHOST:LOCALPORT USER@HOST
 ```
-Essentially the other way of local port forwarding for example:
-
-```bash
-ssh -R 9000:localhost:80 admin@rootknect.net
-```
-Now if you visit your remote server on port `900` it is directed to your local machine port `80`
-
-In sshd_config make sure to add the line `GatewayPorts yes`.
 
 ## Run command on host
 ```bash
