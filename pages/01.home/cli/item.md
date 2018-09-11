@@ -17,6 +17,7 @@ taxonomy:
 Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the application by pressing `F10` save and exit.
 
 ## diff-so-fancy
+
 [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) is an alternative customazable very nice looking diff tool for `git diff`.
 
 In your git config:
@@ -27,4 +28,29 @@ In your git config:
 ```
 
 ## grep alternatives
-[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives. Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
+
+[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives. 
+
+Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
+
+## cat alternative
+
+[bat](https://github.com/sharkdp/bat)
+
+- Syntax highlightning
+- Git integration
+- Automatic paging
+
+## fasd
+
+[fasd](https://github.com/clvv/fasd)
+
+- quickaccess to files, directories
+- inspired by autojump, z, and v
+
+## mu-repo
+
+[mu-repo](http://fabioz.github.io/mu-repo/) 
+
+- manage multiple git repos
+- run git commands on multiple repos
