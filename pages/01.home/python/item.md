@@ -68,7 +68,7 @@ Windows `%APPDATA%\pip\pip.ini` /  Linux pip.conf
 
 **pip**
 ```bash
-pip install [--index-url=http://pypi.org/simple/] --trusted-host pypi.org
+pip install install --trusted-host pypi.org --trusted-host files.pythonhosted.org
 ```
 or in pip.ini (windowns) / pip.conf (linux)
 ```ini
