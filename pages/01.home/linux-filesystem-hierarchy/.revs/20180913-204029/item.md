@@ -82,7 +82,9 @@ contains only binaries essential for booting, restoring, recovering, and/or repa
 - srv
 
 contains site-specific data which is served by this system.
-- usr  ("user system resources") &rarr; contains user-land programs and data (as opposed to 'system land' programs and data)
+- usr  ("user system resources")
+
+contains user-land programs and data (as opposed to 'system land' programs and data)
     - *bin*  &rarr; vast majority of binaries
     - *include* &rarr; 'header files', needed for compiling user space source code.
     - *lib* &rarr; contains program libraries.
@@ -91,7 +93,6 @@ contains site-specific data which is served by this system.
     - *sbin* &rarr; contains programs for administering a system, meant to be run by 'root', e.g. chroot, useradd
     - *share* &rarr; contains 'shareable', architecture-independent files (man pages, icons, fonts etc)
     - *src* &rarr; contains the Linux kernel sources, header-files and documentation.
-
 - var
 
 Contains variable data like system logging files, mail and printer spools, and temporary files.
