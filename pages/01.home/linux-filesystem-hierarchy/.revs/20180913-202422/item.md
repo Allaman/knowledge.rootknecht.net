@@ -1,8 +1,5 @@
 ---
 title: 'Linux Filesystem Hierarchy'
-taxonomy:
-    category:
-        - Linux
 ---
 
 [FHS](https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/)
