@@ -82,7 +82,9 @@ contains only binaries essential for booting, restoring, recovering, and/or repa
 - srv
 
 contains site-specific data which is served by this system.
-- usr  ("user system resources") &rarr; contains user-land programs and data (as opposed to 'system land' programs and data)
+- usr  ("user system resources")
+
+contains user-land programs and data (as opposed to 'system land' programs and data)
     - *bin*  &rarr; vast majority of binaries
     - *include* &rarr; 'header files', needed for compiling user space source code.
     - *lib* &rarr; contains program libraries.
