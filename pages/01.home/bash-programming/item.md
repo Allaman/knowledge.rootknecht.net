@@ -197,3 +197,13 @@ cat /dev/null > FILE
 find PATH -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | exec -0 ls -l
 find PATH -maxdepth 1 -mindepth 1 -type f -not -name README.md | exec -0 ls -l
 ```
+
+## Check PostgreSQL connection
+```bash
+apt-get install postgresql-client
+
+while ! pg_isready -h ${HOST} -p ${PORT} &> /dev/null; do
+	echo "Connection to ${HOST} ${PORT} failed "
+	sleep 1
+done 
+```
