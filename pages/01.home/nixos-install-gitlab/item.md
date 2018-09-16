@@ -2,12 +2,13 @@
 title: 'NixOS Install Gitlab'
 taxonomy:
     category:
-        - NixOS
+        - Linux
+        - Application
 ---
 
 ## Install docker service
 
-Add `virtualisation.docker.enable = true;` and optionally `extraGroups= [ "docker" ]` to a user who needs to control docker to your configuration.nix file. 
+Add `virtualisation.docker.enable = true;` and optionally `extraGroups= [ "docker" ]` to a user who needs to control docker to your configuration.nix file.
 
 ## Install docker-compose
 Add `python36Packages.docker_compose` to `environment.systemPackages`
@@ -45,7 +46,7 @@ Add `openssl` to `environment.systemPackages`
 The main configuration file is `/srv/gitlab/config/gitlab.rb` (adjust your path according to your docker-compose file)
 ### Enable https
 In gitlab.rb put 'external_url "https://gitlab.example.com"'. Gitlab will look after your certificates according to your hostname - here `/etc/gitlab/ssl/gitlab.example.com.key` and `/etc/gitlab/ssl/gitlab.example.com.crt`.
-! Note that this is the path inside of the container and won't be permanent - on your docker host the correct path is `/srv/gitlab/config/ssl/` 
+! Note that this is the path inside of the container and won't be permanent - on your docker host the correct path is `/srv/gitlab/config/ssl/`
 Create the ssl directory and copy your previously generated files `cert.pem` and `cert.key` to this folder and rename them. The cert.pem file is the .crt file and the key.pem the .key file.
 
 Now connect to your container with `docker exec -it gitlab_web_1` and run `gitlab-ctl reconfigure` inside your container.

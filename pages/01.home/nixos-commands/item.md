@@ -2,7 +2,7 @@
 title: 'NixOS Commands'
 taxonomy:
     category:
-        - NixOS
+        - Linux
 ---
 
 ## Configuration

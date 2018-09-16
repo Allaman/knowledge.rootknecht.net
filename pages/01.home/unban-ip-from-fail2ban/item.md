@@ -2,7 +2,7 @@
 title: 'Unban IP from fail2ban'
 taxonomy:
     category:
-        - Others
+        - Linux
 ---
 
 Unban a IP blocked from fail2ban.

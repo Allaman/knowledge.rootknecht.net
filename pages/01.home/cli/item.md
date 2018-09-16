@@ -2,8 +2,7 @@
 title: CLI
 taxonomy:
     category:
-        - Shell
-        - tools
+        - Application
 ---
 
 ## htop
@@ -24,12 +23,12 @@ In your git config:
 ```ini
 [pager]
    diff = diff-so-fancy | less --tabs=1,5 -RFX
-   show = diff-so-fancy | less --tabs=1,5 -RFX    
+   show = diff-so-fancy | less --tabs=1,5 -RFX
 ```
 
 ## grep alternatives
 
-[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives. 
+[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
 
 Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
 
@@ -50,7 +49,7 @@ Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## mu-repo
 
-[mu-repo](http://fabioz.github.io/mu-repo/) 
+[mu-repo](http://fabioz.github.io/mu-repo/)
 
 - manage multiple git repos
 - run git commands on multiple repos

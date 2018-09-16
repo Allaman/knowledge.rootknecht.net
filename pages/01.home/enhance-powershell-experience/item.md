@@ -2,7 +2,7 @@
 title: 'Enhance Powershell Experience'
 taxonomy:
     category:
-        - Windows
+        - Application
 ---
 
 ## Make it more bash like

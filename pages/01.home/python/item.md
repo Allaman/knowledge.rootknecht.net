@@ -1,5 +1,8 @@
 ---
 title: Python
+taxonomy:
+    category:
+        - Programming
 ---
 
 [TOC]
