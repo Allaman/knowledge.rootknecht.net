@@ -57,7 +57,7 @@ iperf -c SERVERIP -p SERVERPORT -t 15 -i 1 -f m
 ## Check open ports
 local
 ```bash
-lsof -i :PORT
+lsof -i -P -n [ | grep LISTEN]
 ss -tan
 netstat -tulpen
 ```
