@@ -36,8 +36,6 @@ Linux and open source enthusiast. Wants to automate everything. Thinks modal edi
 
     Some hints on different programming topics I had to deal with
     
-## Legal
-    
 [Disclaimer](/disclaimer)
 
 [Contact](/contact)
