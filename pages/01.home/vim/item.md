@@ -2,7 +2,7 @@
 title: Vim
 taxonomy:
     category:
-        - Vim
+        - Application
 ---
 
 [TOC]

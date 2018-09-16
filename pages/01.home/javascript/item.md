@@ -2,7 +2,7 @@
 title: Javascript
 taxonomy:
     category:
-        - Others
+        - Programming
 ---
 
 [TOC]
@@ -120,7 +120,7 @@ npm config [--global] set|delete https-proxy PROXY
 ### Ignore certificates
 ```bash
 npm config set strict-ssl false
-```` 
+````
 
 ### Set loglevel
 ```bash

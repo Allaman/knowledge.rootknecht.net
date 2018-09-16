@@ -2,7 +2,7 @@
 title: 'NixOS Configuration'
 taxonomy:
     category:
-        - NixOS
+        - Linux
 ---
 
 [TOC]
@@ -39,8 +39,8 @@ which is equal to
 
 Options have a specified type. The most important are:
 1. Strings
-	
-    `networking.hostName = "dexter";`. 
+
+    `networking.hostName = "dexter";`.
     Special characters need to be escaped with `\`. Multi-line strings are enclosed with double single quotes, e.g.
     ```
     networking.extraHosts =
@@ -50,13 +50,13 @@ Options have a specified type. The most important are:
         '';
     ```
 1. Booleans
-	
+
     Can be true or false, e.g. `networking.firewall.enable = true;`
 1. Integers
-	
+
     `boot.kernel.sysctl."net.ipv4.tcp_keepalive_time" = 60;`.
     Here, net.ivp4 is enclosed in quotes to prevent it from being interprated is set of sets. This is just the name of the kernel option
-    
+
 1. Sets
 
 	```
@@ -66,12 +66,12 @@ Options have a specified type. The most important are:
         options = [ "rw" "data=ordered" "relatime" ];
       };
 	```
-    
+
 1. Lists
 
 	`boot.kernelModules = [ "fuse" "kvm-intel" "coretemp" ];`.
     Note that elements are separated by whitespaces and can be of any type, e.g. sets `swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];`
-    
+
 1. Packages
 
 	```
@@ -164,7 +164,7 @@ NixOS supports two styles of package managemetn:
 2. Ad hoc with `nix-env` similar to traditional package management allowing to mix packages from different Nixpkgs versions.This is the only choice for non-root users.
 
 #### Declarative
-By adding the desired package to `environment.systemPackages = [ ... ];`. Executing `nix-env -qaP '*' --description` lists all available packages. To uninstall a package simple remove it from the file. After modifying your packages run e.g. `nixos-rebuild switch` 
+By adding the desired package to `environment.systemPackages = [ ... ];`. Executing `nix-env -qaP '*' --description` lists all available packages. To uninstall a package simple remove it from the file. After modifying your packages run e.g. `nixos-rebuild switch`
 
 Some packages allow further configuration e.g. firefox `nixpkgs.config.firefox.enableGoogleTalkPlugin = true;`
 !! Unfortunately, Nixpkgs currently lacks a way to query available configuration options.
@@ -185,7 +185,7 @@ system.autoUpgrade.enable = true;
 ```
 
 ## Add new user
-Like in [Package Management](#package_management) declarative and ad hoc style is possible. 
+Like in [Package Management](#package_management) declarative and ad hoc style is possible.
 ```
   users.extraUsers.USERNAME = {
     createHome = true;
@@ -236,7 +236,7 @@ In configuration.nix
     source $ZSH/oh-my-zsh.sh
   '';
   programs.zsh.promptInit = "";
-  
+
   users.extraUsers.USER = {
     shell = pkgs.zsh;
   };

@@ -3,7 +3,6 @@ title: 'Gitlab CI-CD'
 taxonomy:
     category:
         - DevOps
-        - CI/CD
 ---
 
 [TOC]
@@ -50,12 +49,12 @@ Recommended: wildcard domain and corresponding SSL certificate
 
 1. Assign a runner to a group of projects in Gitlab [runner](https://docs.gitlab.com/ee/ci/runners/)
 1. Start runner `docker run -d --name gitlab-runner-public --restart always   -v /srv/gitlab-runner/config:/etc/gitlab-runner   -v /var/run/docker.sock:/var/run/docker.sock   gitlab/gitlab-runner:latest`
-1. [Register runner](https://docs.gitlab.com/runner/register/index.html) 
+1. [Register runner](https://docs.gitlab.com/runner/register/index.html)
 	The docker image used can be overwritten in the .gitlab-ci.yml of your pipeline
 	1. interactive: `docker exec -it gitlab-runner-public bash`
 		- gitlab-runner register
 		- docker as default executioner
-		- alpine as default image 
+		- alpine as default image
 	1. or non interactive
 		```bash
         docker run --rm -t -i -v /path/to/config:/etc/gitlab-runner --name gitlab-runner gitlab/gitlab-runner register \
@@ -69,7 +68,7 @@ Recommended: wildcard domain and corresponding SSL certificate
                           	--run-untagged \
                           	--locked="false"
   ```
-  
+
 1. Setup [Pages](https://gitlab.com/pages) (wildcard domain with TLS support)
 	gitlab.rb
     ```ruby
