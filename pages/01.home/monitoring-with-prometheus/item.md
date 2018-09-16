@@ -4,7 +4,6 @@ media_order: 'grafana.png,grafana2.png'
 taxonomy:
     category:
         - DevOps
-        - Java
         - Programming
 ---
 
