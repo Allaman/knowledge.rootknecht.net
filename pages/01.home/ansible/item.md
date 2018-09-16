@@ -1,5 +1,11 @@
 ---
 title: Ansible
+metadata:
+    refresh: 30
+    generator: 'Grav'
+    description: 'Some useful Ansible tips and trikcs'
+    keywords: 'Ansible, Linux, Server, Configuration, SSH, Automation'
+    author: 'Allaman'
 taxonomy:
     category:
         - DevOps
