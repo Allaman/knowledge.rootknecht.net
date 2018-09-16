@@ -47,7 +47,7 @@ Some applications require to receive custom headers in order to work, e.g. Synct
 
 ## Enable browser cache
 
-with **mod_expires**
+mod_expires
 
 ```bash
 a2enmod expires
@@ -78,7 +78,7 @@ systemctl restart apache2
  </IfModule>
 ```
 
-or with **mod_headers**
+mod_headers
 
 ```bash
 a2enmod headers
