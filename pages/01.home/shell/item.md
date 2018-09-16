@@ -2,7 +2,7 @@
 title: Shell
 taxonomy:
     category:
-        - Shell
+        - Linux
 ---
 
 [TOC]

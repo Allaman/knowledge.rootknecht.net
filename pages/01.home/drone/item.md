@@ -2,9 +2,8 @@
 title: Drone
 taxonomy:
     category:
-        - Applications
+        - Application
         - DevOps
-        - CI/CD
 ---
 
 ## Use Drone to scp files to a target

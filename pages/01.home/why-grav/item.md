@@ -2,7 +2,7 @@
 title: 'Why Grav?'
 taxonomy:
     category:
-        - Others
+        - Personal
 visible: false
 ---
 
@@ -12,7 +12,7 @@ The main players in the area of heavy duty CMSs are [Wordpress](https://wordpres
 
 ## Static site generators
 I like static site generators quite well. They are simple, hackable and secure. Hackable by me of course and secure because there ist no database and no *insert-dynamic-web-language-server* involved, just plain HTML and some CSS and JavaScript. Unfortunately, they are limited in some way. There is no web gui, everything needs to be done in files through an editor. This is somehow limiting as I want to edit my page also when I am not at my privat workstation.
-Some major static site generators are 
+Some major static site generators are
 - [Hugo](https://gohugo.io/) &#8594; written in Go (very fast), powerful shortcodes
 - [Jekyll](https://jekyllrb.com/) &#8594; written in Ruby, powers Github pages
 - [Nikola](https://getnikola.com/) &#8594; written in Python, works well with orgmode

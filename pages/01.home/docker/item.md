@@ -3,7 +3,6 @@ title: Docker
 taxonomy:
     category:
         - DevOps
-        - Docker
 ---
 
 [TOC]
@@ -15,7 +14,7 @@ entrypoint: ping localhost
 ```
 
 ## Show file usage of Docker on a btrfs partition
-The btrfs storage driver of Docker is kind of different. A normal `df -hkl /var/lib/docker` will not show correct numers. Instead use the tools of btrfs: 
+The btrfs storage driver of Docker is kind of different. A normal `df -hkl /var/lib/docker` will not show correct numers. Instead use the tools of btrfs:
 ```bash
 btrfs fi df /varLib/docker
 ```

@@ -2,7 +2,8 @@
 title: 'Bash Programming'
 taxonomy:
     category:
-        - Shell
+        - Programming
+        - Linux
 ---
 
 [TOC]
@@ -54,7 +55,7 @@ done
 COUNTER=0
 while [  $COUNTER -lt 10 ]; do
    	echo The counter is $COUNTER
-       	let COUNTER=COUNTER+1 
+       	let COUNTER=COUNTER+1
 done
 ```
 
@@ -113,10 +114,10 @@ fi
 ```bash
 case $1 in
     pattern1 )
-        statements 
+        statements
         ;;
     pattern2 )
-        statements 
+        statements
         ;;
     ...
 esac
@@ -205,5 +206,5 @@ apt-get install postgresql-client
 while ! pg_isready -h ${HOST} -p ${PORT} &> /dev/null; do
 	echo "Connection to ${HOST} ${PORT} failed "
 	sleep 1
-done 
+done
 ```
