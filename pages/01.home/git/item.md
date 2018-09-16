@@ -2,7 +2,7 @@
 title: Git
 taxonomy:
     category:
-        - Others
+        - Application
 ---
 
 [TOC]
@@ -45,15 +45,15 @@ or start from the initial commit with
 git rebase -i --root $tip
 ```
 
-After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g. 
+After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g.
 ```bash
 git commit --amend --author="Michael <allaman@rootknecht.net>"
 ```
-to modify the author. Then run 
+to modify the author. Then run
 ```bash
 git rebase --continue
 ```
-to go to the next marked commit. After rebasing run 
+to go to the next marked commit. After rebasing run
 ```bash
 git push --force-with-lease
 ```
@@ -77,7 +77,7 @@ or temporarly as command line argument
 ```bash
 git config --global http.sslVerify=false
 ```
-or in .git/config 
+or in .git/config
 ```ini
 [http]
 sslVerify = false

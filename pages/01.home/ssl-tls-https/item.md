@@ -2,8 +2,7 @@
 title: SSL/TLS/HTTPS
 taxonomy:
     category:
-        - Shell
-        - security
+        - Application
 ---
 
 [TOC]
@@ -116,9 +115,9 @@ openssl pkcs12 -export -clcerts -in client.crt -inkey client.key -out client.p12
 Relevant snippet for nginx.conf
 ```ini
 listen *:443;               # Listen for incoming connections from any interface on port 443 (TLS)
-ssl on;                                                                               
-ssl_certificate        /etc/nginx/certs/server.crt;                                   
-ssl_certificate_key    /etc/nginx/certs/server.key;                                   
+ssl on;
+ssl_certificate        /etc/nginx/certs/server.crt;
+ssl_certificate_key    /etc/nginx/certs/server.key;
 ssl_client_certificate /etc/nginx/certs/ca.crt; # used to sign the client certificates
 ssl_verify_client      on; # force SSL verification
 ```

@@ -1,5 +1,8 @@
 ---
 title: 'Network Troubleshooting'
+taxonomy:
+    category:
+        - Linux
 ---
 
 [TOC]
@@ -46,7 +49,7 @@ On your server start
 ```bash
 iperf -s -p SERVERPORT
 ```
-On your client 
+On your client
 ```bash
 iperf -c SERVERIP -p SERVERPORT -t 15 -i 1 -f m
 ```

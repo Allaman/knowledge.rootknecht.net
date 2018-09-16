@@ -2,7 +2,7 @@
 title: Jenkins
 taxonomy:
     category:
-        - Applications
+        - Application
 ---
 
 ## Reverse proxy config
@@ -74,7 +74,7 @@ println "=======================================================================
 println "Your password for jenkins user \"admin\" is $pass_string"
 println "Please safe this randomly generated password or better set a new password"
 println "========================================================================="
- 
+
 // Use only secure JNLP4 Protocol
 Set<String> agentProtocolsList = ['JNLP4-connect', 'Ping']
 if(!instance.getAgentProtocols().equals(agentProtocolsList)) {

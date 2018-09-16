@@ -2,7 +2,7 @@
 title: Other
 taxonomy:
     category:
-        - Others
+        - Personal
 ---
 
 [TOC]
@@ -41,7 +41,7 @@ SHARED_FOLDER_NAME /PATH/TO/MOUNT_POINT vboxsf rw,dmask=770,fmask=600,uid=1000,g
 - uid is the id of your user in the guest
 - gid is the id of the vboxsf-group in the guest
 - dmask sets the default permissions for directories
-- fmask sets the default permissions for files 
+- fmask sets the default permissions for files
 
 ! Ensure that your linux user is in vboxsf group ( `sudo usermod -aG vboxsf USER`)
 
