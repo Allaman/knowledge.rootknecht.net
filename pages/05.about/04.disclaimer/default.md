@@ -1,5 +1,6 @@
 ---
 title: Disclaimer
+menu: disclaimer
 visible: false
 ---
 
