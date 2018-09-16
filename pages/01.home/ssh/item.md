@@ -2,7 +2,8 @@
 title: SSH
 taxonomy:
     category:
-        - Shell
+        - Linux
+        - Application
 ---
 
 ## Basic usage with custom port and custom key

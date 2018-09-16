@@ -2,14 +2,14 @@
 title: 'Powershell Tricks'
 taxonomy:
     category:
-        - Windows
+        - Application
 ---
 
 ## Aliase
 
 To create persistant aliase create the file `C:\Users\<user>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` (folder might not exist).
 
-You might have to allow the execution of powershell scripts on your system: `Set-ExecutionPolicy -Scope CurrentUser BYPASS` 
+You might have to allow the execution of powershell scripts on your system: `Set-ExecutionPolicy -Scope CurrentUser BYPASS`
 ! keep security policies in mind
 
 ```powershell

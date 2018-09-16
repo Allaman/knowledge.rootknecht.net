@@ -2,8 +2,7 @@
 title: Go
 taxonomy:
     category:
-        - golang
-        - programming
+        - Programming
 ---
 
 [TOC]

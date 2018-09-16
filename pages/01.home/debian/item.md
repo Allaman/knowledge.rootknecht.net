@@ -2,7 +2,7 @@
 title: Debian
 taxonomy:
     category:
-        - Others
+        - Linux
 ---
 
 [TOC]
@@ -10,7 +10,7 @@ taxonomy:
 ## Apt-get upgrade
 Do not add or remove dependencies
 ```bash
-apt-get upgrade 
+apt-get upgrade
 ```
 Only add new dependencies
 ```bash

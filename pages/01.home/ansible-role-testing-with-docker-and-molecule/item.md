@@ -2,9 +2,8 @@
 title: 'Ansible role testing with Docker and Molecule'
 taxonomy:
     category:
-        - Ansible
         - DevOps
-        - Docker
+        - Linux
 ---
 
 ## Requirements

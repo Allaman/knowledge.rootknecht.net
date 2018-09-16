@@ -1,5 +1,8 @@
 ---
 title: Java
+taxonomy:
+    category:
+        - Programming
 ---
 
 ## Java key store vs trust store

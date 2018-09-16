@@ -3,7 +3,7 @@ title: Ansible
 taxonomy:
     category:
         - DevOps
-        - Ansible
+        - Linux
 ---
 
 ## Run playbook without inventory file
@@ -12,9 +12,9 @@ taxonomy:
 ansible-playbook -i xxx.xxx.xxx.xxx, playbook.yml # be aware of the comma
 ```
 
-## Get a list of facts 
+## Get a list of facts
 
 ```bash
-ansible -m setup localhost | sed '1c {' | jq '.ansible_facts | keys' 
+ansible -m setup localhost | sed '1c {' | jq '.ansible_facts | keys'
 # alternatively | python -mjson.tool
 ```
