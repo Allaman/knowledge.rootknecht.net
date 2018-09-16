@@ -1,5 +1,6 @@
 ---
 title: Contact
+visible: false
 form:
     name: contact
     fields:
