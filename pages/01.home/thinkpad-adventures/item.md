@@ -3,9 +3,7 @@ title: 'Thinkpad Adventures'
 media_order: 'dissambled-x60.jpg,dissambled.jpg,final.jpg,fingerprint-plate.jpg,fixed_palmrest.jpg,glued.jpg,original.jpg,palmrests.jpg,sidetoside.jpg,tablet.jpg,workingx60.jpg,x60.jpg,cutted.jpg,disassembledx100.jpg,motherboard.jpg,oven.jpg'
 taxonomy:
     category:
-        - thinkpad
-        - diy
-        - hardware
+        - Personal
 ---
 
 [TOC]
@@ -44,13 +42,13 @@ Stupid enough, my x100e did not survive compiling the gentoo kernel. After a cra
 - Disassembled x100e
 
 	![](disassembledx100.jpg?link&cropResize=300,300)
-    
+
 - The motherboard
-	
+
     ![](motherboard.jpg?link&cropResize=300,300)
-    
+
 - Wrapped into alloy and put into the oven for 10 minutes at 180 degrees celsius circulating air
-	
+
     ![](oven.jpg?link&cropResize=300,300)
 
 _After reassembling the unit was working fine!_

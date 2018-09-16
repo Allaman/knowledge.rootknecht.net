@@ -2,7 +2,7 @@
 title: Minishift
 taxonomy:
     category:
-        - Others
+        - DevOps
 ---
 
 [TOC]
@@ -23,7 +23,7 @@ taxonomy:
     Enable-WindowsOptionalFeature -Online -FeatureName:Microsoft-Hyper-V -All
     ```
     Reboot
-    
+
     [More options](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
 1. Add user to HyperV group
@@ -32,26 +32,26 @@ taxonomy:
 	```powershell
     ([adsi]”WinNT://./Hyper-V Administrators,group”).Add(“WinNT://$env:UserDomain/$env:Username,user”)
     ```
-    
+
 1. Create virtual Switch
 	See [docs.microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network)
- 
+
 1. Set environment variable to the name of the created virtual switch
-	
+
     ```powershell
     set HYPERV_VIRTUAL_SWITCH=
     ```
 
 1. Run minishift
-	
+
     ```powershell
     minishift.exe start
     ```
- 
+
 ### With Virtualbox
 
 1. Disable HyperV if appropriate
-	
+
     ```powershell
     Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
     ```

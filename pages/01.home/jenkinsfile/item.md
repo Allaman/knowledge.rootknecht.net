@@ -2,16 +2,14 @@
 title: Jenkinsfile
 taxonomy:
     category:
-        - Applications
+        - Application
         - DevOps
-        - Pipeline
-        - CI/CD
 ---
 
 ## Global vars
 List of available global vars: https://JENKINS_URL/pipeline-syntax/globals
 
-Define your own global vars in "Configure System" -> **Global Pipeline Libraries**. 
+Define your own global vars in "Configure System" -> **Global Pipeline Libraries**.
 
 ### Repository structure
 * ressources directory can have non-groovy resources, e.g. json, that get loaded via the libraryResource step.
@@ -36,7 +34,7 @@ def call(args) {
 ```
 
 ### Usage
-In your Jenkinsfile 
+In your Jenkinsfile
 ```groovy
 library ('LIBRARY_NAME') // At the beginning
 ...
@@ -52,7 +50,7 @@ stages {
 
 [Reference](https://jenkins.io/doc/book/pipeline/shared-libraries/)
 
-## Jenkinsfile 
+## Jenkinsfile
 
 ### Enable git tag / push with ssh on jenkins slaves
 

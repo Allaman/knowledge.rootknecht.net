@@ -4,9 +4,8 @@ media_order: 'grafana.png,grafana2.png'
 taxonomy:
     category:
         - DevOps
-        - java
-        - spring-boot
-        - Docker
+        - Java
+        - Programming
 ---
 
 Minimalistic Java Spring Boot application coming with a preconfigured Prometheus and Grafana allowing to get insights of your application as well as OS and container metrics.

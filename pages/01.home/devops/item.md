@@ -4,7 +4,8 @@ media_order: cc.png
 published: false
 taxonomy:
     category:
-        - Others
+        - DevOps
+        - Personal
 ---
 
 [TOC]

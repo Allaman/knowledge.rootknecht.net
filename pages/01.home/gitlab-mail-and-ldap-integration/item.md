@@ -2,7 +2,7 @@
 title: 'Gitlab Mail and LDAP Integration'
 taxonomy:
     category:
-        - Applications
+        - Application
 ---
 
 `gitlab.rb`

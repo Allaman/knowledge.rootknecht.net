@@ -3,12 +3,14 @@ title: Kubernetes
 taxonomy:
     category:
         - DevOps
+        - Linux
 ---
 
 [TOC]
+
 ## Installation on a "bare metal" single Node
 
-There are quite a lot of options [how to install a kubernetes cluster](https://kubernetes.io/docs/setup/pick-right-solution/). 
+There are quite a lot of options [how to install a kubernetes cluster](https://kubernetes.io/docs/setup/pick-right-solution/).
 
 ### Rancher
 
@@ -95,7 +97,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/s
 
 Start proxy
 ```bash
-kubectl proxy [-p 8080] 
+kubectl proxy [-p 8080]
 ```
 
 Access dashboard http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/ (adjust port if necessary)

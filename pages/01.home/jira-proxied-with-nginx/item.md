@@ -2,7 +2,7 @@
 title: 'Jira proxied with Nginx'
 taxonomy:
     category:
-        - Applications
+        - Application
 ---
 
 ## Jira

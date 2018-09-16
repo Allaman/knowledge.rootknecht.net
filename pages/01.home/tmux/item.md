@@ -2,7 +2,8 @@
 title: tmux
 taxonomy:
     category:
-        - Shell
+        - Linux
+        - Application
 ---
 
 ## Why tmux
@@ -56,10 +57,10 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 
 With `:`you can start a command prompt similar to Vim's ex mode. Tab-autocompletion is available
 
-## Advanced 
+## Advanced
 
 ### Respawn tmux pane
-In tmux command mode 
+In tmux command mode
 ```
 :respawn-pane -k
 ```

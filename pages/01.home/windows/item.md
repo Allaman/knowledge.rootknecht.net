@@ -2,7 +2,7 @@
 title: Windows
 taxonomy:
     category:
-        - Windows
+        - Personal
 ---
 
 [TOC]
