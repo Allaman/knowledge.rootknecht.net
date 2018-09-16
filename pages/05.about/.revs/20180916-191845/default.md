@@ -1,0 +1,13 @@
+---
+title: About
+---
+
+Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift ;-) Beliefs in the only true file format - plain text. You live and learn. 
+
+!!! [Repository](https://repo.rootknecht.net/explore)
+
+!!!! [Github](https://github.com/Allaman)
+
+! [Twitter](https://twitter.com/Allamann)
+
+!! [Keybase](https://keybase.io/allaman)
