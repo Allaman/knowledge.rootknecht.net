@@ -2,7 +2,7 @@
 title: Go
 taxonomy:
     category:
-        - programming
+        - Programming
 ---
 
 [TOC]
