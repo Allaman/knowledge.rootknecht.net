@@ -1,6 +1,6 @@
 ---
 title: Disclaimer
-visible: false
+routable: false
 ---
 
 Liability and copyright according to German law.
