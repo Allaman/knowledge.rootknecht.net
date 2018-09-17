@@ -53,11 +53,3 @@ In Linux use `setxkbmap`:
 setxkbmap -option caps:escape # More options available
 setxkbmap -option # to reset changes
 ```
-
-## Enter copyright symbol
-
-1. In insert mode
-2. `C-k` a question mark will appear
-3. Enter `Co`
-
-[Here](https://devhints.io/vim-digraphs) is a cheatsheet about digraphs (how this is called)
