@@ -113,4 +113,3 @@ In your `userChrome.css` file in a folder `chrome` in your Firefox` profile fold
 #titlebar:active #titlebar-content{margin-bottom:var(--tab-min-height) !important;}
 #tabbrowser-tabs .scrollbutton-up,.tabbrowser-tabs .scrollbutton-down,#alltabs-button,.tabbrowser-tab:not([fadein]){display: none;}
 ```
-<small>[Source](https://gist.githubusercontent.com/forexhill/b0446cc31e5001c9e87754df83f0f1ca/raw/f4f1a807d43434a1f10908364dec56ecdf08422c/gistfile1.txt)</small>

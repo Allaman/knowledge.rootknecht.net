@@ -71,6 +71,17 @@ nc -zv HOST PORT[-][PORT]
 nmap -source-port PORT HOST
 ```
 
+programmatically
+```bash
+#!/bin/bash
+ip=$1
+ports=( 5443 3443 6443 8443 7443 22 23 7079 8079 80 8080 )
+for port in "${ports[@]}"
+do
+  nc -z -v -w5 $ip $port
+done
+```
+
 ## Check traffic on interface
 ```bash
 iftop -i INTERFACE
