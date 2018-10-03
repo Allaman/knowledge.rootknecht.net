@@ -213,3 +213,19 @@ type ALIAS
 ```bash
 convert -density 384 NAME.svg -define icon:auto-resize NAME.ico
 ```
+
+## Show dd status
+
+1. with builtin methods
+    ```bash
+    watch -n 3 'kill -USR1 $(pgrep "^dd$")'
+	```
+1. with package pv
+	```bash
+    dd if=/dev/urandom | pv | dd of=/dev/null
+	```
+    use pv -s 4G for ETA, here approximately 4G
+1. with new status
+	```bash
+	dd if=/dev/urandom of=/dev/null status=progress
+    ```
