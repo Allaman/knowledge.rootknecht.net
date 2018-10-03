@@ -1,0 +1,32 @@
+---
+title: Debian
+taxonomy:
+    category:
+        - Others
+---
+
+[TOC]
+
+## Apt-get upgrade
+Do not add or remove dependencies
+```bash
+apt-get upgrade 
+```
+Only add new dependencies
+```bash
+apt-get upgrade --with-new-pkgs
+```
+Add and remove dependencies
+```bash
+apt-get dist-upgrade
+```
+
+## Fix apt-get Hashsum mismatch in Debian 9
+Usually occuring behind a (enterprise) proxy setup
+
+/etc/apt/apt.conf.d/99fixbadproxy
+```
+Acquire::http::Pipeline-Depth 0;
+Acquire::http::No-Cache true;
+Acquire::BrokenProxy    true;
+```
