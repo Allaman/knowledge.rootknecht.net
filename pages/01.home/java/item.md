@@ -5,8 +5,6 @@ taxonomy:
         - Programming
 ---
 
-[TOC]
-
 ## Java key store vs trust store
 
 1. trustStore is used by `TrustManager` class and keyStore is used by `KeyManager` class
@@ -274,9 +272,9 @@ javac ${tmpdir}/ListenToSignal.java &>/dev/null
 
 # Get signals, test each one of them
 for signal in $(kill -l); do
-  java -cp ${tmpdir} ListenToSignal $signal & # Start program in background
-  sleep 2
-  kill -s $signal $! &>/dev/nul # Send signal
-  wait
+  java -cp ${tmpdir} ListenToSignal $signal &  	 # Start program in background
+  sleep 2                                      								# Make sure it is ready
+  kill -s $signal $! &>/dev/null               					# Send signal
+  wait                                         									# Wait to termination
 done
 ```
