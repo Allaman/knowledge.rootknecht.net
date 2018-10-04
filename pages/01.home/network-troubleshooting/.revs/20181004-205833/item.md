@@ -112,8 +112,7 @@ nmap -A # OS and service detection
 nmap -sV [--version-intensity 5] # Standard service detection (increased agressivity
 nmap -oX outputfile.xml # save as XML
 nmap -oG outputfile.txt # save for grep
-nmap -sV -sC # use default save scripts
-locate nse | grep script # list available scripts
+
 ```
 
 Analyze nmap output with [NetworkScanViewer](http://www.woanware.co.uk/network/networkscanviewer.html)
