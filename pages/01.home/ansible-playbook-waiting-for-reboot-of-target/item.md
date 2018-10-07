@@ -2,15 +2,17 @@
 title: 'Ansible playbook waiting for reboot of target'
 taxonomy:
     category:
-        - DevOps
         - Linux
+        - DevOps
 ---
 
-Sometimes a reboot of a machine during Ansible operation is required, e.g. when altering the network config (I am aware of the possibility of restarting the network service but I have made bad experiences regarding the reliability of this method). Nevertheless, reboot and restart of the network results in a lost ssh connection.
+! UPDATE: Since Ansible 2.7 there is a [reboot module](https://docs.ansible.com/ansible/devel/modules/reboot_module.html)
+
+Sometimes a reboot of a machine during Ansible operation is required. Reboot results in a lost ssh connection.
 
 Here is a way how to properly tell Ansible to handle a machines reboot in the middle of its operation without failing.
 
-The following playbook snippet reconfigures the network, performs a reboot of the server while wating for it to come back with its new IP address. `host_name` and `ip_address` must be provided from external call.
+The following playbook snippet reconfigures the network (especially the IP), performs a reboot of the server while wating for it to come back with its new IP address. `host_name` and `ip_address` must be provided from a external call.
 
 ```yaml
 ---
