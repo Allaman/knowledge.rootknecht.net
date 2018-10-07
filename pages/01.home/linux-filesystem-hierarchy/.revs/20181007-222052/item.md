@@ -44,7 +44,8 @@ taxonomy:
 - etc &rarr; all system related configuration files defined as local files used to control the operation of a program which must be static and cannot be an executable binary.
 - home &rarr; each user is also assigned a specific directory that is accessible only to them and the system administrator which are subdirectories of /home
 - initrd &rarr; capability to load a RAM disk by the boot loader
-- lib and lib64 &rarr; kernel modules and those shared library images needed to boot the system and run the commands in the root filesystem like /bin and /sbin
+- lib
+- lib64 &rarr; kernel modules and those shared library images needed to boot the system and run the commands in the root filesystem like /bin and /sbin
 - media &rarr; containing mount points for removable media
 - mnt &rarr; generic mount point for filesystems or devices
 - opt &rarr; reserved for all the software and add-on packages that are not part of the default installation
