@@ -95,3 +95,54 @@ esac
 
 done
 ```
+
+## CLI Services
+
+1. Weather
+  ```bash
+  curl wttr.in/München
+  ```
+1. Crypto currencies
+  ```bash
+  curl curl eur.rate.sx/eth
+  ```
+1. External IP
+  ```bash
+  curl ipecho.net/plain
+  ```
+1. Cheatsheet
+  ```bash
+  curl cht.sh/ls
+  curl cht.sh/python/dirs+recursive
+  ```
+  Install cli client:
+  ```bash
+  curl https://cht.sh/:cht.sh > /usr/local/bin/cht.sh
+  chmod +x ~/bin/cht.sh
+  ```
+1. Latencies
+  ```bash
+  curl cheat.sh/latencies
+  ```
+1. Generate QR codes
+  ```bash
+  curl qrenco.de/https://google.com
+  curl qrenco.de/Hello%20World
+  ```
+1. URL Shortener
+	```bash
+	curl -s http://tinyurl.com/api-create.php\?url=https://google.com
+	```
+1. Translate
+	[Translate Shell](https://github.com/soimort/translate-shell)
+
+1. Translate
+	[Translate Shell](https://github.com/soimort/translate-shell)
+1. Random commit messages
+  ```bash
+  curl -sk https://whatthecommit.com/index.txt
+  ```
+1. Star Wars in terminal
+  ```bash
+  nc towel.blinkenlights.nl 23
+  ```
