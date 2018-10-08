@@ -4,6 +4,7 @@ taxonomy:
     category:
         - Application
 ---
+[TOC]
 
 ## htop
 
@@ -134,10 +135,9 @@ done
 	curl -s http://tinyurl.com/api-create.php\?url=https://google.com
 	```
 1. Translate
+
 	[Translate Shell](https://github.com/soimort/translate-shell)
 
-1. Translate
-	[Translate Shell](https://github.com/soimort/translate-shell)
 1. Random commit messages
   ```bash
   curl -sk https://whatthecommit.com/index.txt
