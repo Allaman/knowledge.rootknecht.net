@@ -31,6 +31,7 @@ dig DOMAIN.tld ANY +noall +answer # query all DNS records
 traceroute www.google.com # uses UDP data on random port
 traceroute -I www.google.com # uses ICMP data
 traceroute -T -p 80 www.google.com # fix TCP port to test path to services to bypass firewalls
+tracepath www.google.com # similar to traceroute but does not require root priviledge as it does not manipulate raw packages
 mtr -rw www.google.com #send 10 packets and generate report
 ```
 
