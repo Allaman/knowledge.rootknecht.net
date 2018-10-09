@@ -45,6 +45,7 @@ Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 [fasd](https://github.com/clvv/fasd)
 
+- fast navigation in your shell
 - quickaccess to files, directories
 - inspired by autojump, z, and v
 
@@ -54,6 +55,14 @@ Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 - manage multiple git repos
 - run git commands on multiple repos
+
+## ls alternative
+
+[exa](https://the.exa.website/)
+
+- fast (in rust implemented)
+- coloerd multi column outpu
+- respects git status
 
 ## Mount Windows Virtualbox vmdk
 
