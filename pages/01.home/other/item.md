@@ -17,6 +17,25 @@ gem install <name> -p http://my.proxy.com:1234
 - Right click on Titlebar
 - More Actions -> Special Application Settings -> Size & Position -> set `Obey geometry restriction` to `Force` `No`
 
+## Hide titlebar in maximized KDE windows
+
+Add
+```ini
+[Windows]
+BorderlessMaximizedWindows=true
+```
+to the kwin config file
+
+KDE4:
+```bash
+~/[.kde|.kde4|.kdemod4]/share/config/kwinrc
+```
+
+KDE5(Plasma):
+```bash
+~/.config/kwinrc
+```
+
 ## Fix XeLatex sty or font not found errors
 After installation of additional packages/fonts run
 ```bash
