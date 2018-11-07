@@ -52,6 +52,13 @@ grant all privileges on database.* to 'user'@'localhost' identified by "password
 flush privileges;
 ```
 
+## Export all mysql tables to csv files
+
+```bash
+mysqldump ovs -u root -p -T /path/to/folder --fields-terminated-by=,
+```
+The target folder must be writeable from the mysql process user
+
 ## Mount a virtualbox shared folder in a linux guest
 in `/etc/fstab`
 ```bash
