@@ -2,8 +2,8 @@
 title: 'Bash Programming'
 taxonomy:
     category:
-        - Programming
         - Linux
+        - Programming
 ---
 
 [TOC]
@@ -109,6 +109,14 @@ fi
 [ NUM1 -lt NUM2 ]
 ```
 
+## Special variables
+
+```bash
+$# # number of arguments
+$@ # array of all arguments
+$! # last exit code
+```
+
 ## Case (switch) statement
 
 ```bash
@@ -128,6 +136,12 @@ esac
 ```bash
 [ EXPR1 -a EXPR2 ] # True if both are true
 [ EXPR1 -o EXPR2 ] # True if 1 or 2 is true
+```
+
+## Add up a list of numbers
+
+```bash
+<list of numbers> | paste -sd+ - | bc 
 ```
 
 ## PID
