@@ -153,7 +153,7 @@ esac
 ## Programm
 
 ```bash
-command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo"; exit 1; }
+command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo" }
 ```
 
 ## Search / Replace with sed
