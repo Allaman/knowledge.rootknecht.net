@@ -204,7 +204,6 @@ Works for bash, ksh. zsh
 
 ## Prevent a script from exiting your shell
 If you source a script file any `exit` in a function will exit the shell as it runs in the current shell instead of spawning a subshell. Prevent this behaviour by using `return`!
-When a 3rd party script you cannot modify is called which exits your shell than wrap the call with `()` which spawns a subshell for this call
 
 ## Printf
 More stable and powerful than echo. Comparable to C's function.
