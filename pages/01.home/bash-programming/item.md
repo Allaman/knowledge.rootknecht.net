@@ -181,6 +181,16 @@ for i in ${arr[*]}; do
 done
 ```
 
+## Check if a file is being sourced
+
+Works for bash, ksh. zsh
+```bash
+([[ -n $ZSH_EVAL_CONTEXT && $ZSH_EVAL_CONTEXT =~ :file$ ]] ||
+ [[ -n $KSH_VERSION && $(cd "$(dirname -- "$0")" &&
+    printf '%s' "${PWD%/}/")$(basename -- "$0") != "${.sh.file}" ]] ||
+ [[ -n $BASH_VERSION && $0 != "$BASH_SOURCE" ]]) || { echo "This script should be sourced for convenience as it sets env variables in your parent shell!"; exit 1; }
+```
+
 ## Yes no choice selection
 ```bash
   echo "Continue?"
