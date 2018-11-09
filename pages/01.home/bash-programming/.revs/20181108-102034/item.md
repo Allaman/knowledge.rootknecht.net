@@ -144,45 +144,16 @@ esac
 <list of numbers> | paste -sd+ - | bc 
 ```
 
-## Checks
-
-### Programm
-
-```bash
-command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo"; exit 1; }
-```
-
-### PID
+## PID
 
 ```bash
 [ -d $(ps -A | grep 'PATTERN') ] && echo "exists" || echo "not exists"
 ```
 
-### User
+## Programm
 
 ```bash
-getent passwd USER
-id -u name
-```
-
-### File is being sourced
-
-Works for bash, ksh. zsh
-```bash
-([[ -n $ZSH_EVAL_CONTEXT && $ZSH_EVAL_CONTEXT =~ :file$ ]] ||
- [[ -n $KSH_VERSION && $(cd "$(dirname -- "$0")" &&
-    printf '%s' "${PWD%/}/")$(basename -- "$0") != "${.sh.file}" ]] ||
- [[ -n $BASH_VERSION && $0 != "$BASH_SOURCE" ]]) || { echo "This script should be sourced for convenience as it sets env variables in your parent shell!"; exit 1; }
-```
-
-### PostgreSQL connection
-```bash
-apt-get install postgresql-client
-
-while ! pg_isready -h ${HOST} -p ${PORT} &> /dev/null; do
-	echo "Connection to ${HOST} ${PORT} failed "
-	sleep 1
-done
+command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo"; exit 1; }
 ```
 
 ## Search / Replace with sed
@@ -208,6 +179,16 @@ arr=(hello word array)
 for i in ${arr[*]}; do
         echo "her is $i"
 done
+```
+
+## Check if a file is being sourced
+
+Works for bash, ksh. zsh
+```bash
+([[ -n $ZSH_EVAL_CONTEXT && $ZSH_EVAL_CONTEXT =~ :file$ ]] ||
+ [[ -n $KSH_VERSION && $(cd "$(dirname -- "$0")" &&
+    printf '%s' "${PWD%/}/")$(basename -- "$0") != "${.sh.file}" ]] ||
+ [[ -n $BASH_VERSION && $0 != "$BASH_SOURCE" ]]) || { echo "This script should be sourced for convenience as it sets env variables in your parent shell!"; exit 1; }
 ```
 
 ## Yes no choice selection
@@ -241,4 +222,14 @@ cat /dev/null > FILE
 ```bash
 find PATH -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | exec -0 ls -l
 find PATH -maxdepth 1 -mindepth 1 -type f -not -name README.md | exec -0 ls -l
+```
+
+## Check PostgreSQL connection
+```bash
+apt-get install postgresql-client
+
+while ! pg_isready -h ${HOST} -p ${PORT} &> /dev/null; do
+	echo "Connection to ${HOST} ${PORT} failed "
+	sleep 1
+done
 ```
