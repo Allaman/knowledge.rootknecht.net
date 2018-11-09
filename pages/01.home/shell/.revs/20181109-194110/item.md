@@ -167,24 +167,6 @@ echo $(curl -ss http://ipecho.net/plain)
 * Interactive shells source `~/.zshrc`
 * Login shells source `~/.zprofile` and `~/.zlogin`
 
-## Types of shells
-
-1. Interactive
-
-	Interactive means that the commands are run with user-interaction from keyboard, so the shell can prompt the user to enter input.
-
-1. Non-interactive
-
-	The shell is probably run from an automated process so it can't assume if can request input or that someone will see the output.
-
-1. Login
-
-	Means that the shell is run as part of the login of the user to the system. Typically used to do any configuration that a user needs/wants to establish his work-environment.
-
-1. Non-login
-
-	Any other shell run by the user after logging on, or which is run by any automated process which is not coupled to a logged in user.
-
 ## Convert all files in the directory to unix line endings
 
 ```bash
