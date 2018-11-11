@@ -121,6 +121,12 @@ I am a highlighted note
 
 In [my repo](https://repo.rootknecht.net/allaman/404) I collect some funky http error pages I stumbled over
 
+## Print info pages to pdf
+
+```bash
+info --subnodes -o - groff | enscript -o - | ps2pdf - groff.pdf
+```
+
 ## Multi row tabs in Firefox Quantum 58+
 
 In your `userChrome.css` file in a folder `chrome` in your Firefox` profile folder (create if not existing) add the following lines:
