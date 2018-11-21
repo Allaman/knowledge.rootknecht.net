@@ -14,6 +14,12 @@ taxonomy:
 #!/bin/bash
 ```
 
+## Strict
+
+```bash
+set -euo pipefail
+```
+
 ## Debugging
 
 ```bash
@@ -68,6 +74,12 @@ done
 ```
 
 ## IF Condition
+
+### One-liner
+
+```bash
+  [[ -f $tmpfile ]] || rm $tmpfile
+```
 
 ### Env
 
@@ -138,6 +150,12 @@ esac
 [ EXPR1 -o EXPR2 ] # True if 1 or 2 is true
 ```
 
+## Create array from whitespace separated string
+
+```bash
+arr=( $string )
+```
+
 ## Add up a list of numbers
 
 ```bash
@@ -150,6 +168,11 @@ esac
 
 ```bash
 command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo"; exit 1; }
+```
+```bash
+for program in awk sed grep sort uniq rm mktemp; do
+  which "$program" > /dev/null || { error "Not found: $program"; exit 1; }
+done
 ```
 
 ### PID
@@ -200,6 +223,16 @@ delete lines containing a pattern from multiple files
 ```bash
 find . -type f -name '*.md' | xargs sed -i -e '/PATTERN/d'
 ```
+## AWK
+
+### Search and delete pattern
+```bash
+awk '{gsub(/search_pattern/,x); }'
+```
+### Custom separator
+```bash
+awk -F= # = separator for e.g. colums
+```
 
 ## Arrays
 
@@ -211,6 +244,7 @@ done
 ```
 
 ## Yes no choice selection
+with known options
 ```bash
   echo "Continue?"
   select choice in "Yes" "No"; do
@@ -218,6 +252,13 @@ done
       Yes ) echo "Going on; break;;
       No ) exit;;
     esac
+  done
+```
+with unknown options
+```bash
+  select choice in "${array[@]}"; do
+    [[ -n $choice ]] || { echo "Invalid choice. Please try again." >&2; continue; }
+    break
   done
 ```
 
