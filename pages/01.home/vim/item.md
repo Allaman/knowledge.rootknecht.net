@@ -22,6 +22,13 @@ vim -b
 vim -p [file1] [file2] ...
 ```
 
+## Show mappings
+
+```
+:map [<C-j>]
+:verbose map [<C-j>]
+```
+
 ## Print infos (within) vim
 Prints various information about vim like version, enabled features, compile flags and loaded configuration files.
 ```
