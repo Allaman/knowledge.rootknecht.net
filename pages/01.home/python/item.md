@@ -145,3 +145,40 @@ For example for Jupyter notebooks credentials
 In [1]: from IPython.lib import passwd
 In [2]: passwd()
 ```
+
+## CLI arguments and parameters
+
+```python
+@click.group()
+def main():
+    """Main click group"""
+    pass
+
+
+@main.command()
+@click.option('--count', default=10, help='number of entries')
+@click.option('--path', default='pckt.db', help='path to sqlite3 file')
+def update(count, path):
+    """Updates/recreates the database containing all information"""
+    clear_db(path)
+    update_db(path, get_data(fetch_items(P, count)))
+
+
+@main.command()
+@click.option('--path', default='pckt.db', help='path to sqlite3 file')
+def tags(path):
+    """Prints tags and their figures as json"""
+    print(json.dumps(get_tags_stats(select_row(path, 2))))
+
+
+@main.command()
+@click.option('--path', default='pckt.db', help='path to sqlite3 file')
+@click.option('--row', default='complete', help='Which column to search')
+@click.argument('keywords', nargs=-1)
+def search(path, row, keywords):
+    """Fulltext search all rows or specified row"""
+    print(filter_entries(path, row, keywords))
+
+if __name__ == '__main__':
+    main()
+```
