@@ -149,7 +149,6 @@ In [2]: passwd()
 ## CLI arguments and parameters
 
 ```python
-import click
 @click.group()
 def main():
     """Main click group"""
