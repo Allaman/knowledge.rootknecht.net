@@ -250,6 +250,14 @@ type ALIAS
 convert -density 384 NAME.svg -define icon:auto-resize NAME.ico
 ```
 
+## Kill process by name in one line
+
+I want to match not just only the program but its arguments (here for entr)
+
+```bash
+ps ax | grep "xelatex main.tex" | grep -v grep | awk '{print "kill -9 " $1}' | sh
+```
+
 ## Show dd status
 
 1. with builtin methods
