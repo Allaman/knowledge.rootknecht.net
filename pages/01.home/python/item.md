@@ -183,3 +183,12 @@ def search(path, row, keywords):
 if __name__ == '__main__':
     main()
 ```
+
+## Count occurence with hash values
+
+'0' if the key is set for the first time. Otherwise adds '1' every assignment
+
+```python
+tags[tag] = tags.get(tag, 0) + 1
+```
+
