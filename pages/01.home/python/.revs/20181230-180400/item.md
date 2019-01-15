@@ -192,26 +192,3 @@ if __name__ == '__main__':
 tags[tag] = tags.get(tag, 0) + 1
 ```
 
-## Check keys of nested dicts
-
-```python
-def keys_exists(element, *keys):
-    """Check if *keys (nested) exists in `element` (dict).
-    Args:
-        element (dict): the dictionary to be checked
-        keys (string): one or more (nested) keys to check for existence
-    Returns:
-        bool: True if key exists
-    """
-    if not isinstance(element, dict):
-        raise AttributeError('keys_exists() expects dict as first argument.')
-    if len(keys) == 0:
-        raise AttributeError('keys_exists() expects at least two arguments, one given.')
-    for key in keys:
-        try:
-            element = element[key]
-        except KeyError:
-            return False
-    return True
-```
-
