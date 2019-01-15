@@ -210,7 +210,7 @@ def keys_exists(element, *keys):
     for key in keys:
         try:
             element = element[key]
-        except (KeyError, TypeError):
+        except KeyError:
             return False
     return True
 ```
