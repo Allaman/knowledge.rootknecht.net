@@ -215,16 +215,3 @@ def keys_exists(element, *keys):
     return True
 ```
 
-## Profiling
-
-**cProfile**
-```sh
-python -m cProfile -o cprofile.profile main.py
-```
-visualize with `snakeviz cprofile.profile`
-
-**PyCallGrap***
-```bash
-pycallgraph graphviz -- ./main.py
-```
-open `pycallgraph.png`
