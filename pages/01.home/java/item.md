@@ -5,6 +5,8 @@ taxonomy:
         - Programming
 ---
 
+[TOC]
+
 ## Java key store vs trust store
 
 1. trustStore is used by `TrustManager` class and keyStore is used by `KeyManager` class
@@ -224,11 +226,6 @@ kill PID     # Hook will be executed
 kill -9 PID # Hook will not be executed
 ```
 
-## Create a jar form command line
-```bash
-jar cfe NAME.jar ENTRYPOINTCLASSNAME *.class
-```
-
 ## Access system clipboard
 ```java
 public static String readClipboard(){
@@ -277,4 +274,17 @@ for signal in $(kill -l); do
   kill -s $signal $! &>/dev/null               					# Send signal
   wait                                         									# Wait to termination
 done
+```
+
+## Compile and run from CLI
+
+```sh
+javac [-cp classpath1.jar:classpath2.jar:.] CLASSNAME.java
+java [-cp classpath1.jar:classpath2.jar:.] CLASSNAME
+```
+
+## Create a jar form command line
+
+```sh
+jar cfe NAME.jar ENTRYPOINTCLASSNAME *.class
 ```
