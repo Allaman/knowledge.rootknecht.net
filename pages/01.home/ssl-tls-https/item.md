@@ -60,6 +60,13 @@ openssl pkcs12 -in keyStore.[pfx|p12] -out keyStore.pem -nodes
 ```
 `-nocerts` to only output the private key or `-nokeys` to only output the certificates.
 
+## Compare key and certificate
+
+When the key matches the certificate only one has output is returned
+```sh
+(openssl rsa -noout -modulus -in example.com.key | openssl md5; openssl x509 -noout -modulus -in example.com.pem | openssl md5) | uniq
+```
+
 ## Get SSL/TLS certificate information
 ```bash
 alias get-ssl-cert='echo Q |openssl s_client -connect' # prints certificate
