@@ -60,12 +60,6 @@ openssl pkcs12 -in keyStore.[pfx|p12] -out keyStore.pem -nodes
 ```
 `-nocerts` to only output the private key or `-nokeys` to only output the certificates.
 
-## Create a pksc12|pfx file
-
-```sh
-openssl pkcs12 -export -out example.com.pfx -inkey example.com.key -in example.com.pem -certfile foo_intermediate.pem -certfile bar_intermediate.pem -certfile super_ca_root.pem
-```
-
 ## Compare key and certificate
 
 When the key matches the certificate only one has output is returned
