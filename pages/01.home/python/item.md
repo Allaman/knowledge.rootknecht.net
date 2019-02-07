@@ -55,6 +55,13 @@ json.load(open(file.json, 'r'))
 json.loads('{"hello": "world}')
 ```
 
+## Functional Programming
+
+**Iterate hash**
+```python
+ list(map(lambda x: x, out))
+```
+
 ## Upgrade all pip packages
 ```bash
 sudo pip freeze --local | grep -v '"'"'^\-e'"'"' | cut -d = -f 1  | xargs -n1 sudo pip install -U
