@@ -52,6 +52,24 @@ vim --startuptime vim.log
 vim -D
 ```
 
+## Quickfix window
+
+```bash
+:ccl[ose]
+:cope[n]
+:cp
+:cn
+```
+
+## Location window
+
+```bash
+:lcl[ose]
+:lop[en]
+:lp
+:ln
+```
+
 ## Use CAPS as ESC
 
 In Linux use `setxkbmap`:
@@ -68,3 +86,8 @@ setxkbmap -option # to reset changes
 3. Enter `Co`
 
 [Here](https://devhints.io/vim-digraphs) is a cheatsheet about digraphs (how this is called)
+
+## Tabs vs buffers
+    A buffer is the in-memory text of a file.
+    A window is a viewport on a buffer.
+    A tab page is a collection of windows.
