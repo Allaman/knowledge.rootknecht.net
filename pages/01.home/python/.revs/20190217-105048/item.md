@@ -194,8 +194,6 @@ if __name__ == '__main__':
 ## CLI table output
 
 ```python
-import texttable
-
 table = texttable.Texttable()
 table.set_cols_width([width, width, 15, 10, 15])
 for row in entries:
