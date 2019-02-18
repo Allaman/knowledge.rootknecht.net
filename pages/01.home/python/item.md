@@ -247,3 +247,7 @@ visualize with `snakeviz cprofile.profile`
 pycallgraph graphviz -- ./main.py
 ```
 open `pycallgraph.png`
+
+## Static code analysis
+
+[Pyan}(https://github.com/davidfraser/pyan)
