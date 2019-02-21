@@ -161,6 +161,13 @@ sudo dmidecode | grep BIOS
 echo $(curl -ss http://ipecho.net/plain)
 ```
 
+## Get IP from interface
+
+```sh
+ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
+ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1
+```
+
 ## Zsh sourcing
 
 * zsh always sources '~/.zshenv'. 
