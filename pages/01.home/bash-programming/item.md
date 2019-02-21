@@ -213,6 +213,7 @@ done
 	sed -i \
 	        -e "s;^\\(application-port\\)=.*;\\1=8080;g" \
 	        -e "s;^\\(application-host\\)=.*;\\1=0.0.0.0;g" \
+            -e "s/#\{0,1\}api_interface.*/api_interfaces:\"eth1\"/" \
 	        /PATH/TO/FILE
 ```
 search and replace in multiple files
