@@ -79,7 +79,7 @@ A closer look at the Cherry MX brown (RGB) switches.
 
 The Tai-Hao keycaps (doubleshoot, see-thorugh).
 
-![](08-caps.jpg?link&cropResize=300,300)
+![](08-switches.jpg?link&cropResize=300,300)
 
 The keyboard connected and the wrist wings.
 
@@ -116,12 +116,12 @@ Then I would have the choice of configuring the layout to be more qwertz compati
 
 ## Status quo
 
-... or how many words per minute can I produce?
+... or how many words per minute can I produce
 
 | Device  |  WPM  | Error rate |
 |  :-----    |  :-----  |  :-----  |
-| Lioncast LK 20 qwertz| | |
-| Thinkpad X230 qwertz| | |
+| Lioncast LK 20| | |
+| Thinkpad X230| | |
 | ErgoDox EZ default Layout| | |
 
 
