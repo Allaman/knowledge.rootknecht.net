@@ -1,7 +1,5 @@
 ---
 title: 'ErgoDox EZ'
-media_order: '01-boxes.jpg,02-wings.jpg,03-board.jpg,04-board.jpg,05-board.jpg,06-board.jpg,07-switches.jpg,08-caps.jpg,09-full.jpg,10-wing.jpg,11-glow.jpg'
-published: false
 taxonomy:
     category:
         - Personal
@@ -15,7 +13,7 @@ Thinkings about my new keyboard: the [ErgoDox EZ](https://ergodox-ez.com/) and m
 
 ## Why ErgoDox
 
-My current workflow is very keyboard focused and optimized. My main tools are Arch Linux with KDE and customized shortcuts, Vim, zsh, and Firefox with [Vim Extension](https://github.com/tridactyl/tridactyl). As I spent a lot more time with my fingers on my keyboard with every new optimazation I began to notice pain in my fingers and wrists.  
+My current workflow is very keyboard focused and optimized. My main tools are Arch Linux with KDE and customized shortcuts, Vim, zsh, and Firefox with [Vim Extension](https://github.com/tridactyl/tridactyl). 
 
 
 
