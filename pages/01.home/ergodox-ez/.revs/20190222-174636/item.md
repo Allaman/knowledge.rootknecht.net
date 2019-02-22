@@ -17,7 +17,7 @@ Thinkings about my new keyboard: the [ErgoDox EZ](https://ergodox-ez.com/) and m
 My current workflow is very keyboard focused and optimized. My main tools are Arch Linux with KDE and customized shortcuts, Vim, zsh, and Firefox with [Vim Extension](https://github.com/tridactyl/tridactyl). As I spent a lot more time with my fingers on my keyboard with every new optimazation I began to notice pain in my fingers and wrists.  So I decided to look around for ergonomic keyboards. As my passion is to increase productivity and efficiency I will take this also into account. Nevertheless, I was aware that such a huge change of my main input device I am used to for decades will have an impact at least in a transition period.
 
 Basically, there are two major options speaking of ergonomic keyboards:
-1. Something like the [Microsoft 4000](https://www.microsoft.com/accessories/de-de/products/keyboards/natural-ergonomic-keyboard-4000/b2m-00001) which arranges the keys in a more ergonomic way
+1. Something like the [Microsoft 4000]https://www.microsoft.com/accessories/de-de/products/keyboards/natural-ergonomic-keyboard-4000/b2m-00001) which arranges the keys in a more ergonomic way
 2. A more radical approach that splits a keyboard in two halves, like the ErgoDox EZ or more traditional like the [Kinesis Freestyle 2](https://kinesis-ergo.com/shop/freestyle2-for-pc-us/)
 
 There is also the question of staggering. Staggering in the context of keyboards is the off-set of columns/rows to each other. [Here](https://deskthority.net/w/images/5/5b/Staggers_-_1.jpg) you can see a great visual explanation.
@@ -46,18 +46,16 @@ Other models which I have considered but lacked some requirements and/or are DIY
 
 ## Ordering
 
-I ordered the ErgoDox EZ Glow model via the official [Shop](https://ergodox-ez.com/pages/customize). I configured my exemplar with backlit keys, black color, and Cherry MX brown switches with non-sculpted Tai-Hao keycaps. 
-
-Addtionally, I ordered the wrist wings for more typing comfort. It took thirteen days to build(!) and deliver from Taiwan via UPS and there was no issue with german customs. 
+I ordered the ErgoDox EZ Glow model via the official [Shop](https://ergodox-ez.com/pages/customize). I configured my exemplar with backlit keys in black and Cherry MX brown switches with non-sculpted Tai-Hao keycaps. Addtionally, I ordered the wrist wings for more typing comfort. It took thirteen days to build(!) and deliver from Taiwan via UPS and there was no issue with german customs. 
 
 
 ##  Onboxing
 
-The keyboard and the wings came in a two minimalstic but elegant black boxes.
+The keyboard and the wings came in a two minimalstic but elegant black boxes
 
 ![](01-boxes.jpg?link&cropResize=300,300)
     
-The wing's box contains the two wrist wings which seem to be very sturdy and heavier then I thought.
+The wing's box contains the two wrist wings which seem to be very sturdy and heavier then I thought
 
 ![](02-wings.jpg?link&cropResize=300,300)
 
@@ -65,7 +63,7 @@ The keyboard's box contains the two pieces of the keyboard a TRRS cable to conne
 
 ![](03-board.jpg?link&cropResize=300,300)
 
-The two halves of the board in their natural beauty. Note the six legs which allow to adjust the angle in all directions.
+The two halves of the board in their natural beauty. Note the six legs which allow to adjust the angle in all directions
 
 ![](04-board.jpg?link&cropResize=300,300)
 
@@ -73,23 +71,23 @@ The two halves of the board in their natural beauty. Note the six legs which all
 
 ![](06-board.jpg?link&cropResize=300,300)
 
-A closer look at the Cherry MX brown (RGB) switches.
+A closer look at the Cherry MX brown (RGB) switches
 
 ![](07-switches.jpg?link&cropResize=300,300)
 
-The Tai-Hao keycaps (doubleshoot, see-thorugh).
+The Tai-Hao keycaps (doubleshoot, see-thorugh)
 
 ![](08-switches.jpg?link&cropResize=300,300)
 
-The keyboard connected and the wrist wings.
+The keyboard connected and the wrist wings
 
 ![](09-full.jpg?link&cropResize=300,300)
 
-A closer look at a wrist wing.
+A closer look at a wrist wing
 
 ![](10-wing.jpg?link&cropResize=300,300)
 
-The backlit in action.
+The backlit in action
 
 ![](11-glow.jpg?link&cropResize=300,300)
 
