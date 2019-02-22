@@ -113,16 +113,3 @@ My Plan is at first to run the [pre configured layout](https://cdn.shopify.com/s
 Then I would have the choice of configuring the layout to be more qwertz compatible, including the german "Umlaute" ä,ö,ü, or rocking a qwerty layout. The advantage of qwertz would be that I am used to it since the beginning of my computer journey. The advantage of qwerty is that for programming many keys are easier to reach.
 
 
-## Status quo
-
-... or how many words per minute can I produce
-
-| Device  |  WPM  | Error rate |
-|  :-----    |  :-----  |  :-----  |
-| Lioncast LK 20| | |
-| Thinkpad X230| | |
-| ErgoDox EZ default Layout| | |
-
-
-
-**to be continued**
