@@ -111,7 +111,7 @@ I will face multiple challenges by getting used to this new keyboard as this com
 
 My Plan is to run the [pre configured layout](https://cdn.shopify.com/s/files/1/1152/3264/files/default_firmware_v1.2.pdf?2947908262754067686) to get in touch with the board at first.
 
-The main choice I have to figure out is configuring the layout to be more qwertz compatible, including the german "Umlaute" ä,ö,ü, or rocking a qwerty layout. But having the choice is better than not having, isn't it? :-)
+The main choice I have to figure out is configuring the layout to be more qwertz compatible, including the german "Umlaute" ä,ö,ü, or rocking a qwerty layout. But having the choice is better than not having, isn't it? :)
 
 The advantage of qwertz would be that I am used to it since the beginning of my computer journey. The advantage of qwerty is that for programming many keys are easier to reach.
 
