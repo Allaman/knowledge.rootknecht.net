@@ -93,36 +93,15 @@ The backlit in action
 ![](11-glow.jpg?link&cropResize=300,300)
 
 
-## Configuration
-
-An important requirement for a new keyboard was that I do not need to install additional client software which may not be available for my OS or even worse which may be connected to the cloud. Therefore, the ErgoDox EZ is fully programmable by flashing the appropriate configuration on the keyboard itself. This allows me to plug the keyboard to just any device and my settings keep the same!
-
-Linux and Windows work out of the box only for OS X there is little [configuration](https://ergodox-ez.com/pages/configuring-the-keyboard-type-on-os-x) necessary.
-
-
 ## Challenges
 
-I will face multiple challenges by getting used to this new keyboard as this completly differs from my keyboards I am used to.
+I will face multiple challenges by getting used to this new keyboard as this completly differs from my keyboards I am used to as mentioned earlier.
 
 1. I have never used something other than a traditional qwertz layout. At work I use the excellent [Lioncast LK 20](https://www.lioncast.com/en/product/lk20-gaming-keyboard/) and at home the [classical Thinkpad keyboard](https://knowledge.rootknecht.net/thinkpad-adventures#replacing-x230-keyboard) works well for me.
-2. I have never used a columnar stagger ordering.
-3. Of course I have never used a split keyboard.
+2. I have never used a columnar stagger layout
+3. Of course I have never used a split keyboard
 
-My Plan is at first to run the [pre configured layout](https://cdn.shopify.com/s/files/1/1152/3264/files/default_firmware_v1.2.pdf?2947908262754067686) which I recommend to print to get used to the staggering and feeling.
-
-Then I would have the choice of configuring the layout to be more qwertz compatible, including the german "Umlaute" ä,ö,ü, or rocking a qwerty layout. The advantage of qwertz would be that I am used to it since the beginning of my computer journey. The advantage of qwerty is that for programming many keys are easier to reach.
+My Plan is to go at first with the [pre configured layout](https://cdn.shopify.com/s/files/1/1152/3264/files/default_firmware_v1.2.pdf?2947908262754067686) which I recommend to print
 
 
-## Status quo
-
-... or how many words per minute can I produce
-
-| Device  |  WPM  | Error rate |
-|  :-----    |  :-----  |  :-----  |
-| Lioncast LK 20| | |
-| Thinkpad X230| | |
-| ErgoDox EZ default Layout| | |
-
-
-
-**to be continued**
+## Configuration

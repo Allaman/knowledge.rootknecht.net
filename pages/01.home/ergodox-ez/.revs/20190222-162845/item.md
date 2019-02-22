@@ -1,0 +1,81 @@
+---
+title: 'ErgoDox EZ'
+media_order: '01-boxes.jpg,02-wings.jpg,03-board.jpg,04-board.jpg,05-board.jpg,06-board.jpg,07-switches.jpg,08-caps.jpg,09-full.jpg,10-wing.jpg,11-glow.jpg'
+published: false
+taxonomy:
+    category:
+        - Personal
+---
+
+# ErgoDox EZ thinkings
+
+[TOC]
+
+Thinkings about my new keyboard: the [ErgoDox EZ](https://ergodox-ez.com/) and my journey to use it.
+
+## Why ErgoDox
+
+My current workflow is very keyboard focused and optimized. My main tools are Arch Linux with KDE and customized shortcuts, Vim, zsh, and Firefox with [Vim Extension](https://github.com/tridactyl/tridactyl). As I spent a lot more time with my fingers on my keyboard with every new optimazation I began to notice pain in my fingers and wrists.  So I decided to look around for ergonomic keyboards. 
+
+Basically, there are two major options speaking of ergonomic keyboards:
+1. Something like the [Microsoft 4000]https://www.microsoft.com/accessories/de-de/products/keyboards/natural-ergonomic-keyboard-4000/b2m-00001) which arranges the keys in a more ergonomic way
+2. A more radical approach that splits a keyboard in two halves
+
+
+
+## Ordering
+
+I ordered the ErgoDox EZ Glow model that comes with backlighted keys in black and Cherry MX brown switches. Addtionally, I ordered the wrist wings for more typing comfort. It took thirteen days to build(!) and deliver from Taiwan via UPS and there was no issue with german customs. 
+
+##  Onboxing
+
+The keyboard and the wings came in a two minimalstic but elegant black boxes
+
+![](01-boxes.jpg?link&cropResize=300,300)
+    
+The wing's box contains the two wrist wings which seem to be very sturdy and heavier then I thought
+
+![](02-wings.jpg?link&cropResize=300,300)
+
+The keyboard's box contains the two pieces of the keyboard a TRRS cable to connect with each other and a USB Type B cable to connect the right halve to a device. Additionally, a caps/switch removal tool, F/J caps without nubs, and six washers to disable the clicks for the tilt/tent legs allowing infinite adjustability
+
+![](03-board.jpg?link&cropResize=300,300)
+
+The two halves of the board in their natural beauty. Note the six legs which allow to adjust the angle in all directions
+
+![](04-board.jpg?link&cropResize=300,300)
+
+![](05-board.jpg?link&cropResize=300,300)
+
+![](06-board.jpg?link&cropResize=300,300)
+
+A closer look at the Cherry MX brown (RGB) switches
+
+![](07-switches.jpg?link&cropResize=300,300)
+
+The Tai-Hao keycaps (doubleshoot, see-thorugh)
+
+![](08-switches.jpg?link&cropResize=300,300)
+
+The keyboard connected and the wrist wings
+
+![](09-full.jpg?link&cropResize=300,300)
+
+A closer look at a wrist wing
+
+![](10-wing.jpg?link&cropResize=300,300)
+
+The backlit in action
+
+![](11-glow.jpg?link&cropResize=300,300)
+
+
+## Configuration
+
+## Challenges
+
+I will face multiple challenges by getting used to this new keyboard:
+
+1. I have never used something other than a qwertz layout. At work I use the excellent [Lioncast LK 20](https://www.lioncast.com/en/product/lk20-gaming-keyboard/) and at home the [classical Thinkpad keyboard](https://knowledge.rootknecht.net/thinkpad-adventures#replacing-x230-keyboard) works well for me.
+2. I have never used a ortholinear layout
+3. I have never used a 
