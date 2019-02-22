@@ -12,9 +12,9 @@ taxonomy:
 
 Thinkings about my new keyboard: the [ErgoDox EZ](https://ergodox-ez.com/) and my journey with this exciting piece of hardware.
 
-## Why ErgoDox
+## Why ErgoDox EZ
 
-My current workflow is very keyboard focused and optimized. My main tools are Arch Linux with KDE and customized shortcuts, Vim, zsh, and Firefox with [Vim Extension](https://github.com/tridactyl/tridactyl). As I spent a lot more time with my fingers on my keyboard with every new optimazation I began to notice pain in my fingers and wrists.  So I decided to look around for ergonomic keyboards. As my passion is to increase productivity and efficiency I will take this also into account. Nevertheless, I was aware that such a huge change of my main input device I am used to for decades will have an impact at least in a transition period.
+My current workflow is very keyboard focused and optimized. My main tools are Arch Linux with KDE and customized shortcuts, Vim, zsh, and Firefox with [Vim Extension](https://github.com/tridactyl/tridactyl). As I spent a lot more time with my fingers on my keyboard with every new optimization I began to notice pain in my fingers and wrists.  So I decided to look around for ergonomic keyboards. As my passion is to increase productivity and efficiency I will take this also into account. Nevertheless, I was aware that a huge change of my main input device I am used to for decades will have an impact at least in a transition period.
 
 Basically, there are two major options speaking of ergonomic keyboards:
 1. Something like the [Microsoft 4000](https://www.microsoft.com/accessories/de-de/products/keyboards/natural-ergonomic-keyboard-4000/b2m-00001) which arranges the keys in a more ergonomic way
