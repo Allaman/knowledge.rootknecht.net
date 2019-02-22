@@ -7,8 +7,6 @@ taxonomy:
 
 # ErgoDox EZ thinkings
 
-[TOC]
-
 Thinkings about my new keyboard: the [ErgoDox EZ](https://ergodox-ez.com/) and my journey to use it.
 
 ## Ordering
@@ -36,25 +34,4 @@ The two halves of the board in their natural beauty. Note the six legs which all
 ![](05-board.jpg?link&cropResize=300,300)
 
 ![](06-board.jpg?link&cropResize=300,300)
-
-A closer look at the Cherry MX brown (RGB) switches
-
-![](07-switches.jpg?link&cropResize=300,300)
-
-The Tai-Hao keycaps (doubleshoot, see-thorugh)
-
-![](08-switches.jpg?link&cropResize=300,300)
-
-The keyboard connected and the wrist wings
-
-![](09-full.jpg?link&cropResize=300,300)
-
-A closer look at a wrist wing
-
-![](10-wing.jpg?link&cropResize=300,300)
-
-The backlit in action
-
-![](11-glow.jpg?link&cropResize=300,300)
-
 
