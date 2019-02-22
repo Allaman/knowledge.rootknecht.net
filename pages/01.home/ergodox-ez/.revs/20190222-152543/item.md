@@ -17,14 +17,14 @@ I ordered the ErgoDox EZ Glow model that comes with backlighted keys in black an
 
 The keyboard and the wings came in a two minimalstic but elegant black boxes
 
-![](01-boxes.jpg?link&cropResize=300,300)
+	![](01-boxes.jpg?link&cropResize=300,300)
     
 The wing's box contains the two wrist wings which seem to be very sturdy and heavier then I thought
 
-![](02-wings.jpg?link&cropResize=300,300)
+	![](02-wings.jpg?link&cropResize=300,300)
 
 The keyboard's box contains the two pieces of the keyboard a TRRS cable to connect with each other and a USB Type B cable to connect the right halve to a device. Additionally, a caps/switch removal tool, F/J caps without nubs, and six washers to disable the clicks for the tilt/tent legs allowing infinite adjustability
 
-![](03-board.jpg?link&cropResize=300,300)
+	![](03-board.jpg?link&cropResize=300,300)
 
 
