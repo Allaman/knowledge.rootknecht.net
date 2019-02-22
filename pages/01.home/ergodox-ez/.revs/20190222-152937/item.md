@@ -27,11 +27,4 @@ The keyboard's box contains the two pieces of the keyboard a TRRS cable to conne
 
 ![](03-board.jpg?link&cropResize=300,300)
 
-The two halves of the board in their natural beauty. Note the six legs which allow to adjust the angle in all directions
-
-![](04-board.jpg?link&cropResize=300,300)
-
-![](05-board.jpg?link&cropResize=300,300)
-
-![](06-board.jpg?link&cropResize=300,300)
 
