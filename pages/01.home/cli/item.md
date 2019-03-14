@@ -28,27 +28,63 @@ In your git config:
    show = diff-so-fancy | less --tabs=1,5 -RFX
 ```
 
-## grep alternatives
+## ripgrep
+
+ripgrep](https://github.com/BurntSushi/ripgrep)
+
+- `grep` alternative
+- written in Rust
+- fast
+- mostly grep compatible
 
 [Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
 
-Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
-
-## cat alternative
+## bat
 
 [bat](https://github.com/sharkdp/bat)
 
+- `cat` alternative
+- written in Rust
 - Syntax highlightning
 - Git integration
 - Automatic paging
+
+## fd
+
+[fd](https://github.com/sharkdp/fd)
+
+- `find` alternative
+- written in Rust
+- fast
+- provides sane defaults
+- does not intend to fully replace find
+
+## fzf
+
+[fzf](https://github.com/junegunn/fzf)
+
+- command line fuzyy finder
+- written in Golang
+- endless use cases
+- portable
+- Integration in tmux, vim, bash, zsh, ...
 
 ## fasd
 
 [fasd](https://github.com/clvv/fasd)
 
 - fast navigation in your shell
+- written in shell
 - quickaccess to files, directories
 - inspired by autojump, z, and v
+
+## prettyping
+
+[prettyping](https://github.com/denilsonsa/prettyping)
+
+- wrapper around ping
+- written in shell
+- colorful and easy to read
 
 ## mu-repo
 
@@ -57,17 +93,94 @@ Currently running [ripgrep](https://github.com/BurntSushi/ripgrep)
 - manage multiple git repos
 - run git commands on multiple repos
 
-## ls alternative
+## exa
 
 [exa](https://the.exa.website/)
 
-- fast (in rust implemented)
-- coloerd multi column outpu
+- `ls` alternative
+- written in Rust
+- fast
+- colored multi column output
 - respects git status
+- single binary
+
+## translate-shell
+
+[translate-shell](https://github.com/soimort/translate-shell)
+
+- language translation in your shell
+- powered by Google Translate (default) , Bing Translator, Yandex.Translate, and Apertium
+- written in Awk
+- self contained executable
+
+## tig
+
+[tig](https://github.com/jonas/tig)
+
+- modern text interface for git
+- written in C
+- ncurses GUI
+
+## trash-cli
+
+[trash-cli](https://github.com/andreafrancia/trash-cli)
+
+- `rm` alternative respecting the trashcan
+- deleted files can be restored
+- written in Python
+
+## ngrep
+
+[ngrep](https://github.com/jpr5/ngrep)
+
+- user friendly `tcpdump` alternative
+- written in C
+- PCAP based
+
+## xsv
+
+[xsv](https://github.com/BurntSushi/xsv)
+
+- CSV parsing and manipulation
+- written in Rust
+- indexing, slicing, analyzing, splitting and joining 
+
+**Search by column and output specific columns**
+```sh
+  xsv search -d ';' -s Role \
+  data.csv  \
+  | xsv select Name,Location \
+  | xsv table
+```
+
+**Join two csv tables and write in new csv**
+```sh
+xsv join -d ';' Name data.csv Name status.csv | xsv fmt -t ';' > joined.csv
+```
+
+## cheat.sh
+
+[cheat.sh](https://github.com/chubin/cheat.sh)
+
+- cheatsheet interface
+- written in Python
+- 56 programming languages, several DBMSes, and more than 1000 most important UNIX/Linux commands
+- simple curl/browser interface
+- fast
+- CLI client `cht.sh`
+
+## cloc
+
+[cloc](https://github.com/AlDanial/cloc)
+
+- count lines of code
+- written in Perl
+- autodetects languages
+- comments agnostic
 
 ## Mount Windows Virtualbox vmdk
 
-`ndb` (network device block) module and command `qemu-nbd` is required!
+`ndb` (network device block) module and `qemu-nbd` command is required!
 
 ```bash
 #!/bin/bash
@@ -106,25 +219,6 @@ esac
 
 done
 ```
-
-## Work with CSV like a boss
-
-[xsv](https://github.com/BurntSushi/xsv)
-
-**Search by column and output specific columns**
-```sh
-  xsv search -d ';' -s Role \
-  inventory.csv  \
-  | xsv select Hostname,Branch \
-  | xsv table
-```
-
-**Join two csv tables and write in new csv**
-```sh
-xsv join -d ';' Hostname inventory.csv Hostname status.csv | xsv fmt -t ';' > joined.csv
-```
-
-xsv supports many operations on csv files! Sorting, slicing, statistics, filtering, and more. Have a look at the documentation
 
 ## fzf tweaks
 
@@ -169,11 +263,7 @@ xsv supports many operations on csv files! Sorting, slicing, statistics, filteri
   curl cht.sh/ls
   curl cht.sh/python/dirs+recursive
   ```
-  Install cli client:
-  ```bash
-  curl https://cht.sh/:cht.sh > /usr/local/bin/cht.sh
-  chmod +x ~/bin/cht.sh
-  ```
+    See [cheat.sh](#cheat-sh)
 1. Latencies
   ```bash
   curl cheat.sh/latencies
@@ -187,10 +277,6 @@ xsv supports many operations on csv files! Sorting, slicing, statistics, filteri
 	```bash
 	curl -s http://tinyurl.com/api-create.php\?url=https://google.com
 	```
-1. Translate
-
-	[Translate Shell](https://github.com/soimort/translate-shell)
-
 1. Random commit messages
   ```bash
   curl -sk https://whatthecommit.com/index.txt
