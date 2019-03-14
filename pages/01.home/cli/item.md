@@ -7,38 +7,6 @@ taxonomy:
 
 [TOC]
 
-## htop
-
-[htop](https://hisham.hm/htop/) is a enhanced version of `top` which comes preinstalled on most systems.
-- *P* &rarr; sort by CPU
-- *M* &rarr; sort by memory usage
-- *F4* &rarr; filter processes by string
-- *space* &rarr; mark a single process
-
-Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the application by pressing `F10` save and exit.
-
-## diff-so-fancy
-
-[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) is an alternative customazable very nice looking diff tool for `git diff`.
-
-In your git config:
-```ini
-[pager]
-   diff = diff-so-fancy | less --tabs=1,5 -RFX
-   show = diff-so-fancy | less --tabs=1,5 -RFX
-```
-
-## ripgrep
-
-ripgrep](https://github.com/BurntSushi/ripgrep)
-
-- `grep` alternative
-- written in Rust
-- fast
-- mostly grep compatible
-
-[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
-
 ## bat
 
 [bat](https://github.com/sharkdp/bat)
@@ -48,6 +16,51 @@ ripgrep](https://github.com/BurntSushi/ripgrep)
 - Syntax highlightning
 - Git integration
 - Automatic paging
+
+## cheat.sh
+
+[cheat.sh](https://github.com/chubin/cheat.sh)
+
+- cheatsheet interface
+- written in Python
+- 56 programming languages, several DBMSes, and more than 1000 most important UNIX/Linux commands
+- simple curl/browser interface
+- fast
+- CLI client `cht.sh`
+
+## cloc
+
+[cloc](https://github.com/AlDanial/cloc)
+
+- count lines of code
+- written in Perl
+- autodetects languages
+- comments agnostic
+
+## diff-so-fancy
+
+[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) 
+
+- alternative customizable nice looking diff tool for `git diff`
+- written in Perl
+
+In your git config:
+```ini
+[pager]
+   diff = diff-so-fancy | less --tabs=1,5 -RFX
+   show = diff-so-fancy | less --tabs=1,5 -RFX
+```
+
+## exa
+
+[exa](https://the.exa.website/)
+
+- `ls` alternative
+- written in Rust
+- fast
+- colored multi column output
+- respects git status
+- single binary
 
 ## fd
 
@@ -78,13 +91,15 @@ ripgrep](https://github.com/BurntSushi/ripgrep)
 - quickaccess to files, directories
 - inspired by autojump, z, and v
 
-## prettyping
+## htop
 
-[prettyping](https://github.com/denilsonsa/prettyping)
+[htop](https://hisham.hm/htop/) is a enhanced version of `top` which comes preinstalled on most systems.
+- *P* &rarr; sort by CPU
+- *M* &rarr; sort by memory usage
+- *F4* &rarr; filter processes by string
+- *space* &rarr; mark a single process
 
-- wrapper around ping
-- written in shell
-- colorful and easy to read
+Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the application by pressing `F10` save and exit.
 
 ## mu-repo
 
@@ -93,16 +108,32 @@ ripgrep](https://github.com/BurntSushi/ripgrep)
 - manage multiple git repos
 - run git commands on multiple repos
 
-## exa
+## ngrep
 
-[exa](https://the.exa.website/)
+[ngrep](https://github.com/jpr5/ngrep)
 
-- `ls` alternative
+- user friendly `tcpdump` alternative
+- written in C
+- PCAP based
+
+## prettyping
+
+[prettyping](https://github.com/denilsonsa/prettyping)
+
+- wrapper around ping
+- written in shell
+- colorful and easy to read
+
+## ripgrep
+
+ripgrep](https://github.com/BurntSushi/ripgrep)
+
+- `grep` alternative
 - written in Rust
 - fast
-- colored multi column output
-- respects git status
-- single binary
+- mostly grep compatible
+
+[Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
 
 ## translate-shell
 
@@ -129,14 +160,6 @@ ripgrep](https://github.com/BurntSushi/ripgrep)
 - deleted files can be restored
 - written in Python
 
-## ngrep
-
-[ngrep](https://github.com/jpr5/ngrep)
-
-- user friendly `tcpdump` alternative
-- written in C
-- PCAP based
-
 ## xsv
 
 [xsv](https://github.com/BurntSushi/xsv)
@@ -157,26 +180,6 @@ ripgrep](https://github.com/BurntSushi/ripgrep)
 ```sh
 xsv join -d ';' Name data.csv Name status.csv | xsv fmt -t ';' > joined.csv
 ```
-
-## cheat.sh
-
-[cheat.sh](https://github.com/chubin/cheat.sh)
-
-- cheatsheet interface
-- written in Python
-- 56 programming languages, several DBMSes, and more than 1000 most important UNIX/Linux commands
-- simple curl/browser interface
-- fast
-- CLI client `cht.sh`
-
-## cloc
-
-[cloc](https://github.com/AlDanial/cloc)
-
-- count lines of code
-- written in Perl
-- autodetects languages
-- comments agnostic
 
 ## Mount Windows Virtualbox vmdk
 
