@@ -286,3 +286,45 @@ ps ax | grep "xelatex main.tex" | grep -v grep | awk '{print "kill -9 " $1}' | s
 ```sh
 route -n | awk '($1 == "0.0.0.0") { print $NF }'
 ```
+
+## Mount Windows Virtualbox vmdk
+
+`ndb` (network device block) module and `qemu-nbd` command is required!
+
+```bash
+#!/bin/bash
+
+for i in "$@"
+do
+
+case $i in
+    -m|--mount)
+        echo "modprobe nbd, creating device and mounting"
+        sudo rmmod nbd
+		sudo modprobe nbd max_part=63
+        sudo qemu-nbd -c /dev/nbd0 '~/path/to/disk.vmdk'
+        echo "Device created"
+		if [[ -f /dev/nbd0p1 ]]
+		then
+			sudo mount /dev/nbd0p1 ~/mounts/tmp
+		else
+			sudo partprobe /dev/nbd0
+			sudo mount /dev/nbd0p1 ~/mounts/tmp
+		fi
+        echo "Mounted at ~/mounts/tmp"
+        shift
+        ;;
+    -u|--umount)
+        echo "Unmounting, deleting device and removing nbd module"
+        sudo umount ~/mounts/tmp
+        sudo qemu-nbd -d /dev/nbd0
+        sudo rmmod nbd
+        shift
+        echo "Done"
+        ;;
+    \?)
+        echo "invalid option"
+esac
+
+done
+```
