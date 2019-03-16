@@ -1,5 +1,9 @@
 ---
 title: FZF
+taxonomy:
+    category:
+        - Application
+        - Linux
 ---
 
 ## fzf tweaks
