@@ -12,6 +12,8 @@ taxonomy:
         - DevOps
 ---
 
+[TOC]
+
 ## Run playbook without inventory file
 
 ```bash
