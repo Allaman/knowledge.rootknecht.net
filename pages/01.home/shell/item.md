@@ -174,6 +174,12 @@ ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1
 * Interactive shells source `~/.zshrc`
 * Login shells source `~/.zprofile` and `~/.zlogin`
 
+## Find directories containing the most amount of files
+
+```sh
+find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}\"" \; | sort -nr
+```
+
 ## Types of shells
 
 1. Interactive
