@@ -82,6 +82,8 @@ In your git config:
 - portable
 - Integration in tmux, vim, bash, zsh, ...
 
+See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
+
 ## fasd
 
 [fasd](https://github.com/clvv/fasd)
@@ -126,7 +128,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 ## ripgrep
 
-ripgrep](https://github.com/BurntSushi/ripgrep)
+[ripgrep](https://github.com/BurntSushi/ripgrep)
 
 - `grep` alternative
 - written in Rust
@@ -134,6 +136,15 @@ ripgrep](https://github.com/BurntSushi/ripgrep)
 - mostly grep compatible
 
 [Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
+
+## Storm
+
+[storm](https://github.com/emre/storm)
+
+- ssh management wrapper
+- written in Python
+- add, edit, delete, and list your `.ssh/config` entries
+- various UIs
 
 ## translate-shell
 
