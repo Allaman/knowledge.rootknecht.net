@@ -22,7 +22,7 @@ title: 'CLI Web Services'
   curl cht.sh/ls
   curl cht.sh/python/dirs+recursive
 ```
-    See [cheat.sh](https://knowledge.rootknecht.net/cli#cheat-sh)
+    See [cheat.sh](https://knowledge.rootknecht.net/cli-applications#cheat-sh)
     
 ## Latencies
 ```bash
