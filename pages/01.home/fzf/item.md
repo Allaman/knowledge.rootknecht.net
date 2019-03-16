@@ -13,13 +13,13 @@ taxonomy:
 
 ## fzf tweaks
 
-`export FZF_COMPLETION_TRIGGER=',,'`
+- `export FZF_COMPLETION_TRIGGER=',,'`
 
 	Allows to trigger fzf after arbitrary commands, for instance `vim ,,`  /TAB/ invokes fzf
 
 - `export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute:vim {} > /dev/tty'"`
 	
-    Enables you to directly open a file for fzf results
+    Enables you to directly open a file for fzf results with ctrl-o
 
 - `export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"` 
 
