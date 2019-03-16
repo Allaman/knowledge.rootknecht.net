@@ -1,5 +1,5 @@
 ---
-title: CLI
+title: 'CLI Applications'
 taxonomy:
     category:
         - Application
