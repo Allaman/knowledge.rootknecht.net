@@ -1,5 +1,8 @@
 ---
 title: 'CLI Web Services'
+taxonomy:
+    category:
+        - Application
 ---
 
 ## Weather
