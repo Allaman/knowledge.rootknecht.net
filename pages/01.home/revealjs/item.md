@@ -27,3 +27,9 @@ showNotes: true ## Export notes in pdf
 ## showNotes: "separate-page" for longer notes
 ---
 ```
+
+## Image formating
+
+```
+![](bad.jpg) <!-- .element height="65%" width="65%" -->
+```
