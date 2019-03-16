@@ -2,7 +2,6 @@
 title: FZF
 ---
 
-
 ## fzf tweaks
 
 [fzf](https://github.com/junegunn/fzf) is a CLI fuzzy finder with endless possibilities. If you want to improve your terminal workflow you **must** check this out.
