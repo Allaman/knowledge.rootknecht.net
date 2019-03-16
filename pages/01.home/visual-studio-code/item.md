@@ -1,5 +1,5 @@
 ---
-title: 'Visual Studio Code Tricks'
+title: 'Visual Studio Code'
 taxonomy:
     category:
         - Application
