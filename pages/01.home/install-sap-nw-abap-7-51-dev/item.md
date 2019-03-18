@@ -1,5 +1,5 @@
 ---
-title: 'Install SAP Netweaver AS ABAP 7.51 Developer'
+title: 'Install SAP NW ABAP 7.51 Dev'
 taxonomy:
     category:
         - Application
