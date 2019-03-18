@@ -7,6 +7,8 @@ taxonomy:
 
 [TOC]
 
+A brief overview of **c**ommand **l**ine **i**nterface applications I use and higly recommend
+
 ## bat
 
 [bat](https://github.com/sharkdp/bat)
@@ -103,12 +105,37 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 
 Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the application by pressing `F10` save and exit.
 
+## isync
+
+[isync](http://isync.sourceforge.net/)
+
+- IMAP and MailDir synchronization
+- written in C
+- Control every aspect of synchronization
+
+## mstmp
+
+[msmtp](https://marlam.de/msmtp/)
+
+- SMTP Client
+- written in C
+- sendmail compatible
+
 ## mu-repo
 
 [mu-repo](http://fabioz.github.io/mu-repo/)
 
 - manage multiple git repos
 - run git commands on multiple repos
+
+## mutt
+
+[mutt](http://www.mutt.org/)
+
+- full featured mail client
+- written in C
+- highly customizable and scriptable
+- vim like keybindings
 
 ## ngrep
 
