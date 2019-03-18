@@ -153,6 +153,16 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in shell
 - colorful and easy to read
 
+## ranger
+
+[ranger](https://github.com/ranger/ranger)
+
+- file manager
+- written in Python
+- 3 pane or two pane style
+- highly customizable and scriptable
+- vim like keybindings
+
 ## ripgrep
 
 [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -197,6 +207,15 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - `rm` alternative respecting the trashcan
 - deleted files can be restored
 - written in Python
+
+## vdirsyncer
+
+[vdirsyncer](https://github.com/pimutils/vdirsyncer)
+
+- synchronize calendars and contacts
+- written in Python
+-  CardDAV / CalDAV support
+-  fine control
 
 ## xsv
 
