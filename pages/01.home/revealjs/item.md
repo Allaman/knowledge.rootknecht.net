@@ -33,3 +33,18 @@ showNotes: true ## Export notes in pdf
 ```
 ![](bad.jpg) <!-- .element height="65%" width="65%" -->
 ```
+
+## Slide background
+
+```html
+<!-- .slide: data-background="./background.png" -->
+<!-- .slide: style="color:yellow" -->
+```
+
+## Bulletpoints animation
+
+```markdown
+* Emacs, VS Code, Vim <!-- .element: class="fragment" -->
+* R Studio, Jupyter <!-- .element: class="fragment" -->
+* reveal-md Pandoc <!-- .element: class="fragment" -->
+```
