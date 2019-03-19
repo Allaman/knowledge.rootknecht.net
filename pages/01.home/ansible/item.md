@@ -16,13 +16,13 @@ taxonomy:
 
 ## Run playbook without inventory file
 
-```bash
+```sh
 ansible-playbook -i xxx.xxx.xxx.xxx, playbook.yml # be aware of the comma
 ```
 
 ## Get a list of facts
 
-```bash
+```sh
 ansible -m setup localhost | sed '1c {' | jq '.ansible_facts | keys'
 # alternatively | python -mjson.tool
 ```
