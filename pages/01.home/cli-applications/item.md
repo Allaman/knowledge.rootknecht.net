@@ -7,7 +7,7 @@ taxonomy:
 
 [TOC]
 
-A brief overview of **c**ommand **l**ine **i**nterface applications I use and higly recommend
+A brief overview of **c**ommand **l**ine **i**nterface applications I use and higly recommend!
 
 ## bat
 
@@ -43,7 +43,8 @@ A brief overview of **c**ommand **l**ine **i**nterface applications I use and hi
 
 [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) 
 
-- alternative customizable nice looking diff tool for `git diff`
+- alternative for `git diff`
+- customizable and nice looking
 - written in Perl
 
 In your git config:
@@ -95,6 +96,15 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - quickaccess to files, directories
 - inspired by autojump, z, and v
 
+## hledger
+
+[hledger](https://hledger.org/)
+
+- double entry accounting
+- written in Haskell
+- ledger compatible
+- Web UI, ncurses, API, reports, and more
+
 ## htop
 
 [htop](https://hisham.hm/htop/) is a enhanced version of `top` which comes preinstalled on most systems.
@@ -105,6 +115,20 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 
 Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the application by pressing `F10` save and exit.
 
+## iftop
+
+[iftop](http://www.ex-parrot.com/pdw/iftop/)
+
+- top like interface for bandwidth usage
+- written in C
+
+## iotop
+
+[iotop](http://guichaz.free.fr/iotop/)
+
+- top like interface for ingoing/outgoing
+- written in python
+
 ## isync
 
 [isync](http://isync.sourceforge.net/)
@@ -112,6 +136,32 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - IMAP and MailDir synchronization
 - written in C
 - Control every aspect of synchronization
+
+## khard
+
+[khard](https://github.com/scheibler/khard)
+
+- CardDAV client
+- written in Python
+- mutt integration
+- in combination with [vdirsyncer](#vdirsyncer)
+
+## khal
+
+[khal](https://github.com/pimutils/khal)
+
+- calendar application
+- written in Python
+- reads and writes events/icalendars
+- in combination with [vdirsyncer](#vdirsyncer)
+
+## mpv
+
+[mpv](https://mpv.io/)
+
+- media player
+- written in C
+- CLI optimized
 
 ## mstmp
 
@@ -136,6 +186,14 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in C
 - highly customizable and scriptable
 - vim like keybindings
+
+## ncdu
+
+[ncdu](https://dev.yorhel.nl/ncdu)
+
+- ncurses disk usage
+- written in C
+- fast and simple to use
 
 ## ngrep
 
@@ -174,7 +232,21 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 [Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
 
-## Storm
+## spacemace
+
+[spacemacs](https://github.com/syl20bnr/spacemacs)
+
+- Emacs distribution
+- combines Emacs and Vim
+- written in elisp
+
+## spacevim
+
+- Vim distribution
+- like spacemacs for Vim
+- written in Vim script
+
+## storm
 
 [storm](https://github.com/emre/storm)
 
@@ -200,6 +272,15 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in C
 - ncurses GUI
 
+## tmux
+
+[tmux](https://github.com/tmux/tmux)
+
+- terminal multiplexer
+- alternative to `screen`
+- written in C
+- [basic intro](https://knowledge.rootknecht.net/tmux)
+
 ## trash-cli
 
 [trash-cli](https://github.com/andreafrancia/trash-cli)
@@ -208,14 +289,32 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - deleted files can be restored
 - written in Python
 
+## urlview
+
+[urlview](https://github.com/sigpipe/urlview)
+
+- extract URLs from text
+- written in C
+- extract urls from mails (mutt) and more
+
 ## vdirsyncer
 
 [vdirsyncer](https://github.com/pimutils/vdirsyncer)
 
 - synchronize calendars and contacts
 - written in Python
--  CardDAV / CalDAV support
--  fine control
+- CardDAV / CalDAV support
+- fine control
+
+## w3m
+
+[w3m](http://w3m.sourceforge.net/)
+
+- text-based web browser
+- written in C
+- Vim like keybindings
+- renders html for other apps (like mutt)
+- alternatives: [links2](http://links.twibright.com/), [Lynx](https://lynx.browser.org/), [Elinks](http://elinks.or.cz/index.html)
 
 ## xsv
 
@@ -237,3 +336,12 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 ```sh
 xsv join -d ';' Name data.csv Name status.csv | xsv fmt -t ';' > joined.csv
 ```
+
+## youtube-dl
+
+[youtube-dl](https://ytdl-org.github.io/youtube-dl/index.html)
+
+- download videos from video platforms
+- written in Python
+- by far not limited to youtube
+- convert them to mp4
