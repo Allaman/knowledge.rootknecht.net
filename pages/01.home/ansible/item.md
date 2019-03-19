@@ -29,7 +29,7 @@ ansible -m setup localhost | sed '1c {' | jq '.ansible_facts | keys'
 
 ## Ansible playbook waiting for reboot of target
 
-! UPDATE: Since Ansible 2.7 there is a [reboot module](https://docs.ansible.com/ansible/devel/modules/reboot_module.html)
+!! UPDATE: Since Ansible 2.7 there is a [reboot module](https://docs.ansible.com/ansible/devel/modules/reboot_module.html)
 
 Sometimes a reboot of a machine during Ansible operation is required. Reboot results in a lost ssh connection.
 
