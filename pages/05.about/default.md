@@ -16,23 +16,23 @@ Linux and open source enthusiast. Wants to automate everything. Thinks modal edi
 
 ## Categories
 
-- *Application*
+- [Application](https://knowledge.rootknecht.net/taxonomy?name=category&val=Application)
 
     Everything related to applications, e.g their installation, configuration, or usage
 
-- *DevOps*
+- [DevOps](https://knowledge.rootknecht.net/taxonomy?name=category&val=DevOps)
 
-    Tools and techniques in the area of DevOps, e.g. automation and infrastrcture setup
+    Tools and techniques in the area of DevOps, e.g. automation and infrastructure setup of linux and containerized environments
 
-- *Linux*
+- [Linux](https://knowledge.rootknecht.net/taxonomy?name=category&val=Linux)
 
-    Some of my knowledge from my Linux usage in the past decade, both on the server and client side
+    Some of my knowledge from my Linux usage in the past decade, both on the server and on the client side
 
-- *Personal*
+- [Personal](https://knowledge.rootknecht.net/taxonomy?name=category&val=Personal)
 
-    Personal stuff or opinion and other not categorized articles
+    Personal stuff or opinions and other not categorized articles
 
-- *Programming*
+- [Programming](https://knowledge.rootknecht.net/taxonomy?name=category&val=Programming)
 
     Some hints on different programming topics I had to deal with
     
