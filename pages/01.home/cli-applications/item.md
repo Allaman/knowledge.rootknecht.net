@@ -5,9 +5,9 @@ taxonomy:
         - Application
 ---
 
-[TOC]
-
 A brief overview of **c**ommand **l**ine **i**nterface applications I use and higly recommend!
+
+[TOC]
 
 ## bat
 
@@ -15,9 +15,9 @@ A brief overview of **c**ommand **l**ine **i**nterface applications I use and hi
 
 - `cat` alternative
 - written in Rust
-- Syntax highlightning
+- syntax highlightning
 - Git integration
-- Automatic paging
+- automatic paging
 
 ## cheat.sh
 
@@ -25,7 +25,7 @@ A brief overview of **c**ommand **l**ine **i**nterface applications I use and hi
 
 - cheatsheet interface
 - written in Python
-- 56 programming languages, several DBMSes, and more than 1000 most important UNIX/Linux commands
+- 56 programming languages, several DBMSes, and more than 1000 UNIX/Linux commands
 - simple curl/browser interface
 - fast
 - CLI client `cht.sh`
@@ -162,6 +162,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - media player
 - written in C
 - CLI optimized
+- plays (youtube) streams
 
 ## mstmp
 
@@ -177,6 +178,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 - manage multiple git repos
 - run git commands on multiple repos
+- discover git repos in your file system
 
 ## mutt
 
@@ -217,9 +219,10 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 - file manager
 - written in Python
-- 3 pane or two pane style
+- three pane or two pane style
 - highly customizable and scriptable
 - vim like keybindings
+- alternatives: [vifm](https://vifm.info/), [nnn](https://github.com/jarun/nnn), [mc](https://midnight-commander.org/)
 
 ## ripgrep
 
@@ -229,6 +232,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in Rust
 - fast
 - mostly grep compatible
+- sane default settings
 
 [Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
 
@@ -344,4 +348,4 @@ xsv join -d ';' Name data.csv Name status.csv | xsv fmt -t ';' > joined.csv
 - download videos from video platforms
 - written in Python
 - by far not limited to youtube
-- convert them to mp4
+- convert videos to mp4
