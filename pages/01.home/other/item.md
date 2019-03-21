@@ -45,7 +45,7 @@ sudo texhash
 Occurs when fontawesome is used. Add `\newfontfamily{\FA}{[FontAwesome.otf]}` after loading the fontawesome package
 
 ## Create new MySQL database and user
-```bash
+```sql
 mysql -u root -p
 create database name;
 grant all privileges on database.* to 'user'@'localhost' identified by "password";
@@ -58,6 +58,12 @@ flush privileges;
 mysqldump ovs -u root -p -T /path/to/folder --fields-terminated-by=,
 ```
 The target folder must be writeable from the mysql process user
+
+## Check mysql/mariadb user and auth
+
+```sql
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+```
 
 ## Mount a virtualbox shared folder in a linux guest
 in `/etc/fstab`
@@ -134,6 +140,7 @@ In `/usr/lib/jvm/java-8-openjdk/jre/lib/security/java.security` (or the appropri
 jdk.tls.disabledAlgorithms=SSLv3, RC4, MD5withRSA, DH keySize < 1024, \
 EC keySize < 224, DES40_CBC, RC4_40
 ```
+
 
 ## Multi row tabs in Firefox Quantum 58+
 

@@ -119,14 +119,14 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 [iftop](http://www.ex-parrot.com/pdw/iftop/)
 
-- top like interface for bandwidth usage
+- `top` like interface for bandwidth usage
 - written in C
 
 ## iotop
 
 [iotop](http://guichaz.free.fr/iotop/)
 
-- top like interface for ingoing/outgoing
+- `top` like interface for ingoing/outgoing
 - written in python
 
 ## isync
@@ -135,7 +135,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 - IMAP and MailDir synchronization
 - written in C
-- Control every aspect of synchronization
+- control every aspect of synchronization
 
 ## khard
 
@@ -143,7 +143,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 - CardDAV client
 - written in Python
-- mutt integration
+- [mutt](#mutt) integration
 - in combination with [vdirsyncer](#vdirsyncer)
 
 ## khal
@@ -210,7 +210,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 [prettyping](https://github.com/denilsonsa/prettyping)
 
 - wrapper around ping
-- written in shell
+- written in bash
 - colorful and easy to read
 
 ## ranger
@@ -289,9 +289,9 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 [trash-cli](https://github.com/andreafrancia/trash-cli)
 
-- `rm` alternative respecting the trashcan
-- deleted files can be restored
+- `rm` alternative with trashcan
 - written in Python
+- deleted files can be restored
 
 ## urlview
 
@@ -299,7 +299,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 - extract URLs from text
 - written in C
-- extract urls from mails (mutt) and more
+- [mutt](#mutt) and [tmux](#tmux) integration and more
 
 ## vdirsyncer
 
