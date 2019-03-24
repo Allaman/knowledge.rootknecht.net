@@ -77,7 +77,7 @@ fi
 ## Autostart a container with systemd
 
 /etc/systemd/system/NAME.service
-```init
+```
 [Unit]
 Description=Start Container
 After=docker.service
