@@ -14,7 +14,7 @@ taxonomy:
 This page describes certain aspects in the area of DevOps. If not marked these statements are my own wording based upon my own thinking and experience without any engagement with respect to correctness and other opinions.
 
 ### What is DevOps
-!!! A enterprise **culture** aiming to deliver high quality software within a short lead time and high efficiency taking into account all stakeholders.
+!!! An enterprise **culture** aiming to deliver high quality software within a short lead time and high efficiency taking into account all stakeholders.
 
 ### What is Cloud Computing
 !!! Utilization of **dynamic** IT ressources through a network.
