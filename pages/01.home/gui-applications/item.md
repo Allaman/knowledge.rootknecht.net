@@ -83,6 +83,15 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - fast and intuitiv
 - open source
 
+## KeePassXC
+
+[KeePassXC](https://github.com/keepassxreboot/keepassxc)
+
+- Keepass compatible password manager
+- written in C++
+- browser integration
+- open source
+
 ## KTouch
 
 [KTouch](https://kde.org/applications/education/ktouch)
