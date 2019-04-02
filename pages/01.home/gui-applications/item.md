@@ -91,6 +91,7 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - written in C++
 - browser integration
 - open source
+- cross platform
 
 ## KTouch
 
