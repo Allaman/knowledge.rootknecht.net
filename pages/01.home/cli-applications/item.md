@@ -6,6 +6,7 @@ taxonomy:
 ---
 
 A brief overview of **c**ommand **l**ine **i**nterface applications I use and higly recommend!
+See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for more applications.
 
 [TOC]
 
@@ -38,15 +39,6 @@ A brief overview of **c**ommand **l**ine **i**nterface applications I use and hi
 - written in Perl
 - autodetects languages
 - comments agnostic
-
-## code-server
-
-[code-server](https://github.com/codercom/code-server)
-
-- run [Visual Studio Code](#visual-studio-code) on a server
-- accessiable via web browser
-- written in TypeScript/JavaScript
-- Docker deployment available
 
 ## diff-so-fancy
 
@@ -164,15 +156,6 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - reads and writes events/icalendars
 - in combination with [vdirsyncer](#vdirsyncer)
 
-## mpv
-
-[mpv](https://mpv.io/)
-
-- media player
-- written in C
-- CLI optimized
-- plays (youtube) streams
-
 ## mstmp
 
 [msmtp](https://marlam.de/msmtp/)
@@ -245,7 +228,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 
 [Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
 
-## spacemace
+## spacemacs
 
 [spacemacs](https://github.com/syl20bnr/spacemacs)
 
@@ -276,26 +259,6 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in Python
 - add, edit, delete, and list your `.ssh/config` entries
 - various UIs
-
-## Sublime Merge
-
-[Sublime Merge](https://www.sublimemerge.com/)
-
-- Git gui
-- written in C
-- cross platform
-- Sublime Text style
-- proprietary
-
-## Sublime Text
-
-[Sublime Text](https://www.sublimetext.com/)
-
-- text editor
-- written in C
-- cross platform
-- fast and customizable
-- proprietary
 
 ## translate-shell
 
@@ -356,16 +319,6 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in Python
 - CardDAV / CalDAV support
 - fine control
-
-## Visual Studio Code
-
-[Visual Studio Code](https://code.visualstudio.com/)
-
-- **THE** text editor besides Vim :-)
-- electron based
-- batteries included
-- heavily expandable and customizable
-- cross platform
 
 ## w3m
 
