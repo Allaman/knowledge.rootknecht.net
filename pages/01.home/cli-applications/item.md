@@ -39,6 +39,15 @@ A brief overview of **c**ommand **l**ine **i**nterface applications I use and hi
 - autodetects languages
 - comments agnostic
 
+## code-server
+
+[code-server](https://github.com/codercom/code-server)
+
+- run [Visual Studio Code](#visual-studio-code) on a server
+- accessiable via web browser
+- written in TypeScript/JavaScript
+- Docker deployment available
+
 ## diff-so-fancy
 
 [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) 
@@ -250,6 +259,15 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - like spacemacs for Vim
 - written in Vim script
 
+## ssh_scan
+
+[ssh_scan](https://github.com/mozilla/ssh_scan)
+
+- SSH configuration and policy scanner
+- written in Ruby
+- by Mozilla
+- portable and configurable
+
 ## storm
 
 [storm](https://github.com/emre/storm)
@@ -258,6 +276,26 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in Python
 - add, edit, delete, and list your `.ssh/config` entries
 - various UIs
+
+## Sublime Merge
+
+[Sublime Merge](https://www.sublimemerge.com/)
+
+- Git gui
+- written in C
+- cross platform
+- Sublime Text style
+- proprietary
+
+## Sublime Text
+
+[Sublime Text](https://www.sublimetext.com/)
+
+- text editor
+- written in C
+- cross platform
+- fast and customizable
+- proprietary
 
 ## translate-shell
 
@@ -301,6 +339,15 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in C
 - [mutt](#mutt) and [tmux](#tmux) integration and more
 
+## Vagrant
+
+[vagrant](https://github.com/hashicorp/vagrant)
+
+- build your environments
+- VirtualBox, VMWare, KVM, Public Cloud, ...
+- written in Ruby
+- cross platform
+
 ## vdirsyncer
 
 [vdirsyncer](https://github.com/pimutils/vdirsyncer)
@@ -309,6 +356,16 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in Python
 - CardDAV / CalDAV support
 - fine control
+
+## Visual Studio Code
+
+[Visual Studio Code](https://code.visualstudio.com/)
+
+- **THE** text editor besides Vim :-)
+- electron based
+- batteries included
+- heavily expandable and customizable
+- cross platform
 
 ## w3m
 

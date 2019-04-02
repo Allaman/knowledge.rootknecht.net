@@ -23,8 +23,6 @@ This page describes certain aspects in the area of DevOps. If not marked these s
 
 ### Dev vs Ops
 
-Origin for the "blame game"
-
 | What Devs want | What Ops want |
 |  :-----          |  :-----          |
 | Deliver fast | Ensure availability |
@@ -39,6 +37,10 @@ Origin for the "blame game"
 - **A**utomation
 - **M**easurement
 - **S**haring
+
+### Continuous Everything
+
+**tbd**
 
 ## Cloud Computing
 
