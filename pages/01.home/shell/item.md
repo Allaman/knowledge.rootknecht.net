@@ -1,5 +1,6 @@
 ---
 title: Shell
+media_order: shell-startup-order.png
 taxonomy:
     category:
         - Linux
@@ -168,17 +169,17 @@ ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
 ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1
 ```
 
+## Shell Boot Order
+
+![](shell-startup-order.png?link&cropResize=300,300)
+
+<small>from [here](https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html)</small>
+
 ## Zsh sourcing
 
 * zsh always sources '~/.zshenv'. 
 * Interactive shells source `~/.zshrc`
 * Login shells source `~/.zprofile` and `~/.zlogin`
-
-## Find directories containing the most amount of files
-
-```sh
-find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}\"" \; | sort -nr
-```
 
 ## Types of shells
 
@@ -197,6 +198,12 @@ find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}
 1. Non-login
 
 	Any other shell run by the user after logging on, or which is run by any automated process which is not coupled to a logged in user.
+
+## Find directories containing the most amount of files
+
+```sh
+find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}\"" \; | sort -nr
+```
 
 ## Convert all files in the directory to unix line endings
 
@@ -291,6 +298,19 @@ ps ax | grep "xelatex main.tex" | grep -v grep | awk '{print "kill -9 " $1}' | s
 
 ```sh
 route -n | awk '($1 == "0.0.0.0") { print $NF }'
+```
+
+## Inline file returning
+
+instead of 
+```sh
+grep string1 file1 > result1
+grept string1 file2 > result
+diff result1 result2 
+```
+use `<()`
+```sh
+diff <(grep string1 file1) <(grep string1 file2)
 ```
 
 ## Mount Windows Virtualbox vmdk
