@@ -6,7 +6,7 @@ taxonomy:
         - Application
 ---
 
-Revealjs is a framework for producing nice looking HTML presentations.
+[Revealjs](https://github.com/hakimel/reveal.js/) is a framework for producing nice looking HTML presentations.
 
 [Here](https://open.rootknecht.io/revealjs-intro/#/) you can find a presentation which I created to illustrate revealjs.
 
