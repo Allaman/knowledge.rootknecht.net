@@ -2,7 +2,6 @@
 title: 'Bash Programming'
 taxonomy:
     category:
-        - Linux
         - Programming
 ---
 
