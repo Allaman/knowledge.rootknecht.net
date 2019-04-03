@@ -283,16 +283,3 @@ cat /dev/null > FILE
 find PATH -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | exec -0 ls -l
 find PATH -maxdepth 1 -mindepth 1 -type f -not -name README.md | exec -0 ls -l
 ```
-
-## Inline file returning
-
-instead of 
-```sh
-grep string1 file1 > result1
-grept string1 file2 > result
-diff result1 result2 
-```
-use `<()`
-```sh
-diff <(grep string1 file1) <(grep string1 file2)
-```
