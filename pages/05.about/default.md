@@ -4,7 +4,7 @@ title: About
 
 ## Me
 
-Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift 😃 Beliefs in the only true file format - plain text. You live and learn.
+Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift 😃 Believes in the only true file format - plain text. You live and learn.
 
 !!! [Repository](https://repo.rootknecht.net/explore)
 
@@ -30,11 +30,11 @@ Linux and open source enthusiast. Wants to automate everything. Thinks modal edi
 
 - [Personal](https://knowledge.rootknecht.net/taxonomy?name=category&val=Personal)
 
-    Personal stuff or opinions and other not categorized articles
+    Personal stuff or opinions and other non categorized articles
 
 - [Programming](https://knowledge.rootknecht.net/taxonomy?name=category&val=Programming)
 
-    Some hints on different programming topics I had to deal with
+    Some hints on different programming topics I dealt with
     
 ## Legal
     
