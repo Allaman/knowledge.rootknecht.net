@@ -197,6 +197,15 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in C
 - PCAP based
 
+## Pandoc
+
+[Pandoc](https://pandoc.org/)
+
+- text converter
+- written in Haskell
+- supports many many formats
+- md to pdf, html, ...
+
 ## prettyping
 
 [prettyping](https://github.com/denilsonsa/prettyping)
