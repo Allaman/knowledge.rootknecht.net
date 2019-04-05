@@ -262,6 +262,29 @@ with unknown options
   done
 ```
 
+## Redirect command output
+**stderr and stdout**
+```bash
+command > /dev/null 2>&1
+# bash only
+command &> /dev/null
+```
+
+**only stderr**
+```bash
+command 2> /dev/null
+```
+
+**only stdout**
+```bash
+command 1> /dev/null
+```
+
+## Replace whitspace with underscore in all filenames in current directory
+```bash
+for f in *\ *; do mv "$f" "${f// /_}"; done
+```
+
 ## Prevent a script from exiting your shell
 If you source a script file any `exit` in a function will exit the shell as it runs in the current shell instead of spawning a subshell. Prevent this behaviour by using `return`!
 When a 3rd party script you cannot modify is called which exits your shell than wrap the call with `()` which spawns a subshell for this call
@@ -272,14 +295,38 @@ More stable and powerful than echo. Comparable to C's function.
 printf "%s with %s\\n" "VAL1" "VAL2" >> test.txt
 ```
 
+## Make all files with shebang in a folder executable
+
+```bash
+grep -rl '^#!' FOLDER | xargs chmod +x
+```
+
 ## Empty/clear a file
 ```bash
 echo > FILE
 cat /dev/null > FILE
 ```
 
+## Ommit first line of stdout
+
+```bash
+awk '{if(NR>1)print}'
+```
+
 ## File or directory listings
 ```bash
 find PATH -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | exec -0 ls -l
 find PATH -maxdepth 1 -mindepth 1 -type f -not -name README.md | exec -0 ls -l
+```
+
+## Find directories containing the most amount of files
+
+```sh
+find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}\"" \; | sort -nr
+```
+
+## Convert all files in the directory to unix line endings
+
+```bash
+find . -type f -print0 | xargs -0 dos2unix
 ```
