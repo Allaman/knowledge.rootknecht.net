@@ -14,7 +14,7 @@ curl wttr.in/München
 ## Crypto currencies
 
 ```sh
-curl curl eur.rate.sx/eth
+curl eur.rate.sx/eth
 ```
 
 ## External IP
