@@ -7,9 +7,7 @@ taxonomy:
 
 [Revealjs](https://github.com/hakimel/reveal.js/) is a framework for producing nice looking HTML presentations.
 
-[Here](https://open.rootknecht.io/revealjs-intro/#/) you can find a presentation which I created to illustrate revealjs.
-
-[Here](https://repo.rootknecht.net/open/revealjs-intro) is the repo with the source code.
+[Here](https://open.rootknecht.io/revealjs-intro/#/) you can find a presentation which I created to illustrate Revealjs and [here](https://repo.rootknecht.net/open/revealjs-intro) is the repo with its source code.
 
 ## Frontmatter
 
