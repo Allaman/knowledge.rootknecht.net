@@ -1,6 +1,5 @@
 ---
 title: Revealjs
-media_order: revealjs-quickstart.html
 taxonomy:
     category:
         - Application
