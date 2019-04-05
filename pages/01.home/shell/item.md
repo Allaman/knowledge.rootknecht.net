@@ -55,6 +55,16 @@ EOT
 useradd -p $(openssl passwd -1 $PASS) $USER
 ```
 
+## Generate hash for passwords
+```bash
+echo "password" | sha1sum
+```
+
+## Add existing user to group
+```bash
+usermod -a -G group user
+```
+
 ## Copy permissions from existing file
 ```bash
 chown --reference=otherfile newFile
@@ -64,24 +74,6 @@ chmod --reference=otherfile newFile
 ## Modify ownership of symlinks
 ```bash
 chown -h USER:GROUP SYMLINK
-```
-
-## Redirect command output
-**stderr and stdout**
-```bash
-command > /dev/null 2>&1
-# bash only
-command &> /dev/null
-```
-
-**only stderr**
-```bash
-command 2> /dev/null
-```
-
-**only stdout**
-```bash
-command 1> /dev/null
 ```
 
 ## Inherit permissions from parent directory
@@ -112,12 +104,8 @@ curl \
 https://httpbin.org/
 ```
 
-## Add existing user to group
-```bash
-usermod -a -G group user
-```
-
 ## Reduce size of pdf files with ghostscript
+
 ```bash
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=OPTION -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
 ```
@@ -129,37 +117,46 @@ common options for dPDFSETTINGS are:
 - dPDFSETTINGS=/printer selects output similar to the Acrobat Distiller "Print Optimized" setting
 - dPDFSETTINGS=/default selects output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file
 
-## Generate hash for passwords
-```bash
-echo "password" | sha1sum
-```
 ## Run multiple commands in background
+
 ```bash
 (command1 &) && (command2 &)
 ```
-## Replace whitspace with underscore in all filenames in current directory
-```bash
-for f in *\ *; do mv "$f" "${f// /_}"; done
-```
+
 ## Shows what is in file 2 but not in file 1
+
 ```bash
 grep -v -F -x -f
 ```
+
 ## Merge all pdf files in current directory
+
 ```bash
 gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf *.pdf
 ```
+
 ## Generate handout from given pdf file
+
 ```bash
 pdfjam --nup 2x3 --frame true --noautoscale false --delta "0.2cm 0.3cm" --scale 0.95
 ```
+
 ## Get BIOS version
+
 ```bash
 sudo dmidecode | grep BIOS
 ```
+
 ## Get external IP
+
 ```bash
 echo $(curl -ss http://ipecho.net/plain)
+```
+
+## Find primary network interface
+
+```sh
+route -n | awk '($1 == "0.0.0.0") { print $NF }'
 ```
 
 ## Get IP from interface
@@ -167,6 +164,18 @@ echo $(curl -ss http://ipecho.net/plain)
 ```sh
 ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
 ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1
+```
+
+## Get system information
+
+Basics e.g. modelnumber, manufactorer
+```bash
+dmidecode -t1
+```
+
+Ram slots
+```bash
+dmidecode -t memory
 ```
 
 ## Shell Boot Order
@@ -199,36 +208,6 @@ ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1
 
 	Any other shell run by the user after logging on, or which is run by any automated process which is not coupled to a logged in user.
 
-## Find directories containing the most amount of files
-
-```sh
-find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}\"" \; | sort -nr
-```
-
-## Convert all files in the directory to unix line endings
-
-```bash
-find . -type f -print0 | xargs -0 dos2unix
-```
-
-## Ommit first line of stdout
-
-```bash
-awk '{if(NR>1)print}'
-```
-
-## Get system information
-
-Basics e.g. modelnumber, manufactorer
-```bash
-dmidecode -t1
-```
-
-Ram slots
-```bash
-dmidecode -t memory
-```
-
 ## Custom ps command
 
 ```bash
@@ -236,6 +215,7 @@ ps axo user:20,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,comm
 ```
 
 ## Download whole website with wget
+
 ```bash
 wget \
      --recursive \
@@ -250,22 +230,20 @@ wget \
 ```
 
 ## PHP modules
+
 ```bash
 php -m
 ```
 /etc/php/php.ini
 
-## Make all files with shebang in a folder executable
-```bash
-grep -rl '^#!' FOLDER | xargs chmod +x
-```
-
 ## Print the value of an alias
+
 ```bash
 type ALIAS
 ```
 
-## Convert svg to all in one ico
+## Convert svg to all in one icon
+
 ```bash
 convert -density 384 NAME.svg -define icon:auto-resize NAME.ico
 ```
@@ -294,12 +272,6 @@ ps ax | grep "xelatex main.tex" | grep -v grep | awk '{print "kill -9 " $1}' | s
 	dd if=/dev/urandom of=/dev/null status=progress
     ```
     
-## Find primary network interface
-
-```sh
-route -n | awk '($1 == "0.0.0.0") { print $NF }'
-```
-
 ## Inline file returning
 
 instead of 
