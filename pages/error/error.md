@@ -2,19 +2,12 @@
 title: error
 ---
 
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-</head>
-<body>
-    <div id="wrapper" class="loaded">
-      <pre id="terminal" style="display: block;">
-      	<span class="cursor"></span>
-      </pre>
-    </div>
-    <script>init(TEXT404);</script>
-</body>
-</html>
+	<h1>Segmentation Fault!</h1>
+	<section class="error-container">
+	  <span><span>4</span></span>
+	  <span>0</span>
+	  <span><span>4</span></span>
+	</section>
+	<div class="link-container">
+	  <a target="_blank" href="mailto:support@example.com" class="more-link">Report!</a>
+	</div>
