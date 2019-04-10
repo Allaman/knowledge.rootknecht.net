@@ -6,15 +6,21 @@ title: About
 
 Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift 😃 Believes in the only true file format - plain text. You live and learn.
 
-!!! [Repository](https://repo.rootknecht.net/explore)
+! [Linkedin](https://www.linkedin.com/in/michael-peter-4aa918107/)
 
-!!!! [Github](https://github.com/Allaman)
+! [Xing](https://www.xing.com/profile/Michael_Peter94)
 
 ! [Twitter](https://twitter.com/Allamann)
 
+!! [Repository](https://repo.rootknecht.net/explore)
+
+!! [Github](https://github.com/Allaman)
+
 !! [Keybase](https://keybase.io/allaman)
 
-## Categories
+## Webpage
+
+The intention behind this page is that I can remember things I discovered during my journey and to share my experience and tricks I made. I structured the topics in the folowing five categories:
 
 - [Application](https://knowledge.rootknecht.net/taxonomy?name=category&val=Application)
 
