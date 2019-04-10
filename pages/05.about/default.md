@@ -41,9 +41,3 @@ The intention behind this page is that I can remember things I discovered during
 - [Programming](https://knowledge.rootknecht.net/taxonomy?name=category&val=Programming)
 
     Some hints on different programming topics I dealt with
-    
-## Legal
-    
-[Disclaimer](/disclaimer)
-
-[Contact](/contact)
