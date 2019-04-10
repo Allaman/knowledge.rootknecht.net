@@ -1,5 +1,6 @@
 ---
 title: Contact
+published: false
 visible: false
 form:
     name: contact
