@@ -1,5 +1,5 @@
 ---
-title: Datenschutz
+title: Privacy
 ---
 
 <h2>Datenschutzerklärung</h2>
