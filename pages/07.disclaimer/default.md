@@ -9,7 +9,11 @@ Disclaimer (Impressum) in German language:
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
 Michael Peter
-[Adresse auf Anfrage](/contact)
+Egerländerstr. 2
+85386 Eching
+Deutschland
+
+allaman@rootknecht.net
 
 # Haftungsausschluss
 ## Haftung für Inhalte
