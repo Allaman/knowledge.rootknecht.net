@@ -97,6 +97,16 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - quickaccess to files, directories
 - inspired by autojump, z, and v
 
+## Glances
+
+[glances](https://github.com/nicolargo/glances)
+
+- fancy htop alternative
+- written in Python
+- including webserver
+- cross platform
+- remote monitoring
+
 ## hledger
 
 [hledger](https://hledger.org/)
