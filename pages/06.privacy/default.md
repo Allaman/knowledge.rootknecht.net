@@ -1,5 +1,6 @@
 ---
 title: Privacy
+visible: false
 ---
 
 <h2>Datenschutzerklärung</h2>
