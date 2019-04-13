@@ -1,5 +1,6 @@
 ---
 title: Privacy
+routable: false
 ---
 
 <h2>Datenschutzerklärung</h2>
