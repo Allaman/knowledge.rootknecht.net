@@ -88,11 +88,29 @@ Infrastructure as Code is an approach of infrastructure automation based on prac
 ### Challenges in the Cloud Age
 
 1. Server Sprawl[^2]
-2. Configuration Drif
+2. Configuration Drift
 3. Snowflake Servers
 4. Fragile Infrastructure
 5. Automation Fear
 6. Erosion
+
+### Priciples
+
+1. Systems should be reproducible
+2. Systems should be disposable
+3. Systems should be consistent
+4. Processes should be repeatable
+5. Design should be flexible
+
+### IaC and DevOps
+
+Infrastructure as Code provides your DevOps teams the following benefigs:
+
+1. Develop and test against production-like systems
+2. Deploy with repeatable, reliable processes
+3. Monitor and validate operational quality
+4. Improve quality
+
 
 [^1]: Better known examples for SaaS solutions are Gmail or Office365
 [^2]: According to "Infrastructure as Code - Managing Servers in the Cloud" by Kief Morris - an excellent book
