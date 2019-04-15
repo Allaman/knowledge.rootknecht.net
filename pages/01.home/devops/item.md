@@ -81,4 +81,18 @@ Examples in the Amazon ecosystem:
 
 !!! Automated management of the life cycle of all infrastructure components in their entirety by utilization of methods and best practices from the area of software engineering.
 
+### Definition
+
+Infrastructure as Code is an approach of infrastructure automation based on practices already established in classical software development. It emphasizes consistent, repeatable routines for provisioning and changing systems as well as their configuration. Engineers use and enforce techniques commonly known in the field of software development, such as version control systems, automated testing, deployment orchestration, test driven development, and continuous integration/delivery. Therefore, infrastructure is treated as if it is software and data.
+
+### Challenges in the Cloud Age
+
+1. Server Sprawl[^2]
+2. Configuration Drif
+3. Snowflake Servers
+4. Fragile Infrastructure
+5. Automation Fear
+6. Erosion
+
 [^1]: Better known examples for SaaS solutions are Gmail or Office365
+[^2]: According to "Infrastructure as Code - Managing Servers in the Cloud" by Kief Morris - an excellent book
