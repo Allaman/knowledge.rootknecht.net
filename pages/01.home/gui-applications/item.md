@@ -47,6 +47,16 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - community edition quite powerful
 - Java based
 
+## Easytag
+
+[easytag](https://gitlab.gnome.org/GNOME/easytag/)
+
+- mp3 tag editor
+- written in C
+- open source
+- cross platform
+- powerful yet light weight
+
 ## Filelight
 
 [Filelight](https://utils.kde.org/projects/filelight/)
