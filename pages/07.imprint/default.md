@@ -1,11 +1,11 @@
 ---
-title: Disclaimer
+title: Imprint
 visible: false
 ---
 
 Liability and copyright according to German law.
 
-Disclaimer (Impressum) in German language:
+Imprint (Impressum) in German language:
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
