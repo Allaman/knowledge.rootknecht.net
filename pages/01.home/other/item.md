@@ -161,3 +161,58 @@ In your `userChrome.css` file in a folder `chrome` in your Firefox` profile fold
 #tabbrowser-tabs .scrollbutton-up,.tabbrowser-tabs .scrollbutton-down,#alltabs-button,.tabbrowser-tab:not([fadein]){display: none;}
 ```
 <small>[Source](https://gist.githubusercontent.com/forexhill/b0446cc31e5001c9e87754df83f0f1ca/raw/f4f1a807d43434a1f10908364dec56ecdf08422c/gistfile1.txt)</small>
+
+## Humble Bumble eBook bulk download
+
+Paste and execute in the dev tools of the browser
+
+```javascript
+// How many seconds to delay between downloads.
+var delay = 1000;
+// whether to use window.location or window.open
+// window.open is more convenient, but may be popup-blocked
+var window_open = false;
+// the filetypes to look for, in order of preference.
+// Make sure your browser won't try to preview these filetypes.
+var filetypes = ['epub', 'mobi', 'pdf'];
+
+var downloads = document.getElementsByClassName('download-buttons');
+var i = 0;
+var success = 0;
+
+function download() {
+  var children = downloads[i].children;
+  var hrefs = {};
+  for (var j = 0; j < children.length; j++) {
+    var href = children[j].getElementsByClassName('a')[0].href;
+    for (var k = 0; k < filetypes.length; k++) {
+      if (href.includes(filetypes[k])) {
+        hrefs[filetypes[k]] = href;
+        console.log('Found ' + filetypes[k] + ': ' + href);
+      }
+    }
+  }
+  var href = undefined;
+  for (var k = 0; k < filetypes.length; k++) {
+    if (hrefs[filetypes[k]] != undefined) {
+      href = hrefs[filetypes[k]];
+      break;
+    }
+  }
+  if (href != undefined) {
+    console.log('Downloading: ' + href);
+    if (window_open) {
+      window.open(href);
+    } else {
+      window.location = href;
+    }
+    success++;
+  }
+  i++;
+  console.log(i + '/' + downloads.length + '; ' + success + ' successes.');
+  if (i < downloads.length) {
+    window.setTimeout(download, delay);
+  }
+}
+```
+<small>[Source](http://shallowsky.com/blog/tech/web/downloading-from-humble-bundle.html)</small>
