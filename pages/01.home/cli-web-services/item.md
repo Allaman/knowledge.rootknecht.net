@@ -5,6 +5,8 @@ taxonomy:
         - Application
 ---
 
+[TOC]
+
 ## Weather
 
 ```sh
@@ -25,10 +27,12 @@ curl ipecho.net/plain
 
 ## Translator
 
-Translates marked text with the Google translate API and displays the result via `notify-send`
+Translates marked text to **de** with the Google translate API and displays the result via `notify-send`
 
 ```sh
-notify-send --icon=info "$(xsel -o)" "$(wget -U "Mozilla/5.0" -qO - "http://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=de&dt=t&q=$(xsel -o | sed "s/[\"'<>]//g")" | sed "s/,,,0]],,.*//g" | awk -F'"' '{print $2, $6}')"
+notify-send --icon=info "$(xsel -o)" \
+	"$(wget -U "Mozilla/5.0" -qO - "http://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=de&dt=t&q=$(xsel -o | sed "s/[\"'<>]//g")" \
+    | sed "s/,,,0]],,.*//g" | awk -F'"' '{print $2, $6}')"
 ```
 
 ## Cheatsheet
