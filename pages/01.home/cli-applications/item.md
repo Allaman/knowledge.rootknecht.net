@@ -66,6 +66,16 @@ In your git config:
 - respects git status
 - single binary
 
+## extract
+
+[extract](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/extract/extract.plugin.zsh)
+
+- oh-my-zsh plugin
+- written in bash
+- auto detects and extracts various compressed formats
+- simple and easy to use
+- required "backend" commands (like zip or tar) must be installed
+
 ## fd
 
 [fd](https://github.com/sharkdp/fd)
@@ -223,6 +233,16 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - wrapper around ping
 - written in bash
 - colorful and easy to read
+
+## Procs
+
+[procs](https://github.com/dalance/procs)
+
+- alternative to `ps`
+- written in Rust
+- open source
+- nice looking and handy functionality
+- customizable
 
 ## ranger
 
