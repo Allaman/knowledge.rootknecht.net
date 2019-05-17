@@ -96,6 +96,11 @@ npm install http-server –g
 http-server
 ```
 
+Buysbox
+```sh
+busybox httpd -p 127.0.0.1:8080 -h /var/www/
+```
+
 ## Markdown highlighted notes
 For custom highlighted notes in a normal Markdown use the following snippets
 ```markdown
