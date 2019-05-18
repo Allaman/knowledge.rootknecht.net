@@ -174,6 +174,17 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - open source
 - cross platform
 
+## Rofi
+
+[rofi](https://github.com/davatorium/rofi)
+
+- launcher, window switcher and dmenu replacement
+- written in C
+- customizable
+- keyboard driven
+- ssh and desktop file launcher mode
+- theming
+
 ## Sublime Merge
 
 [Sublime Merge](https://www.sublimemerge.com/)
