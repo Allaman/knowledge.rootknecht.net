@@ -299,6 +299,14 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - add, edit, delete, and list your `.ssh/config` entries
 - various UIs
 
+## sxhkd
+
+[sxhkd](https://github.com/baskerville/sxhkd)
+
+- hotkey utility 
+- written in C
+- works across all Distributions with x server
+
 ## translate-shell
 
 [translate-shell](https://github.com/soimort/translate-shell)

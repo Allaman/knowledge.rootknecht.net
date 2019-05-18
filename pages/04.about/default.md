@@ -4,7 +4,9 @@ title: About
 
 ## Me
 
-Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift 😃 Believes in the only true file format - plain text. You live and learn.
+[center]Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift 😃 Believes in the only true file format - plain text. You live and learn.[/center]
+
+## Get in touch
 
 ! [Linkedin](https://www.linkedin.com/in/michael-peter-4aa918107/)
 
@@ -18,7 +20,7 @@ Linux and open source enthusiast. Wants to automate everything. Thinks modal edi
 
 !! [Keybase](https://keybase.io/allaman)
 
-## Webpage
+## Why knowledge.rootknecht.net
 
 The intention behind this page is that I can remember things I discovered during my journey and to share my experience and tricks I made. I structured the topics in the folowing five categories:
 

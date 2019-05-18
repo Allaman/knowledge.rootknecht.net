@@ -11,7 +11,7 @@ taxonomy:
 
 ## Motivation
 
-I am a Linux[^1] user for a decade now and my workflow and productivity is optimized to this environment especially the shell[^2]. For some insights of my workflow and tools have a look at [here](https://knowledge.rootknecht.net/linux-productivity). From time to time my work demands from me to work on a Windows machine despite the fact that in my kind of business, Infrastructure and DevOps, the majority is Linux driven. 
+I am a Linux[^1] user for over a decade and my workflow and productivity is optimized to this environment especially the shell[^2]. For some insights of my workflow and tools have a look at [here](https://knowledge.rootknecht.net/linux-productivity). From time to time my work demands from me to work on a Windows machine despite the fact that in my kind of business, Infrastructure and DevOps, the majority of systems and tools is Linux driven.
 
 Now the question is how to get the best Linux like experience on a Windows 10[^3] machine specifically how to get the best shell experience and the tools that I am used to.
 
