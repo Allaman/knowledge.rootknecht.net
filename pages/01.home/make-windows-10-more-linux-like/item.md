@@ -23,6 +23,12 @@ I want to describe some Windows tweaks and software and three ways of getting a 
 
 ## Built-in Windows
 
+Windows 10 finally has built-in functionality that is available on Linux since my beginning: **virtual desktops** and a **clipboard manager**! 
+
+You can access the clipboard manager by pressing `Win + r`. Although it is not as powerful as some Linux managers it is a start. Also have a look at [ditto](https://ditto-cp.sourceforge.io/) for a replacement.
+
+Virtual desktops are crucial for my workflow! I use them to structure my apps and keep my applications organized on different desktops. Unfortunatley, the shortcuts for interacting with virtual desktops are not customizable out of the box. [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) fills the gap and allows me to create more "home row friendly" shortcuts.
+
 
 ## Software
 
@@ -31,6 +37,8 @@ Generally speaking, I always prefer cross platform software to be able to have a
 - [ConEmu](https://conemu.github.io/) - An enhanced terminal featuring tabs, Guake drop down style, various differents shells and much customazation options
 - [MobaXterm](https://mobaxterm.mobatek.net/) - A fully featured SSH, FTP, RDP and more client with session management, tunneling, its own shell and more
 - [Autohotkey](https://www.autohotkey.com/) - An open source Windows scripting tool for automation and key binding settings
+- [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) - Customizing shortcuts for built in virtual desktops
+- [ditto](https://ditto-cp.sourceforge.io/) - A free clipboard manager for those that want more customization than the built-in one offers
 
 
 
@@ -51,8 +59,13 @@ Requirements:
 - [Enable/Install WSL](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
 - Choose and install a Linux distribution from. As of now the choice is Ubuntu, OpenSUSE, SLES, Kali Linux, or Debian GNU/Linux. I prefer Ubuntu for the easiest usage
 
+Basically, configure it like your Linux. Install zsh, clone your dotfiles, install tools like ripgrep, fzf, etc. Generally speaking WSL is intended to be used to access Linux toolchain and not for server or GUI applications (altough possible). Also keep in mind that there might be issues due to differences in both, Windows' and Linux' filessystems.
+
 |Pros|Cons|
 |-------|-------|
+|Easy Setup|Needs admin rights|
+|Close to native Linux|Not all distributions available|
+|Your Linux config works|Can be slow (emulation)|
 
 ## Powershell
 
