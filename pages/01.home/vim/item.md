@@ -79,6 +79,16 @@ setxkbmap -option caps:escape # More options available
 setxkbmap -option # to reset changes
 ```
 
+## NeoVim and vimrc
+
+In `.config/nvim/init.vim` (create if not existing)
+
+```vim
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+```
+
 ## Enter copyright symbol
 
 1. In insert mode

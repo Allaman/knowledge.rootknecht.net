@@ -234,6 +234,12 @@ awk '{gsub(/search_pattern/,x); }'
 awk -F= # = separator for e.g. colums
 ```
 
+### Column of line
+
+```sh
+free -h | awk '/Mem:/{print $2}'
+```
+
 ## Arrays
 
 ```bash
