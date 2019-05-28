@@ -22,6 +22,17 @@ vim -b
 vim -p [file1] [file2] ...
 ```
 
+## Convert line endings
+
+```sh
+vim +':w ++ff=unix' +':q' FILE
+```
+
+or for other endings
+
+- `:w ++ff=dos`
+- `:w ++ff=mac`
+
 ## Show mappings
 
 ```

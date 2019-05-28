@@ -170,7 +170,7 @@ command -v PROGRAMM >/dev/null 2>&1 || { echo >&2 "require foo"; exit 1; }
 ```
 ```bash
 for program in awk sed grep sort uniq rm mktemp; do
-  which "$program" > /dev/null || { error "Not found: $program"; exit 1; }
+  command -v "$program" > /dev/null 2>&1 || { echo "Not found: $program"; exit 1; }
 done
 ```
 
