@@ -6,3 +6,12 @@ taxonomy:
         - Personal
 ---
 
+## Hardware
+
+## Operating System
+
+## Desktop Environmnet
+
+## Common Applications
+
+## Workflow Philosophy
