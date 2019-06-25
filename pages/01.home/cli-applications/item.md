@@ -76,6 +76,22 @@ In your git config:
 - provides sane defaults
 - does not intend to fully replace find
 
+## figlet
+
+[figlet](http://www.figlet.org/)
+
+- ASCII letter generator
+- cross platform
+- customizable
+```
+    ___        _______ ____   ___  __  __ _____ 
+   / \ \      / / ____/ ___| / _ \|  \/  | ____|
+  / _ \ \ /\ / /|  _| \___ \| | | | |\/| |  _|  
+ / ___ \ V  V / | |___ ___) | |_| | |  | | |___ 
+/_/   \_\_/\_/  |_____|____/ \___/|_|  |_|_____|
+
+```
+
 ## fzf
 
 [fzf](https://github.com/junegunn/fzf)
