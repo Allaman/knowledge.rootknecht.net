@@ -66,6 +66,16 @@ In your git config:
 - respects git status
 - single binary
 
+## extract
+
+[extract](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/extract/extract.plugin.zsh)
+
+- oh-my-zsh plugin
+- written in bash
+- auto detects and extracts various compressed formats
+- simple and easy to use
+- required "backend" commands (like zip or tar) must be installed
+
 ## fd
 
 [fd](https://github.com/sharkdp/fd)
@@ -240,6 +250,16 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in bash
 - colorful and easy to read
 
+## Procs
+
+[procs](https://github.com/dalance/procs)
+
+- alternative to `ps`
+- written in Rust
+- open source
+- nice looking and handy functionality
+- customizable
+
 ## ranger
 
 [ranger](https://github.com/ranger/ranger)
@@ -294,6 +314,14 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in Python
 - add, edit, delete, and list your `.ssh/config` entries
 - various UIs
+
+## sxhkd
+
+[sxhkd](https://github.com/baskerville/sxhkd)
+
+- hotkey utility 
+- written in C
+- works across all Distributions with x server
 
 ## translate-shell
 
