@@ -229,6 +229,13 @@ wget \
          www.example.com/home/wiki/
 ```
 
+## zip folder with password
+
+```bash
+zip -rP PASSWORD file.zip folder/
+```
+
+
 ## PHP modules
 
 ```bash

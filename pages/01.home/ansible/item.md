@@ -18,6 +18,19 @@ taxonomy:
 
 ```sh
 ansible-playbook -i xxx.xxx.xxx.xxx, playbook.yml # be aware of the comma
+ansible all -i localhost, -m setup -c local
+```
+
+## Output shell command
+
+```yaml
+- name: debug
+  shell: ls -al /var/www/
+  register: out
+
+- name: out
+  debug:
+    var: out.stdout_lines
 ```
 
 ## Get a list of facts

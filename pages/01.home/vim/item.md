@@ -22,6 +22,17 @@ vim -b
 vim -p [file1] [file2] ...
 ```
 
+## Convert line endings
+
+```sh
+vim +':w ++ff=unix' +':q' FILE
+```
+
+or for other endings
+
+- `:w ++ff=dos`
+- `:w ++ff=mac`
+
 ## Show mappings
 
 ```
@@ -77,6 +88,16 @@ In Linux use `setxkbmap`:
 ```bash
 setxkbmap -option caps:escape # More options available
 setxkbmap -option # to reset changes
+```
+
+## NeoVim and vimrc
+
+In `.config/nvim/init.vim` (create if not existing)
+
+```vim
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
 ```
 
 ## Enter copyright symbol
