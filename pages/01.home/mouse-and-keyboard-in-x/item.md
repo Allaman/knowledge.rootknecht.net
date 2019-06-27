@@ -11,6 +11,17 @@ List devices with `xinput --list'
 List props of a device with `xinput --list-props <DEVICE_ID>`
 
 Set acceleration with `xinput --set-prop <DEVICE ID> 'libinput Accel Speed' <ACC FACTOR>`
+    
+In `/etc/X11/xorg.conf.d/99-libinput-custom-config.conf` persist configuration:
+    
+```
+Section "InputClass"
+  Identifier "Trackpoint AccelSpeed"
+  MatchDriver "libinput"
+  MatchProduct "TPPS/2 Elan TrackPoint" # adjust to your needs
+  Option "AccelSpeed" "0.5"
+EndSection
+```
 
 ## Configuring keyboard
 
