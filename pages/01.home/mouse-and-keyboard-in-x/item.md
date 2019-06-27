@@ -6,7 +6,7 @@ title: 'Mouse and Keyboard in X'
 
 ## Configuring mouse and trackpoint
 
-List devices with `xinput --list'
+List devices with `xinput --list`
 
 List props of a device with `xinput --list-props <DEVICE_ID>`
 
