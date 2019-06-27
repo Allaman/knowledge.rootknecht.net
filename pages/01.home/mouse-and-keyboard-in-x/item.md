@@ -2,6 +2,8 @@
 title: 'Mouse and Keyboard in X'
 ---
 
+! Does not apply to Wayland and assumes `f86-input-libinput`
+
 ## Configuring mouse and trackpoint
 
 List devices with `xinput --list'
