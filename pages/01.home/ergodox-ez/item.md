@@ -93,6 +93,10 @@ The backlit in action.
 
 ![](11-glow.jpg?link&cropResize=300,300)
 
+ The limited edition transport case I was offered:
+ 
+ ![](case.jpg?link&cropResize=300,300)
+
 
 ## Configuration
 
