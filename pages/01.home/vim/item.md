@@ -7,6 +7,10 @@ taxonomy:
 
 [TOC]
 
+## My (Neo)Vim config
+
+! Working on that! :)
+
 ## Safe file opend by an user as root
 ```vimscript
 :w !sudo tee %
