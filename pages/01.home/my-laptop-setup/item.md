@@ -21,6 +21,8 @@ I am running a Lenovo X1 Carbon 6th Generation with following specs:
 - Intel Dualband-Wireless-AC 8265 (2x2) WLAN
 - Fibocom Cat9 L850-GL 4G LTE
 
+![](x1carbon.jpg?link&cropResize=300,300)
+
 ### Why Lenovo
 
 My first Lenovo Laptop was the superior [x220](https://thinkwiki.de/X220) and I was totally impressed by its lightweight formfactor *and* its performance. My father is still running it today (as of June 2019)! I was so impressed that I even upgraded just after one year to the successor [x230](https://thinkwiki.de/X230) that was my main working machine until May 2019!
