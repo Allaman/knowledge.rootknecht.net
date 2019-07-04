@@ -139,4 +139,4 @@ Another aspect which is quite controversy is my preference when it comes to mult
 
 
 
-[^1]: I cannot speak for dvorak, neo2 and other special layouts
+[^1]: I cannot speak for [dvorak](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard), [neo](https://neo-layout.org/), and other special layouts
