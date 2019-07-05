@@ -5,6 +5,7 @@ taxonomy:
     category:
         - Personal
 ---
+[TOC]
 
 ## Hardware
 
