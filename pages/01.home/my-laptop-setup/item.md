@@ -30,7 +30,7 @@ My first Lenovo Laptop was the superior [x220](https://thinkwiki.de/X220) and I 
 
 At this point I was totally commited to run Lenovo laptops for two main reasons:
 
-1. Lenovo's trackpoint. I am almost as fast as with a real mouse by using the trackpoint despite my [workflow](#workflow_philosophy) being heavily keyboard centric.
+1. Lenovo's trackpoint. I am almost as fast as with a real mouse by using the trackpoint despite my [workflow](#workflow-philosophy) being heavily keyboard centric.
 2. Lenovo's keyboards are top notch! The classical ones even more than the newer chiclet ones but still top notch! I even [replaced](https://knowledge.rootknecht.net/thinkpad-adventures#replacing-x230-keyboard) my keyboard of the x230 with an old one :)
 
 Of course there are more reasons like excellent performance, build quality, and the classical look
