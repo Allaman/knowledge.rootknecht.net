@@ -5,13 +5,14 @@ taxonomy:
     category:
         - Personal
 ---
+
 [TOC]
 
 ## Hardware
 
 ### Laptop
 
-I am running a Lenovo X1 Carbon 6th Generation with following specs:
+I am running a Lenovo X1 Carbon 6th Generation[^1]  with following specs:
 
 - Intel Core i7-8550U processor (8 MB Cache, up to 4,00 GHz)
 - Intel UHD-Grafik 620
@@ -41,7 +42,7 @@ Besides my x1 I use an [ErgoDZ EZ](https://knowledge.rootknecht.net/ergodox-ez) 
 
 ## Operating System
 
-I am running the [i3wm](https://i3wm.org/) flavor of [Manjaro Arch Linxu](https://manjaro.org/). 
+I am running the [i3wm](https://i3wm.org/) flavor of [Manjaro Arch Linux](https://manjaro.org/). 
 
 In my opinion Manjaro is the best desktop operating system as it provides a good balance between the bleeding edge of pure Arch and the stability of non [rolling release](https://en.wikipedia.org/wiki/Rolling_release) distributions like Ubuntu. 
 
@@ -113,7 +114,7 @@ fasd allows you to quickly jump to folders by indexing and weighting your visite
 
 I am a keyboard fan. For the things I do the keyboard is the primary input method as most of the time I handle with some form of textual data. Actually, my main reason for switching to a Linux OS back in 2009 was to be able to operate my Laptop with my keyboard only because I always forgot my mouse. After some years of fear of Vim, caused by not being able to quit it, I decided to give it a deeper try not aware of the impact of my style of work!
 
-Since that my usage of Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's [modal editing](https://en.wikipedia.org/wiki/Vi#Interface) approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the Home Row. Vim-like key bindings strongly support not this pattern on regular keyboard layouts[1], I decided to give it a deeper try. My skills in using Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's modal editing approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the [Home Row](https://www.computerhope.com/jargon/h/hrk.htm). Vim-like key bindings strongly support not this pattern on regular keyboard layouts[^1] like qwert[z|y]. 
+Since that my usage of Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's [modal editing](https://en.wikipedia.org/wiki/Vi#Interface) approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the Home Row. Vim-like key bindings strongly support not this pattern on regular keyboard layouts[1], I decided to give it a deeper try. My skills in using Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's modal editing approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the [Home Row](https://www.computerhope.com/jargon/h/hrk.htm). Vim-like key bindings strongly support not this pattern on regular keyboard layouts[^2] like qwert[z|y]. 
 
 Here is a not comprehensive list of applications that support Vim-like key bindings:
 
@@ -139,5 +140,5 @@ Another aspect which is quite controversy is my preference when it comes to mult
 1. Use a drop down Terminal like [Yakuake](https://kde.org/applications/system/org.kde.yakuake) for quick terminal tasks without modifying your current desktop
 
 
-
-[^1]: I cannot speak for [dvorak](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard), [neo](https://neo-layout.org/), and other special layouts
+[^1]: I am not sponsored by any company in this article
+[^2]: I cannot speak for [dvorak](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard), [neo](https://neo-layout.org/), and other special layouts
