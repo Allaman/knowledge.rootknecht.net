@@ -62,3 +62,30 @@ ulimit -c unlimited is the same as LimitCORE=infinity
 ulimit -v unlimited is the same as LimitAS=infinity
 ulimit -m unlimited is the same as LimitRSS=infinity 
 ```
+
+## Interact with systemd
+
+Reload changes
+```sh
+systemctl daemon-reload
+```
+
+List unit files
+```sh
+systemctl list-unit-files [--state=[LODA|SUB|ACTIVE|failed]]
+```
+
+Enable/Disable unit
+```sh
+systemctl enable|disable FOO
+```
+
+Edit unit file
+```sh
+systemctl edit --full FOO # or just by directly editing the file
+```
+
+Start/Stop/Reload/Restart
+```sh
+systemctl start/stop/reload/restart FOO
+```
