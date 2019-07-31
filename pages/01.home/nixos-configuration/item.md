@@ -200,6 +200,15 @@ This user has no password and is only able to login with its private ssh key. In
 
 As ad hoc style you can use standarf linux commands such as useradd, usermod, groupadd, etc.
 
+## Automatic garbage collection
+```
+nix.gc = {
+  automatic = true;
+  dates = "weekly";
+  options = "--delete-older-than 30d";
+};
+```
+
 ## Zsh
 In configuration.nix
 ```
