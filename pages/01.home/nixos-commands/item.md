@@ -76,3 +76,13 @@ nix-env -e PACKAGE
 ```bash
 nix-env -f https://github.com/NixOS/nixpkgs/archive/master.tar.gz -iA pkgs.NAME
 ```
+
+### Clean system
+```sh
+nix-collect-garbage -d # as root to clear system profile
+```
+
+### Optimize store
+```sh
+nix-store --optimise
+```
