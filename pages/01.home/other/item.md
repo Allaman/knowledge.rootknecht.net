@@ -65,6 +65,12 @@ The target folder must be writeable from the mysql process user
 SELECT user,authentication_string,plugin,host FROM mysql.user;
 ```
 
+## Create mysql backup user (read-only)
+
+```mysql
+GRANT SELECT,LOCK TABLES ON DBNAME.* TO 'backup'@'localhost';
+```
+
 ## Mount a virtualbox shared folder in a linux guest
 in `/etc/fstab`
 ```bash
