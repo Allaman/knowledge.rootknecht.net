@@ -93,3 +93,27 @@ Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
 </IfModule>
 ```
+## Enable FPM/FastCGI 
+
+- Install `php7.x-fpm`
+- Activate mods
+```sh
+a2enmod actions fastcgi alias proxy_fcgi
+a2enconf php7.x-fpm
+```
+- check status of fpm service
+```sh
+systemctl status php7.3-fpm
+```
+- Add to your apache config:
+```
+<FilesMatch \.php$>
+  <If "-f %{SCRIPT_FILENAME}">
+    SetHandler "proxy:unix:/run/php-fpm/www.sock|fcgi://localhost"
+  </If>
+</FilesMatch>
+```
+- Test
+```
+echo "<?php phpinfo(); ?>" > /var/www/test/index.php
+```
