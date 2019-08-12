@@ -60,6 +60,7 @@ In your git config:
 [exa](https://the.exa.website/)
 
 - `ls` alternative
+- similar to [lsd](#lsd)
 - written in Rust
 - fast
 - colored multi column output
@@ -115,15 +116,26 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - quickaccess to files, directories
 - inspired by autojump, z, and v
 
-## Glances
+## glances
 
 [glances](https://github.com/nicolargo/glances)
 
-- fancy htop alternative
+- fancy top alternative
 - written in Python
+- similar to [gotop](#gotop) and [htop](#htop)
 - including webserver
 - cross platform
 - remote monitoring
+
+## gotop
+
+[gotop](https://github.com/cjbassi/gotop)
+
+- fancy top alternative
+- written in Go
+- similar to [glances](#glances) and [htop](#htop)
+- colorscheme support
+- includes network, temperatures and more
 
 ## hledger
 
@@ -143,6 +155,8 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - *space* &rarr; mark a single process
 
 Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the application by pressing `F10` save and exit.
+
+Alternatives may be [glances](#glances) and [gotop](#gotop)
 
 ## iftop
 
@@ -183,6 +197,18 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in Python
 - reads and writes events/icalendars
 - in combination with [vdirsyncer](#vdirsyncer)
+
+## lsd
+
+[lsd](https://github.com/Peltoche/lsd)
+
+- `ls` alternative
+- similar to [exa](#exa)
+- written in Rust
+- fast
+- colored multi column output
+- single binary
+- icons
 
 ## mstmp
 
@@ -225,7 +251,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in C
 - PCAP based
 
-## Pandoc
+## pandoc
 
 [Pandoc](https://pandoc.org/)
 
@@ -242,7 +268,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in bash
 - colorful and easy to read
 
-## Procs
+## procs
 
 [procs](https://github.com/dalance/procs)
 
@@ -357,7 +383,7 @@ Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the applic
 - written in C
 - [mutt](#mutt) and [tmux](#tmux) integration and more
 
-## Vagrant
+## vagrant
 
 [vagrant](https://github.com/hashicorp/vagrant)
 

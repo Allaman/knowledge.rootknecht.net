@@ -11,7 +11,7 @@ taxonomy:
 
 ## Preface
 
-DevOps can usually unleash its full potential in combination with [Cloud Computing](#cloud-computing) and [Infrastructure as Coe](#infrastructure-as-code), which are described in the following article as well.
+DevOps can usually unleash its full potential in combination with [Cloud Computing](#cloud-computing) and [Infrastructure as Code](#infrastructure-as-code), which are described in the following article as well.
 
 ## Terms and definitions
 ! Disclaimer
@@ -40,7 +40,7 @@ This page describes certain aspects in the area of DevOps. If not marked these s
 
 ### Continuous Everything
 
-**tbd**
+**coming soon**
 
 ## Cloud Computing
 
