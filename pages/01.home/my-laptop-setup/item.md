@@ -38,7 +38,7 @@ Of course there are more reasons like excellent performance, build quality, and 
 
 ### Peripherals
 
-Besides my x1 I use an [ErgoDZ EZ](https://knowledge.rootknecht.net/ergodox-ez) keyboard, a [Logitech MX Anywhere 2S](https://www.logitech.com/de-de/product/mx-anywhere-2s-flow) in midnight blue, a [Panasonic Bluetooth RP-HD605NE-K9](https://www.panasonic.com/de/consumer/home-entertainment/kopf-ohrhoerer/kopfhoerer/rp-hd605n.html)
+Besides my x1 I use an [ErgoDZ EZ](https://knowledge.rootknecht.net/ergodox-ez) keyboard, a [Logitech MX Anywhere 2S](https://www.logitech.com/de-de/product/mx-anywhere-2s-flow) in midnight blue, a [Panasonic Bluetooth RP-HD605NE-K9](https://www.panasonic.com/de/consumer/home-entertainment/kopf-ohrhoerer/kopfhoerer/rp-hd605n.html). For more ports I use the [Inateck USB C Hub](https://www.amazon.de/gp/product/B07QXYS1WM) USB C port replikator.
 
 ## Operating System
 
@@ -105,10 +105,9 @@ fasd allows you to quickly jump to folders by indexing and weighting your visite
 | grep | [ripgrep](https://github.com/BurntSushi/ripgrep) |
 | ps   | [procs](https://github.com/dalance/procs) |
 | cat  | [bat](https://github.com/sharkdp/bat) |
-| ls   | [exa](https://github.com/ogham/exa) |
+| ls   | [exa](https://github.com/ogham/exa) or [lsd](https://github.com/Peltoche/lsd/) |
 
 ! Nevertheless, I strongly recommend to learn the original tools as you cannot assume to find those replacements on each system!
-
 
 ## Workflow Philosophy
 
@@ -138,6 +137,7 @@ Another aspect which is quite controversy is my preference when it comes to mult
 1. Use a launcher application to start applications fast
 1. Use less bloated applications to reduce GUI elements and focus on content
 1. Use a drop down Terminal like [Yakuake](https://kde.org/applications/system/org.kde.yakuake) for quick terminal tasks without modifying your current desktop
+1. Let the WM handle the window management ;)
 
 
 [^1]: I am not sponsored by any company in this article
