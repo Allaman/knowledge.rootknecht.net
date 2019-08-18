@@ -16,9 +16,9 @@ title: About
 
 !! [fa icon=fa-gitlab /] [Repository](https://repo.rootknecht.net/explore)
 
-!! [fa icon=fa-github /]  [Github](https://github.com/Allaman)
+!! [fab icon=fa-github /]  [Github](https://github.com/Allaman)
 
-!! [fa icon=fa-keybase /] [Keybase](https://keybase.io/allaman)
+!! [fab icon=fa-keybase /] [Keybase](https://keybase.io/allaman)
 
 ## Why knowledge.rootknecht.net?
 
