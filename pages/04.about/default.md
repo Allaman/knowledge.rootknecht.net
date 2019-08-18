@@ -8,19 +8,19 @@ title: About
 
 ## Get in touch
 
-! [Linkedin](https://www.linkedin.com/in/michael-peter-4aa918107/)
+! [fa icon=fa-linkedin /] [Linkedin](https://www.linkedin.com/in/michael-peter-4aa918107/)
 
-! [Xing](https://www.xing.com/profile/Michael_Peter94)
+! [fa icon=fa-xing /] [Xing](https://www.xing.com/profile/Michael_Peter94)
 
-! [Twitter](https://twitter.com/Allamann)
+! [fa icon=fa-twitter /] [Twitter](https://twitter.com/Allamann)
 
-!! [Repository](https://repo.rootknecht.net/explore)
+!! [fa icon=fa-gitlab /] [Repository](https://repo.rootknecht.net/explore)
 
-!! [Github](https://github.com/Allaman)
+!! [fa icon=fa-github /]  [Github](https://github.com/Allaman)
 
-!! [Keybase](https://keybase.io/allaman)
+!! [fa icon=fa-keybase /] [Keybase](https://keybase.io/allaman)
 
-## Why knowledge.rootknecht.net
+## Why knowledge.rootknecht.net?
 
 The intention behind this page is that I can remember things I discovered during my journey and to share my experience and tricks I made. I structured the topics in the folowing five categories:
 
