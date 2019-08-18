@@ -3,8 +3,10 @@ title: About
 ---
 
 ## Me
+<div class="me">
+	Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to <strong>e</strong>scape <strong>m</strong>eta <strong>a</strong>lt <strong>c</strong>ontrol <strong>s</strong>hift 😃 Believes in the only true file format - plain text. You live and learn.
+</div>
 
-[center]Linux and open source enthusiast. Wants to automate everything. Thinks modal editing is superior to **e**scape **m**eta **a**lt **c**ontrol **s**hift 😃 Believes in the only true file format - plain text. You live and learn.[/center]
 
 ## Get in touch
 
@@ -16,9 +18,9 @@ title: About
 
 !! [fa icon=fa-gitlab /] [Repository](https://repo.rootknecht.net/explore)
 
-!! [fab icon=fa-github /]  [Github](https://github.com/Allaman)
+!! [fa icon=fa-github /]  [Github](https://github.com/Allaman)
 
-!! [fab icon=fa-keybase /] [Keybase](https://keybase.io/allaman)
+!! [fa icon=fa-key /] [Keybase](https://keybase.io/allaman)
 
 ## Why knowledge.rootknecht.net?
 
