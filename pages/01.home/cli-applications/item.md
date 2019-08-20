@@ -10,6 +10,16 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 
 [TOC]
 
+## awless
+
+[awless](https://github.com/wallix/awless)
+
+- AWS CLI wrapper
+- written in Go
+- intuitive set of (sub)commands
+- templating language
+- different terminal outputs
+
 ## bat
 
 [bat](https://github.com/sharkdp/bat)
