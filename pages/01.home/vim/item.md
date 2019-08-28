@@ -21,6 +21,20 @@ taxonomy:
 vim -b
 ```
 
+## Add string at the end of lines
+
+- `SHIFT-v` to select lines
+- `:norm Astring'
+
+norm means `type the following commands` and the `A` stands for append
+
+## Add string at the start of lines
+
+- `^` to move to the start of the line
+- `CTRL-v' to block select your lines
+- `SHIFT-I` to insert your string (on *one* line)
+- `ESC` to insert the string on all lines
+
 ## Open multiple files in vim tabs
 ```bash
 vim -p [file1] [file2] ...
