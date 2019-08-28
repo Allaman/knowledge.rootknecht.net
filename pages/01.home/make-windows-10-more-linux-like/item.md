@@ -15,17 +15,17 @@ I am a Linux[^1] user for over a decade and my workflow and productivity is opti
 
 Now the question is how to get the best Linux like experience on a Windows 10[^3] machine specifically how to get the best shell experience and the tools that I am used to.
 
-I want to describe some Windows tweaks and software and three ways of getting a more Linux like experience on your Windows 10 machine:
+I want to describe some Windows tweaks and three ways of getting a more Linux like experience on your Windows 10 machine as follows:
 
 1. A combination of a virtual machine running Linux and a local SSH client
 2. The Windows Subsystem for Linux basically a compatibility layer for running linux binaries (ELF)
 3. Tweak and enhance the Powershell
 
-## Built-in Windows
+## Built-in Windows Tools
 
 Windows 10 finally has built-in functionality that is available on Linux since my beginning: **virtual desktops** and a **clipboard manager**! 
 
-You can access the clipboard manager by pressing `Win + r`. Although it is not as powerful as some Linux managers it is a start. Also have a look at [ditto](https://ditto-cp.sourceforge.io/) for a replacement.
+You can access the clipboard manager by pressing `Win + v`. Although it is not as powerful as some Linux managers it is a start. Also have a look at [ditto](https://ditto-cp.sourceforge.io/) for a replacement.
 
 Virtual desktops are crucial for my workflow! I use them to structure my apps and keep my applications organized on different desktops. Unfortunatley, the shortcuts for interacting with virtual desktops are not customizable out of the box. [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) fills the gap and allows me to create more "home row friendly" shortcuts.
 
@@ -36,21 +36,73 @@ Generally speaking, I always prefer cross platform software to be able to have a
 
 - [ConEmu](https://conemu.github.io/) - An enhanced terminal featuring tabs, Guake drop down style, various differents shells and much customazation options
 - [MobaXterm](https://mobaxterm.mobatek.net/) - A fully featured SSH, FTP, RDP and more client with session management, tunneling, its own shell and more
-- [Autohotkey](https://www.autohotkey.com/) - An open source Windows scripting tool for automation and key binding settings
+- [Autohotkey](https://www.autohotkey.com/) - An open source Windows scripting tool for automation and key binding settings for instance mapping ESC to CAPS.
 - [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) - Customizing shortcuts for built in virtual desktops
 - [ditto](https://ditto-cp.sourceforge.io/) - A free clipboard manager for those that want more customization than the built-in one offers
 
+
+### Autohotkey
+
+To automatically start an AHK script simply add [capstoesc.ahk](./capstoesc.ask) to your Windows startup folder (`Win+r -> shell:startup`)
+
+### Powershell
+
+Good [guide](https://gist.github.com/jchandra74/5b0c94385175c7a8d1cb39bc5157365e) to customize and bring color into powershell
+
+1. Generate new defaut profile for powershell
+
+```powershell
+new-item $profile -itemtype file -force
+```
+
+2. Edit profile
+
+```powershell
+ise $PROFILE
+```
+
+3. Different profiles
+
+There are six [different profiles](https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profiles/)
+
+| Current User, Current Host – console | $Home\[My ]Documents\WindowsPowerShell\Profile.ps1
+| All Users, Current Host – console | $PsHome\Microsoft.PowerShell_profile.ps1
+
+4. Bash -> Powershell
+
+| Bash | Powershell
+| ls -ltr | Get-ChildItem . | Sort-Object -Property LastWriteTime|
+| find . -type f -iname "azure" | Get-ChildItem -Filter "*azure*" -Recurse -File|
+| cp -R Tools ~/ | Copy-Item '.\Tools\' $env:USERPROFILE -Recurse|
+| mkdir | New-Item -ItemType Directory -Name ‘NewFolder’|
+| touch{1..4} | 1..4 | ForEach-Object { New-Item -ItemType File -Name "MyFile$_" }|
+| tail -n7 ./MyFile1 | Get-Content -Tail 7 .\MyFile1|
+| tail -f ./MyFile1 | Get-Content -Wait .\MyFile1|
+| grep | where-object and select-string -pattern|
+
+
+5. Environment
+  - List environment `Get-ChildItem Env:s`
+  - See Env for current session `Get-ChildItem Env:*path* | format-list` or `$env:path`
+  - Set env for current session `$env:myX = "alice"` or `$env:path = $env:path + ";C:\Program Files (x86)\app\bin"`
+  - Remove env for current session  `Remove-Item env:myX`
+  - See Permanent Env variable `[environment]::GetEnvironmentVariable("myY", "[User|Process|Machine]")`
+  - Create permanent Env variable `[Environment]::SetEnvironmentVariable("myY", "la la", "User")`
+  - Removing Permanent Env variable `[Environment]::SetEnvironmentVariable("myY", $null, "User")`
 
 
 ## VM + SSH Client
 
 Requirements:
 
-- A hypervisor installed. I prefer [VirtualBox](https://www.virtualbox.org/)
+- A hypervisor installed. I prefer [VirtualBox](https://www.virtualbox.org/). Alternatively, use [VMware Workstation](https://www.vmware.com/de/products/workstation-player.html)
 - A ssh client. I prefer [MobaXterm](https://mobaxterm.mobatek.net/) but [Putty](https://www.putty.org/) will get the job done as well
 
 |Pros|Cons|
 |-------|-------|
+| normal Linux | virtualization overhead |
+| close to native experience | hardware passthrough might be an issue |
+| shared folders | no gui (at least in headless mode) |
 
 ## WSL
 
@@ -58,6 +110,8 @@ Requirements:
 
 - [Enable/Install WSL](https://docs.microsoft.com/de-de/windows/wsl/install-win10)
 - Choose and install a Linux distribution from. As of now the choice is Ubuntu, OpenSUSE, SLES, Kali Linux, or Debian GNU/Linux. I prefer Ubuntu for the easiest usage
+- [Bonus](https://blog.joaograssi.com/windows-subsystem-for-linux-with-oh-my-zsh-conemu/]
+
 
 Basically, configure it like your Linux. Install zsh, clone your dotfiles, install tools like ripgrep, fzf, etc. Generally speaking WSL is intended to be used to access Linux toolchain and not for server or GUI applications (altough possible). Also keep in mind that there might be issues due to differences in both, Windows' and Linux' filessystems.
 
@@ -75,6 +129,9 @@ Requirements:
 
 |Pros|Cons|
 |-------|-------|
+| native | not Bash |
+| obect oriented | awkward commands coming from Linux |
+| Integrated in Windows | missing tools |
 
 [^1]: Linux is refered to as an Linux based operationg system like Ubuntu, Arch, Debian
 [^2]: or CLI, konsole, terminal, you name it 
