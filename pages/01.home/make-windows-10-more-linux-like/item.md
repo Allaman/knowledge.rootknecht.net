@@ -71,6 +71,7 @@ There are six [different profiles](https://devblogs.microsoft.com/scripting/unde
 4. Bash -> Powershell
 
 | Bash | Powershell
+|-------|-------|
 | ls -ltr | Get-ChildItem . | Sort-Object -Property LastWriteTime|
 | find . -type f -iname "azure" | Get-ChildItem -Filter "*azure*" -Recurse -File|
 | cp -R Tools ~/ | Copy-Item '.\Tools\' $env:USERPROFILE -Recurse|
