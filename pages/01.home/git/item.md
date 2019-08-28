@@ -115,3 +115,10 @@ When the origin is at github vice versa. Now, origin will targed the Gitlab as w
 ```bash
 git config [--global] --edit
 ```
+
+## Set git file endings to LF (msysgit)
+
+```sh
+git config --global core.autocrlf false
+git config --global core.eol lf
+```
