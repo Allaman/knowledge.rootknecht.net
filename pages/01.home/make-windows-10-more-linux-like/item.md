@@ -72,11 +72,11 @@ There are six [different profiles](https://devblogs.microsoft.com/scripting/unde
 
 | Bash | Powershell
 |-------|-------|
-| ls -ltr | Get-ChildItem . | Sort-Object -Property LastWriteTime|
+| ls -ltr | Get-ChildItem . \| Sort-Object -Property LastWriteTime|
 | find . -type f -iname "azure" | Get-ChildItem -Filter "*azure*" -Recurse -File|
 | cp -R Tools ~/ | Copy-Item '.\Tools\' $env:USERPROFILE -Recurse|
 | mkdir | New-Item -ItemType Directory -Name ‘NewFolder’|
-| touch{1..4} | 1..4 | ForEach-Object { New-Item -ItemType File -Name "MyFile$_" }|
+| touch{1..4} | 1..4 \| ForEach-Object { New-Item -ItemType File -Name "MyFile$_" }|
 | tail -n7 ./MyFile1 | Get-Content -Tail 7 .\MyFile1|
 | tail -f ./MyFile1 | Get-Content -Wait .\MyFile1|
 | grep | where-object and select-string -pattern|
