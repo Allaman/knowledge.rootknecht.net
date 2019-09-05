@@ -93,7 +93,8 @@ php -S localhost:8000
 
 Python
 ```bash
-python -m SimpleHTTPServer 8000
+python2 -m SimpleHTTPServer 8000
+python3 -m http.server
 ```
 
 JavaScript
