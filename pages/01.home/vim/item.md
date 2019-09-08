@@ -16,6 +16,12 @@ taxonomy:
 :w !sudo tee %
 ```
 
+## Delete empty lines
+
+```vimscript
+:g/^$/d
+```
+
 ## Open file in binary mode
 ```bash
 vim -b
