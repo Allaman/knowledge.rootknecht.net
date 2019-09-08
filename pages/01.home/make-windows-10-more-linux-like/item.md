@@ -39,6 +39,9 @@ Generally speaking, I always prefer cross platform software to be able to have a
 - [Autohotkey](https://www.autohotkey.com/) - An open source Windows scripting tool for automation and key binding settings for instance mapping ESC to CAPS.
 - [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) - Customizing shortcuts for built in virtual desktops
 - [ditto](https://ditto-cp.sourceforge.io/) - A free clipboard manager for those that want more customization than the built-in one offers
+- [PowerToys](https://github.com/microsoft/PowerToys) - Tools from Microsoft for power users
+- [WinFile](https://github.com/microsoft/winfile) - Original Microsoft Windows file manager (very fast, no special folders)
+
 
 
 ### Autohotkey
@@ -80,6 +83,7 @@ There are six [different profiles](https://devblogs.microsoft.com/scripting/unde
 | tail -n7 ./MyFile1 | Get-Content -Tail 7 .\MyFile1|
 | tail -f ./MyFile1 | Get-Content -Wait .\MyFile1|
 | grep | where-object and select-string -pattern|
+| redirect output | *>&1 > log.txt|
 
 
 5. Environment
@@ -91,6 +95,48 @@ There are six [different profiles](https://devblogs.microsoft.com/scripting/unde
   - Create permanent Env variable `[Environment]::SetEnvironmentVariable("myY", "la la", "User")`
   - Removing Permanent Env variable `[Environment]::SetEnvironmentVariable("myY", $null, "User")`
 
+#### Powershell extensions
+
+Install [PSReadLine](https://github.com/lzybkr/PSReadLine) (optionally as current user if your are lacking admin rights). PSReadLine provides several features which are known from bash like a history search, undo/redo, and more.
+
+```powershell
+Install-Module [-Scope CurrentUser] PSReadLine
+```
+Add `Import-Module PSReadLine` to C:\Users\<user>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` (create file if necessary) to autoload the module upon powershell start.
+
+Set keybinding to Emacs to use common bash key combos, e.g. `ctrl+a` for jumping to the beginning of the line
+```powershell
+Set-PSReadlineOption -EditMode Emacs
+```
+
+Enable history search forward/backward auto completion with
+```powershell
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+```
+
+* [posh-git](https://github.com/dahlbyk/posh-git) for Powershell Git integration: Install-Module posh-git `Import-Module posh-git`to your Powershell Profile
+* [posh-docker](https://github.com/samneirinck/posh-docker) for Docker completion: Install-Module posh-docker and add `Import-Module posh-docker` to your Powershell Profile
+
+#### Aliase
+
+To create persistant aliase create the file `C:\Users\<user>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` (folder might not exist).
+
+You might have to allow the execution of powershell scripts on your system: `Set-ExecutionPolicy -Scope CurrentUser BYPASS`
+! keep security policies in mind
+
+```powershell
+function f_workspace {Set-Location "C:\Users\<user>\Documents\workspace"}
+Set-Alias workspace f_workspace
+function f_up {docker-compose.exe up }
+Set-Alias dup f_up
+function f_images {docker images}
+Set-Alias di f_images
+function f_ps {docker ps}
+Set-Alias dps f_ps
+function f_dexec {docker exec -it}
+Set-Alias dexec f_dexec
+```
 
 ## VM + SSH Client
 
