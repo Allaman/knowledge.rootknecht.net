@@ -54,9 +54,11 @@ Last but not least, the [Arch community](https://wiki.archlinux.org/index.php/Ma
 
 Currently, I am not running a [Desktop Environment (DE)](https://en.wikipedia.org/wiki/Desktop_environment) like KDE, Gnome, XFCE, etc. As mentioned earlier I am running a [Window Manager (WM)](https://en.wikipedia.org/wiki/Window_manager) named i3wm. A window manager is usually part of a DE and is responsible for the management of windows within a graphical user interface.
 
-An impression of my setup:
+Impressions of my setup:
 
-![](de.png?link&cropResize=300,300)
+![](desktop.png?link?lightbox=600,400&resize=200,200)
+![](de.png?link?lightbox=600,400&resize=200,200)
+![](gtop.png?link?lightbox=600,400&resize=200,200)
 
 ## Applications
 
@@ -106,6 +108,7 @@ fasd allows you to quickly jump to folders by indexing and weighting your visite
 | ps   | [procs](https://github.com/dalance/procs) |
 | cat  | [bat](https://github.com/sharkdp/bat) |
 | ls   | [exa](https://github.com/ogham/exa) or [lsd](https://github.com/Peltoche/lsd/) |
+| htop   | [gtop](https://github.com/aksakalli/gtop) |
 
 ! Nevertheless, I strongly recommend to learn the original tools as you cannot assume to find those replacements on each system!
 
