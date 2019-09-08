@@ -56,9 +56,9 @@ Currently, I am not running a [Desktop Environment (DE)](https://en.wikipedia.or
 
 Impressions of my setup:
 
-![](desktop.png?link?lightbox=600,400&resize=200,200)
-![](de.png?link?lightbox=600,400&resize=200,200)
-![](gtop.png?link?lightbox=600,400&resize=200,200)
+![](desktop.png?link&lightbox=600,400&resize=300,300)
+![](de.png?link&lightbox=600,400&resize=300,300)
+![](gtop.png?link&lightbox=600,400&resize=300,300)
 
 ## Applications
 
