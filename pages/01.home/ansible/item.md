@@ -116,3 +116,68 @@ graph LR
 [/mermaid]
 
 ### Flow
+
+### molecule.yml
+
+```yml
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: foo
+    image: centos/systemd
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
+    override_command: false
+    exposed_ports:
+      - 80/udp
+      - 80/tcp
+    published_ports:
+      - 0.0.0.0:8080:80/udp
+      - 0.0.0.0:8080:80/tcp
+    networks:
+      - name: foo
+    pre_build_image: false
+  - name: foo-db
+    image: mysql:5.7
+    override_command: false
+    env:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: admin
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    exposed_ports:
+      - 3306/udp
+      - 3306/tcp
+    networks:
+      - name: foo
+    pull: true
+    pre_build_image: true
+scenario:
+  name: default
+  test_sequence:
+    - lint
+    - destroy
+    - dependency
+    - syntax
+    - create
+    - prepare
+    - converge
+    - idempotence
+    - side_effect
+    - verify
+    - destroy
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+verifier:
+  name: testinfra
+  lint:
+    name: flake8
+```
