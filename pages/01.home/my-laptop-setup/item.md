@@ -55,9 +55,9 @@ Currently, I am not running a [Desktop Environment (DE)](https://en.wikipedia.or
 
 Impressions of my setup:
 
-![](desktop.png?link&lightbox1920,1080&resize=300,300)
-![](de.png?link&lightbox1920,1080&resize=300,300)
-![](gtop.png?link&lightbox1920,1080&resize=300,300)
+![](desktop.png?link&lightbox=1920,1080&resize=300,300)
+![](de.png?link&lightbox=1920,1080&resize=300,300)
+![](gtop.png?link&lightbox=1920,1080&resize=300,300)
 
 ## Applications
 
@@ -77,7 +77,7 @@ For displaying and interacting I use [khal (calendar)](https://knowledge.rootkne
 
 My main editor/IDE is a heavily customized [Neovim](https://neovim.io/) a fork of the infamous [Vim](https://www.vim.org/). From time to time I also use the Insiders build of [Visual Studio Code](https://code.visualstudio.com/insiders/) for instance for debugging. At this time VSC is the best graphical editor/IDE available. My config and plugins are described [here](https://knowledge.rootknecht.net/vim#my-neo-vim-config) and [here](https://knowledge.rootknecht.net/visual-studio-code). Somehow my backup text editor is [Sublime Text](https://www.sublimetext.com/). Sublime Text shines with speed and simplicity though it also can be extended with plenty of plugins.
 
-![](vim.png?link&lightbox1920,1080&resize=300,300)
+![](vim.png?link&lightbox=1920,1080&resize=300,300)
 
 ### Utilities
 
@@ -86,13 +86,13 @@ My workflow is mainly terminal based. Except browsing the web I spend most of th
 Let's begin with the shell itself. I am using zsh with [Fish-like autosuggestions for zsh](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh-completions](https://github.com/zsh-users/zsh-completions).
 Additionally, I created some dozens of aliases in order to fast execute commands or remap old commands to the new executables. Another important feature of each shell should be a sane history configuration meaning an unlimited history file, shared history between sessions and immediately appending items to the history. 
 
-![](neofetch.png?link&lightbox1920,1080&resize=300,300)
+![](neofetch.png?link&lightbox=1920,1080&resize=300,300)
 
 As terminal I use [termite](https://github.com/thestinger/termite) which is very fast, minimalistic and keyboard-driven.
 
 In order to move around and find things fast in my terminal there I use a couple of commandline tools. The most important tools are [fzf](https://github.com/junegunn/fzf) and [fasd](https://github.com/clvv/fasd). fzf allows you to quickly fuzzy find files and folders and search your history. Due to the ability to stdin to fzf the customizations are nearly endless. 
 
-![](fzf.png?link&lightbox1920,1080&resize=300,300)
+![](fzf.png?link&lightbox=1920,1080&resize=300,300)
 
 Here you can see fzf find invoked by `Ctrl+t`. Notice also the preview window on the right side. By hitting `Ctrl+o` I can open the selected file in my editor or by just entering the path to the file is entered at the cursor in my terminal. As I said the possibilities are endless and you should really give it a try. There is also a [Vim integration](https://github.com/junegunn/fzf.vim). 
 

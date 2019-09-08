@@ -122,6 +122,17 @@ common options for dPDFSETTINGS are:
 ```bash
 (command1 &) && (command2 &)
 ```
+## Get RAM usage
+
+```sh
+ps -o pid,user,%mem,command ax | sort -b -k3 -r
+```
+
+## Execute command as different user
+
+```sh
+su - targetuser -s /bin/bash -c "/bin/echo hello world" 
+```
 
 ## Shows what is in file 2 but not in file 1
 
