@@ -2,6 +2,32 @@
 title: Web
 ---
 
+[TOC]
+
+## Start a simple web server for testing/developing
+
+PHP
+```bash
+php -S localhost:8000
+```
+
+Python
+```bash
+python2 -m SimpleHTTPServer 8000
+python3 -m http.server
+```
+
+JavaScript
+```bash
+npm install http-server –g
+http-server
+```
+
+Buysbox
+```sh
+busybox httpd -p 127.0.0.1:8080 -h /var/www/
+```
+
 ## Modal overlay popup (button)
 
 ```html
@@ -146,3 +172,7 @@ title: Web
 </script>
 ```
 [source](https://stackoverflow.com/questions/50210529/open-bootstrap-4-modal-via-javascript-by-clicking-a-link)
+
+## Fancy http error pages
+
+In [my repo](https://repo.rootknecht.net/allaman/404) I collect some funky http error pages I stumbled over
