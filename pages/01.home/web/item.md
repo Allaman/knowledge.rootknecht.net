@@ -117,31 +117,32 @@ title: Web
 ## Modal overlay popup (link)
 
 ```html
-     <!-- Trigger the modal with a button -->
-    <a href="#Modal" >Open Modal</a>
-    <!-- Modal -->
-    <div id="Modal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+<!-- Trigger the modal with a button -->
+<a href="#Modal" >Open Modal</a>
+<!-- Modal -->
+<div id="Modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
 
-      </div>
     </div>
-    <script type="text/javascript">
-        $('a[href$="#Modal"]').on( "click", function() {
-       $('#Modal').modal('show');
+</div>
+<script type="text/javascript">
+    $('a[href$="#Modal"]').on( "click", function() {
+        $('#Modal').modal('show');
     });
+</script>
 ```
 [source](https://stackoverflow.com/questions/50210529/open-bootstrap-4-modal-via-javascript-by-clicking-a-link)

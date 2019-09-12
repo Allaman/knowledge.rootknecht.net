@@ -85,29 +85,6 @@ SHARED_FOLDER_NAME /PATH/TO/MOUNT_POINT vboxsf rw,dmask=770,fmask=600,uid=1000,g
 
 ! Ensure that the vboxsf module is loaded (`sudo modprobe -a vboxsf`)
 
-## Start a simple web server for testing/developing
-PHP
-```bash
-php -S localhost:8000
-```
-
-Python
-```bash
-python2 -m SimpleHTTPServer 8000
-python3 -m http.server
-```
-
-JavaScript
-```bash
-npm install http-server –g
-http-server
-```
-
-Buysbox
-```sh
-busybox httpd -p 127.0.0.1:8080 -h /var/www/
-```
-
 ## Markdown highlighted notes
 For custom highlighted notes in a normal Markdown use the following snippets
 ```markdown
@@ -134,10 +111,6 @@ I am a highlighted note
 }
 </style>
 ```
-
-## Fancy http error pages
-
-In [my repo](https://repo.rootknecht.net/allaman/404) I collect some funky http error pages I stumbled over
 
 ## Print info pages to pdf
 
