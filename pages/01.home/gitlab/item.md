@@ -148,7 +148,7 @@ gitlab_rails['ldap_servers'] = {
 }
 ```
 
-## Install Gitlab as with Docker on NixOS
+## Deploy Gitlab with Docker on NixOS
 
 ### Install docker service
 
