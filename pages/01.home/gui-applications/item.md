@@ -37,6 +37,16 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - cross platform
 - open source
 
+## Dia
+
+[Dia](http://dia-installer.de/)
+
+- diaagram software
+- cross platform
+- open source
+- written in C
+- alternatives are: [Edraw Max Pro](#edraw-max-pro) and [yed](#yed)
+
 ## DBeaver
 
 [DBeaver](https://github.com/dbeaver/dbeaver)
@@ -56,6 +66,16 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - open source
 - cross platform
 - powerful yet light weight
+
+## Edraw Max Pro
+
+[Edraw Max Pro](https://www.edrawsoft.com/de/)
+
+- diaagram software
+- cross platform
+- proprietary
+- many templates and icons available
+- alternatives are [dia](#dia) and [yed](#yed)
 
 ## Filelight
 
@@ -244,3 +264,4 @@ See [CLI Applications](https://knowledge.rootknecht.net/cli-applications) for mo
 - cross platform
 - Java based
 - proprietary
+- alteratives are [dia](#dia) and [Edraw Max Pro](#edraw-max-pro)
