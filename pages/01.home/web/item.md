@@ -28,6 +28,14 @@ Buysbox
 busybox httpd -p 127.0.0.1:8080 -h /var/www/
 ```
 
+## CSS applying only on specified div
+
+```css
+.footer a.link {
+    color: black;
+}
+```
+
 ## Modal overlay popup (button)
 
 ```html
