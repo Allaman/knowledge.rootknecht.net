@@ -2,7 +2,7 @@
 title: Gitlab
 taxonomy:
     category:
-        - Applications
+        - Application
         - DevOps
 ---
 
