@@ -3,7 +3,6 @@ title: Apache
 taxonomy:
     category:
         - Application
-        - Linux
 ---
 
 [TOC]
