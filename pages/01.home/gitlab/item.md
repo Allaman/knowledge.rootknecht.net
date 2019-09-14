@@ -210,7 +210,7 @@ pages:
 
 ```
 
-## Mail integration
+## LDAP Mail integration
 
 In `gitlab.rb`
 
