@@ -1,5 +1,5 @@
 ---
-title: 'Why Grav?'
+title: 'Why Grav CMS?'
 taxonomy:
     category:
         - Personal
