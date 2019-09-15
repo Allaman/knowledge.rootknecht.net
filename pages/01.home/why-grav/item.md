@@ -6,7 +6,7 @@ taxonomy:
 visible: false
 ---
 
-[TOC]
+In this article I explain why I have choosen [Grav CMS](https://getgrav.org/), maybe a rather unknown solution, for [knowledge.rootknecht.net](#). 
 
 ## Classic CMS
 
