@@ -4,7 +4,7 @@ title: About
 
 ## Me
 <div class="me">
-	Linux and open source enthusiast. <br>
+   Linux and open source enthusiast. <br>
   Wants to automate everything. <br>
   Thinks modal editing is superior to <strong>e</strong>scape <strong>m</strong>eta <strong>a</strong>lt <strong>c</strong>ontrol <strong>s</strong>hift 😃 <br>
   Believes in the only true file format - plain text. <br>
@@ -30,7 +30,9 @@ title: About
 
 ## Why knowledge.rootknecht.net?
 
-The intention behind this page is that I can remember things I discovered during my journey and to share my experience and tricks I made with you. I structured the topics in the folowing five categories:
+The intention behind this page is that I can remember things I discovered during my journey and to share my experience and tricks I made with you. In my opinion, to share solutions and hints is at least as satisfying as to disvocer or develop them on your own.
+
+I structured the topics in the folowing five categories:
 
 - [Application](https://knowledge.rootknecht.net/taxonomy?name=category&val=Application)
 
