@@ -180,6 +180,10 @@ Requirements:
 | obect oriented | awkward commands coming from Linux |
 | Integrated in Windows | missing tools |
 
+## Start Linux GUI Applications in Winodws
+
+Linux GUI applications usually require a running [X Server](https://en.wikipedia.org/wiki/X_Window_System) in order to display their window. You can dowload some X server implementation for Winodws like [Xming](https://sourceforge.net/projects/xming/). After installing and starting the x server on your Windows machine you just enter `export DISPLAY=:0` in your WSL. Now you can launch GUI applications within this WSL shell.
+
 [^1]: Linux is refered to as an Linux based operationg system like Ubuntu, Arch, Debian
 [^2]: or CLI, konsole, terminal, you name it 
 [^3]: WSL is only available on Windows 10 64bit systems
