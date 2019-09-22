@@ -423,7 +423,7 @@ Alternatives may be [glances](#glances) and [gotop](#gotop)
 - CardDAV / CalDAV support
 - fine control
 
-# vifm
+## vifm
 
 [vifm](https://github.com/vifm/vifm)
 
