@@ -208,6 +208,18 @@ Alternatives may be [glances](#glances) and [gotop](#gotop)
 - reads and writes events/icalendars
 - in combination with [vdirsyncer](#vdirsyncer)
 
+## lf
+
+[lf](https://github.com/gokcehan/lf)
+
+- file manager
+- written in Go
+- three pane style
+- vim like keybindings
+- no dependencies
+- similar to [ranger](#ranger)
+- alternatives: [nnn](https://github.com/jarun/nnn), [vifm](#vifm), [ranger](#ranger)
+
 ## lsd
 
 [lsd](https://github.com/Peltoche/lsd)
@@ -297,7 +309,7 @@ Alternatives may be [glances](#glances) and [gotop](#gotop)
 - three pane or two pane style
 - highly customizable and scriptable
 - vim like keybindings
-- alternatives: [vifm](https://vifm.info/), [nnn](https://github.com/jarun/nnn), [mc](https://midnight-commander.org/)
+- alternatives: [vifm](#vifm), [nnn](https://github.com/jarun/nnn), [mc](https://midnight-commander.org/), [lf](#lf)
 
 ## ripgrep
 
@@ -410,6 +422,17 @@ Alternatives may be [glances](#glances) and [gotop](#gotop)
 - written in Python
 - CardDAV / CalDAV support
 - fine control
+
+# vifm
+
+[vifm](https://github.com/vifm/vifm)
+
+- file manager
+- written in C
+- [MC](https://midnight-commander.org/) look and feel
+- highly customizable and scriptable
+- vim like keybindings
+- alternatives: [ranger](#ranger), [nnn](https://github.com/jarun/nnn), [lf](#lf)
 
 ## w3m
 
