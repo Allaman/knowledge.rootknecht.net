@@ -274,6 +274,25 @@ I want to match not just only the program but its arguments (here for entr)
 ps ax | grep "xelatex main.tex" | grep -v grep | awk '{print "kill -9 " $1}' | sh
 ```
 
+## Rsync
+
+This command recursively syncs two folders with advanced matching options I am running for syncing my documents to my [eInk Reader](https://onyxboox.com/boox_novapro).
+
+```sh
+rsync -rv \
+--omit-dir-times \ # ignore timestamps
+--prune-empty-dirs \ # don't create emtpy directories
+--delete \ # also delete files at the destination
+--exclude='dir1' --exclude='dir2' \ # exclude dir1 and dir2
+--include='*/' \ # but include all other directories
+--exclude='.*' \ # exclude all hidden files
+--include='*.pdf' --include='*.epub' \ # include .pdf and .epub files
+--exclude='*' \ # exclude all the rest
+-e "ssh -p8022" \ # copy over ssh
+source \ # source directory to sync
+user@host:/destination # target directory on remote
+```
+
 ## Show dd status
 
 1. with builtin methods
