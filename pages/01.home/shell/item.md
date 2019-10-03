@@ -177,6 +177,21 @@ ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
 ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1
 ```
 
+## List files from a packages managed by package managers
+
+```sh
+# dpkg
+dpkg-query -L <PACKAGE_NAME>
+dpkg-deb -c <FILE-NAME>
+apt-file list <PACKAGE_NAME> (package not installed)
+
+# Pacman
+pacman -Ql  <PACKAGE_NAME>
+
+# RPM
+rpm -ql <PACKAGE_NAME>
+```
+
 ## Get system information
 
 Basics e.g. modelnumber, manufactorer
