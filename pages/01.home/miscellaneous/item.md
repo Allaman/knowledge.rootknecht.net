@@ -1,5 +1,5 @@
 ---
-title: 'Mixed Content'
+title: Miscellaneous
 taxonomy:
     category:
         - Uncategorized
