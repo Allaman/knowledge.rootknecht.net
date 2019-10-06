@@ -101,22 +101,22 @@ Infrastructure as Code is an approach of infrastructure automation based on prac
 - minimizes the overhead and costs for all stakeholders and helps to speed up team efficiency     
 - minimizes automation fear and risks from making changes
 
-2. Systems should be disposable
+2. **Systems should be disposable**
 
 - robust, homogenous, and well-tested infrastructure  
 - from unreliable software running on reliable hardware towards reliable software running on unreliable hardware
 
-3. Systems should be consistent
+3. **Systems should be consistent**
 
 - prevent configuration drift 
 - fight against automation fear
 
-4. Processes should be repeatable
+4. **Processes should be repeatable**
 
 - disposable systems are easier to achieve as systems can be easily created multiple times. 
 - cost reduction, as ITstaff does not waste time on repetitive tasks.
     
-5. Design should be flexible
+5. **Design should be flexible**
 
 - reduce the impact of a "big bang" change. 
 - infrastructure is able to adopt to business needs being an enabler not a showstopper
