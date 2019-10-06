@@ -4,7 +4,7 @@ media_order: cc.png
 taxonomy:
     category:
         - DevOps
-        - Personal
+        - Blog
 ---
 
 [TOC]
