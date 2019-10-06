@@ -48,3 +48,13 @@ I looked at four systems:
 3. [Pico](http://picocms.org/) &#8594; Does not provide a web ui
 4. [Grav](https://getgrav.org/) &#8594; Has everything I needed (and more a even didn't know I would need :-D )
 
+## Improve Grav Performance
+
+An overview of techniques to improve Grav page speed to increase the rank in various kinds of web performance raks
+
+- Enable compression
+- Minify CSS, HTML, adn JavaScript
+- Optimize images
+- Browser cache control
+- Activate cache in grav (here Redis)
+- Enable HTTP/2
