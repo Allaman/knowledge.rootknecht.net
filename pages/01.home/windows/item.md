@@ -2,7 +2,7 @@
 title: Windows
 taxonomy:
     category:
-        - Programming
+        - Uncategorized
 ---
 
 [TOC]
