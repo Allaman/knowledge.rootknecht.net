@@ -3,7 +3,7 @@ title: 'Mein Weg zum Freiberufler (GER)'
 published: true
 taxonomy:
     category:
-        - Personal
+        - Blog
 ---
 
 [TOC]
