@@ -3,7 +3,7 @@ title: 'Thinkpad Adventures'
 media_order: 'dissambled-x60.jpg,dissambled.jpg,final.jpg,fingerprint-plate.jpg,fixed_palmrest.jpg,glued.jpg,original.jpg,palmrests.jpg,sidetoside.jpg,tablet.jpg,workingx60.jpg,x60.jpg,cutted.jpg,disassembledx100.jpg,motherboard.jpg,oven.jpg'
 taxonomy:
     category:
-        - Personal
+        - Blog
 ---
 
 [TOC]
