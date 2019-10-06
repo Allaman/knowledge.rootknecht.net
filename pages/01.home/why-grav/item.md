@@ -2,7 +2,7 @@
 title: 'Why Grav CMS?'
 taxonomy:
     category:
-        - Personal
+        - Blog
 visible: false
 ---
 
