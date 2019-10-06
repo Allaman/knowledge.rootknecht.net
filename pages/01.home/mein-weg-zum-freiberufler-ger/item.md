@@ -6,13 +6,16 @@ taxonomy:
         - Personal
 ---
 
-In diesem Artikel möchte ich meine Erfahrungen auf dem Weg zum Freiberufler in der IT schildern.
+[TOC]
+
+In diesem Artikel möchte ich meine Erfahrungen und typische Bedenken auf dem Weg zum Freiberufler in der IT schildern.
 
 !!! Alle Angaben ohne Gewähr! Der Artikel ist kein Ersatz für adäquate Beratungsdienstleistungen von Steuerberatern, Finanz- und Versicherungsberatern, etc. und spiegelt ausschließlich meine Erfahrung und Meinung wieder.
 
 ## Meine Motivation
 
-Warum wollte ich mich als Freiberufler neu versuchen?
+Warum wollte ich mich überhaupt als Freiberufler neu versuchen obwohl ich in einem guten Angestellltenverhältnis war?
+
 Nun, zum einem bin ich ein freiheitsliebender Mensch. Ich möchte gerne frei sein in meinen Arbeitszeiten. Natürlich ist mir bewusst dass es hier auch Einschränkungen gibt, da ich in der Regel in einem Team arbeiten werde und mich an deren Arbeitszeiten orientieren muss. Nichtsdestotrotz möchte ich für mich gern entscheiden können ob ich z. B. an einem Tag zwölf Stunden leisten möchte oder unter der Woche einen Tag zur persönlichen Entwicklung nutze und die Arbeit dafür am Sonntag rein hole. Freiheit bedeutet für mich auch selbst entscheiden zu können in welchem Umfeld und mit welchen Technologien ich arbeite. Diese beiden Punkte sind auch für meine Kunden von Vorteil. Durch flexible Arbeitszeiten und Projekte für die ich "brenne" erhöht sich meine Performance und mein Output ungemein.
 
 Für mich ist Lernen und Erfahrungen sammeln wie Treibstoff, etwas das mich antreibt. Durch meine freiberufliche Tätigkeit werde ich für mich sehr neue Aspekte lernen wie der Umgang mit Steuern, Rücklagen und Buchhaltung, Marketing, Projektvereinbarungen und mehr. Selbstverständlich soll die fachliche Weiterentwicklung nicht zu kurz kommen. Dies ist allerdings kein Merkmal der Selbstständigkeit da diese Möglichkeit auch als Angestellter bestehen kann.
@@ -25,7 +28,7 @@ Wenn man seine Überlegungen, sich als Freiberufler selbstständig zu machen tei
 
 Zum besseren Verständnis meine privaten Umstände haben diesen Beschluss erleichtert. So war ich zu dieser Zeit ungebunden und hatte wenig finanzielle Verpflichtungen sowie ein kleines finanzielles Polster um mehrere Monate ohne Einkommen überstehen zu können. Außerdem wollte ich bereits ein erstes Projekt "in der Tasche haben" bevor ich überhaupt diesen Schritt wage.
 
-### Der Invest ist zu hoch
+### Der Einsatz ist zu hoch
 
 Sich als Freiberufler, insbesondere in der IT Branche, selbstständig zu machen erfordert so gut wie kein Startkapital. Man muss keine Kosten für die Gründung veranschlagen und auch keine Notarkosten oder kostspielige Geräte beschaffen. Je nach Kundenprojekt bekommt man sogar ein Notebook gestellt. Trotzdem sollte man die "versteckten" Kosten nicht unterschätzen. So kann es erforderlich sein das verschiedene Versicherungen angepasst oder neu abgeschlossen werden müssen (siehe [Versicherungen](#versicherungen)). Des Weiteren können Kosten für Marketing (Homepage, Visitenkarten, etc.) und "Infrastruktur" wie Steuerberater, Buchhaltungssoftware, etc. hinzukommen.
 Man sollte auf jeden Fall bei den Zahlungsmodalitäten ein Auge auf Fristen haben. So kann es vorkommen das man in den ersten beiden Monaten keinen Umsatz hat da eine Zahlungsmodalität z. B. sein kann: 30 Tage ab Stundenerfassung, also die Erfassung am Anfang des zu bezahlenden Folgemonats und die tatsächliche Bezahlung im zweiten Folgemonat. Auch wenn der Einsatz nicht hoch ist ist es nie verkehrt wenn man ein paar Monate ohne Einkommen über die Runden kommen kann.
