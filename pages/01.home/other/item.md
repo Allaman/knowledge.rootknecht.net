@@ -1,8 +1,8 @@
 ---
-title: Other
+title: 'Mixed Content'
 taxonomy:
     category:
-        - Personal
+        - Programming
 ---
 
 [TOC]
