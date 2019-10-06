@@ -1,6 +1,6 @@
 ---
 title: 'Mein Weg zum Freiberufler (GER)'
-published: false
+published: true
 taxonomy:
     category:
         - Personal
