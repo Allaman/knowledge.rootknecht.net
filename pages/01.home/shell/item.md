@@ -261,6 +261,13 @@ wget \
 zip -rP PASSWORD file.zip folder/
 ```
 
+## Add user and group
+
+```sh
+groupadd GROUP && useradd -g|-G GROUP user
+```
+- lower g when group exists
+- optional -M for no home directory
 
 ## PHP modules
 
