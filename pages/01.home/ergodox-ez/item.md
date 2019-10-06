@@ -3,7 +3,7 @@ title: 'ErgoDox EZ'
 media_order: '01-boxes.jpg,02-wings.jpg,03-board.jpg,04-board.jpg,05-board.jpg,06-board.jpg,07-switches.jpg,08-caps.jpg,09-full.jpg,10-wing.jpg,11-glow.jpg'
 taxonomy:
     category:
-        - Personal
+        - Blog
 ---
 
 # ErgoDox EZ thinkings
