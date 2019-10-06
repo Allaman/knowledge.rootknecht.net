@@ -3,7 +3,7 @@ title: 'My Laptop Setup'
 published: true
 taxonomy:
     category:
-        - Personal
+        - Blog
 ---
 
 [TOC]
