@@ -2,7 +2,7 @@
 title: 'Mixed Content'
 taxonomy:
     category:
-        - Programming
+        - Uncategorized
 ---
 
 [TOC]
