@@ -174,10 +174,11 @@ for program in awk sed grep sort uniq rm mktemp; do
 done
 ```
 
-### PID
+### Process
 
 ```bash
-[ -d $(ps -A | grep 'PATTERN') ] && echo "exists" || echo "not exists"
+pgrep -x <PROCESSNAME> >/dev/null && echo "Process found" || echo "Process not found"
+ps -C <PROCESSNAME> >/dev/null && echo "Running" || echo "Not running"
 ```
 
 ### User
