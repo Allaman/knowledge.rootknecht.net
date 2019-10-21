@@ -37,6 +37,10 @@ I structured the topics in the folowing five categories:
 - [Application](https://knowledge.rootknecht.net/taxonomy?name=category&val=Application)
 
     Everything related to applications, e.g their installation, configuration, or usage
+  
+- [Blog](https://knowledge.rootknecht.net/taxonomy?name=category&val=Blog)
+
+	This is somehow a normal Blog about various things I want to write about
 
 - [DevOps](https://knowledge.rootknecht.net/taxonomy?name=category&val=DevOps)
 
@@ -46,14 +50,14 @@ I structured the topics in the folowing five categories:
 
     Experience from my Linux usage in the past decade, both on the server and on the client side
 
-- [Personal](https://knowledge.rootknecht.net/taxonomy?name=category&val=Personal)
-
-    Personal stuff or opinions and other non categorized articles
-
 - [Programming](https://knowledge.rootknecht.net/taxonomy?name=category&val=Programming)
 
     Some hints on different programming topics I dealt with
 
+- [Uncategorized ](https://knowledge.rootknecht.net/taxonomy?name=category&val=Uncategorized )
+
+    Well, things that don't fit in any other category :)
+
 ## How is this page built?
 
-Please have a look at [Why Grav](#why-grav) where I illustrate the reasons for building this webpage the way is is built. 
+Please have a look at [Why Grav](#why-grav) where I describe the reasons for building this webpage the way it is built. 
