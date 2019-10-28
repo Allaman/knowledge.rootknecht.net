@@ -12,13 +12,13 @@ taxonomy:
 ! Working on that! :)
 
 ## Safe file opend by an user as root
-```vimscript
+```
 :w !sudo tee %
 ```
 
 ## Delete empty lines
 
-```vimscript
+```
 :g/^$/d
 ```
 
@@ -118,7 +118,7 @@ setxkbmap -option # to reset changes
 
 In `.config/nvim/init.vim` (create if not existing)
 
-```vim
+```
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 source ~/.vimrc
