@@ -94,6 +94,12 @@ openssl s_client -state -nbio -connect HOST:PORT
 curl --insecure -v https://google.com 2>&1 | awk 'BEGIN { cert=0 } /^\* Server certificate:/ { cert=1 } /^\*/ { if (cert) print }'
 ```
 
+## Get end date of a certificate
+
+```sh
+openssl x509 -enddate -noout -in <CERT>
+```
+
 ## Mutual SSL connection with nginx
 
 Generating CA, certificates, and keys
