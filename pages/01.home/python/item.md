@@ -29,6 +29,14 @@ with open('FOO.csv', newline='') as csvfile:
 ```
 [More](https://docs.python.org/3/library/csv.html)
 
+## Date and time
+
+```python
+time_object = datetime.strptime("19-11-20", '%y-%m-%d').date() # read from string
+time_object.strftime("%Y/%m/%d") # print to string
+```
+
+
 ## Logging
 ```python
 import logging
