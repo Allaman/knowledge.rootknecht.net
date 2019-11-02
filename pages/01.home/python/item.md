@@ -23,6 +23,7 @@ except IOError as err:
 import csv
 with open('FOO.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+    next(reader, None) # skip header row
     for row in reader:
         print(', '.join(row))
 ```
