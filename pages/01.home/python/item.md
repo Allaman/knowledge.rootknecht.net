@@ -17,6 +17,17 @@ except IOError as err:
     sys.exit()
 ```
 
+## Read csv
+
+```python
+import csv
+with open('FOO.csv', newline='') as csvfile:
+    reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+    for row in reader:
+        print(', '.join(row))
+```
+[More](https://docs.python.org/3/library/csv.html)
+
 ## Logging
 ```python
 import logging
