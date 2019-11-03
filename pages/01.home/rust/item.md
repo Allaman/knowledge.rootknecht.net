@@ -128,49 +128,52 @@ fn main() {
 ### IF-Else
 
 ```rust
-    if number < 5 {
-        println!("True");
-    } else {
-        println!("False")
-    }
+if number < 5 {
+    println!("True");
+} else {
+    println!("False")
+}
 ```
 
 ### Loops
 
 1. loop
-```rust
-loop {
-    println!("Loop forever till break!");
-    if condition {
-        break;
-    }
-}
-```
+
+  ```rust
+  loop {
+      println!("Loop forever till break!");
+      if condition {
+          break;
+      }
+  }
+  ```
 
 2. while
-```rust
-let mut i = 0;
-while i < 10 {
-    println!("{}", i);
-    i = i + 1;
-}
-```
+
+  ```rust
+  let mut i = 0;
+  while i < 10 {
+      println!("{}", i);
+      i = i + 1;
+  }
+  ```
 
 3. for
-```rust
-let mut sum = 0;
-for n in 1..11 { // including start and excluding end
-    sum += n;
-}
-println!("{}", sum);
-```
 
-```rust
-let v = &["rust", "go", "c++"];
-for text in v {
-    println!("I like {}.", text);
-}
-```
+  ```rust
+  let mut sum = 0;
+  for n in 1..11 { // including start and excluding end
+      sum += n;
+  }
+  println!("{}", sum);
+  ```
+
+  ```rust
+  let v = &["rust", "go", "c++"];
+  for text in v {
+      println!("I like {}.", text);
+  }
+  ```
 
 ## Read from user input
 
