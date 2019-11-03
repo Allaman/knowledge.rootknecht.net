@@ -76,35 +76,35 @@ Also available: `cargo test`, `cargo doc` and `cargo publish`.
 ### Scalars
 
 ```rust
-    let number1: u8 = 1;
-    let number2: u16 = 10;
-    let number3: u32 = 100;
-    let number4: u64 = 1_000;
-    let number5: usize = 10_000;
+let number1: u8 = 1;
+let number2: u16 = 10;
+let number3: u32 = 100;
+let number4: u64 = 1_000;
+let number5: usize = 10_000;
 
-    let number6: i8 = -1;
-    let number7: i16 = -10;
-    let number8: i32 = -100; // default
-    let number9: i64 = -1_000;
-    let number0: isize = -10_000;
+let number6: i8 = -1;
+let number7: i16 = -10;
+let number8: i32 = -100; // default
+let number9: i64 = -1_000;
+let number0: isize = -10_000;
 
-    let decimal1: f32 = 3.14;
-    let decimal2: f64 = 2.78; // default
+let decimal1: f32 = 3.14;
+let decimal2: f64 = 2.78; // default
 
-    let b1: bool = true;
-    let b2: bool = false;
+let b1: bool = true;
+let b2: bool = false;
 
-    let char1: char = 'z';
-    let char2: char = '';
+let char1: char = 'z';
+let char2: char = '';
 ```
 
 ### Compounds
 
 ```rust
-    let t1: (u8, u8, bool) = (1, 10, true);
-    let (x, y, z) = t1;
+let t1: (u8, u8, bool) = (1, 10, true);
+let (x, y, z) = t1;
 
-    let arr = [1, 2, 3, 4, 5]; // FIXED size
+let arr = [1, 2, 3, 4, 5]; // FIXED size
 ```
 
 ### Mutability
