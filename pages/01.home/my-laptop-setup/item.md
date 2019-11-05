@@ -37,7 +37,7 @@ Of course there are more reasons like excellent performance, build quality, and 
 
 ### Peripherals and Gadgets
 
-Besides my X1 I use an [ErgoDZ EZ](https://knowledge.rootknecht.net/ergodox-ez) or [Lioncast LK 30](https://knowledge.rootknecht.net/ergodox-ez) keyboard, a [Logitech MX Anywhere 2S](https://www.logitech.com/de-de/product/mx-anywhere-2s-flow) when I am on the go or an ergonomic [Logtiech MX Vertical}(https://www.logitech.com/de-de/product/mx-vertical-ergonomic-mouse) at the office, and finally a [Panasonic Bluetooth RP-HD605NE-K9](https://www.panasonic.com/de/consumer/home-entertainment/kopf-ohrhoerer/kopfhoerer/rp-hd605n.html). For more ports I use the [Inateck USB C Hub](https://www.amazon.de/gp/product/B07QXYS1WM) USB C port replikator. For taking notes and reading books I can recommend the [ONYX BOOX Nova](https://onyxboox.com/boox_nova) E-ink device.
+Besides my X1 I use an [ErgoDZ EZ](https://knowledge.rootknecht.net/ergodox-ez) or [Lioncast LK 30](https://knowledge.rootknecht.net/ergodox-ez) keyboard, a [Logitech MX Anywhere 2S](https://www.logitech.com/de-de/product/mx-anywhere-2s-flow) when I am on the go or an ergonomic [Logtiech MX Vertical](https://www.logitech.com/de-de/product/mx-vertical-ergonomic-mouse) at the office, and finally a [Panasonic Bluetooth RP-HD605NE-K9](https://www.panasonic.com/de/consumer/home-entertainment/kopf-ohrhoerer/kopfhoerer/rp-hd605n.html). For more ports I use the [Inateck USB C Hub](https://www.amazon.de/gp/product/B07QXYS1WM) USB C port replikator. For taking notes and reading books I can recommend the [ONYX BOOX Nova](https://onyxboox.com/boox_nova) E-ink device.
 
 ## Operating System
 
