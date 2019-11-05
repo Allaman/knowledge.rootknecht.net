@@ -35,15 +35,15 @@ At this point I was totally commited to run Lenovo laptops for two main reasons:
 
 Of course there are more reasons like excellent performance, build quality, and the classical look.
 
-### Peripherals
+### Peripherals and Gadgets
 
-Besides my x1 I use an [ErgoDZ EZ](https://knowledge.rootknecht.net/ergodox-ez) keyboard, a [Logitech MX Anywhere 2S](https://www.logitech.com/de-de/product/mx-anywhere-2s-flow) in midnight blue, a [Panasonic Bluetooth RP-HD605NE-K9](https://www.panasonic.com/de/consumer/home-entertainment/kopf-ohrhoerer/kopfhoerer/rp-hd605n.html). For more ports I use the [Inateck USB C Hub](https://www.amazon.de/gp/product/B07QXYS1WM) USB C port replikator.
+Besides my X1 I use an [ErgoDZ EZ](https://knowledge.rootknecht.net/ergodox-ez) or [Lioncast LK 30](https://knowledge.rootknecht.net/ergodox-ez) keyboard, a [Logitech MX Anywhere 2S](https://www.logitech.com/de-de/product/mx-anywhere-2s-flow) when I am on the go or an ergonomic [Logtiech MX Vertical}(https://www.logitech.com/de-de/product/mx-vertical-ergonomic-mouse) at the office, and finally a [Panasonic Bluetooth RP-HD605NE-K9](https://www.panasonic.com/de/consumer/home-entertainment/kopf-ohrhoerer/kopfhoerer/rp-hd605n.html). For more ports I use the [Inateck USB C Hub](https://www.amazon.de/gp/product/B07QXYS1WM) USB C port replikator. For taking notes and reading books I can recommend the [ONYX BOOX Nova](https://onyxboox.com/boox_nova) E-ink device.
 
 ## Operating System
 
-I am running the [i3wm](https://i3wm.org/) flavor of [Manjaro Arch Linux](https://manjaro.org/). 
+I am running the [i3wm](https://i3wm.org/) flavor of [Manjaro Arch Linux](https://manjaro.org/).
 
-In my opinion Manjaro is the best desktop operating system as it provides a good balance between the bleeding edge of pure Arch and the stability of non [rolling release](https://en.wikipedia.org/wiki/Rolling_release) distributions like Ubuntu. 
+In my opinion Manjaro is the best desktop operating system as it provides a good balance between the bleeding edge of pure Arch and the stability of non [rolling release](https://en.wikipedia.org/wiki/Rolling_release) distributions like Ubuntu.
 
 Furthermore, [Pacman](https://wiki.archlinux.org/index.php/Pacman) and the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) provide basically packages for every software you can imagine. Therefore, I do not have to worry about different installation mechanism mechanisms like manually or via pip. Everything is managed by the system's package manager
 
@@ -81,20 +81,20 @@ My main editor/IDE is a heavily customized [Neovim](https://neovim.io/) a fork o
 
 ### Utilities
 
-My workflow is mainly terminal based. Except browsing the web I spend most of the time in front of a black window :) To enhance my experience I use some awesome tools. 
+My workflow is mainly terminal based. Except browsing the web I spend most of the time in front of a black window :) To enhance my experience I use some awesome tools.
 
 Let's begin with the shell itself. I am using zsh with [Fish-like autosuggestions for zsh](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh-completions](https://github.com/zsh-users/zsh-completions).
-Additionally, I created some dozens of aliases in order to fast execute commands or remap old commands to the new executables. Another important feature of each shell should be a sane history configuration meaning an unlimited history file, shared history between sessions and immediately appending items to the history. 
+Additionally, I created some dozens of aliases in order to fast execute commands or remap old commands to the new executables. Another important feature of each shell should be a sane history configuration meaning an unlimited history file, shared history between sessions and immediately appending items to the history.
 
 ![](neofetch.png?link&lightbox=1920,1080&resize=300,300)
 
 As terminal I use [termite](https://github.com/thestinger/termite) which is very fast, minimalistic and keyboard-driven.
 
-In order to move around and find things fast in my terminal there I use a couple of commandline tools. The most important tools are [fzf](https://github.com/junegunn/fzf) and [fasd](https://github.com/clvv/fasd). fzf allows you to quickly fuzzy find files and folders and search your history. Due to the ability to stdin to fzf the customizations are nearly endless. 
+In order to move around and find things fast in my terminal there I use a couple of commandline tools. The most important tools are [fzf](https://github.com/junegunn/fzf) and [fasd](https://github.com/clvv/fasd). fzf allows you to quickly fuzzy find files and folders and search your history. Due to the ability to stdin to fzf the customizations are nearly endless.
 
 ![](fzf.png?link&lightbox=1920,1080&resize=300,300)
 
-Here you can see fzf find invoked by `Ctrl+t`. Notice also the preview window on the right side. By hitting `Ctrl+o` I can open the selected file in my editor or by just entering the path to the file is entered at the cursor in my terminal. As I said the possibilities are endless and you should really give it a try. There is also a [Vim integration](https://github.com/junegunn/fzf.vim). 
+Here you can see fzf find invoked by `Ctrl+t`. Notice also the preview window on the right side. By hitting `Ctrl+o` I can open the selected file in my editor or by just entering the path to the file is entered at the cursor in my terminal. As I said the possibilities are endless and you should really give it a try. There is also a [Vim integration](https://github.com/junegunn/fzf.vim).
 
 fasd allows you to quickly jump to folders by indexing and weighting your visited folders. With fasd you don't need to enter the full path of a folder as it also works with fuzzy matching. It is often enough to just enter the folders basename ignoring the full path and fasd will do the rest
 
@@ -115,13 +115,13 @@ fasd allows you to quickly jump to folders by indexing and weighting your visite
 
 I am a keyboard fan. For the things I do the keyboard is the primary input method as most of the time I handle with some form of textual data. Actually, my main reason for switching to a Linux OS back in 2009 was to be able to operate my Laptop with my keyboard only because I always forgot my mouse. After some years of fear of Vim, caused by not being able to quit it, I decided to give it a deeper try not aware of the impact of my style of work!
 
-Since that my usage of Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's [modal editing](https://en.wikipedia.org/wiki/Vi#Interface) approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the Home Row. Vim-like key bindings strongly support not this pattern on regular keyboard layouts[1], I decided to give it a deeper try. My skills in using Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's modal editing approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the [Home Row](https://www.computerhope.com/jargon/h/hrk.htm). Vim-like key bindings strongly support not this pattern on regular keyboard layouts[^2] like qwert[z|y]. 
+Since that my usage of Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's [modal editing](https://en.wikipedia.org/wiki/Vi#Interface) approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the Home Row. Vim-like key bindings strongly support not this pattern on regular keyboard layouts[1], I decided to give it a deeper try. My skills in using Vim improved a lot and I discovered and still discover new features every day. Furthermore, Vim's modal editing approach inspired me to only use applications that support Vim-like key bindings. In my opinion the productivity highly increases when not just using keyboard shortcuts but also barely leave the [Home Row](https://www.computerhope.com/jargon/h/hrk.htm). Vim-like key bindings strongly support not this pattern on regular keyboard layouts[^2] like qwert[z|y].
 
 Here is a not comprehensive list of applications that support Vim-like key bindings:
 
 - [Vim Vixen](https://en.wikipedia.org/wiki/Vi#Interface) &rarr; a vim plugin for firefox
 - [mutt](http://www.mutt.org/) and [neomutt](https://neomutt.org/) &rarr; mail clients with vim key bindings
-- [vifm](https://vifm.info/) and [ranger](https://github.com/ranger/ranger) &rarr; file managers 
+- [vifm](https://vifm.info/) and [ranger](https://github.com/ranger/ranger) &rarr; file managers
 - [zathura](https://git.pwmt.org/pwmt/zathura) &rarr; keyboard driven lightweight pdf viewer
 - [newsboat](https://newsboat.org/) &rarr; terminal RSS reader
 - [sc-im](https://github.com/andmarti1424/sc-im) &rarr; ncurses spreadsheet with Vim's modal editing
