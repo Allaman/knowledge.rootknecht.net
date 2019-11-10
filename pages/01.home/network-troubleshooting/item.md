@@ -58,12 +58,32 @@ iperf -c SERVERIP -p SERVERPORT -t 15 -i 1 -f m
 - -l 1 shows output every second
 - -f m shows rate in Mbps
 
+## Check local IP
+
+```sh
+ip a
+ifconfig # deprecated
+
+```
+
+## Routes
+List routes
+```bash
+ip r
+route -n # deprecated
+```
+Add default gateway
+```bash
+ip route add default via GATEWAYIP
+route add default gw GATEWAYIP # deprecated
+```
+
 ## Check open ports
 local
 ```bash
 lsof -i -P -n [ | grep LISTEN]
-ss -tan
-netstat -tulpen
+ss -tulpen
+netstat -tulpen # deprecated
 ```
 on remote
 ```bash
@@ -87,18 +107,6 @@ done
 ```bash
 iftop -i INTERFACE
 nethogs device INTERFACE
-```
-
-## Routes
-List routes
-```bash
-ip route
-route -n
-```
-Add default gateway
-```bash
-ip route add default via GATEWAYIP
-route add default gw GATEWAYIP
 ```
 
 ## Scan with nmap
