@@ -188,6 +188,24 @@ getent passwd USER
 id -u name
 ```
 
+### Root user
+
+POSIX compliant
+```sh
+if ! [ $(id -u) = 0 ]; then
+   echo "Must be run as root!"
+   exit 1
+fi
+```
+BASH 
+```sh
+#!/bin/bash
+if [[ $EUID -ne 0 ]]; then
+   echo "Must be run as root!" 
+   exit 1
+fi
+```
+
 ### File is being sourced
 
 Works for bash, ksh. zsh
