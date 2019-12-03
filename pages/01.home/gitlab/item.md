@@ -27,7 +27,7 @@ services:
       volumes:
         - '/srv/gitlab/config:/etc/gitlab'
         - '/srv/gitlab/logs:/var/log/gitlab'
-        - '/srv/gitlab/data:/var/opt/gitlab'
+        - '/srv/gitlab/app:/var/opt/gitlab'
 ```
 
 ## Gitlab
@@ -274,7 +274,7 @@ services:
     volumes:
       - '/srv/gitlab/config:/etc/gitlab'
       - '/srv/gitlab/logs:/var/log/gitlab'
-      - '/srv/gitlab/data:/var/opt/gitlab'
+      - '/srv/gitlab/app:/var/opt/gitlab'
 ```
 Run `docker-compose up -d` to start the service in the backgroud. You should now be able to access gitlab with your machine's IP
 
