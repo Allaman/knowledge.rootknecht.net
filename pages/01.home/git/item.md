@@ -122,3 +122,15 @@ git config [--global] --edit
 git config --global core.autocrlf false
 git config --global core.eol lf
 ```
+
+## Debug git command
+
+```sh
+GIT_CURL_VERBOSE=1 GIT_TRACE=1 git pull
+```
+
+even more output:
+
+```sh
+set -x; GIT_TRACE=2 GIT_CURL_VERBOSE=2 GIT_TRACE_PERFORMANCE=2 GIT_TRACE_PACK_ACCESS=2 GIT_TRACE_PACKET=2 GIT_TRACE_PACKFILE=2 GIT_TRACE_SETUP=2 GIT_TRACE_SHALLOW=2 git pull origin master -v -v; set +x
+```
