@@ -134,3 +134,73 @@ even more output:
 ```sh
 set -x; GIT_TRACE=2 GIT_CURL_VERBOSE=2 GIT_TRACE_PERFORMANCE=2 GIT_TRACE_PACK_ACCESS=2 GIT_TRACE_PACKET=2 GIT_TRACE_PACKFILE=2 GIT_TRACE_SETUP=2 GIT_TRACE_SHALLOW=2 git pull origin master -v -v; set +x
 ```
+## List all repos a Github user is allowed to access
+
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Small CLI script to list basic overview of our Github repositories
+
+- Access and repositories are based upon the user's permissions
+- Default ouput is a SingleTable (fancier) but ASCII Table is supported as well
+- Show last commit only since a defined period of time to limit required API calls
+
+Install dependencies with 'pip3 install --user PyGithub, terminaltables' or appropriate command
+"""
+__version__ = "1.0.0"
+
+from datetime import datetime, timedelta
+import argparse
+from github import Github
+from terminaltables import AsciiTable, SingleTable
+
+def main(args):
+    """ entry point """
+    g = Github(args.token)
+
+    data = [['Name', 'URL', 'Tags', 'Branches', 'Last Commit']]
+
+    since = datetime.now() - timedelta(days=args.days)
+
+    for repo in g.get_user().get_repos():
+        # to see all the available attributes and methods
+        # print(dir(repo))
+        commits = repo.get_commits(since=since)
+        date = 'unknown'
+        author = 'unknown'
+        try:
+            if commits.totalCount > 0:
+                last_commit = commits[0]
+                date = last_commit.last_modified
+                author = last_commit.author.login
+        except:
+            pass # empty repo found ^^
+        name = repo.name
+        url = repo.clone_url
+        tags = []
+        for tag in repo.get_tags():
+            tags.append(tag.name)
+        branches = []
+        for branch in repo.get_branches():
+            branches.append(branch.name)
+        data.append([name, url, '\n'.join(tags), '\n'.join(branches), f"{date} by {author}"])
+
+    if (args.a):
+        table = AsciiTable(data)
+    else:
+        table = SingleTable(data)
+    table.inner_row_border = True
+    print(table.table)
+
+if __name__ == "__main__":
+    """ Executed from the commandline"""
+    parser = argparse.ArgumentParser(description='Terminal Github Overview for Innio')
+    parser.add_argument('-t', '--token', action='store', required=True, help='your Github API token')
+    parser.add_argument('-d', '--days', action='store', type=int, default=1, help='list commits since x days')
+    parser.add_argument('-a', action='store_true', default=False, help='use simple ASCII table as output')
+    parser.add_argument('-v', action='version',version='%(prog)s (version {version})'.format(version=__version__))
+    args = parser.parse_args()
+    main(args)
+
+```
