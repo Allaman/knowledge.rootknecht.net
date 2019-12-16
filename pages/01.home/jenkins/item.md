@@ -11,7 +11,6 @@ taxonomy:
 
 ```nginx
       location ^~ /jenkins/ {
-        # TODO
         proxy_pass http://xxx.xxx.xxx.xxx:8080/jenkins/;
         proxy_set_header   Host             $host:$server_port;
         proxy_set_header   X-Real-IP        $remote_addr;
@@ -31,7 +30,7 @@ taxonomy:
 In case of bad proxy configuration warning in Jenkins ensure that the `Jenkins URL` in the settings ist with port number!
 
 ## Setup Git, Maven, JDK, Docker, and Co
-Configure multiple Versions in „Manage Jenkins“ - > „Configure Global Tools“. When nothing is configured the system defaults will be used. When one entry is present this one will be used. If multiple versions are configured you can select the version in your job settings
+Configure multiple Versions in "Manage Jenkins" - > "Configure Global Tools". When nothing is configured the system defaults will be used. When one entry is present this one will be used. If multiple versions are configured you can select the version in your job settings
 
 
 ## Ldap troubleshooting
