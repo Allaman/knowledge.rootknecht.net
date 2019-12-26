@@ -22,6 +22,11 @@ taxonomy:
 :g/^$/d
 ```
 
+## Replace currently selected text with default register without yanking it
+```
+vnoremap p "_dP
+```
+
 ## Open file in binary mode
 ```bash
 vim -b
