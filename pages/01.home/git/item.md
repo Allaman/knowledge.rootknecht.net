@@ -213,43 +213,49 @@ git tag -d <tag> # only delete local tag
 
 ### Undo public change
 
-*Use case*: After a `git push` you realize a commit is wrong
-*Undo*: `git revert <SHA>`
+**Use case**: After a `git push` you realize a commit is wrong
+
+**Undo**: `git revert <SHA>`
 
 This will create a new commit that reverts the specified commit
 
 ### Fix commit message
 
-*Use case*: Typo in commit message "before" `git push`
-*Undo*: `git commit --amend -m "Fixed commit message"`
+**Use case**: Typo in commit message "before" `git push`
+
+**Undo**: `git commit --amend -m "Fixed commit message"`
 
 This will update and replace the most recent commit. Be aware that staged changes will be included as well so in order to just fix the commit message ensure that there are no staged changes.
 
 ### Undo local change
 
-*Use case*: After editing local files nothing is working and you want to undo everything you have done.
-*Undo*: `git checkout -- <filename>`
+**Use case**: After editing local files nothing is working and you want to undo everything you have done.
+
+**Undo**: `git checkout -- <filename>`
 
 This will modify the file to a state known to git. Be aware that you cannot recover this as nothing was ever commited!
 
 ### Reset local change
 
-*Use case*: You made local commits (not yet pushed) and you want to undo the last four commits without any leftovers.
-*Undo*: `git reset [--hard] <last good SHA>`
+**Use case**: You made local commits (not yet pushed) and you want to undo the last four commits without any leftovers.
+
+**Undo**: `git reset [--hard] <last good SHA>`
 
 This will rewind the history of your repo back to the specified SHA as if the commits never happened. By default, `git reset` only removes the commits but not the content on disk. `--hard` option will also remove the changes on disk.
 
 ### Redo after undo local change
 
-*Use case*: After `git reset --hard` you changed your mind and want the changes back
-*Undo*: `git reflog`
+**Use case**: After `git reset --hard` you changed your mind and want the changes back
 
-This will show a list of times *Use case* `HEAD` changed.
+**Undo**: `git reflog`
+
+This will show a list of times **Use case** `HEAD` changed.
 
 ### Wrong branch
 
-*Use case*: You made some commits accidenttally on master instead a feature branch.
-*Undo*: `git branch feature`, `gt reset --hard origin/master`, `git checkout feature`
+**Use case**: You made some commits accidenttally on master instead a feature branch.
+
+**Undo**: `git branch feature`, `gt reset --hard origin/master`, `git checkout feature`
 
 This will
 1. create a branch named "feature" pointing to the most recent commit while still in master
@@ -258,8 +264,9 @@ This will
 
 ### Branch in
 
-*Use case*: Branch named "feature" branch started from master but you realized that after syncing master with origin/master that master was far behind. Now commits on "feature" should start now instead of being behind.
-*Undo*: `git checkout feature`, `git rebase master`
+**Use case**: Branch named "feature" branch started from master but you realized that after syncing master with origin/master that master was far behind. Now commits on "feature" should start now instead of being behind.
+
+**Undo**: `git checkout feature`, `git rebase master`
 
 This will
 1. locate the common ancestor between "feature" and master
@@ -268,8 +275,9 @@ This will
 
 ### Mass undo/redo
 
-*Use case*: You have a dozen commmits but only want some of them and the rest should disappear
-*Undo*: `git rebase -i <earlier SHA>`
+**Use case**: You have a dozen commmits but only want some of them and the rest should disappear
+
+**Undo**: `git rebase -i <earlier SHA>`
 
 This will start rebase in interactive mode like above but before replaying any commits you have the chance to modify each commit.
 
@@ -281,8 +289,9 @@ This will start rebase in interactive mode like above but before replaying any c
 
 ### Fix an earlier commit
 
-*Use case*: You forgot to include a file in an earlier commit. You haven't pushed yet but it also is not the most recent commit (--amend won't work)
-*Undo*: `git commit --sqash <SHA of the earlier commit>`, `git rebae --autosqash -i <even earlier SHA>`
+**Use case**: You forgot to include a file in an earlier commit. You haven't pushed yet but it also is not the most recent commit (--amend won't work)
+
+**Undo**: `git commit --sqash <SHA of the earlier commit>`, `git rebae --autosqash -i <even earlier SHA>`
 
 This will
 1. create a new commit with a message like "sqash! Earlier commit"
@@ -290,12 +299,14 @@ This will
 
 ### Stop tracking a tracked file
 
-*Use case*: Accidenttaly, you added a wrong file to the repo
-*Undo*: `git rm --cached <filename>`
+**Use case**: Accidenttaly, you added a wrong file to the repo
+
+**Undo**: `git rm --cached <filename>`
 
 This will remove the file from git but preserves the content on disk
 
 ### Modify past commits
+
 Start the rebase at the last "good" commit
 
 ```bash
