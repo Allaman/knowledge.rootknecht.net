@@ -188,6 +188,26 @@ if __name__ == "__main__":
 git config core.filemode false
 ```
 
+## Integrating branches
+
+### With merge
+
+```sh
+git checkout feature
+git merge master
+```
+
+This results in a merge commit and may pollute the commit log but it **preserves history** in contrast to `rebase`
+
+### With rebase
+
+**Don't do that on public branches where multiple devs are working on as this will rewrite the commit history according to your local branch!**
+
+```sh
+git checkout feature
+git rebase master
+```
+
 ## Delete branches
 
 ```sh
@@ -255,7 +275,7 @@ This will show a list of times **Use case** `HEAD` changed.
 
 **Use case**: You made some commits accidenttally on master instead a feature branch.
 
-**Undo**: `git branch feature`, `gt reset --hard origin/master`, `git checkout feature`
+**Undo**: `git branch feature`, `git reset --hard origin/master`, `git checkout feature`
 
 This will
 1. create a branch named "feature" pointing to the most recent commit while still in master
@@ -266,7 +286,7 @@ This will
 
 **Use case**: Branch named "feature" branch started from master but you realized that after syncing master with origin/master that master was far behind. Now commits on "feature" should start now instead of being behind.
 
-**Undo**: `git checkout feature`, `git rebase master`
+**Undo**: `git checkout feature`, `git rebase master` (compare [Integrate branches](#integrate-branches))
 
 This will
 1. locate the common ancestor between "feature" and master
