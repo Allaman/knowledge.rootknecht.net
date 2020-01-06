@@ -113,7 +113,7 @@ resource "aws_security_group_rule" "cidr_to_sg" {
   from_port         = each.value["from_port"]
   to_port           = each.value["to_port"]
   cidr_blocks       = each.value["cidr_blocks"]
-  security_group_id = module.gas.security_group_id
+  security_group_id = module.foo.security_group_id
 }
 
 resource "aws_security_group_rule" "sg_to_sg" {
@@ -123,6 +123,6 @@ resource "aws_security_group_rule" "sg_to_sg" {
   from_port                = each.value["from_port"]
   to_port                  = each.value["to_port"]
   source_security_group_id = each.value["source_sg_id"]
-  security_group_id        = module.gas.security_group_id
+  security_group_id        = module.foo.security_group_id
 }
 ```
