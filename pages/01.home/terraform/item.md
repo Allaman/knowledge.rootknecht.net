@@ -58,3 +58,71 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(args)
 ```
+
+## Manage AWS security groups
+
+! Terraform &ge; 0.12 required due to `for_each` functionality
+
+```
+locals {
+  cidr_to_sg_rules = {
+    icmp_ping = {
+      type        = "ingress"
+      protocol    = "icmp"
+      from_port   = -1
+      to_port     = -1
+      cidr_blocks = [var.ping_cidr]
+    }
+    icmp_pong = {
+      type        = "egress"
+      protocol    = "icmp"
+      from_port   = -1
+      to_port     = -1
+      cidr_blocks = [var.egress_cidr]
+    }
+    http_out = {
+      type        = "egress"
+      protocol    = "tcp"
+      from_port   = 80
+      to_port     = 80
+      cidr_blocks = [var.egress_cidr]
+    }
+    https_out = {
+      type        = "egress"
+      protocol    = "tcp"
+      from_port   = 443
+      to_port     = 443
+      cidr_blocks = [var.egress_cidr]
+    }
+  }
+  sg_to_sg_rules = { for id in var.ssh_security_group_ids :
+    id => {
+      type         = "ingress"
+      protocol     = "tcp"
+      from_port    = 22
+      to_port      = 22
+      source_sg_id = id
+    }
+  }
+}
+
+resource "aws_security_group_rule" "cidr_to_sg" {
+  for_each          = local.cidr_to_sg_rules
+  type              = each.value["type"]
+  protocol          = each.value["protocol"]
+  from_port         = each.value["from_port"]
+  to_port           = each.value["to_port"]
+  cidr_blocks       = each.value["cidr_blocks"]
+  security_group_id = module.gas.security_group_id
+}
+
+resource "aws_security_group_rule" "sg_to_sg" {
+  for_each                 = local.sg_to_sg_rules
+  type                     = each.value["type"]
+  protocol                 = each.value["protocol"]
+  from_port                = each.value["from_port"]
+  to_port                  = each.value["to_port"]
+  source_security_group_id = each.value["source_sg_id"]
+  security_group_id        = module.gas.security_group_id
+}
+```
