@@ -142,6 +142,16 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - cross platform
 - remote monitoring
 
+## glow
+
+[glow](https://github.com/charmbracelet/glow)
+
+- render markdown on the cli
+- written in Go
+- styles and paging
+- read from URL
+- similar to [bat](#bat)
+
 ## gotop
 
 [gotop](https://github.com/cjbassi/gotop)
