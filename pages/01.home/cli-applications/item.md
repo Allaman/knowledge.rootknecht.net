@@ -380,7 +380,7 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 
 - modern text interface for git
 - written in C
-- ncurses GUI
+- ncurses UI
 
 ## tmux
 
@@ -453,19 +453,6 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - CSV parsing and manipulation
 - written in Rust
 - indexing, slicing, analyzing, splitting and joining 
-
-**Search by column and output specific columns**
-```sh
-  xsv search -d ';' -s Role \
-  data.csv  \
-  | xsv select Name,Location \
-  | xsv table
-```
-
-**Join two csv tables and write in new csv**
-```sh
-xsv join -d ';' Name data.csv Name status.csv | xsv fmt -t ';' > joined.csv
-```
 
 ## youtube-dl
 
