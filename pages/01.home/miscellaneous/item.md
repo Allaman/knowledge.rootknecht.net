@@ -201,3 +201,20 @@ function download() {
 }
 ```
 <small>[Source](http://shallowsky.com/blog/tech/web/downloading-from-humble-bundle.html)</small>
+
+## CSV manipulation 
+
+With [xsv](#xsv)
+
+**Search by column and output specific columns**
+```sh
+  xsv search -d ';' -s Role \
+  data.csv  \
+  | xsv select Name,Location \
+  | xsv table
+```
+
+**Join two csv tables and write in new csv**
+```sh
+xsv join -d ';' Name data.csv Name status.csv | xsv fmt -t ';' > joined.csv
+```

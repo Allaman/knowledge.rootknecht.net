@@ -5,8 +5,8 @@ taxonomy:
         - Application
 ---
 
-A brief overview of **c**ommand **l**ine **i**nterface applications I use and higly recommend!
-See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for more applications.
+A brief overview of **c**ommand **l**ine **i**nterface applications I use and highly recommend!
+See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for more.
 
 [TOC]
 
@@ -19,6 +19,18 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - intuitive set of (sub)commands
 - templating language
 - different terminal outputs
+- see also [bash-my-aws](#bash-my-aws)
+
+## bash-my-aws
+
+[bash-my-aws](gghttps://github.com/bash-my-aws/bash-my-aws)
+
+- AWS CLI wrapper scripts
+- written in Bash
+- Unix pipeline friendly
+- short memorable commands
+- command completion
+- see also [awless](#awless)
 
 ## bat
 
@@ -57,13 +69,6 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - alternative for `git diff`
 - customizable and nice looking
 - written in Perl
-
-In your git config:
-```ini
-[pager]
-   diff = diff-so-fancy | less --tabs=1,5 -RFX
-   show = diff-so-fancy | less --tabs=1,5 -RFX
-```
 
 ## exa
 
@@ -158,15 +163,12 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 
 ## htop
 
-[htop](https://hisham.hm/htop/) is a enhanced version of `top` which comes preinstalled on most systems.
-- *P* &rarr; sort by CPU
-- *M* &rarr; sort by memory usage
-- *F4* &rarr; filter processes by string
-- *space* &rarr; mark a single process
+[htop](https://github.com/hishamhm/htop) 
 
-Settings are stored in `$HOME/.config/htop/htoprc` but overwritten by the application by pressing `F10` save and exit.
-
-Alternatives may be [glances](#glances) and [gotop](#gotop)
+- enhanced version of `top`
+- written in C
+- ncurses UI
+- Alternatives: [glances](#glances) and [gotop](#gotop)
 
 ## iftop
 
