@@ -1,5 +1,8 @@
 ---
 title: HAProxy
+taxonomy:
+    category:
+        - Application
 ---
 
 ## Forward only config
