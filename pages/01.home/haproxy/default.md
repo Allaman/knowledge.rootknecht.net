@@ -7,7 +7,7 @@ taxonomy:
 
 ## Forward only config
 
-Can be used as Ansible template
+Can be used as Ansible template; valid for HaProxy 1.8
 
 ```
 global
@@ -20,7 +20,6 @@ global
     log         127.0.0.1:514 local2 notice
     log         127.0.0.1:514 local3
 
-    # turn on stats unix socket
     stats socket /var/lib/haproxy/stats
 
 defaults
