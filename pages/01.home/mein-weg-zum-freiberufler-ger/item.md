@@ -51,9 +51,9 @@ Aber wenn man krank ist kommt kein Geld rein!
 
 Das stimmt erst mal. Hier gilt es genügend Rücklagen aufzubauen oder schon mitzubringen, um einen Verdienstausfall von einigen Wochen oder Monaten überbrücken zu können. Außerdem rechne ich in meinem Alter nicht mit größeren Ausfällen. Natürlich _kann_ immer etwas passieren, aber soll man sich davon wirklich abschrecken lassen...?
 
-### Scheinselbstständigkeit
+### Scheinselbstständigkeit + RV-Pflicht
 
-Die Scheinselbstständigkeit ist ein heißes Thema und ich möchte hier bewusst nicht näher drauf eingehen. Wenn man bestimmte Dinge beachtet kommt man aber auch hier gut zu Recht. [Hier](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/scheinselbststaendigkeit/) findet man einen guten ersten Überblick über das Thema.
+Die Scheinselbstständigkeit und Rentenversicherung ist ein heißes Thema und ich möchte hier bewusst nicht näher drauf eingehen. Wenn man bestimmte Dinge beachtet kommt man aber auch hier gut zu Recht. [Hier](https://www.fuer-gruender.de/wissen/unternehmen-gruenden/unternehmen-anmelden/scheinselbststaendigkeit/) findet man einen guten ersten Überblick über das Thema. Zur RV-Pflicht sollte man die 5/6 Grenze an Umsatz durch einen Kunden auf dem Radar haben.
 
 ## Die Selbstständigkeit
 
