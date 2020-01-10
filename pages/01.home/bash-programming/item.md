@@ -161,6 +161,17 @@ arr=( $string )
 <list of numbers> | paste -sd+ - | bc 
 ```
 
+## Yes/no user input choice
+
+```sh
+read -p "Run? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    cowsay
+fi
+```
+
 ## Checks
 
 ### Programm
