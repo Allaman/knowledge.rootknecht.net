@@ -42,6 +42,15 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - Git integration
 - automatic paging
 
+## broot
+
+[broot](https://github.com/Canop/broot)
+
+- navigate your files with ease from your terminal
+- cd+ls+tree+du replacement and more
+- written in R
+- configurable and scriptable
+
 ## cheat.sh
 
 [cheat.sh](https://github.com/chubin/cheat.sh)
@@ -110,6 +119,24 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - cross platform
 - customizable
 
+## fasd
+
+[fasd](https://github.com/clvv/fasd)
+
+- fast navigation in your shell
+- written in shell
+- quickaccess to files, directories
+- inspired by autojump, z, and v
+
+## forgit
+
+[forgit](https://github.com/wfxr/forgit)
+
+- interactive git
+- written in Bash
+- utilizes [fzf](#fzf)
+- see [tig](#tig) for an alternative
+
 ## fzf
 
 [fzf](https://github.com/junegunn/fzf)
@@ -119,17 +146,9 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - endless use cases
 - portable
 - Integration in tmux, vim, bash, zsh, ...
+- [skim](https://github.com/lotabout/skim) - alternative written in Rust
 
 See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
-
-## fasd
-
-[fasd](https://github.com/clvv/fasd)
-
-- fast navigation in your shell
-- written in shell
-- quickaccess to files, directories
-- inspired by autojump, z, and v
 
 ## glances
 
