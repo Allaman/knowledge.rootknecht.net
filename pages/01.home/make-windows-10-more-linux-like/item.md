@@ -1,5 +1,6 @@
 ---
 title: 'Make Windows 10 more Linux like'
+media_order: capstoesc.ahk
 taxonomy:
     category:
         - Uncategorized
@@ -47,7 +48,7 @@ Generally speaking, I always prefer cross platform software to be able to have a
 
 ### Autohotkey
 
-To automatically start an AHK script simply add [capstoesc.ahk](./capstoesc.ask) to your Windows startup folder (`Win+r -> shell:startup`)
+To automatically start an AHK script simply add [capstoesc.ahk](capstoesc.ahk) to your Windows startup folder (`Win+r -> shell:startup`)
 
 ### Powershell
 
