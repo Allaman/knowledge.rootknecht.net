@@ -126,3 +126,45 @@ resource "aws_security_group_rule" "sg_to_sg" {
   security_group_id        = module.foo.security_group_id
 }
 ```
+
+## Using for_each
+
+! Terraform &ge; 0.12 required
+
+```
+operators =   {
+  "Max_Mustermann" = "system:masters",
+  "Michaela_Musterfrau" = "system:masters"
+}
+```
+
+```
+resource "aws_iam_user" "operators" {
+  for_each = var.operators
+  name  = each.key
+  path  = "/${var.cluster_name}/"
+
+  tags = {
+    "group" = each.value
+  }
+}
+```
+
+```
+data "external" "operator_map" {
+  for_each = var.operators
+  program = ["python", "${path.module}/map.py"]
+
+  query = {
+    user_arn = aws_iam_user.operators[each.key].arn
+    username = aws_iam_user.operators[each.key].name
+    group    = each.value
+  }
+}
+```
+
+```
+output "users" {
+  value = [for value in data.external.operator_map: value.result]
+}
+```
