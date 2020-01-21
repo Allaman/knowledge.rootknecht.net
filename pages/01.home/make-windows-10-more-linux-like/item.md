@@ -35,6 +35,7 @@ Virtual desktops are crucial for my workflow! I use them to structure my apps an
 Generally speaking, I always prefer cross platform software to be able to have a as much as possible unified user experience across different platforms. That said have a look at my [CLI Applications](https://knowledge.rootknecht.net/cli-applications) and [GUI Applications](https://knowledge.rootknecht.net/gui-applications) summaries. Particularly, most of the GUI applications I am running are cross platform capable. Nevertheless, find some usefull Windows applications that are not necessary useful or available on Linux systems:
 
 - [ConEmu](https://conemu.github.io/) - An enhanced terminal featuring tabs, Guake drop down style, various differents shells and much customazation options
+- [Terminus](https://github.com/Eugeny/terminus) - Alternative to ConEmu, configurable, includes patched fonts, integrated SSH client, Powershell, WSL, CMD and more
 - [MobaXterm](https://mobaxterm.mobatek.net/) - A fully featured SSH, FTP, RDP and more client with session management, tunneling, its own shell and more
 - [Autohotkey](https://www.autohotkey.com/) - An open source Windows scripting tool for automation and key binding settings for instance mapping ESC to CAPS.
 - [Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer) - Customizing shortcuts for built in virtual desktops
