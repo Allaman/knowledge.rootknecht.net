@@ -363,4 +363,4 @@ git push --force-with-lease
 ```
 to push your modifications.
 
-[1]: [origin](https://gist.github.com/myusuf3/7f645819ded92bda6677)
+[^1]: [origin](https://gist.github.com/myusuf3/7f645819ded92bda6677)
