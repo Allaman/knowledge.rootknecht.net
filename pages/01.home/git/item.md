@@ -182,6 +182,17 @@ if __name__ == "__main__":
 
 ```
 
+## Remove submodule
+
+How to remove a submodule from a git repository[^1]
+
+1. Remove the relevant `.gitmodules` section
+2. `git add .gitmodules`
+3. Remove the relevant `.git/config' section
+4. `git rm --cached /path/to/submodule (no trailing slash)
+5. `git commit -m "Remove submodule"
+6. `rm -rf /path/to/submodule`
+
 ## old mode 100755 new mode 100644
 
 ```
@@ -351,3 +362,5 @@ to go to the next marked commit. After rebasing run
 git push --force-with-lease
 ```
 to push your modifications.
+
+[1]: [origin](https://gist.github.com/myusuf3/7f645819ded92bda6677)
