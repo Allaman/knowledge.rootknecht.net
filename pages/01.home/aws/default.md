@@ -4,6 +4,12 @@ title: AWS
 
 [TOC]
 
+## Tooling
+
+- [awless](https://github.com/wallix/awless)
+- [bash-my-aws](https://github.com/bash-my-aws/bash-my-aws)
+- [commandeer](https://getcommandeer.com/)
+
 ## RDS instance
 
 ```
