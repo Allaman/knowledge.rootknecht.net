@@ -6,7 +6,7 @@ title: AWS
 
 ## RDS instance
 
-```sh
+```
 # create snapshot
 aws rds create-db-snapshot --db-instance-identifier <INSTANCE_IDENTIFIER> --db-snapshot-identifier <SNAPSHOT_IDENTIFIER>
 # verify snapshot
@@ -19,7 +19,7 @@ aws rds delete-db-instance --db-instance-identifier <INSTANCE_IDENTIFIER> --skip
 
 ## AMI
 
-```sh
+```
 # create 
 aws ec2 create-image --no-reboot --instance-id <INSTANCE_ID> --name "FOO" --description "BAR"
 # verify
@@ -28,7 +28,7 @@ aws ec2 describe-images --image-ids <AMI_ID>
 
 ## Volumes
 
-```sh
+```
 # stop instance
 # for ASG change min=0 desired=0 and set instance to standby
 aws ec2 stop-instances --instance-ids <INSTANCE_ID>
