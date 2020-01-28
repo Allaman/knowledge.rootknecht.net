@@ -296,6 +296,12 @@ I want to match not just only the program but its arguments (here for entr)
 ps ax | grep "xelatex main.tex" | grep -v grep | awk '{print "kill -9 " $1}' | sh
 ```
 
+## Generate random number
+
+```sh
+awk -v min=1 -v max=100 'BEGIN{srand(); print int(min+rand()*(max-min+1))}'
+```
+
 ## Rsync
 
 This command recursively syncs two folders with advanced matching options I am running for syncing my documents to my [eInk Reader](https://onyxboox.com/boox_novapro).
