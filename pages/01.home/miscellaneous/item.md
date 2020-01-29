@@ -54,7 +54,7 @@ flush privileges;
 
 ## Get MySQL char set
 
-```mysql
+```sql
 SELECT default_character_set_name FROM information_schema.SCHEMATA S WHERE schema_name = "DBNAME";
 SELECT CCSA.character_set_name FROM information_schema.`TABLES` T,information_schema.`COLLATION_CHARACTER_SET_APPLICABILITY` CCSA WHERE CCSA.collation_name = T.table_collation AND T.table_schema = "DBNAME" AND T.table_name = "TABLENAME";
 ```
@@ -62,7 +62,7 @@ SELECT CCSA.character_set_name FROM information_schema.`TABLES` T,information_sc
 ## Set MySQL char set to utf-8
 
 Whole database
-```mysql
+```sql
 ALTER DATABASE "DBNAME" CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
@@ -93,7 +93,7 @@ SELECT user,authentication_string,plugin,host FROM mysql.user;
 
 ## Create mysql backup user (read-only)
 
-```mysql
+```sql
 GRANT SELECT,LOCK TABLES ON DBNAME.* TO 'backup'@'localhost';
 ```
 
