@@ -52,6 +52,32 @@ grant all privileges on database.* to 'user'@'localhost' identified by "password
 flush privileges;
 ```
 
+## Get MySQL char set
+
+```mysql
+SELECT default_character_set_name FROM information_schema.SCHEMATA S WHERE schema_name = "DBNAME";
+SELECT CCSA.character_set_name FROM information_schema.`TABLES` T,information_schema.`COLLATION_CHARACTER_SET_APPLICABILITY` CCSA WHERE CCSA.collation_name = T.table_collation AND T.table_schema = "DBNAME" AND T.table_name = "TABLENAME";
+```
+
+## Set MySQL char set to utf-8
+
+Whole database
+```mysql
+ALTER DATABASE "DBNAME" CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
+
+All tables in a database
+cat .my.cnf
+```ini
+[client]
+user=USERNAME
+password="PASSWORD"
+```
+
+```sh
+mysql --database=DBNAME -B -N -e "SHOW TABLES" | awk '{print "SET foreign_key_checks = 0; ALTER TABLE", $1, "CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci; SET foreign_key_checks = 1; "}' | mysql --database=DBNAME
+```
+
 ## Export all mysql tables to csv files
 
 ```bash
