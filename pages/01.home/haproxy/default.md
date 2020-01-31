@@ -6,6 +6,8 @@ taxonomy:
         - Application
 ---
 
+[TOC]
+
 ## Forward only config
 
 Can be used as Ansible template; valid for HaProxy 1.8
