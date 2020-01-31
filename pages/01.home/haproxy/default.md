@@ -1,5 +1,6 @@
 ---
 title: HAProxy
+media_order: haproxy_http_log_format.pdf
 taxonomy:
     category:
         - Application
@@ -64,3 +65,7 @@ listen health_check_http_url
     monitor-uri /health
     option      dontlognull
 ```
+
+## HAProxy log format
+
+[haproxy_http_log_format.pdf](haproxy_http_log_format.pdf)
