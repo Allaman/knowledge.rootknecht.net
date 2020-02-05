@@ -36,6 +36,12 @@ time_object = datetime.strptime("19-11-20", '%y-%m-%d').date() # read from strin
 time_object.strftime("%Y/%m/%d") # print to string
 ```
 
+## One liner yaml to json
+
+```sh
+python -c 'import sys, yaml, json; json.dump(yaml.safe_load(sys.stdin), sys.stdout, indent=4)' < $FILE
+```
+
 
 ## Logging
 ```python
