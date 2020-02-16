@@ -1,6 +1,6 @@
 ---
 title: 'Thinkpad Adventures'
-media_order: 'dissambled-x60.jpg,dissambled.jpg,final.jpg,fingerprint-plate.jpg,fixed_palmrest.jpg,glued.jpg,original.jpg,palmrests.jpg,sidetoside.jpg,tablet.jpg,workingx60.jpg,x60.jpg,cutted.jpg,disassembledx100.jpg,motherboard.jpg,oven.jpg'
+media_order: 'dissambled-x60.jpg,dissambled.jpg,final.jpg,fingerprint-plate.jpg,fixed_palmrest.jpg,glued.jpg,original.jpg,palmrests.jpg,sidetoside.jpg,tablet.jpg,workingx60.jpg,x60.jpg,cutted.jpg,disassembledx100.jpg,motherboard.jpg,oven.jpg,front.jpg,back.jpg,open.jpg'
 taxonomy:
     category:
         - Blog
@@ -96,3 +96,13 @@ I ordered the following parts at ebay:
 - Final result
 
 	![](final.jpg?link&cropResize=300,300)
+    
+## Dbranding my Lenovo X1 Carbon
+
+I am a huge fan of [dbrand](https://dbrand.com). They offer extrem nice looking and perfectly fitting skins for various devices. All my Galaxy Devices had them applied and I thought it was about time to give my X1 Carbon a new look. here is the result
+
+![](front.jpg?link&cropResize=300,300)
+
+![](back.jpg?link&cropResize=300,300)
+
+![](open.jpg?link&cropResize=300,300)
