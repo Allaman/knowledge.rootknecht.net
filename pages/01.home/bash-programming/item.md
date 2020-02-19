@@ -161,17 +161,6 @@ arr=( $string )
 <list of numbers> | paste -sd+ - | bc 
 ```
 
-## Yes/no user input choice
-
-```sh
-read -p "Run? " -n 1 -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    cowsay
-fi
-```
-
 ## Checks
 
 ### Programm
@@ -296,6 +285,15 @@ with unknown options
     [[ -n $choice ]] || { echo "Invalid choice. Please try again." >&2; continue; }
     break
   done
+```
+or
+```sh
+read -p "Run? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    cowsay
+fi
 ```
 
 ## Redirect command output
