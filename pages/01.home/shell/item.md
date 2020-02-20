@@ -18,6 +18,23 @@ In /etc/inputrc
 "\e[6~": history-search-forward
 ```
 
+## jq / yq
+
+Input:
+```yaml
+packages:
+	cli:
+      - vim
+      - emacs
+    sys:
+      - strace
+      - devel-base
+```
+Return a single line string from input yaml
+```
+yq -rc '.packages | .[][]' conf.yml | paste -sd' '
+```
+
 ## Force changes to /etc/hosts
 ```bash
 systemctl restart nscd
