@@ -49,3 +49,10 @@ aws ec2 create-volume --snapshot-id <SNAPSHOT_ID> --volume-type gp2 --encrypted 
 # reattach vol
 aws ec2 attach-volume --volume-id <NEW_SNAPSHOT_ID>--instance-id <INSTANCE_ID> --device /dev/sda1
 ```
+
+## Optiongroup
+
+|Terraform | AWS Console|
+|-------------|--------------------|
+|immediate | dynamic|
+|pending-reboot | static|
