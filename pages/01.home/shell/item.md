@@ -79,8 +79,25 @@ echo "password" | sha1sum
 
 ## Add existing user to group
 ```bash
-usermod -a -G group user
+usermod -a -G GROUP USER
 ```
+
+## Force reload of group membership without logout
+
+```sh
+sg NEW_GROUP -c "bash"
+```
+
+```sh
+newgrp NEW_GROUP
+newgrp $(id -gn) # ensure membership in own group
+```
+Those will create additional login shells!
+
+```sh
+exec su -l USER_NAME
+```
+This will not create an additional login shell but will require the users password. When passwordless sudo is enabled use sudo before su
 
 ## Copy permissions from existing file
 ```bash
