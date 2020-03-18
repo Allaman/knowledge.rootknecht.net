@@ -1,0 +1,46 @@
+---
+title: Makefile
+---
+
+## Makefile 
+
+## Run shell commands
+```make
+DOCKER_GID=$(shell getent group docker | cut -d: -f3)
+```
+
+## User defined function
+```make
+define get_conf
+$(shell yq -r .$(1) conf.yml)
+endef
+NAME:=$(call get_conf,name)
+```
+
+## Concat variables
+```make
+BUILDARGS=--build-arg uid=$(UID) --build-arg gid=$(GID)
+BUILDARGS:=$(BUILDARGS) --build-arg docker_gid=$(DOCKER_GID)
+BUILDARGS:=$(BUILDARGS) --build-arg name=$(NAME)
+```
+
+## IF
+```make
+ifeq ($(MOUNT_AWS_FOLDER), true)
+MOUNT:=${MOUNT} -v $$HOME/.aws/:/home/${NAME}/.aws
+endif
+```
+
+## Help message
+```make
+.PHONY: help
+help: ## This help.
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+.DEFAULT_GOAL := help
+```
+This allows something like the following where everything after `##` is printed as help message
+```make
+build: ## Build the container
+	@echo 'Building image'
+	docker build $(BUILDARGS) -t $(NAME) .
+```
