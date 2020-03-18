@@ -17,7 +17,7 @@ taxonomy:
 ## Run playbook without inventory file
 
 ```sh
-ansible-playbook -i xxx.xxx.xxx.xxx, playbook.yml # be aware of the comma
+ansible-playbook --connection=local --inventory xxx.xxx.xxx.xxx, playbook.yml # be aware of the comma
 ansible all -i localhost, -m setup -c local
 ```
 
