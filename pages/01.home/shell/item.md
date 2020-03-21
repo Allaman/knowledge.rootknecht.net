@@ -115,6 +115,16 @@ chown -h USER:GROUP SYMLINK
 chmod g+s /path/to/parent
 ```
 
+## Add user and allow sudo without password
+
+```sh
+groupadd -g ${gid} ${name} && useradd -d /home/${name} -u ${uid} -g ${gid} -m -s /bin/zsh -r ${name} &&\
+    echo "${name} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers &&\
+```
+1. Create group, create user with homedirectory, uid/gi, zsh login shell, system account
+2.  Add line to sudoers file to allow user passwordless sudo
+```
+
 ## Curl for REST API
 **Auth**
 ```bash
