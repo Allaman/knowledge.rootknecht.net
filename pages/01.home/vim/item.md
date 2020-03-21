@@ -9,7 +9,7 @@ taxonomy:
 
 ## My (Neo)Vim config
 
-! Working on that! :)
+[vimrc](https://repo.rootknecht.net/allaman/public-dotfiles/blob/master/vimrc)
 
 ## Safe file opend by an user as root
 ```
@@ -74,6 +74,24 @@ Prints various information about vim like version, enabled features, compile fla
 ```
 :version
 ```
+
+## Folding
+
+- **za**: Toogle at the current line
+- **zo**: Open fold
+- **zc**: Close fold
+- **zR**: Open all folds
+- **zM**: Close all folds
+- **zm**: Increases the foldlevel by one
+- **zr**: Decreases the foldlevel by one
+- **zj** Moves the cursor to the next fold
+- **zk**: Moves the cursor to the previous fold
+- **\[z**: Move to start of open fold
+- **]z**: Move to end of open fold
+- **zf#j**: Creates a fold from the cursor down # lines
+- **zf/string** Creates a fold from the cursor to string
+- **zd**: Deletes the fold at the cursor
+- **zE**: Deletes all folds
 
 ## Modeline
 By setting `set modeline=1` you can enable the [Modeline Magic](http://vim.wikia.com/wiki/Modeline_magic). When it is not working you can check the setting with the following command:
