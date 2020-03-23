@@ -77,6 +77,14 @@ Prints various information about vim like version, enabled features, compile fla
 
 ## Folding
 
+config using indent as fold method (see also [Modeline](#modeline)):
+```
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+```
+
 - **za**: Toogle at the current line
 - **zo**: Open fold
 - **zc**: Close fold
@@ -99,6 +107,12 @@ By setting `set modeline=1` you can enable the [Modeline Magic](http://vim.wikia
 :verbose set modeline?
 ```
 Some distros disable it with `nomodeline` in /etc/vimrc
+
+Example usage folding: This line at the bottom of a file tells vim to use `marker` as foldmethod and fold all foldings after opening the file
+
+```
+" vim:foldmethod=marker:foldlevel=0
+```
 
 ## Startup time
 ```bash
