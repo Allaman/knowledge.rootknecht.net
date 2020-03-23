@@ -168,3 +168,8 @@ output "users" {
   value = [for value in data.external.operator_map: value.result]
 }
 ```
+
+Conditional for_each
+```
+  for_each = length(var.mysql_allowed_cidrs) > 0 ? local.cidr_to_sg_rules : {}
+```
