@@ -257,8 +257,8 @@ resource "aws_lambda_function" "es_cleanup" {
 
   environment {
     variables = {
-      ES_ENDPOINT              = var.es_endpoint
-      ES_PORT                       = var.port
+      ES_ENDPOINT             = var.es_endpoint
+      ES_PORT                      = var.port
       DELETE_AFTER_UNIT = var.delete_after_unit
       DELETE_AFTER           = var.delete_after
       REGION                        = var.region
@@ -273,6 +273,8 @@ resource "aws_lambda_function" "es_cleanup" {
 ```
 
 **script.py**
+
+To install the required modules to the local src folder use pip's target argument `pip install <dependency> -t .`
 ```python
 import os
 import boto3
@@ -283,12 +285,12 @@ import curator
 
 # Lambda execution starts here.
 def lambda_handler(event, context):
-    es_endpoint = os.environ["ES_ENDPOINT"]
-    es_port = os.environ["ES_PORT"]
-    delete_after = int(os.environ["DELETE_AFTER"])
+    es_endpoint        = os.environ["ES_ENDPOINT"]
+    es_port                = os.environ["ES_PORT"]
+    delete_after         = int(os.environ["DELETE_AFTER"])
     delete_after_unit = os.environ["DELETE_AFTER_UNIT"]
-    region = os.environ["REGION"]
-    service = 'es'
+    region                  = os.environ["REGION"]
+    service                = 'es'
 
     credentials = boto3.Session().get_credentials()
     awsauth = AWS4Auth(credentials.access_key, credentials.secret_key,
