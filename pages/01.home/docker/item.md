@@ -151,3 +151,10 @@ systemctl enable NAME
 docker commit CONTAINERID test
 docker run -it --entrypoint=/bin/bash test
 ```
+
+## Mount Docker socket on Windows
+
+Pay attention to double slash
+```sh
+-v //var/run/docker.sock:/var/run/docker.sock
+```
