@@ -6,6 +6,8 @@ taxonomy:
         - DevOps
 ---
 
+[TOC]
+
 ## TF exclude targets
 
 Terraform allows to specify target modules by the `--target` option. Unfortunately, there is no option to apply everything but a certain module. The following script iterates through the directory and filters all modules. From this result a string is constructed to perform a Terraform command that excludes some target modules.
@@ -172,4 +174,155 @@ output "users" {
 Conditional for_each
 ```
   for_each = length(var.mysql_allowed_cidrs) > 0 ? local.cidr_to_sg_rules : {}
+```
+
+## Data transformation
+
+```
+locals {
+  user_policy_pairs = flatten([
+    for policy, users in var.iam-map : [
+      for user in users: {
+        policy = policy
+        user   = user
+      }
+    ]
+  ])
+}
+
+output "association-map" {
+  value = {
+    for obj in local.user_policy_pairs : "${obj.policy}_${obj.user}" => obj
+  }
+}
+```
+<small>[source](https://discuss.hashicorp.com/t/produce-maps-from-list-of-strings-of-a-map/2197/2)</small>
+
+## AWS Lambda
+
+Example for creating a Lambda that deletes ES indicies
+
+**iam.tf**
+```
+data "aws_iam_policy_document" "assume_role" {
+
+  statement {
+    actions = ["sts:AssumeRole"]
+    effect  = "Allow"
+
+    principals {
+      type        = "Service"
+      identifiers = ["lambda.amazonaws.com"]
+    }
+  }
+}
+
+data "aws_iam_policy_document" "es_cleanup" {
+  statement {
+    actions = [
+      "es:ESHttpGet",
+      "es:ESHttpPut",
+      "es:ESHttpPost",
+      "es:ESHttpHead",
+      "es:ESHttpDelete",
+      "es:Describe*",
+      "es:List*",
+    ]
+    
+    effect = "Allow"
+    
+    resources = [
+      "${var.es_arn}/*"
+    ]
+  }
+}
+```
+
+**lambda.tf**
+```
+data "archive_file" "zipit" {
+  type        = "zip"
+  source_dir = "${path.module}/src/"
+  output_path = "${path.module}/es_cleanup.zip"
+}
+
+resource "aws_lambda_function" "es_cleanup" {
+  filename         = "${path.module}/es_cleanup.zip"
+  function_name    = var.name
+  description      = "es-cleanup-${var.environment}"
+  runtime          = "python${var.python_version}"
+  role             = "${aws_iam_role.default.arn}"
+  handler          = "${var.name}.lambda_handler"
+  timeout          = 20
+
+  environment {
+    variables = {
+      ES_ENDPOINT              = var.es_endpoint
+      ES_PORT                       = var.port
+      DELETE_AFTER_UNIT = var.delete_after_unit
+      DELETE_AFTER           = var.delete_after
+      REGION                        = var.region
+    }
+  }
+
+  vpc_config {
+    subnet_ids         = var.private_subnet_ids
+    security_group_ids = [aws_security_group.es_cleanup.id]
+  }
+}
+```
+
+**script.py**
+```python
+import os
+import boto3
+from requests_aws4auth import AWS4Auth
+from elasticsearch import Elasticsearch, RequestsHttpConnection
+import curator
+ 
+
+# Lambda execution starts here.
+def lambda_handler(event, context):
+    es_endpoint = os.environ["ES_ENDPOINT"]
+    es_port = os.environ["ES_PORT"]
+    delete_after = int(os.environ["DELETE_AFTER"])
+    delete_after_unit = os.environ["DELETE_AFTER_UNIT"]
+    region = os.environ["REGION"]
+    service = 'es'
+
+    credentials = boto3.Session().get_credentials()
+    awsauth = AWS4Auth(credentials.access_key, credentials.secret_key,
+                       region, service, session_token=credentials.token)
+
+    # Build the Elasticsearch client.
+    es = Elasticsearch(
+        ["{}:{}".format(es_endpoint, es_port)],
+        http_auth=awsauth,
+        use_ssl=True,
+        verify_certs=True,
+        connection_class=RequestsHttpConnection
+    )
+
+    # Get all indecies
+    index_list = curator.IndexList(es)
+
+    # Remove .kibana indices from result
+    index_list.filter_by_regex(kind='suffix', value='.kibana', exclude=True)
+
+    # Remove .FooBar indices from result
+    index_list.filter_by_regex(kind='suffix', value='.FooBar', exclude=True)
+
+    # Filter indices by age
+    index_list.filter_by_age(source='creation_date', direction='older',
+                             unit=delete_after_unit, unit_count=delete_after)
+
+    print("Found %s indices" % len(index_list.indices))
+    print("Found %s" % index_list.indices)
+    ##########################################
+    # USE WITH CARE
+    # THIS CODE WILL DELETE INDICES!
+    ##########################################
+    # If our filtered list contains any indices, delete them.
+    # if index_list.indices:
+    #     curator.DeleteIndices(index_list).do_action()
 ```
