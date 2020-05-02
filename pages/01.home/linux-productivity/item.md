@@ -9,5 +9,5 @@ taxonomy:
  [Direct Link to Slides](https://open.rootknecht.io/linux-productivity/#/title-slide)
 </iframe>
 
-[Here](https://repo.rootknecht.net/open/linux-productivity) you cab find the repository containing the source code and [here](https://open.rootknecht.io/linux-productivity/#/title-slide) the direct link to the presentation about how to increase your productivity in Linux :)
+[Here](https://repo.rootknecht.net/open/linux-productivity) you can find the repository containing the source code and [here](https://open.rootknecht.io/linux-productivity/#/title-slide) the direct link to the presentation about how to increase your productivity in Linux :)
 
