@@ -102,6 +102,17 @@ services:
 
 Starting the service with `docker-compose up -d`keeps the container running
 
+## Tag and push
+
+`registry.port/` is optional when pushing to duckerhub
+
+```sh
+docker login
+docker build . -t foobar
+docker tag foobar registry:port/name/foobar
+docker push foobar registry:port/name/foobar
+```
+
 ## Set docker host
 ```bash
 DOCKER_HOST=tcp://192.168.56.101:2375

@@ -9,7 +9,7 @@ taxonomy:
 
 ## My (Neo)Vim config
 
-[vimrc](https://repo.rootknecht.net/allaman/public-dotfiles/blob/master/vimrc)
+[vimrc](https://raw.githubusercontent.com/Allaman/dotfiles/master/vimrc)
 
 ## Safe file opend by an user as root
 ```
