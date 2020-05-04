@@ -196,6 +196,12 @@ gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf *.pdf
 pdfjam --nup 2x3 --frame true --noautoscale false --delta "0.2cm 0.3cm" --scale 0.95
 ```
 
+## List all executable files in current dir
+
+```sh
+find . -executable -type f
+```
+
 ## Get BIOS version
 
 ```bash

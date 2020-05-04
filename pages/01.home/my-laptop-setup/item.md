@@ -111,6 +111,10 @@ fasd allows you to quickly jump to folders by indexing and weighting your visite
 
 ! Nevertheless, I strongly recommend to learn the original tools as you cannot assume to find those replacements on each system!
 
+## Dotfiles
+
+[Here](https://github.com/Allaman/dotfiles) you can find some of my dotfiles. 
+
 ## Workflow Philosophy
 
 I am a keyboard fan. For the things I do the keyboard is the primary input method as most of the time I handle with some form of textual data. Actually, my main reason for switching to a Linux OS back in 2009 was to be able to operate my Laptop with my keyboard only because I always forgot my mouse. After some years of fear of Vim, caused by not being able to quit it, I decided to give it a deeper try not aware of the impact of my style of work!
