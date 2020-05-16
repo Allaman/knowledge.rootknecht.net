@@ -10,6 +10,7 @@ taxonomy:
 
 ## Tools and workflow
 
+
 ## Scaling deployment deletion sequence
 
 Pod deletion preference is based on a ordered series of checks, defined in code here:
@@ -30,6 +31,18 @@ Summarizing- precedence is given to delete pods:
 ## Check permission of service accounts
 ```sh
 kubectl auth can-i list deployment --as=system:serviceaccount:default:<NAME> -n <NAME>
+```
+
+## Run a quick pod for testing
+
+```sh
+kubectl run test -n NAMESPACE --rm -i --tty --image debian -- bash
+```
+
+## Get kubeconfig via AWS cli
+
+```sh
+aws --profile=<AWS PROFILE> eks update-kubeconfig --name <CLUSTER NAME>
 ```
 
 ## Deploy Dashboard
