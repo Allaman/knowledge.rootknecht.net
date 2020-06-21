@@ -7,11 +7,11 @@ taxonomy:
 
 [Revealjs](https://github.com/hakimel/reveal.js/) is a framework for producing nice looking HTML presentations.
 
-<iframe width="600" height="400" marginheight="0" marginwidth="0" frameborder="0" allowfullscreen src="https://open.rootknecht.io/revealjs-intro/">
- [Direct Link to Slides](https://open.rootknecht.io/revealjs-intro/)
+<iframe width="600" height="400" marginheight="0" marginwidth="0" frameborder="0" allowfullscreen src="https://allaman.github.io/reveal-js-intro/">
+ [Direct Link to Slides](https://allaman.github.io/reveal-js-intro/)
 </iframe>
 
-[Here](https://repo.rootknecht.net/open/revealjs-intro) you can find the source code and [here](https://open.rootknecht.io/revealjs-intro/) the direct link to the presentation to illustrate Revealjs.
+[Here](https://github.com/Allaman/reveal-js-intro) you can find the source code and [here](https://allaman.github.io/reveal-js-intro/) the direct link to the presentation to illustrate Revealjs.
 
 ## Frontmatter
 
