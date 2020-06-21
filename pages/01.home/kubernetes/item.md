@@ -4,11 +4,14 @@ taxonomy:
     category:
         - Linux
         - DevOps
+        - Linux
 ---
 
 [TOC]
 
-## Tools and workflow
+## Installation on a "bare metal" single Node
+
+There are quite a lot of options [how to install a kubernetes cluster](https://kubernetes.io/docs/setup/pick-right-solution/).
 
 
 ## Scaling deployment deletion sequence

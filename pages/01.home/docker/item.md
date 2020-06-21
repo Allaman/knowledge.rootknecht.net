@@ -102,14 +102,6 @@ services:
 
 Starting the service with `docker-compose up -d`keeps the container running
 
-## Docker login
-
-```sh
-
-```sh
-echo "$PASSWORD" | docker login -u "$USER" --password-stdin REGISTRY_URL # default dockerhub
-```
-
 ## Tag and push
 
 `registry.port/` is optional when pushing to duckerhub
