@@ -20,8 +20,6 @@ title: About
 
 ! [fa icon=fa-twitter /] [Twitter](https://twitter.com/Allamann)
 
-!! [fa icon=fa-gitlab /] [Repository](https://repo.rootknecht.net/explore)
-
 !! [fa icon=fa-github /]  [Github](https://github.com/Allaman)
 
 !! [fa icon=fa-key /] [Keybase](https://keybase.io/allaman)
