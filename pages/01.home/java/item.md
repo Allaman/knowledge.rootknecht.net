@@ -276,6 +276,15 @@ for signal in $(kill -l); do
 done
 ```
 
+## Maven
+
+### Skip tests
+
+```sh
+-DskipTests=true -Dmaven.test.skip=true
+```
+
+
 ## Compile and run from CLI
 
 ```sh

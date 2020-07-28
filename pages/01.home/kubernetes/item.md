@@ -88,3 +88,19 @@ subjects:
   namespace: kube-system
 ```
 Deploy to your cluster `kubectl create -f dashboard-admin.yml`. Then you skip authentication in the login screen
+
+## Create a (certificate based) user
+
+1. `openssl genrsa -out ~/certs/firstname.name.key 4096`
+1. `openssl req -config ~/certs/firstname.name.csr.cnf -new -key ~/certs/firstname.name.key -nodes -out ~/certs/firstname.name.csr`
+1. `cat ~/certs/sammy.csr | base64 | tr -d '\n'`
+1. `kubectl get csr`
+1. `kubectl certificate approve firstname.name-authentication`
+1. `kubectl get csr firstname.name-authentication -o jsonpath='{.status.certificate}' | base64 --decode > firstname.name.crt`
+1. `kubectl config view --raw -o json | jq -r '.clusters[] | select(.name == "'$(kubectl config current-context)'") | .cluster."certificate-authority-data"'`
+
+Links:
+
+- [Secure DO K8s cluster](https://www.digitalocean.com/community/tutorials/recommended-steps-to-secure-a-digitalocean-kubernetes-cluster)
+- [Configure RBAC in your k8s cluster](https://docs.bitnami.com/tutorials/configure-rbac-in-your-kubernetes-cluster/)
+- [k8s client certificate](https://medium.com/better-programming/k8s-tips-give-access-to-your-clusterwith-a-client-certificate-dfb3b71a76fe)

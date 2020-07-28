@@ -125,7 +125,7 @@ fi
 ```bash
 $# # number of arguments
 $@ # array of all arguments
-$! # last exit code
+$? # last exit code
 ```
 
 ## Case (switch) statement
@@ -259,6 +259,18 @@ awk -F= # = separator for e.g. colums
 free -h | awk '/Mem:/{print $2}'
 ```
 
+### Print all columns from nth column
+
+```sh
+awk '{$1=$2=""; print $0}'
+```
+
+### Remove first line
+
+```sh
+awk '{if (NR!=1) {print}}'
+```
+
 ## Arrays
 
 ```bash
@@ -294,6 +306,12 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     cowsay
 fi
+```
+
+## Print date/time string
+
+```sh
+date -u +"%Y-%m-%dT%H:%M:%SZ"
 ```
 
 ## Redirect command output
@@ -339,6 +357,14 @@ grep -rl '^#!' FOLDER | xargs chmod +x
 ```bash
 echo > FILE
 cat /dev/null > FILE
+```
+
+## String manipulation
+
+### Substrings
+
+```sh
+echo "id=12" | cut -d'=' -f 2 # 12
 ```
 
 ## Ommit first line of stdout

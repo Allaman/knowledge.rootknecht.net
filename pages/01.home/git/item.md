@@ -351,7 +351,7 @@ git rebase -i --root $tip
 
 After this command a text editor will open. Edit the keywords at the beginning of the line, in this case `edit` allows us to modify the commits. After saving the file the first commit to be edited will be selected. Now you can run e.g.
 ```bash
-git commit --amend --author="Michael <allaman@rootknecht.net>"
+git commit --amend --author="Michael <allaman@rootknecht.net>" --no-edit
 ```
 to modify the author. Then run
 ```bash
