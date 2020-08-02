@@ -88,7 +88,7 @@ Additionally, I created some dozens of aliases in order to fast execute commands
 
 ![](neofetch.png?link&lightbox=1920,1080&resize=300,300)
 
-As terminal I use [termite](https://github.com/thestinger/termite) which is very fast, minimalistic and keyboard-driven.
+As terminal I use [termite](https://github.com/thestinger/termite) which is very fast, minimalistic and keyboard-driven or [alacritty](https://github.com/alacritty/alacritty) a super fast cross platform terminal.
 
 In order to move around and find things fast in my terminal there I use a couple of commandline tools. The most important tools are [fzf](https://github.com/junegunn/fzf) and [fasd](https://github.com/clvv/fasd). fzf allows you to quickly fuzzy find files and folders and search your history. Due to the ability to stdin to fzf the customizations are nearly endless.
 
@@ -132,9 +132,8 @@ Here is a not comprehensive list of applications that support Vim-like key bindi
 - [sxiv](https://github.com/muennich/sxiv) &rarr; an image viewer
 - [qutebrowser](http://qutebrowser.org/) &rarr; keyboard-focused web browser
 - [tig](https://github.com/jonas/tig) &rarr; a git ncurses interface
-- [tig](https://github.com/jonas/tig) &rarr; a git ncurses interface
 - [termite](https://github.com/thestinger/termite) &rarr; a terminal with build in vim like keybindings
-- every major IDE/editor like Visual Studio Code, [Intellij IDEA](https://www.jetbrains.com/idea/), [Eclipse](https://www.eclipse.org/ide), etc. can be extended with a Vim plugin
+- every major IDE/editor like [Visual Studio Code](https://code.visualstudio.com/), [Intellij IDEA](https://www.jetbrains.com/idea/), [Eclipse](https://www.eclipse.org/ide), etc. can be extended with a Vim plugin
 
 
 Another aspect which is quite controversy is my preference when it comes to multi monitor operation. I don't have one! In my opinion I can work best by only focusing on one screen with one maximized window and optionally panes like Vim's split view. I find it way to distracting working with two or more monitors to properly identify which window is active, where my mouse is and always turning my head in the right direction. In order to be productive with just one screen I have some rules that are anchored in my subconsciousness:
