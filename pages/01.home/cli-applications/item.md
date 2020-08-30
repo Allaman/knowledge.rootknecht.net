@@ -71,6 +71,14 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - autodetects languages
 - comments agnostic
 
+## delta
+
+[delta](https://github.com/dandavison/delta)
+
+- alternative to [diff-so-fancy](#diff-so-fancy)
+- enhanced and customizable diff view
+- written in Rust
+
 ## diff-so-fancy
 
 [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) 
@@ -238,6 +246,16 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - written in Python
 - reads and writes events/icalendars
 - in combination with [vdirsyncer](#vdirsyncer)
+
+## lazygit
+
+[lazygit](https://github.com/jesseduffield/lazygit)
+
+- alternative to [tig](#tig)
+- simple terminal UI for git
+- written in Go
+- no dependencies
+- cross platform
 
 ## lf
 

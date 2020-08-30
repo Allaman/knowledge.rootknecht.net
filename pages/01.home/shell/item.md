@@ -20,7 +20,7 @@ In /etc/inputrc
 
 ## jq / yq
 
-Input:
+Input `conf.yaml`:
 ```yaml
 packages:
 	cli:
@@ -30,9 +30,25 @@ packages:
       - strace
       - devel-base
 ```
-Return a single line string from input yaml
+Return a combined list from cli and sys
 ```
-yq -rc '.packages | .[][]' conf.yml | paste -sd' '
+yq r conf.yaml --collect packages.*.*
+```
+
+Add an entry to cli list
+```sh
+yq w -i conf.yaml packages.cli[+] FOO
+```
+Remove FOO from cli list
+```sh
+yq w -i conf.yaml packages.cli[+] FOO
+```
+
+## Env substitution via find (on all yamls)
+
+This command will "iterate" over all yaml files in `FOLDER` and call `envsubst` replacing the original file with the modified one
+```sh
+    find <FOLDER> -type f -name \*.yaml -print0 | xargs -0 -I{} sh -c 'envsubst < "$1" | sponge "$1"' -- {}
 ```
 
 ## Force changes to /etc/hosts
@@ -331,6 +347,14 @@ php -m
 ```bash
 type ALIAS
 ```
+
+## Show output of a background process
+
+```sh
+tail -f /proc/<PID>/fd/
+```
+- 1 is stdout
+- 2 is stderr
 
 ## Convert svg to all in one icon
 

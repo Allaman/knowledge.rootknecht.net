@@ -26,7 +26,7 @@ I am running a Lenovo X1 Carbon 6th Generation[^1]  with following specs:
 
 ### Why Lenovo
 
-My first Lenovo Laptop was the superior [x220](https://thinkwiki.de/X220) and I was totally impressed by its lightweight formfactor *and* its performance. My father is still running it today (as of June 2019)! I was so impressed that I even upgraded just after one year to the successor [x230](https://thinkwiki.de/X230) that was my main working machine until May 2019!
+My first Lenovo Laptop was the superior [x220](https://thinkwiki.de/X220) and I was totally impressed by its lightweight formfactor *and* its performance. My father is still running it today (as of July 2020)! I was so impressed that I even upgraded just after one year to the successor [x230](https://thinkwiki.de/X230) that was my main working machine until May 2019!
 
 At this point I was totally commited to run Lenovo laptops for two main reasons:
 
@@ -45,7 +45,7 @@ I am running the [i3wm](https://i3wm.org/) flavor of [Manjaro Arch Linux](https:
 
 In my opinion Manjaro is the best desktop operating system as it provides a good balance between the bleeding edge of pure Arch and the stability of non [rolling release](https://en.wikipedia.org/wiki/Rolling_release) distributions like Ubuntu.
 
-Furthermore, [Pacman](https://wiki.archlinux.org/index.php/Pacman) and the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) provide basically packages for every software you can imagine. Therefore, I do not have to worry about different installation mechanism mechanisms like manually or via pip. Everything is managed by the system's package manager
+Furthermore, [Pacman](https://wiki.archlinux.org/index.php/Pacman) and the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) provide basically packages for every software you can imagine.
 
 Last but not least, the [Arch community](https://wiki.archlinux.org/index.php/Main_page) does a superior job in creating documentation and helpful articles. In my opinion it is the biggest knowledge base of a distribution that is often also applicable for other distributions.
 
@@ -123,7 +123,7 @@ Since that my usage of Vim improved a lot and I discovered and still discover ne
 
 Here is a not comprehensive list of applications that support Vim-like key bindings:
 
-- [Vim Vixen](https://en.wikipedia.org/wiki/Vi#Interface) &rarr; a vim plugin for firefox
+- [Vim Vixen](https://en.wikipedia.org/wiki/Vi#Interface) &rarr; a vim plugin for Firefox
 - [mutt](http://www.mutt.org/) and [neomutt](https://neomutt.org/) &rarr; mail clients with vim key bindings
 - [vifm](https://vifm.info/) and [ranger](https://github.com/ranger/ranger) &rarr; file managers
 - [zathura](https://git.pwmt.org/pwmt/zathura) &rarr; keyboard driven lightweight pdf viewer

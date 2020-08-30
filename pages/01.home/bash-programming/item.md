@@ -206,7 +206,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 ```
 
-### File is being sourced
+### Check if file is being sourced
 
 Works for bash, ksh. zsh
 ```bash
