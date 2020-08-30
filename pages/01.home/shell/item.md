@@ -48,7 +48,7 @@ yq w -i conf.yaml packages.cli[+] FOO
 
 This command will "iterate" over all yaml files in `FOLDER` and call `envsubst` replacing the original file with the modified one
 ```sh
-    find <FOLDER> -type f -name \*.yaml -print0 | xargs -0 -I{} sh -c 'envsubst < "$1" | sponge "$1"' -- {}
+find <FOLDER> -type f -name \*.yaml -print0 | xargs -0 -I{} sh -c 'envsubst < "$1" | sponge "$1"' -- {}
 ```
 
 ## Force changes to /etc/hosts
