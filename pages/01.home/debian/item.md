@@ -21,6 +21,15 @@ Add and remove dependencies
 apt-get dist-upgrade
 ```
 
+## Automatic and quiet apt-get 
+
+```sh
+DEBIAN_FRONTEND="noninteractive" &&\
+apt-get -qq update < /dev/null > /dev/null &&\
+apt-get -qq upgrade < /dev/null > /dev/null &&\
+apt-get -qq install htop vim </dev/null > /dev/null
+```
+
 ## Fix apt-get Hashsum mismatch in Debian 9
 Usually occuring behind a (enterprise) proxy setup
 
