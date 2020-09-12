@@ -8,7 +8,7 @@ taxonomy:
 ---
 
 ## My tmux
-![](tmux.png)
+![](tmux.png?link&cropResize=300,300))
 
 Find it [here](https://raw.githubusercontent.com/Allaman/dotfiles/master/tmux.conf)
 
