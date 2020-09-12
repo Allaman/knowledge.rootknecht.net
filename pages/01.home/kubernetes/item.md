@@ -4,7 +4,6 @@ taxonomy:
     category:
         - Linux
         - DevOps
-        - Linux
 ---
 
 [TOC]
@@ -104,3 +103,63 @@ Links:
 - [Secure DO K8s cluster](https://www.digitalocean.com/community/tutorials/recommended-steps-to-secure-a-digitalocean-kubernetes-cluster)
 - [Configure RBAC in your k8s cluster](https://docs.bitnami.com/tutorials/configure-rbac-in-your-kubernetes-cluster/)
 - [k8s client certificate](https://medium.com/better-programming/k8s-tips-give-access-to-your-clusterwith-a-client-certificate-dfb3b71a76fe)
+
+## Create a Kubernetes cron for time-based scaling of deployments
+
+```yaml
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: namespace
+  name: scaling
+# Adjust permissions to your specific needs
+# This allows full rights to all ressources in your namespace
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: scaling
+  namespace: namespace
+subjects:
+- kind: ServiceAccount
+  name: sa-scaling
+  namespace: namespace
+roleRef:
+  kind: Role
+  name: scaling
+  apiGroup: ""
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: sa-scaling
+  namespace: namespace
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: scaling
+  namespace: namespace
+spec:
+  # Adjust your schedule
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: sa-scaling
+          containers:
+          - name: kubectl
+            image: bitnami/kubectl:1.17.0
+            command:
+            - /bin/sh
+            - -c
+            # Adjust to your needs
+            - kubectl scale --current-replicas=1 --replicas=2 deployment/foobar
+          restartPolicy: OnFailure
+```
