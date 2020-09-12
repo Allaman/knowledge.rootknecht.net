@@ -1,10 +1,16 @@
 ---
 title: tmux
+media_order: tmux.png
 taxonomy:
     category:
-        - Linux
         - Application
+        - Linux
 ---
+
+## My tmux
+![](tmux.png)
+
+Find it [here](https://raw.githubusercontent.com/Allaman/dotfiles/master/tmux.conf)
 
 ## Why tmux
 
