@@ -390,3 +390,27 @@ find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}
 ```bash
 find . -type f -print0 | xargs -0 dos2unix
 ```
+
+## Create a simple menu with zenity
+
+```sh
+#!/bin/bash
+
+choice="AA BB CC DD EE"
+response=$(zenity --height=300 --width=200 --list --title='Snippet' --column=choice $choice)
+
+case $response in
+  AA)
+    echo Your choice is $response
+    ;;
+  BB)
+    echo Your choice is $response
+    ;;
+  CC)
+    echo Your choice is $response
+    ;;
+  DD)
+    echo Your choice is $response
+    ;;
+esac
+```
