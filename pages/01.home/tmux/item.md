@@ -8,9 +8,9 @@ taxonomy:
 ---
 
 ## My tmux
-![](tmux.png?link&cropResize=400,500))
+![](tmux.png?link&cropResize=700,700)
 
-Find it [here](https://raw.githubusercontent.com/Allaman/dotfiles/master/tmux.conf)
+Find it [here](https://raw.githubusercontent.com/Allaman/dotfiles/master/tmux.conf) and [here](https://github.com/Allaman/dotfiles) all of my dotfiles
 
 ## Why tmux
 

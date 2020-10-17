@@ -16,6 +16,32 @@ taxonomy:
 :w !sudo tee %
 ```
 
+## Search and replace over multiple files
+
+! This is the native vim way. There are plugins like [FAR](https://github.com/brooth/far.vim) that will also do that for you.
+
+In order to edit multiple files at once you need to load all of them in vim buffers by doing
+
+```
+:args `fd -e yaml`
+```
+
+!!! You can replace the `fd` command that is responsible for generating the file list with any other suitable command like the regular `find`
+
+Check your buffers with `:buffers`. Your desired files should be loaded.
+
+Now execute a command on all openend buffers, in this case the search and replace:
+
+```
+:bufdo %s/SEARCH/REPLACE/ge | update
+```
+
+- `bufdo` execute commands on all open buffers
+- `%` search the whole buffer
+- `g` globally meaning do not stop after the first hit in a line
+- `e` surpress warning when pattern is not found
+- `update` save all changes
+
 ## Delete empty lines
 
 ```
