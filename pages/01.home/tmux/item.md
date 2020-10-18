@@ -10,15 +10,16 @@ taxonomy:
 ## My tmux
 ![](tmux.png?link&cropResize=700,700)
 
-Find it [here](https://raw.githubusercontent.com/Allaman/dotfiles/master/tmux.conf) and [here](https://github.com/Allaman/dotfiles) all of my dotfiles
+Find my tmux config [here](https://raw.githubusercontent.com/Allaman/dotfiles/master/tmux.conf) and [here](https://github.com/Allaman/dotfiles) all of my dotfiles
 
 ## Why tmux
 
 1. Multiple shell windows and panes from a single connection
-2. Session functionality which survices disconnects
+2. Session functionality thtat survives disconnects
 3. Session sharing
-4. Extensible
+4. Plugins extend functionality
 5. Keyboard driven
+6. Highly customizable
 
 Alternative: `screen` which comes preinstalled on most distributions
 
@@ -39,10 +40,9 @@ tmux ls # list running sessions
 tmux kill-session -t NAME # kill session NAME
 ```
 
-
 ## Commands
 
-Commands are composed of the **tmux prefix (default CTRL+b) and the actual command**.
+Commands are composed of the **tmux prefix (default CTRL+b) and the actual command**. Be aware that my config may vary!
 
 |command|action|
 |-------------|---------|
@@ -55,7 +55,7 @@ Commands are composed of the **tmux prefix (default CTRL+b) and the actual comma
 | prefix %|split window vertically|
 | prefix "|split window horizontally|
 | prefix x|kill current pane|
-|prefix d|detach tmux (back to normal shell)|
+| prefix d|detach tmux (back to normal shell)|
 | prefix ?|list shortcuts|
 | prefix t|show big clock|
 
