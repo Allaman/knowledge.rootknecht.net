@@ -225,8 +225,16 @@ while ! pg_isready -h ${HOST} -p ${PORT} &> /dev/null; do
 	sleep 1
 done
 ```
+## SED
 
-## Search / Replace with sed
+## Prepend text on multiple files
+
+```sh
+fd -e yaml | xargs sed -i '1s;^;TO-BE-PREPENDED;'
+```
+!! This command will edit all yaml files inplace! Backup!
+
+### Search / Replace
 ```bash
 	sed -i \
 	        -e "s;^\\(application-port\\)=.*;\\1=8080;g" \
