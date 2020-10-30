@@ -87,6 +87,14 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - customizable and nice looking
 - written in Perl
 
+# direnv
+
+[direnv](https://github.com/direnv/direnv)
+
+- automatic context aware .profile
+- written in Go
+- shell hooks for zsh, fish, bash, ...
+
 ## exa
 
 [exa](https://the.exa.website/)
@@ -372,6 +380,15 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 
 [Comprehensive comparison](https://beyondgrep.com/feature-comparison/) of grep alternatives.
 
+## rofi
+
+[rofi](https://github.com/davatorium/rofi)
+
+- window switcher, application launcher, ssh, scripting and more
+- written in C
+- highly customizable and scriptable
+- vim like keybindings
+
 ## spacemacs
 
 [spacemacs](https://github.com/syl20bnr/spacemacs)
@@ -411,6 +428,15 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - hotkey utility 
 - written in C
 - works across all Distributions with x server
+
+## thefuck
+
+[thefuck](https://github.com/nvbn/thefuck)
+
+- corrects previously entered commands
+- written in Python
+- supports various commands like git, apt, etc
+- can be extended with custom rules
 
 ## translate-shell
 
@@ -471,6 +497,13 @@ See [here](https://knowledge.rootknecht.net/fzf) for some of my tweaks
 - written in Python
 - CardDAV / CalDAV support
 - fine control
+
+## vidir
+
+[vdir](https://linux.die.net/man/1/vidir)
+
+- bulk edit directories and files in a vim buffer
+- part of most Linux distributions
 
 ## vifm
 
