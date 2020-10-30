@@ -227,7 +227,7 @@ done
 ```
 ## SED
 
-## Prepend text on multiple files
+### Prepend text on multiple files
 
 ```sh
 fd -e yaml | xargs sed -i '1s;^;TO-BE-PREPENDED;'
@@ -242,21 +242,28 @@ fd -e yaml | xargs sed -i '1s;^;TO-BE-PREPENDED;'
             -e "s/#\{0,1\}api_interface.*/api_interfaces:\"eth1\"/" \
 	        /PATH/TO/FILE
 ```
-search and replace in multiple files
+
+#### search and replace in multiple files
+
 ```bash
 find . -type f -name 'config' | xargs sed -i -e  's/PATTERN/STRING/g'
 ```
-delete lines containing a pattern from multiple files
+
+#### Delete lines containing a pattern from multiple files
+
 ```bash
 find . -type f -name '*.md' | xargs sed -i -e '/PATTERN/d'
 ```
+
 ## AWK
 
 ### Search and delete pattern
+
 ```bash
 awk '{gsub(/search_pattern/,x); }'
 ```
 ### Custom separator
+
 ```bash
 awk -F= # = separator for e.g. colums
 ```
