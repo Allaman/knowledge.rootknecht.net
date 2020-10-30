@@ -87,7 +87,7 @@ See [GUI Applications](https://knowledge.rootknecht.net/gui-applications) for mo
 - customizable and nice looking
 - written in Perl
 
-# direnv
+## direnv
 
 [direnv](https://github.com/direnv/direnv)
 
