@@ -152,7 +152,7 @@ esac
 ## Create array from whitespace separated string
 
 ```bash
-arr=( $string )
+arr=($string)
 ```
 
 ## Add up a list of numbers
@@ -284,6 +284,12 @@ awk '{$1=$2=""; print $0}'
 
 ```sh
 awk '{if (NR!=1) {print}}'
+```
+
+### Split a string
+
+```sh
+echo -n "eins:zwei:drei | awk '{split($0,r,":"); print r[1]}';) # returns zwei
 ```
 
 ## Arrays
