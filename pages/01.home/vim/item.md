@@ -145,6 +145,16 @@ Example usage folding: This line at the bottom of a file tells vim to use `marke
 vim --startuptime vim.log
 ```
 
+## Debug lag in vim
+
+After starting vim
+```
+:profile start profile.log
+:profile func *
+:profile file *
+```
+Do the stuff that lags and then run `:profile pause` and quit vim. Inpsect `profile.log`
+
 ## Open vim in debug mode
 ```bash
 vim -D

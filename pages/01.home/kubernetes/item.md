@@ -35,6 +35,12 @@ Summarizing- precedence is given to delete pods:
 kubectl auth can-i list deployment --as=system:serviceaccount:default:<NAME> -n <NAME>
 ```
 
+## Get logs from a unknown pod
+
+```sh
+ kubectl logs --tail 20  $(kubectl get pods -l=app=flux -o jsonpath="{.items[0].metadata.name}") 
+ ```
+
 ## Run a quick pod for testing
 
 ```sh
