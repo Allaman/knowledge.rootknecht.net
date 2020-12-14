@@ -225,6 +225,18 @@ while ! pg_isready -h ${HOST} -p ${PORT} &> /dev/null; do
 	sleep 1
 done
 ```
+
+###  Argument count
+
+```sh
+  if [ $# -eq 0 ]; then
+    echo "Missing argument(s)"
+    echo "Usage: $(basename $0) foo"
+    echo "Usage: $(basename $0) foo bar"
+    exit 1
+  fi
+```
+
 ## SED
 
 ### Prepend text on multiple files
