@@ -24,8 +24,9 @@ Filter json:
 ```sh
 jq -r '.report.problems[] | select(.category=="Error") | [.filename, .sourceId, .details] | @csv' $file.json >> summary.csv
 ```
+- `-r` raw format (do not quote)
 - `|` pipe the result to the next query
-- select supports `and` and `or` 
+- `select` supports `and` and `or` 
 - `[ ... ]` transforms objets to an array
 - @csv converts an array to csv format
 
