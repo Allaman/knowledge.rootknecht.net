@@ -20,6 +20,15 @@ In /etc/inputrc
 
 ## jq / yq
 
+Filter json:
+```sh
+jq -r '.report.problems[] | select(.category=="Error") | [.filename, .sourceId, .details] | @csv' $file.json >> summary.csv
+```
+- `|` pipe the result to the next query
+- select supports `and` and `or` 
+- `[ ... ]` transforms objets to an array
+- @csv converts an array to csv format
+
 Input `conf.yaml`:
 ```yaml
 packages:
