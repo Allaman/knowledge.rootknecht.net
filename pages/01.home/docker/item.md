@@ -61,6 +61,13 @@ After starting a service via docker-compose Docker will shut it down if there is
 entrypoint: ping localhost
 ```
 
+## Run a command in the docker namespace
+
+```sh
+sudo nsenter -t $(docker inspect -f '{{.State.Pid}}' <CONTAINER_NAME_OR_ID>) -n <CMD>
+```
+For instance to run netstat and show connections of the container.
+
 ## Show file usage of Docker on a btrfs partition
 The btrfs storage driver of Docker is kind of different. A normal `df -hkl /var/lib/docker` will not show correct numers. Instead use the tools of btrfs:
 ```bash
