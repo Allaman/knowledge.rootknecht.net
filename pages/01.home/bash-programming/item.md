@@ -255,6 +255,11 @@ fd -e yaml | xargs sed -i '1s;^;TO-BE-PREPENDED;'
 	        /PATH/TO/FILE
 ```
 
+#### capture groups
+```bash
+sed -i 's/httpCode:\([0-9]\+\)/StatusCode:\1/'
+```
+
 #### search and replace in multiple files
 
 ```bash
