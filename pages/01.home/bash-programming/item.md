@@ -309,6 +309,12 @@ awk '{if (NR!=1) {print}}'
 echo -n "eins:zwei:drei | awk '{split($0,r,":"); print r[1]}';) # returns zwei
 ```
 
+## Time/Date
+
+```sh
+date --rfc-3339=seconds
+```
+
 ## Arrays
 
 ```bash
