@@ -8,6 +8,14 @@ title: Makefile
 ```makefile
 DOCKER_GID=$(shell getent group docker | cut -d: -f3)
 ```
+## echo
+
+Prefixing with `@` does not print out the command itself
+
+```makefile
+	@echo "Spinning up the cluster"
+	kind create cluster --config kind.yaml
+```
 
 ## User defined function
 ```makefile
@@ -34,8 +42,10 @@ endif
 ## Help message
 ```makefile
 .PHONY: help
+
 help: ## This help.
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
 .DEFAULT_GOAL := help
 ```
 This allows something like the following where everything after `##` is printed as help message
