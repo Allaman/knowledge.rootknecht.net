@@ -417,22 +417,35 @@ echo "id=12" | cut -d'=' -f 2 # 12
 awk '{if(NR>1)print}'
 ```
 
-## File or directory listings
-```bash
-find PATH -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | exec -0 ls -l
-find PATH -maxdepth 1 -mindepth 1 -type f -not -name README.md | exec -0 ls -l
-```
+## Find
 
-## Find directories containing the most amount of files
+### Find directories containing the most amount of files
 
 ```sh
 find . -type d -exec sh -c "fc=\$(find '{}' -type f | wc -l); echo -e \"\$fc\t{}\"" \; | sort -nr
 ```
+### File or directory listings
+```sh
+find PATH -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | exec -0 ls -l
+find PATH -maxdepth 1 -mindepth 1 -type f -not -name README.md | exec -0 ls -l
+```
 
-## Convert all files in the directory to unix line endings
+### Convert all files in the directory to unix line endings
 
-```bash
+```sh
 find . -type f -print0 | xargs -0 dos2unix
+```
+
+## Do not list the root directory
+
+```sh
+find deployments ! -path deployments -type d -printf "%f\n"
+```
+
+## basename functionality
+
+```sh
+find . -printf "%f\n"
 ```
 
 ## Create a simple menu with zenity
