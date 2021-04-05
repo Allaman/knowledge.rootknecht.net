@@ -33,14 +33,27 @@ BUILDARGS:=$(BUILDARGS) --build-arg name=$(NAME)
 ```
 
 ## IF
+
+**Simple if**
 ```makefile
 ifeq ($(MOUNT_AWS_FOLDER), true)
 MOUNT:=${MOUNT} -v $$HOME/.aws/:/home/${NAME}/.aws
 endif
 ```
 
+**Bash oneliner**
 ```makefile
 	@if [ "$(TARGET)" == "" ]; then echo "Missing target variable - run make targets for possible values"; exit 1; fi
+```
+
+**Search for string**
+```makefile
+EDITOR:=$(shell type -p nvim || echo vim)
+ifneq (,$(findstring vim,$(EDITOR)))
+	EDITOR += -c 'set syntax=yaml' -
+else
+	EDITOR:=less
+endif
 ```
 
 ## Help message
