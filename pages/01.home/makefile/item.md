@@ -2,8 +2,6 @@
 title: Makefile
 ---
 
-## Makefile 
-
 [TOC]
 
 ## Run shell commands
