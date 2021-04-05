@@ -4,6 +4,8 @@ title: Makefile
 
 ## Makefile 
 
+[TOC]
+
 ## Run shell commands
 ```makefile
 DOCKER_GID=$(shell getent group docker | cut -d: -f3)
@@ -59,6 +61,12 @@ ifneq (,$(findstring vim,$(EDITOR)))
 else
 	EDITOR:=less
 endif
+```
+
+## Wait for something
+
+```makefile
+	@while [[ "$$(kubectl get -n kube-system deployment/sealed-secrets-controller -o json | jq '.status.readyReplicas')" != "1" ]]; do sleep 5; done
 ```
 
 ## Help message
