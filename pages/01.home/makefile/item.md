@@ -39,6 +39,10 @@ MOUNT:=${MOUNT} -v $$HOME/.aws/:/home/${NAME}/.aws
 endif
 ```
 
+```makefile
+	@if [ "$(TARGET)" == "" ]; then echo "Missing target variable - run make targets for possible values"; exit 1; fi
+```
+
 ## Help message
 ```makefile
 .PHONY: help
