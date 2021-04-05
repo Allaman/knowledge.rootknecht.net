@@ -32,6 +32,11 @@ BUILDARGS:=$(BUILDARGS) --build-arg docker_gid=$(DOCKER_GID)
 BUILDARGS:=$(BUILDARGS) --build-arg name=$(NAME)
 ```
 
+Concat string
+```makefile
+	EDITOR += -c 'set syntax=yaml' -
+```
+
 ## IF
 
 **Simple if**
