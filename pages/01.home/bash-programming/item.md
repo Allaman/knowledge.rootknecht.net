@@ -163,6 +163,12 @@ arr=($string)
 
 ## Checks
 
+### Website
+
+```sh
+	while [[ "$(shell curl -s -o /dev/null -w ''%{http_code}'' localhost/grafana/login)" != "200" ]]; do sleep 5; done
+```
+
 ### Programm
 
 ```bash
