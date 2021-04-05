@@ -166,7 +166,7 @@ arr=($string)
 ### Website
 
 ```sh
-	while [[ "$(shell curl -s -o /dev/null -w ''%{http_code}'' localhost/grafana/login)" != "200" ]]; do sleep 5; done
+	while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' localhost/grafana/login)" != "200" ]]; do sleep 5; done
 ```
 
 ### Programm
