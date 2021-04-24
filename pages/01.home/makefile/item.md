@@ -4,10 +4,18 @@ title: Makefile
 
 [TOC]
 
-## Run shell commands
+## Run shell commands 
+
 ```makefile
 DOCKER_GID=$(shell getent group docker | cut -d: -f3)
 ```
+## Assign output of shell commands to a variable
+
+```makefile
+	$(eval NAME=$(shell hostname))
+    echo "Hostname is $(NAME)"
+```
+
 ## echo
 
 Prefixing with `@` does not print out the command itself
