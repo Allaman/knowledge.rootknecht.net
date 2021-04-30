@@ -180,6 +180,19 @@ for program in awk sed grep sort uniq rm mktemp; do
 done
 ```
 
+```sh
+checkUtils() {
+    readonly MSG="not found. Please make sure this is installed and in PATH."
+    readonly UTILS="awk basename cat column echo git grep head seq sort tput \
+		tr uniq wc"
+
+    for u in $UTILS
+    do
+        command -v "$u" >/dev/null 2>&1 || { echo >&2 "$u ${MSG}"; exit 1; }
+    done
+}
+```
+
 ### Process
 
 ```bash
