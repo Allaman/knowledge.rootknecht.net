@@ -19,6 +19,7 @@ In /etc/inputrc
 ```
 
 ## jq / yq
+! Some yq commands refer to v3. See [upgrading from v3](https://mikefarah.gitbook.io/yq/upgrading-from-v3)
 
 Filter json:
 ```sh
