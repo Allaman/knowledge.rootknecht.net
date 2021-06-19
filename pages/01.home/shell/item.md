@@ -132,6 +132,15 @@ chown --reference=otherfile newFile
 chmod --reference=otherfile newFile
 ```
 
+## Fix messed up permissions
+
+```bash
+fd -t f | xargs -d '\n' chmod u-x && fd -t f | xargs -d '\n' chmod g-x
+```
+- recursively all files in current folder
+- remove executable bit from user and group
+- handle spaces in filenames
+
 ## Modify ownership of symlinks
 ```bash
 chown -h USER:GROUP SYMLINK
