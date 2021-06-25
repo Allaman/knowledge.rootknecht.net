@@ -102,6 +102,38 @@ var cores = data["server"].(map[string]interface{})["cores"].(float64)
 // TODO
 ```
 
+## Args and ENV
+
+```go
+func main() {
+	statsCmd := flag.NewFlagSet("stats", flag.ExitOnError)
+
+	// Flags for stats subcommand
+    // reads from Env var and command line
+	statsDebugPtr := statsCmd.Bool("debug", getBoolEnv("FOO_DEBUG", false), "enable debugging")  
+}
+
+func getBoolEnv(key string, defaultValue bool) bool {
+	if val, ok := getEnv(key); ok {
+		boolVal, err := strconv.ParseBool(val)
+		if err != nil {
+			return false
+		}
+		return boolVal
+	}
+	return defaultValue
+}
+
+func getEnv(key string) (string, bool) {
+	val, ok := os.LookupEnv(key)
+	if !ok {
+		return "", ok
+	}
+	return val, ok
+}
+
+```
+
 ## Building a CLI
 
 **Result:**
