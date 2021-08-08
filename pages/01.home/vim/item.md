@@ -7,9 +7,9 @@ taxonomy:
 
 [TOC]
 
-## My (Neo)Vim config
+## My NeoVim config
 
-[vimrc](https://raw.githubusercontent.com/Allaman/dotfiles/master/vimrc)
+You can find my obsolete [vimrc](https://raw.githubusercontent.com/Allaman/dotfiles/master/vimrc) that should work both with Vim >8.0 and NeoVim. My new [NeoVim >0.5 configuration](https://github.com/Allaman/nvim) is the current setup I use for all of my daily tasks.
 
 ## Safe file opend by an user as root
 ```
