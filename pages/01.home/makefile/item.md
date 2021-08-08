@@ -4,6 +4,11 @@ title: Makefile
 
 [TOC]
 
+## My Makefiles
+
+You can find some of my Makefiles I use for different purposes in my [util](https://github.com/Allaman/utils/tree/main/makefile) repository
+
+
 ## Run shell commands 
 
 ```makefile
