@@ -6,7 +6,7 @@ title: Makefile
 
 ## My Makefiles
 
-You can find some of my Makefiles I use for different purposes in my [util](https://github.com/Allaman/utils/tree/main/makefile) repository
+You can find some of my Makefiles I use for different purposes in my [toolbox](https://github.com/Allaman/toolbox) repository
 
 
 ## Run shell commands 
