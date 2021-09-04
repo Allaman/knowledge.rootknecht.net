@@ -10,8 +10,8 @@ visible: false
 </p>
 <h3 id="dsg-general-controller">Verantwortlicher</h3>
 <p><span class="tsmcontroller">Michael Peter<br>
-    Egerländerstr. 2<br>
-    85386 Eching<br>
+    Amalienstr. 58<br>
+    86633 Neuburg an der Donau<br>
     Deutschland<br>
     <br>
     Mailadresse: allaman@rootknecht.net<br>
